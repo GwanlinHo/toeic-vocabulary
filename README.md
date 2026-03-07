@@ -1,5 +1,7 @@
 # 多益單字隨身卡 (TOEIC Vocabulary Flashcards)
 
+> 🌐 **線上網址：[https://gwanlinho.github.io/toeic-vocabulary/](https://gwanlinho.github.io/toeic-vocabulary/)**
+
 這是一個輕量、反應快速的靜態網頁工具，旨在幫助使用者利用碎片時間複習多益 (TOEIC) 高頻單字。專為行動裝置優化，可完美配合 iOS 捷徑或 Android 桌面捷徑使用。
 
 ## 🚀 特色功能
@@ -22,6 +24,7 @@
 - `style.css`：視覺樣式與主題配色。
 - `script.js`：資料讀取、隨機抽取及互動邏輯。
 - `data_*.json`：按等級分類的單字資料庫。
+- `scripts/`：用於產出與整理單字資料庫的 Python 腳本。
 
 ## 🌐 部署方式
 
