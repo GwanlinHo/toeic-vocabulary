@@ -1,68 +1,53 @@
 import json
+import os
 
-# 第 1-50 個高品質單字對應表 (藍色等級)
-enriched_data_blue_1 = {
-    "postage": {"phonetic": "/ˈpoʊstɪdʒ/", "pos": "n.", "meaning": "郵資", "phrases": ["postage stamp", "postage paid"], "synonyms": ["mailing cost"], "antonyms": [], "example": "Please make sure you have the correct postage on the envelope before mailing it."},
-    "prescription": {"phonetic": "/prɪˈskrɪpʃn/", "pos": "n.", "meaning": "處方箋", "phrases": ["prescription drug", "fill a prescription"], "synonyms": ["instruction", "remedy"], "antonyms": [], "example": "The doctor wrote a prescription for some antibiotics to treat the infection."},
-    "press": {"phonetic": "/pres/", "pos": "n./v.", "meaning": "媒體；新聞界；按", "phrases": ["press conference", "press release"], "synonyms": ["media", "journalism"], "antonyms": [], "example": "The company held a press conference to announce its new product line."},
-    "promotional": {"phonetic": "/prəˈmoʊʃənl/", "pos": "adj.", "meaning": "促銷的；宣傳的", "phrases": ["promotional material", "promotional campaign"], "synonyms": ["advertising"], "antonyms": [], "example": "We are distributing promotional leaflets in the city center to attract more customers."},
-    "publication": {"phonetic": "/ˌpʌblɪˈkeɪʃn/", "pos": "n.", "meaning": "出版；刊物", "phrases": ["daily publication", "scientific publication"], "synonyms": ["issue", "printing"], "antonyms": [], "example": "The new book is scheduled for publication in early September."},
-    "queue": {"phonetic": "/kjuː/", "pos": "n./v.", "meaning": "隊列；排隊", "phrases": ["stand in a queue", "jump the queue"], "synonyms": ["line"], "antonyms": [], "example": "There was a long queue of people waiting to buy tickets for the concert."},
-    "railroad": {"phonetic": "/ˈreɪlroʊd/", "pos": "n.", "meaning": "鐵路", "phrases": ["railroad station", "railroad track"], "synonyms": ["railway"], "antonyms": [], "example": "The new railroad line will connect the two cities and reduce travel time."},
-    "ranch": {"phonetic": "/ræntʃ/", "pos": "n.", "meaning": "大牧場；農場", "phrases": ["cattle ranch", "guest ranch"], "synonyms": ["farm", "estate"], "antonyms": [], "example": "He spent his summer working on a cattle ranch in the countryside."},
-    "residence": {"phonetic": "/ˈrezɪdəns/", "pos": "n.", "meaning": "住宅；居住權", "phrases": ["permanent residence", "official residence"], "synonyms": ["home", "dwelling"], "antonyms": [], "example": "The ambassador's official residence is located near the city center."},
-    "resident": {"phonetic": "/ˈrezɪdənt/", "pos": "n.", "meaning": "居民", "phrases": ["local resident", "permanent resident"], "synonyms": ["inhabitant", "citizen"], "antonyms": [], "example": "Local residents have complained about the noise from the nearby construction site."},
-    "semester": {"phonetic": "/sɪˈmestər/", "pos": "n.", "meaning": "學期", "phrases": ["spring semester", "fall semester"], "synonyms": ["term"], "antonyms": [], "example": "The final exams will take place at the end of the fall semester."},
-    "sneakers": {"phonetic": "/ˈsniːkərz/", "pos": "n.", "meaning": "運動鞋", "phrases": ["a pair of sneakers"], "synonyms": ["training shoes", "tennis shoes"], "antonyms": [], "example": "You should wear comfortable sneakers if you plan to go for a long walk."},
-    "sick in mind and body": {"phonetic": "/sɪk ɪn maɪnd ænd ˈbɑːdi/", "pos": "adj.", "meaning": "身心疲憊", "phrases": [], "synonyms": ["exhausted"], "antonyms": ["healthy"], "example": "After working long hours for months, he felt sick in mind and body."},
-    "society": {"phonetic": "/səˈsaɪəti/", "pos": "n.", "meaning": "社會；協會", "phrases": ["modern society", "professional society"], "synonyms": ["community", "association"], "antonyms": [], "example": "Technology has had a profound impact on all aspects of modern society."},
-    "square": {"phonetic": "/skwer/", "pos": "n./adj.", "meaning": "廣場；正方形的", "phrases": ["town square", "square meter"], "synonyms": ["plaza"], "antonyms": [], "example": "The city's main square is a popular gathering place for locals and tourists."},
-    "stable": {"phonetic": "/ˈsteɪbl/", "pos": "adj./n.", "meaning": "穩定的；馬廄", "phrases": ["stable condition", "stable price"], "synonyms": ["steady", "firm"], "antonyms": ["unstable", "shaky"], "example": "The company's financial situation has remained stable over the last few years."},
-    "suit": {"phonetic": "/suːt/", "pos": "n./v.", "meaning": "西裝；適合", "phrases": ["business suit", "lawsuit"], "synonyms": ["outfit", "fit"], "antonyms": [], "example": "The candidate wore a dark blue suit for his job interview."},
-    "suitcase": {"phonetic": "/ˈsuːtkeɪs/", "pos": "n.", "meaning": "手提箱；行李箱", "phrases": ["pack a suitcase", "heavy suitcase"], "synonyms": ["bag", "luggage"], "antonyms": [], "example": "She packed her suitcase and headed to the airport for her vacation."},
-    "tailor": {"phonetic": "/ˈteɪlər/", "pos": "n./v.", "meaning": "裁縫；量身打造", "phrases": ["tailor-made", "professional tailor"], "synonyms": ["adjust", "customize"], "antonyms": [], "example": "The training program was tailored to meet the specific needs of our employees."},
-    "terminal": {"phonetic": "/ˈtɜːrmɪnl/", "pos": "n./adj.", "meaning": "航站；終端機；晚期的", "phrases": ["airport terminal", "computer terminal"], "synonyms": ["station", "end"], "antonyms": [], "example": "Please proceed to terminal two for all international flight departures."},
-    "tenant": {"phonetic": "/ˈtenənt/", "pos": "n.", "meaning": "租戶；房客", "phrases": ["new tenant", "sitting tenant"], "synonyms": ["lessee", "occupant"], "antonyms": ["landlord"], "example": "The landlord is looking for a new tenant to rent the vacant apartment."},
-    "toll": {"phonetic": "/toʊl/", "pos": "n.", "meaning": "通行費；代價", "phrases": ["toll road", "toll bridge"], "synonyms": ["fee", "charge"], "antonyms": [], "example": "You have to pay a toll to cross the bridge into the city center."},
-    "tour": {"phonetic": "/tʊr/", "pos": "n./v.", "meaning": "導覽；旅遊", "phrases": ["guided tour", "business tour"], "synonyms": ["trip", "excursion"], "antonyms": [], "example": "We took a guided tour of the factory to see how the products are made."},
-    "track": {"phonetic": "/træk/", "pos": "n./v.", "meaning": "軌道；追蹤", "phrases": ["keep track of", "on track"], "synonyms": ["path", "monitor"], "antonyms": [], "example": "It's important to keep track of all your business expenses for tax purposes."},
-    "traditional": {"phonetic": "/trəˈdɪʃənl/", "pos": "adj.", "meaning": "傳統的", "phrases": ["traditional values", "traditional method"], "synonyms": ["conventional", "customary"], "antonyms": ["modern", "innovative"], "example": "The company still uses some traditional methods of production alongside new technology."},
-    "unsanitary": {"phonetic": "/ʌnˈsænɪteri/", "pos": "adj.", "meaning": "不衛生的", "phrases": ["unsanitary conditions"], "synonyms": ["unhygienic", "dirty"], "antonyms": ["sanitary", "clean"], "example": "The restaurant was closed down due to its extremely unsanitary kitchen conditions."},
-    "vaccinate": {"phonetic": "/ˈvæksɪneɪt/", "pos": "v.", "meaning": "接種疫苗", "phrases": ["get vaccinated"], "synonyms": ["immunize"], "antonyms": [], "example": "It is recommended that all international travelers be vaccinated against certain diseases."},
-    "vegetarian": {"phonetic": "/ˌvedʒəˈteriən/", "pos": "n./adj.", "meaning": "素食者；素食的", "phrases": ["vegetarian meal", "strict vegetarian"], "synonyms": [], "antonyms": [], "example": "The restaurant offers a variety of delicious vegetarian dishes on its menu."},
-    "vehicle": {"phonetic": "/ˈviːəkl/", "pos": "n.", "meaning": "車輛；工具", "phrases": ["motor vehicle", "commercial vehicle"], "synonyms": ["car", "conveyance"], "antonyms": [], "example": "All commercial vehicles must be registered with the local transportation authority."},
-    "vending machine": {"phonetic": "/ˈvendɪŋ məˈʃiːn/", "pos": "n.", "meaning": "販賣機", "phrases": ["beverage vending machine"], "synonyms": [], "antonyms": [], "example": "You can get cold drinks and snacks from the vending machine in the lobby."},
-    "voyage": {"phonetic": "/ˈvɔɪɪdʒ/", "pos": "n./v.", "meaning": "航程；旅程", "phrases": ["maiden voyage", "sea voyage"], "synonyms": ["journey", "trip"], "antonyms": [], "example": "The ship is preparing for its maiden voyage across the Atlantic Ocean."},
-    "spy": {"phonetic": "/spaɪ/", "pos": "n./v.", "meaning": "間諜；暗中監視", "phrases": ["industrial spy", "spy on"], "synonyms": ["secret agent", "monitor"], "antonyms": [], "example": "The company was accused of hiring an industrial spy to steal its competitor's secrets."},
-    "stack": {"phonetic": "/stæk/", "pos": "n./v.", "meaning": "疊；堆", "phrases": ["a stack of paper", "stack the boxes"], "synonyms": ["pile", "heap"], "antonyms": [], "example": "Please place the new files in the stack on the corner of my desk."},
-    "strive": {"phonetic": "/straɪv/", "pos": "v.", "meaning": "努力；奮鬥", "phrases": ["strive for success", "strive to do"], "synonyms": ["endeavor", "attempt"], "antonyms": ["give up"], "example": "Our company strives to provide the highest quality of service to our customers."},
-    "structure": {"phonetic": "/ˈstrʌktʃər/", "pos": "n./v.", "meaning": "結構；建築物", "phrases": ["organizational structure", "social structure"], "synonyms": ["framework", "organization"], "antonyms": [], "example": "The company is planning to change its organizational structure to improve efficiency."},
-    "substantiate": {"phonetic": "/səbˈstænʃieɪt/", "pos": "v.", "meaning": "證實", "phrases": ["substantiate a claim", "fully substantiate"], "synonyms": ["verify", "confirm"], "antonyms": ["disprove", "refute"], "example": "You need to provide some evidence to substantiate your claims against the manager."},
-    "support": {"phonetic": "/səˈpɔːrt/", "pos": "v./n.", "meaning": "支持；擁護", "phrases": ["technical support", "customer support"], "synonyms": ["assist", "aid"], "antonyms": ["oppose", "hinder"], "example": "Please contact our technical support team if you have any problems with the software."},
-    "suppose": {"phonetic": "/səˈpoʊz/", "pos": "v.", "meaning": "猜想；假設", "phrases": ["be supposed to", "supposedly"], "synonyms": ["assume", "think"], "antonyms": [], "example": "I suppose that the meeting will take place in the conference room as usual."},
-    "surmize": {"phonetic": "/sərˈmaɪz/", "pos": "v./n.", "meaning": "推測；猜度", "phrases": [], "synonyms": ["guess", "conjecture"], "antonyms": [], "example": "We can only surmize that the drop in sales was due to the recent price increase."},
-    "survey": {"phonetic": "/ˈsɜːrveɪ/", "pos": "n./v.", "meaning": "調查；測量", "phrases": ["customer survey", "conduct a survey"], "synonyms": ["poll", "study"], "antonyms": [], "example": "According to a recent customer survey, most people are happy with our new products."},
-    "survive": {"phonetic": "/sərˈvaɪv/", "pos": "v.", "meaning": "倖存；活下來", "phrases": ["survive the crisis", "survival rate"], "synonyms": ["endure", "persist"], "antonyms": ["die", "perish"], "example": "Few businesses were able to survive the severe economic crisis last year."},
-    "sustain": {"phonetic": "/səˈsteɪn/", "pos": "v.", "meaning": "維持；遭受(損失)", "phrases": ["sustain growth", "sustain a loss"], "synonyms": ["maintain", "undergo"], "antonyms": ["end", "stop"], "example": "The company has managed to sustain a high level of growth over the last five years."},
-    "swap": {"phonetic": "/swɑːp/", "pos": "v./n.", "meaning": "交換", "phrases": ["swap ideas", "swap places"], "synonyms": ["exchange", "trade"], "antonyms": [], "example": "I'd like to swap my morning shift for your afternoon shift next Tuesday."},
-    "sway": {"phonetic": "/sweɪ/", "pos": "v./n.", "meaning": "搖擺；影響", "phrases": ["hold sway", "sway public opinion"], "synonyms": ["influence", "persuade"], "antonyms": [], "example": "The manager's persuasive arguments were able to sway the board's decision."},
-    "temper": {"phonetic": "/ˈtempər/", "pos": "n./v.", "meaning": "脾氣；調和", "phrases": ["lose one's temper", "bad temper"], "synonyms": ["mood", "disposition"], "antonyms": [], "example": "It is important to keep your temper even when dealing with difficult customers."},
-    "testify": {"phonetic": "/ˈtestɪfaɪ/", "pos": "v.", "meaning": "作證；證實", "phrases": ["testify against", "testify to"], "synonyms": ["bear witness", "certify"], "antonyms": [], "example": "Several witnesses were called to testify during the court case last week."},
-    "thrive": {"phonetic": "/θraɪv/", "pos": "v.", "meaning": "繁榮；興旺", "phrases": ["thrive on competition", "thriving business"], "synonyms": ["prosper", "flourish"], "antonyms": ["fail", "decline"], "example": "The local tourism industry has continued to thrive despite the economic downturn."},
-    "transcend": {"phonetic": "/trænˈsend/", "pos": "v.", "meaning": "超越；凌駕", "phrases": ["transcend boundaries", "transcend limitations"], "synonyms": ["surpass", "exceed"], "antonyms": [], "example": "His innovative ideas transcend the traditional boundaries of the industry."},
-    "underline": {"phonetic": "/ˌʌndərˈlaɪn/", "pos": "v.", "meaning": "畫底線；強調", "phrases": [], "synonyms": ["emphasize", "highlight"], "antonyms": [], "example": "The manager wanted to underline the importance of meeting the project deadline."},
-    "unveil": {"phonetic": "/ˌʌnˈveɪl/", "pos": "v.", "meaning": "揭幕；公開", "phrases": ["unveil a statue", "unveil a plan"], "synonyms": ["reveal", "disclose"], "antonyms": ["hide", "conceal"], "example": "The company is planning to unveil its new marketing strategy next month."}
-}
+def update_vocab():
+    # 首批 20 個商務進階單字 (藍色等級)
+    new_data = [
+        {"word": "Abbreviate", "phonetic": "/əˈbriːvieɪt/", "pos": "v.", "meaning": "縮寫, 縮短", "level": "blue", "phrases": ["abbreviated form", "standard abbreviation"], "synonyms": ["shorten", "curtail"], "antonyms": ["elongate", "expand"], "example": "The committee decided to abbreviate the final report for the board meeting."},
+        {"word": "Abstain", "phonetic": "/əbˈsteɪn/", "pos": "v.", "meaning": "戒除, 放棄, 投棄權票", "level": "blue", "phrases": ["abstain from voting", "total abstinence"], "synonyms": ["refrain", "desist"], "antonyms": ["indulge", "participate"], "example": "Three members of the board decided to abstain from voting on the controversial proposal."},
+        {"word": "Accomplice", "phonetic": "/əˈkʌmplɪs/", "pos": "n.", "meaning": "同謀, 幫兇", "level": "blue", "phrases": ["witting accomplice", "alleged accomplice"], "synonyms": ["associate", "collaborator"], "antonyms": ["opponent", "adversary"], "example": "The investigation revealed that the hacker had an accomplice within the IT department."},
+        {"word": "Acquaint", "phonetic": "/əˈkweɪnt/", "pos": "v.", "meaning": "使認識, 使了解", "level": "blue", "phrases": ["acquaint oneself with", "get acquainted"], "synonyms": ["familiarize", "inform"], "antonyms": ["ignore", "unfamiliar"], "example": "New employees are required to acquaint themselves with the company's safety protocols."},
+        {"word": "Adjourn", "phonetic": "/əˈdʒɜːrn/", "pos": "v.", "meaning": "休會, 延期", "level": "blue", "phrases": ["adjourn the meeting", "motion to adjourn"], "synonyms": ["suspend", "postpone"], "antonyms": ["convene", "commence"], "example": "The chairperson decided to adjourn the session until 9:00 AM the following morning."},
+        {"word": "Affidavit", "phonetic": "/ˌæfəˈdeɪvɪt/", "pos": "n.", "meaning": "宣誓書", "level": "blue", "phrases": ["sign an affidavit", "sworn affidavit"], "synonyms": ["testimony", "sworn statement"], "antonyms": [], "example": "The witness provided a sworn affidavit to the court regarding the contract dispute."},
+        {"word": "Aggregate", "ranking": "blue", "phonetic": "/ˈæɡrɪɡət/", "pos": "adj./n.", "meaning": "總計的, 集合體", "level": "blue", "phrases": ["aggregate demand", "in the aggregate"], "synonyms": ["total", "accumulated"], "antonyms": ["individual", "separate"], "example": "The aggregate annual revenue exceeded the initial projections by 15%."},
+        {"word": "Alleviate", "phonetic": "/əˈliːvieɪt/", "pos": "v.", "meaning": "減輕, 緩和", "level": "blue", "phrases": ["alleviate poverty", "alleviate the symptoms"], "synonyms": ["relieve", "mitigate"], "antonyms": ["aggravate", "intensify"], "example": "The government introduced new tax breaks to alleviate the burden on small businesses."},
+        {"word": "Amicable", "phonetic": "/ˈæmɪkəbl/", "pos": "adj.", "meaning": "友好的, 和睦的", "level": "blue", "phrases": ["amicable settlement", "amicable relationship"], "synonyms": ["friendly", "harmonious"], "antonyms": ["hostile", "antagonistic"], "example": "The two companies reached an amicable settlement after months of legal disputes."},
+        {"word": "Appraisal", "phonetic": "/əˈpreɪzl/", "pos": "n.", "meaning": "評價, 估價, 考核", "level": "blue", "phrases": ["performance appraisal", "property appraisal"], "synonyms": ["assessment", "evaluation"], "antonyms": [], "example": "The annual performance appraisal is a key component of our professional development program."},
+        {"word": "Arrear", "phonetic": "/əˈrɪər/", "pos": "n.", "meaning": "欠款, 拖欠", "level": "blue", "phrases": ["in arrears", "rent arrears"], "synonyms": ["debt", "deficit"], "antonyms": [], "example": "The tenant was three months in arrears with his rent payments."},
+        {"word": "Asset", "phonetic": "/ˈæset/", "pos": "n.", "meaning": "資產, 優點", "level": "blue", "phrases": ["valuable asset", "fixed assets"], "synonyms": ["property", "resource"], "antonyms": ["liability"], "example": "The new marketing director has proven to be a valuable asset to the organization."},
+        {"word": "Attrition", "phonetic": "/əˈtrɪʃn/", "pos": "n.", "meaning": "磨損, (人員)自然縮減", "level": "blue", "phrases": ["staff attrition", "attrition rate"], "synonyms": ["erosion", "reduction"], "antonyms": ["growth", "expansion"], "example": "The company decided not to fill the vacancies caused by natural staff attrition."},
+        {"word": "Audit", "phonetic": "/ˈɔːdɪt/", "pos": "v./n.", "meaning": "審計, 查帳", "level": "blue", "phrases": ["internal audit", "financial audit"], "synonyms": ["inspection", "scrutiny"], "antonyms": [], "example": "The independent firm will conduct a thorough audit of the company's financial records."},
+        {"word": "Authorize", "phonetic": "/ˈɔːθəraɪz/", "pos": "v.", "meaning": "授權, 批准", "level": "blue", "phrases": ["authorized dealer", "authorize a payment"], "synonyms": ["approve", "sanction"], "antonyms": ["forbid", "veto"], "example": "Only the department head is allowed to authorize international travel expenses."},
+        {"word": "Ballot", "phonetic": "/ˈbælət/", "pos": "n./v.", "meaning": "投票, 選票", "level": "blue", "phrases": ["secret ballot", "cast a ballot"], "synonyms": ["vote", "poll"], "antonyms": [], "example": "The union members will cast their ballots to decide on the new wage agreement."},
+        {"word": "Benchmark", "phonetic": "/ˈbentʃmɑːrk/", "pos": "n.", "meaning": "基準, 標竿", "level": "blue", "phrases": ["industry benchmark", "benchmark test"], "synonyms": ["standard", "criterion"], "antonyms": [], "example": "The current performance levels will serve as a benchmark for future evaluations."},
+        {"word": "Beneficiary", "phonetic": "/ˌbenɪˈfɪʃieri/", "pos": "n.", "meaning": "受益人", "level": "blue", "phrases": ["sole beneficiary", "insurance beneficiary"], "synonyms": ["recipient", "heir"], "antonyms": ["donor", "benefactor"], "example": "The non-profit organization was named as the primary beneficiary of the estate."},
+        {"word": "Bid", "phonetic": "/bɪd/", "pos": "v./n.", "meaning": "出價, 投標", "level": "blue", "phrases": ["takeover bid", "sealed bid"], "synonyms": ["tender", "offer"], "antonyms": [], "example": "The construction company submitted a competitive bid for the new highway project."},
+        {"word": "Blueprint", "phonetic": "/ˈbluːprɪnt/", "pos": "n.", "meaning": "藍圖, 計畫", "level": "blue", "phrases": ["detailed blueprint", "blueprint for success"], "synonyms": ["plan", "design"], "antonyms": [], "example": "The CEO presented a comprehensive blueprint for the company's expansion into Asian markets."}
+    ]
+    
+    file_path = "data_blue.json"
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            try:
+                current_data = json.load(f)
+            except:
+                current_data = []
+    else:
+        current_data = []
 
-with open('data_blue.json', 'r', encoding='utf-8') as f:
-    data = json.load(f)
+    # 避免重複 (根據 word)
+    existing_words = {item['word'].lower() for item in current_data}
+    added_count = 0
+    for item in new_data:
+        if item['word'].lower() not in existing_words:
+            current_data.append(item)
+            added_count += 1
+            
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(current_data, f, ensure_ascii=False, indent=2)
+        
+    print(f"成功合併！新增了 {added_count} 個單字到 {file_path}，目前總計 {len(current_data)} 個單字。")
 
-for item in data:
-    word = item['word']
-    if word in enriched_data_blue_1:
-        item.update(enriched_data_blue_1[word])
-
-with open('data_blue.json', 'w', encoding='utf-8') as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-
-print("成功精修藍色等級第 1-50 個高品質單字。")
+if __name__ == "__main__":
+    update_vocab()

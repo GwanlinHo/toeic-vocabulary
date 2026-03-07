@@ -687,21 +687,6 @@
     "example": "His immature comments during the meeting were seen as unprofessional by the manager."
   },
   {
-    "word": "pharmaceutical",
-    "phonetic": "/ˌfɑːrməˈsuːtɪkl/",
-    "pos": "adj./n.",
-    "meaning": "製藥的；藥物",
-    "level": "gold",
-    "phrases": [
-      "pharmaceutical industry"
-    ],
-    "synonyms": [
-      "medicinal"
-    ],
-    "antonyms": [],
-    "example": "The company is a major player in the global pharmaceutical industry."
-  },
-  {
     "word": "depressant",
     "phonetic": "/dɪˈpresnt/",
     "pos": "n./adj.",
@@ -769,24 +754,6 @@
     ],
     "antonyms": [],
     "example": "The project is currently in its final stage and will be completed by next week."
-  },
-  {
-    "word": "depression",
-    "phonetic": "/dɪˈpreʃn/",
-    "pos": "n.",
-    "meaning": "經濟大蕭條；憂鬱",
-    "level": "gold",
-    "phrases": [
-      "Great Depression"
-    ],
-    "synonyms": [
-      "slump",
-      "despair"
-    ],
-    "antonyms": [
-      "prosperity"
-    ],
-    "example": "The Great Depression of the 1930s had a devastating impact on global trade."
   },
   {
     "word": "on the market",
@@ -1346,22 +1313,6 @@
       "close"
     ],
     "example": "The company is preparing for the global launch of its new smartphone next month."
-  },
-  {
-    "word": "installment",
-    "phonetic": "/ɪnˈstɔːlmənt/",
-    "pos": "n.",
-    "meaning": "分期付款；(連載)一期",
-    "level": "gold",
-    "phrases": [
-      "monthly installments"
-    ],
-    "synonyms": [
-      "payment",
-      "part"
-    ],
-    "antonyms": [],
-    "example": "You can pay for the new refrigerator in twelve equal monthly installments."
   },
   {
     "word": "fairness",
@@ -2061,44 +2012,6 @@
     "example": "Please reserve a seat for me on the morning flight to New York."
   },
   {
-    "word": "sector",
-    "phonetic": "/ˈsektər/",
-    "pos": "n.",
-    "meaning": "部門；領域；扇形",
-    "level": "gold",
-    "phrases": [
-      "public sector",
-      "private sector",
-      "technology sector"
-    ],
-    "synonyms": [
-      "segment",
-      "area",
-      "division"
-    ],
-    "antonyms": [],
-    "example": "The country's technology sector has seen rapid growth over the last decade."
-  },
-  {
-    "word": "volatile",
-    "phonetic": "/ˈvɑːlətl/",
-    "pos": "adj.",
-    "meaning": "不穩定的；易變的；揮發性的",
-    "level": "gold",
-    "phrases": [
-      "volatile market"
-    ],
-    "synonyms": [
-      "unstable",
-      "unpredictable"
-    ],
-    "antonyms": [
-      "stable",
-      "constant"
-    ],
-    "example": "The stock market remained highly volatile throughout the day due to political news."
-  },
-  {
     "word": "fare",
     "phonetic": "/fer/",
     "pos": "n./v.",
@@ -2505,25 +2418,6 @@
     "example": "The union leaders are trying to resolve the dispute without further confrontation with management."
   },
   {
-    "word": "confront",
-    "phonetic": "/kənˈfrʌnt/",
-    "pos": "v.",
-    "meaning": "面對；對抗",
-    "level": "gold",
-    "phrases": [
-      "confront a problem"
-    ],
-    "synonyms": [
-      "face",
-      "encounter"
-    ],
-    "antonyms": [
-      "avoid",
-      "evade"
-    ],
-    "example": "The manager decided to confront the employee about her recurring lateness."
-  },
-  {
     "word": "biography",
     "phonetic": "/baɪˈɑːɡrəfi/",
     "pos": "n.",
@@ -2600,44 +2494,6 @@
       "criticize for"
     ],
     "example": "The manager complimented the team on their hard work and dedication to the project."
-  },
-  {
-    "word": "punctual",
-    "phonetic": "/ˈpʌŋktʃuəl/",
-    "pos": "adj.",
-    "meaning": "準時的",
-    "level": "gold",
-    "phrases": [
-      "be punctual for"
-    ],
-    "synonyms": [
-      "on time",
-      "prompt"
-    ],
-    "antonyms": [
-      "late",
-      "tardy"
-    ],
-    "example": "It is important to be punctual for meetings to show respect for everyone's time."
-  },
-  {
-    "word": "dependable",
-    "phonetic": "/dɪˈpendəbl/",
-    "pos": "adj.",
-    "meaning": "可靠的；可信任的",
-    "level": "gold",
-    "phrases": [
-      "dependable person"
-    ],
-    "synonyms": [
-      "reliable",
-      "trustworthy"
-    ],
-    "antonyms": [
-      "unreliable",
-      "undependable"
-    ],
-    "example": "We are looking for a dependable person to manage the office while the manager is away."
   },
   {
     "word": "clock in/out",
@@ -3309,26 +3165,6 @@
     "example": "The manager gave a frank assessment of the project's current progress and challenges."
   },
   {
-    "word": "arrogant",
-    "phonetic": "/ˈærəɡənt/",
-    "pos": "adj.",
-    "meaning": "傲慢的；自大的",
-    "level": "gold",
-    "phrases": [
-      "arrogant behavior"
-    ],
-    "synonyms": [
-      "haughty",
-      "proud",
-      "conceited"
-    ],
-    "antonyms": [
-      "humble",
-      "modest"
-    ],
-    "example": "His arrogant attitude made it difficult for him to work effectively with the rest of the team."
-  },
-  {
     "word": "impersonal",
     "phonetic": "/ɪmˈpɜːrsənl/",
     "pos": "adj.",
@@ -3346,21 +3182,6 @@
       "warm"
     ],
     "example": "Large corporations can sometimes feel very impersonal to their customers and employees."
-  },
-  {
-    "word": "vacancy",
-    "phonetic": "/ˈveɪkənsi/",
-    "pos": "n.",
-    "meaning": "職缺；空房",
-    "level": "gold",
-    "phrases": [
-      "job vacancy"
-    ],
-    "synonyms": [
-      "opening"
-    ],
-    "antonyms": [],
-    "example": "There is currently a vacancy for a senior marketing manager in our overseas office."
   },
   {
     "word": "take the initiative",
@@ -3625,26 +3446,6 @@
     "example": "You should avoid eating too much greasy food if you want to stay healthy."
   },
   {
-    "word": "revoke",
-    "phonetic": "/rɪˈvoʊk/",
-    "pos": "v.",
-    "meaning": "撤銷；廢除",
-    "level": "gold",
-    "phrases": [
-      "revoke a license"
-    ],
-    "synonyms": [
-      "cancel",
-      "annul",
-      "rescind"
-    ],
-    "antonyms": [
-      "grant",
-      "issue"
-    ],
-    "example": "The government decided to revoke the company's business license following the scandal."
-  },
-  {
     "word": "utensil",
     "phonetic": "/juːˈtensl/",
     "pos": "n.",
@@ -3705,26 +3506,6 @@
     ],
     "antonyms": [],
     "example": "The company held a magnificent gala dinner to celebrate its twentieth anniversary."
-  },
-  {
-    "word": "sophisticated",
-    "phonetic": "/səˈfɪstɪkeɪtɪd/",
-    "pos": "adj.",
-    "meaning": "世故的；精密的；先進的",
-    "level": "gold",
-    "phrases": [
-      "sophisticated software"
-    ],
-    "synonyms": [
-      "advanced",
-      "complex",
-      "refined"
-    ],
-    "antonyms": [
-      "simple",
-      "naive"
-    ],
-    "example": "The new security system is highly sophisticated and uses facial recognition technology."
   },
   {
     "word": "keep in mind",
@@ -3811,25 +3592,6 @@
     ],
     "antonyms": [],
     "example": "The university is known for its world-class faculty in the field of economics."
-  },
-  {
-    "word": "abundant",
-    "phonetic": "/əˈbʌndənt/",
-    "pos": "adj.",
-    "meaning": "豐富的；充沛的",
-    "level": "gold",
-    "phrases": [
-      "abundant resources"
-    ],
-    "synonyms": [
-      "plentiful",
-      "ample"
-    ],
-    "antonyms": [
-      "scarce",
-      "meager"
-    ],
-    "example": "The region is rich in mineral resources and has an abundant supply of water."
   },
   {
     "word": "unheeded",
@@ -4204,22 +3966,6 @@
     "example": "The workers had to strip the old wallpaper before painting the office walls."
   },
   {
-    "word": "apprentice",
-    "phonetic": "/əˈprentɪs/",
-    "pos": "n.",
-    "meaning": "學徒",
-    "level": "gold",
-    "phrases": [
-      "engineering apprentice"
-    ],
-    "synonyms": [
-      "intern",
-      "trainee"
-    ],
-    "antonyms": [],
-    "example": "He started his career as an apprentice in a local engineering firm ten years ago."
-  },
-  {
     "word": "enclosed",
     "phonetic": "/ɪnˈkloʊzd/",
     "pos": "adj./v. (past)",
@@ -4460,22 +4206,6 @@
     "example": "The management decided to dust off an old project proposal from three years ago."
   },
   {
-    "word": "congestion",
-    "phonetic": "/kənˈdʒestʃən/",
-    "pos": "n.",
-    "meaning": "擁擠；堵塞",
-    "level": "gold",
-    "phrases": [
-      "traffic congestion"
-    ],
-    "synonyms": [
-      "crowding",
-      "jam"
-    ],
-    "antonyms": [],
-    "example": "The new overpass has significantly reduced traffic congestion in the city center."
-  },
-  {
     "word": "contribute to",
     "phonetic": "/kənˈtrɪbjuːt tuː/",
     "pos": "v. phr.",
@@ -4490,23 +4220,6 @@
     ],
     "antonyms": [],
     "example": "Innovation and teamwork have greatly contributed to the company's success."
-  },
-  {
-    "word": "workforce",
-    "phonetic": "/ˈwɜːrkfɔːrs/",
-    "pos": "n.",
-    "meaning": "勞動力",
-    "level": "gold",
-    "phrases": [
-      "skilled workforce",
-      "total workforce"
-    ],
-    "synonyms": [
-      "labor force",
-      "manpower"
-    ],
-    "antonyms": [],
-    "example": "The company has a highly skilled and motivated workforce of over five hundred people."
   },
   {
     "word": "cutback",
@@ -4688,25 +4401,6 @@
       "major"
     ],
     "example": "The improvements in efficiency have resulted in a marginal decrease in costs."
-  },
-  {
-    "word": "emission",
-    "phonetic": "/iˈmɪʃn/",
-    "pos": "n.",
-    "meaning": "排放；散發",
-    "level": "gold",
-    "phrases": [
-      "carbon emissions",
-      "emission standards"
-    ],
-    "synonyms": [
-      "release",
-      "discharge"
-    ],
-    "antonyms": [
-      "absorption"
-    ],
-    "example": "The government is introducing stricter regulations to reduce carbon emissions from factories."
   },
   {
     "word": "thrill",
@@ -5577,22 +5271,6 @@
     "example": "Please let us know your seat preference for the flight to London."
   },
   {
-    "word": "acquaint",
-    "phonetic": "/əˈkweɪnt/",
-    "pos": "v.",
-    "meaning": "使認識；使了解",
-    "level": "gold",
-    "phrases": [
-      "acquaint oneself with"
-    ],
-    "synonyms": [
-      "familiarize",
-      "inform"
-    ],
-    "antonyms": [],
-    "example": "New employees should take some time to acquaint themselves with the company's policies."
-  },
-  {
     "word": "try out sth",
     "phonetic": "/traɪ aʊt/",
     "pos": "v. phr.",
@@ -5784,23 +5462,6 @@
       "expose"
     ],
     "example": "He tried to disguise his disappointment when he didn't get the promotion."
-  },
-  {
-    "word": "avenue",
-    "phonetic": "/ˈævənjuː/",
-    "pos": "n.",
-    "meaning": "大道；途徑",
-    "level": "gold",
-    "phrases": [
-      "Fifth Avenue",
-      "explore all avenues"
-    ],
-    "synonyms": [
-      "boulevard",
-      "way"
-    ],
-    "antonyms": [],
-    "example": "The company is exploring every avenue to find a solution to the problem."
   },
   {
     "word": "front desk",
@@ -6268,22 +5929,6 @@
     "example": "The company threatened to take legal action against the competitor for trademark infringement."
   },
   {
-    "word": "sue",
-    "phonetic": "/suː/",
-    "pos": "v.",
-    "meaning": "控告；起訴",
-    "level": "gold",
-    "phrases": [
-      "sue for damages"
-    ],
-    "synonyms": [
-      "prosecute",
-      "litigate"
-    ],
-    "antonyms": [],
-    "example": "The environmental group decided to sue the factory for polluting the local river."
-  },
-  {
     "word": "critic",
     "phonetic": "/ˈkrɪtɪk/",
     "pos": "n.",
@@ -6356,26 +6001,6 @@
     "example": "The government is launching a new campaign to tackle the problem of childhood obesity."
   },
   {
-    "word": "decline",
-    "phonetic": "/dɪˈklaɪn/",
-    "pos": "v./n.",
-    "meaning": "下降；衰退；婉拒",
-    "level": "gold",
-    "phrases": [
-      "economic decline",
-      "decline an invitation"
-    ],
-    "synonyms": [
-      "decrease",
-      "refuse"
-    ],
-    "antonyms": [
-      "increase",
-      "accept"
-    ],
-    "example": "The company has seen a decline in profits for three consecutive quarters."
-  },
-  {
     "word": "register",
     "phonetic": "/ˈredʒɪstər/",
     "pos": "v./n.",
@@ -6391,22 +6016,6 @@
     ],
     "antonyms": [],
     "example": "All participants are required to register for the conference by the end of the month."
-  },
-  {
-    "word": "commissioner",
-    "phonetic": "/kəˈmɪʃənər/",
-    "pos": "n.",
-    "meaning": "委員；專員",
-    "level": "gold",
-    "phrases": [
-      "European Commissioner"
-    ],
-    "synonyms": [
-      "official",
-      "delegate"
-    ],
-    "antonyms": [],
-    "example": "The health commissioner is responsible for overseeing the city's vaccination program."
   },
   {
     "word": "epidemic",
@@ -6875,26 +6484,6 @@
     "example": "The new overpass has helped to reduce traffic congestion at the busy intersection."
   },
   {
-    "word": "collapse",
-    "phonetic": "/kəˈlæps/",
-    "pos": "v./n.",
-    "meaning": "倒塌；崩潰",
-    "level": "gold",
-    "phrases": [
-      "building collapse",
-      "economic collapse"
-    ],
-    "synonyms": [
-      "fall",
-      "breakdown"
-    ],
-    "antonyms": [
-      "stability",
-      "growth"
-    ],
-    "example": "The old bridge collapsed under the weight of the heavy delivery truck."
-  },
-  {
     "word": "excavator",
     "phonetic": "/ˈekskəveɪtər/",
     "pos": "n.",
@@ -7079,22 +6668,6 @@
       "irrelevant"
     ],
     "example": "Please provide any relevant information that could help us with our investigation."
-  },
-  {
-    "word": "alternative",
-    "phonetic": "/ɔːlˈtɜːrnətɪv/",
-    "pos": "n./adj.",
-    "meaning": "替代方案；替代的",
-    "level": "gold",
-    "phrases": [
-      "alternative energy"
-    ],
-    "synonyms": [
-      "option",
-      "choice"
-    ],
-    "antonyms": [],
-    "example": "We need to find an alternative supplier if the current one cannot deliver on time."
   },
   {
     "word": "as of",
@@ -7307,25 +6880,6 @@
     "example": "The company managed to corner the local market for organic products."
   },
   {
-    "word": "elude",
-    "phonetic": "/iˈluːd/",
-    "pos": "v.",
-    "meaning": "逃避；躲避；使...不解",
-    "level": "gold",
-    "phrases": [
-      "elude capture"
-    ],
-    "synonyms": [
-      "evade",
-      "escape"
-    ],
-    "antonyms": [
-      "confront",
-      "face"
-    ],
-    "example": "The suspect managed to elude the police for several days before being caught."
-  },
-  {
     "word": "outpour",
     "phonetic": "/ˈaʊtpɔːr/",
     "pos": "n.",
@@ -7386,26 +6940,6 @@
       "negligent"
     ],
     "example": "Security guards must remain vigilant at all times to prevent any unauthorized entry."
-  },
-  {
-    "word": "demise",
-    "phonetic": "/dɪˈmaɪz/",
-    "pos": "n.",
-    "meaning": "死亡；終結；垮台",
-    "level": "gold",
-    "phrases": [
-      "unexpected demise"
-    ],
-    "synonyms": [
-      "death",
-      "end",
-      "fall"
-    ],
-    "antonyms": [
-      "birth",
-      "beginning"
-    ],
-    "example": "The sudden demise of the company was a shock to its employees and shareholders."
   },
   {
     "word": "a defining moment",
@@ -7526,25 +7060,6 @@
     "example": "The company's new advertising strategy proved to be a potent tool for increasing sales."
   },
   {
-    "word": "radical",
-    "phonetic": "/ˈrædɪkl/",
-    "pos": "adj./n.",
-    "meaning": "激進的；徹底的",
-    "level": "gold",
-    "phrases": [
-      "radical change"
-    ],
-    "synonyms": [
-      "extreme",
-      "fundamental"
-    ],
-    "antonyms": [
-      "conservative",
-      "minor"
-    ],
-    "example": "The company underwent a radical restructuring to improve its financial position."
-  },
-  {
     "word": "brace for/against",
     "phonetic": "/breɪs fər/",
     "pos": "v. phr.",
@@ -7576,22 +7091,6 @@
       "forgiveness"
     ],
     "example": "The company lowered its prices in retaliation for its competitor's aggressive marketing."
-  },
-  {
-    "word": "demonstration",
-    "phonetic": "/ˌdemənˈstreɪʃn/",
-    "pos": "n.",
-    "meaning": "示範；集會遊行；證明",
-    "level": "gold",
-    "phrases": [
-      "product demonstration"
-    ],
-    "synonyms": [
-      "display",
-      "protest"
-    ],
-    "antonyms": [],
-    "example": "The sales representative gave a live demonstration of the new kitchen appliance."
   },
   {
     "word": "a massive compound",
@@ -7767,24 +7266,6 @@
     "example": "The company's profits have increased steadily over the last five years."
   },
   {
-    "word": "threshold",
-    "phonetic": "/ˈθreʃhoʊld/",
-    "pos": "n.",
-    "meaning": "門檻；開端",
-    "level": "gold",
-    "phrases": [
-      "pain threshold",
-      "on the threshold of"
-    ],
-    "synonyms": [
-      "doorway",
-      "entrance",
-      "limit"
-    ],
-    "antonyms": [],
-    "example": "The company is on the threshold of a new era of growth and innovation."
-  },
-  {
     "word": "motherhood without marriage",
     "phonetic": "/ˈmʌðərhʊd wɪˈðaʊt ˈmærɪdʒ/",
     "pos": "n. phr.",
@@ -7895,26 +7376,6 @@
     "example": "He has consistently performed well in his role as a sales manager."
   },
   {
-    "word": "elevate",
-    "phonetic": "/ˈelɪveɪt/",
-    "pos": "v.",
-    "meaning": "提升；舉起",
-    "level": "gold",
-    "phrases": [
-      "elevate to a position"
-    ],
-    "synonyms": [
-      "raise",
-      "lift",
-      "promote"
-    ],
-    "antonyms": [
-      "lower",
-      "demote"
-    ],
-    "example": "The company's new marketing campaign helped to elevate its brand image."
-  },
-  {
     "word": "diverse",
     "phonetic": "/daɪˈvɜːrs/",
     "pos": "adj.",
@@ -7962,44 +7423,6 @@
     "synonyms": [],
     "antonyms": [],
     "example": "The study discussed the challenges faced by marriageable men in the current economy."
-  },
-  {
-    "word": "conservative",
-    "phonetic": "/kənˈsɜːrvətɪv/",
-    "pos": "adj./n.",
-    "meaning": "保守的；守舊的",
-    "level": "gold",
-    "phrases": [
-      "conservative estimate"
-    ],
-    "synonyms": [
-      "traditional",
-      "conventional"
-    ],
-    "antonyms": [
-      "liberal",
-      "radical"
-    ],
-    "example": "The company takes a conservative approach to investing its surplus funds."
-  },
-  {
-    "word": "incentive",
-    "phonetic": "/ɪnˈsentɪv/",
-    "pos": "n./adj.",
-    "meaning": "激勵；獎勵",
-    "level": "gold",
-    "phrases": [
-      "financial incentive",
-      "tax incentive"
-    ],
-    "synonyms": [
-      "motivation",
-      "stimulus"
-    ],
-    "antonyms": [
-      "deterrent"
-    ],
-    "example": "The government offers tax incentives to companies that invest in renewable energy."
   },
   {
     "word": "safety net program",
@@ -8130,25 +7553,6 @@
       "soar"
     ],
     "example": "The company's share price plunged following the news of the financial scandal."
-  },
-  {
-    "word": "prompt",
-    "phonetic": "/prɑːmpt/",
-    "pos": "v./adj./n.",
-    "meaning": "促使；迅速的；提示",
-    "level": "gold",
-    "phrases": [
-      "prompt reply"
-    ],
-    "synonyms": [
-      "cause",
-      "immediate"
-    ],
-    "antonyms": [
-      "slow",
-      "delayed"
-    ],
-    "example": "We would like to thank you for your prompt response to our inquiry."
   },
   {
     "word": "cognitive",
@@ -8698,45 +8102,6 @@
     "example": "Although the new policy was well-intentioned, it had several unexpected negative consequences."
   },
   {
-    "word": "exacerbate",
-    "phonetic": "/ɪɡˈzæsərbeɪt/",
-    "pos": "v.",
-    "meaning": "使加劇；使惡化",
-    "level": "gold",
-    "phrases": [
-      "exacerbate the problem"
-    ],
-    "synonyms": [
-      "aggravate",
-      "worsen"
-    ],
-    "antonyms": [
-      "improve",
-      "alleviate"
-    ],
-    "example": "The sudden drop in temperature could exacerbate the patient's respiratory condition."
-  },
-  {
-    "word": "combat",
-    "phonetic": "/ˈkɑːmbæt/",
-    "pos": "v./n.",
-    "meaning": "打擊；戰鬥",
-    "level": "gold",
-    "phrases": [
-      "combat crime",
-      "combat inflation"
-    ],
-    "synonyms": [
-      "fight",
-      "tackle"
-    ],
-    "antonyms": [
-      "support",
-      "encourage"
-    ],
-    "example": "The government is taking new measures to combat the problem of youth unemployment."
-  },
-  {
     "word": "missteps",
     "phonetic": "/ˌmɪsˈsteps/",
     "pos": "n.",
@@ -9013,25 +8378,6 @@
     "example": "The investigators are working to ascertain the cause of the fire in the warehouse."
   },
   {
-    "word": "compound",
-    "phonetic": "/ˈkɑːmpaʊnd/",
-    "pos": "n./v./adj.",
-    "meaning": "複合物；合成；惡化",
-    "level": "gold",
-    "phrases": [
-      "chemical compound",
-      "compound interest"
-    ],
-    "synonyms": [
-      "mixture",
-      "worsen"
-    ],
-    "antonyms": [
-      "simple"
-    ],
-    "example": "High interest rates will compound the company's existing financial problems."
-  },
-  {
     "word": "alienation",
     "phonetic": "/ˌeɪliəˈneɪʃn/",
     "pos": "n.",
@@ -9157,26 +8503,6 @@
     "example": "I'm sorry to intrude, but there is an urgent phone call for the manager."
   },
   {
-    "word": "assemble",
-    "phonetic": "/əˈsembl/",
-    "pos": "v.",
-    "meaning": "組裝；集合",
-    "level": "gold",
-    "phrases": [
-      "assemble a team"
-    ],
-    "synonyms": [
-      "gather",
-      "collect",
-      "build"
-    ],
-    "antonyms": [
-      "disassemble",
-      "disperse"
-    ],
-    "example": "The workers will assemble the new machinery in the factory tomorrow morning."
-  },
-  {
     "word": "fronts",
     "phonetic": "/frʌnts/",
     "pos": "n.",
@@ -9239,25 +8565,6 @@
       "repel"
     ],
     "example": "The low prices might tempt customers to buy things they don't really need."
-  },
-  {
-    "word": "postpone",
-    "phonetic": "/poʊˈspoʊn/",
-    "pos": "v.",
-    "meaning": "延期",
-    "level": "gold",
-    "phrases": [
-      "postpone a meeting"
-    ],
-    "synonyms": [
-      "delay",
-      "defer"
-    ],
-    "antonyms": [
-      "advance",
-      "bring forward"
-    ],
-    "example": "The meeting has been postponed until next week due to the manager's illness."
   },
   {
     "word": "simultaneously",
@@ -9516,27 +8823,6 @@
       "rapid"
     ],
     "example": "Sales have remained sluggish this quarter despite the new marketing campaign."
-  },
-  {
-    "word": "delicate",
-    "phonetic": "/ˈdelɪkət/",
-    "pos": "adj.",
-    "meaning": "脆弱的；精緻的；棘手的",
-    "level": "gold",
-    "phrases": [
-      "delicate situation",
-      "delicate fabric"
-    ],
-    "synonyms": [
-      "fragile",
-      "fine",
-      "sensitive"
-    ],
-    "antonyms": [
-      "robust",
-      "rough"
-    ],
-    "example": "The negotiations are in a delicate stage and could fail if we are not careful."
   },
   {
     "word": "stake",
@@ -10552,22 +9838,6 @@
     "example": "The company has launched a new campaign to promote its eco-friendly products."
   },
   {
-    "word": "refurbish",
-    "phonetic": "/ˌriːˈfɜːrbɪʃ/",
-    "pos": "v.",
-    "meaning": "翻修；整修",
-    "level": "gold",
-    "phrases": [
-      "refurbish an office"
-    ],
-    "synonyms": [
-      "renovate",
-      "remodel"
-    ],
-    "antonyms": [],
-    "example": "The management has decided to refurbish the old office building next month."
-  },
-  {
     "word": "top priority",
     "phonetic": "/tɑːp praɪˈɔːrəti/",
     "pos": "n. phr.",
@@ -10852,22 +10122,6 @@
     "example": "The island is known for its beautiful beaches and warm tropical climate."
   },
   {
-    "word": "consortium",
-    "phonetic": "/kənˈsɔːrtiəm/",
-    "pos": "n.",
-    "meaning": "聯盟；財團",
-    "level": "gold",
-    "phrases": [
-      "international consortium"
-    ],
-    "synonyms": [
-      "syndicate",
-      "alliance"
-    ],
-    "antonyms": [],
-    "example": "A consortium of international banks provided the funding for the massive construction project."
-  },
-  {
     "word": "on behalf of",
     "phonetic": "/ɑːn bɪˈhæf əv/",
     "pos": "phr.",
@@ -10994,19 +10248,6 @@
     "example": "The new project has managed to garner a lot of interest from potential investors."
   },
   {
-    "word": "resignation",
-    "phonetic": "/ˌrezɪɡˈneɪʃn/",
-    "pos": "n.",
-    "meaning": "辭職；辭呈",
-    "level": "gold",
-    "phrases": [
-      "submit a resignation"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "example": "The CEO's sudden resignation was a major shock to the entire company."
-  },
-  {
     "word": "on the verge of",
     "phonetic": "/ɑːn ðə vɜːrdʒ əv/",
     "pos": "phr.",
@@ -11020,24 +10261,6 @@
     ],
     "antonyms": [],
     "example": "The company is on the verge of signing a major contract with an international client."
-  },
-  {
-    "word": "advocate",
-    "phonetic": "/ˈædvəkət/ (n.) /ˈædvəkeɪt/ (v.)",
-    "pos": "n./v.",
-    "meaning": "擁護者；主張",
-    "level": "gold",
-    "phrases": [
-      "environmental advocate"
-    ],
-    "synonyms": [
-      "supporter",
-      "promote"
-    ],
-    "antonyms": [
-      "opponent"
-    ],
-    "example": "He is a strong advocate for renewable energy and has published several books on the topic."
   },
   {
     "word": "festive",
@@ -11511,26 +10734,6 @@
     "example": "The sales team is itching to start the new marketing campaign next week."
   },
   {
-    "word": "complimentary",
-    "phonetic": "/ˌkɑːmplɪˈmentəri/",
-    "pos": "adj.",
-    "meaning": "免費贈送的；稱讚的",
-    "level": "gold",
-    "phrases": [
-      "complimentary breakfast",
-      "complimentary tickets"
-    ],
-    "synonyms": [
-      "free",
-      "flattering"
-    ],
-    "antonyms": [
-      "paid",
-      "critical"
-    ],
-    "example": "The hotel provides complimentary bottles of water for all its guests."
-  },
-  {
     "word": "regardless of",
     "phonetic": "/rɪˈɡɑːrdləs əv/",
     "pos": "prep. phr.",
@@ -11627,22 +10830,6 @@
     "example": "You should visit an authorized dealer to get your car serviced and repaired."
   },
   {
-    "word": "amendment",
-    "phonetic": "/əˈmendmənt/",
-    "pos": "n.",
-    "meaning": "修正；改訂",
-    "level": "gold",
-    "phrases": [
-      "constitutional amendment"
-    ],
-    "synonyms": [
-      "correction",
-      "alteration"
-    ],
-    "antonyms": [],
-    "example": "The board of directors approved several amendments to the company's bylaws."
-  },
-  {
     "word": "sightseeing",
     "phonetic": "/ˈsaɪtsiːɪŋ/",
     "pos": "n.",
@@ -11674,23 +10861,6 @@
     "example": "Winning the 'Best Workplace' award is a highly coveted honor in the industry."
   },
   {
-    "word": "layout",
-    "phonetic": "/ˈleɪaʊt/",
-    "pos": "n.",
-    "meaning": "版面設計；佈局",
-    "level": "gold",
-    "phrases": [
-      "office layout",
-      "website layout"
-    ],
-    "synonyms": [
-      "arrangement",
-      "design"
-    ],
-    "antonyms": [],
-    "example": "The marketing team is working on a new layout for the company's annual report."
-  },
-  {
     "word": "premier",
     "phonetic": "/prɪˈmɪr/ (adj.) /ˈpriːmiər/ (n.)",
     "pos": "adj./n.",
@@ -11720,19 +10890,6 @@
     "synonyms": [],
     "antonyms": [],
     "example": "The factory was fined for failing to follow regulations regarding the disposal of mercury."
-  },
-  {
-    "word": "overlap",
-    "phonetic": "/ˌoʊvərˈlæp/",
-    "pos": "v./n.",
-    "meaning": "重疊",
-    "level": "gold",
-    "phrases": [],
-    "synonyms": [
-      "coincide"
-    ],
-    "antonyms": [],
-    "example": "The two projects overlap in several areas, so the teams need to coordinate their work."
   },
   {
     "word": "realtor",
@@ -11822,25 +10979,6 @@
       "worthless"
     ],
     "example": "His experience in the industry proved to be invaluable to the new start-up."
-  },
-  {
-    "word": "discrepancy",
-    "phonetic": "/dɪˈskrepənsi/",
-    "pos": "n.",
-    "meaning": "差異；不一致",
-    "level": "gold",
-    "phrases": [
-      "financial discrepancy"
-    ],
-    "synonyms": [
-      "inconsistency",
-      "difference"
-    ],
-    "antonyms": [
-      "agreement",
-      "consistency"
-    ],
-    "example": "The auditors identified a significant discrepancy in the company's financial records."
   },
   {
     "word": "symphony",
@@ -12103,22 +11241,6 @@
     "example": "The central bank decided to hike interest rates to combat rising inflation in the country."
   },
   {
-    "word": "warranty",
-    "phonetic": "/ˈwɔːrənti/",
-    "pos": "n.",
-    "meaning": "保固；保證",
-    "level": "gold",
-    "phrases": [
-      "under warranty",
-      "extended warranty"
-    ],
-    "synonyms": [
-      "guarantee"
-    ],
-    "antonyms": [],
-    "example": "The laptop is still under warranty, so the repair should be free of charge."
-  },
-  {
     "word": "declination",
     "phonetic": "/ˌdeklɪˈneɪʃn/",
     "pos": "n.",
@@ -12197,40 +11319,6 @@
     ],
     "antonyms": [],
     "example": "You should contact your insurance agent if you have any questions about your coverage."
-  },
-  {
-    "word": "remittance",
-    "phonetic": "/rɪˈmɪtns/",
-    "pos": "n.",
-    "meaning": "匯款",
-    "level": "gold",
-    "phrases": [
-      "electronic remittance"
-    ],
-    "synonyms": [
-      "payment",
-      "transfer"
-    ],
-    "antonyms": [],
-    "example": "The company requires a copy of the bank remittance before it can dispatch the order."
-  },
-  {
-    "word": "streamline",
-    "phonetic": "/ˈstriːmlaɪn/",
-    "pos": "v.",
-    "meaning": "簡化；效率化；使流線型",
-    "level": "gold",
-    "phrases": [
-      "streamline operations"
-    ],
-    "synonyms": [
-      "simplify",
-      "optimize"
-    ],
-    "antonyms": [
-      "complicate"
-    ],
-    "example": "The new manager is planning to streamline the production process to reduce waste and save time."
   },
   {
     "word": "clue to",
@@ -12357,21 +11445,6 @@
       "pragmatic"
     ],
     "example": "The old watch has no financial worth, but it has great sentimental value to him."
-  },
-  {
-    "word": "complementary",
-    "phonetic": "/ˌkɑːmplɪˈmentəri/",
-    "pos": "adj.",
-    "meaning": "互補的",
-    "level": "gold",
-    "phrases": [
-      "complementary colors"
-    ],
-    "synonyms": [
-      "matching"
-    ],
-    "antonyms": [],
-    "example": "The two managers have complementary skills, which makes them a very effective team."
   },
   {
     "word": "supplementary",
@@ -12969,23 +12042,6 @@
     "example": "All staff members must follow the strict security protocol when entering the laboratory."
   },
   {
-    "word": "commitment",
-    "phonetic": "/kəˈmɪtmənt/",
-    "pos": "n.",
-    "meaning": "承諾；奉獻",
-    "level": "gold",
-    "phrases": [
-      "make a commitment",
-      "long-term commitment"
-    ],
-    "synonyms": [
-      "promise",
-      "dedication"
-    ],
-    "antonyms": [],
-    "example": "The company is well-known for its commitment to environmental sustainability."
-  },
-  {
     "word": "downstairs",
     "phonetic": "/ˌdaʊnˈsterz/",
     "pos": "adv./adj./n.",
@@ -13182,19 +12238,6 @@
     "example": "The severe storm caused a major power outage that lasted for several hours."
   },
   {
-    "word": "embassy",
-    "phonetic": "/ˈembəsi/",
-    "pos": "n.",
-    "meaning": "大使館",
-    "level": "gold",
-    "phrases": [
-      "foreign embassy"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "example": "You need to visit the embassy to apply for a visa before you travel to that country."
-  },
-  {
     "word": "remodel",
     "phonetic": "/ˌriːˈmɑːdl/",
     "pos": "v.",
@@ -13273,21 +12316,6 @@
     "example": "The company held an appreciation's ceremony to honor its long-serving employees."
   },
   {
-    "word": "referral",
-    "phonetic": "/rɪˈfɜːrəl/",
-    "pos": "n.",
-    "meaning": "推薦；轉介",
-    "level": "gold",
-    "phrases": [
-      "employee referral"
-    ],
-    "synonyms": [
-      "recommendation"
-    ],
-    "antonyms": [],
-    "example": "Many of our new clients come to us through referrals from existing customers."
-  },
-  {
     "word": "plumbing",
     "phonetic": "/ˈplʌmɪŋ/",
     "pos": "n.",
@@ -13330,25 +12358,6 @@
     "example": "The company has several innovative new products in the pipe line for next year."
   },
   {
-    "word": "waive",
-    "phonetic": "/weɪv/",
-    "pos": "v.",
-    "meaning": "放棄(權利/要求)；免除(費用)",
-    "level": "gold",
-    "phrases": [
-      "waive a fee"
-    ],
-    "synonyms": [
-      "relinquish",
-      "forgo"
-    ],
-    "antonyms": [
-      "claim",
-      "enforce"
-    ],
-    "example": "The bank agreed to waive the late fee after the customer explained the situation."
-  },
-  {
     "word": "bank",
     "phonetic": "/bæŋk/",
     "pos": "n./v.",
@@ -13361,23 +12370,6 @@
     "synonyms": [],
     "antonyms": [],
     "example": "I need to go to the bank to deposit some checks this afternoon."
-  },
-  {
-    "word": "voucher",
-    "phonetic": "/ˈvaʊtʃər/",
-    "pos": "n.",
-    "meaning": "憑證；代金券",
-    "level": "gold",
-    "phrases": [
-      "gift voucher",
-      "travel voucher"
-    ],
-    "synonyms": [
-      "coupon",
-      "token"
-    ],
-    "antonyms": [],
-    "example": "The hotel gave us a complimentary breakfast voucher during our stay."
   },
   {
     "word": "courtesy",
@@ -14072,23 +13064,6 @@
     "example": "A quiet working environment is conducive to concentration and productivity."
   },
   {
-    "word": "arrangement",
-    "phonetic": "/əˈreɪndʒmənt/",
-    "pos": "n.",
-    "meaning": "安排；約定；佈置",
-    "level": "gold",
-    "phrases": [
-      "make arrangements",
-      "travel arrangements"
-    ],
-    "synonyms": [
-      "preparation",
-      "agreement"
-    ],
-    "antonyms": [],
-    "example": "We have made all the necessary travel arrangements for the business trip."
-  },
-  {
     "word": "arranger",
     "phonetic": "/əˈreɪndʒər/",
     "pos": "n.",
@@ -14144,23 +13119,6 @@
     "example": "The hotel has a large conference room that can accommodate two hundred people."
   },
   {
-    "word": "venue",
-    "phonetic": "/ˈvenjuː/",
-    "pos": "n.",
-    "meaning": "場地；地點",
-    "level": "gold",
-    "phrases": [
-      "concert venue",
-      "meeting venue"
-    ],
-    "synonyms": [
-      "location",
-      "place"
-    ],
-    "antonyms": [],
-    "example": "The city center is a popular venue for international technology conferences."
-  },
-  {
     "word": "equivalent",
     "phonetic": "/ɪˈkwɪvələnt/",
     "pos": "adj./n.",
@@ -14198,25 +13156,6 @@
       "final"
     ],
     "example": "The company is offering an introductory price for its new software service."
-  },
-  {
-    "word": "proficient",
-    "phonetic": "/prəˈfɪʃnt/",
-    "pos": "adj.",
-    "meaning": "精通的；熟練的",
-    "level": "gold",
-    "phrases": [
-      "proficient in English"
-    ],
-    "synonyms": [
-      "skilled",
-      "expert"
-    ],
-    "antonyms": [
-      "incompetent",
-      "inept"
-    ],
-    "example": "All applicants for the position must be proficient in at least two foreign languages."
   },
   {
     "word": "vastly",
@@ -14354,22 +13293,6 @@
     "example": "The crowd filed into the building in an orderly manner once the doors opened."
   },
   {
-    "word": "consignment",
-    "phonetic": "/kənˈsaɪnmənt/",
-    "pos": "n.",
-    "meaning": "寄售；委託貨物",
-    "level": "gold",
-    "phrases": [
-      "on consignment"
-    ],
-    "synonyms": [
-      "shipment",
-      "delivery"
-    ],
-    "antonyms": [],
-    "example": "The store agreed to sell the artist's paintings on consignment."
-  },
-  {
     "word": "tricky",
     "phonetic": "/ˈtrɪki/",
     "pos": "adj.",
@@ -14400,40 +13323,6 @@
     ],
     "antonyms": [],
     "example": "The company hired a professional interior decorator to redesign the main office lobby."
-  },
-  {
-    "word": "commemorate",
-    "phonetic": "/kəˈmeməreɪt/",
-    "pos": "v.",
-    "meaning": "紀念；慶祝",
-    "level": "gold",
-    "phrases": [
-      "commemorate an anniversary"
-    ],
-    "synonyms": [
-      "celebrate",
-      "honor"
-    ],
-    "antonyms": [],
-    "example": "A special plaque was installed to commemorate the opening of the new research facility."
-  },
-  {
-    "word": "emit",
-    "phonetic": "/iˈmɪt/",
-    "pos": "v.",
-    "meaning": "排放；散發；發出",
-    "level": "gold",
-    "phrases": [
-      "emit greenhouse gases"
-    ],
-    "synonyms": [
-      "release",
-      "discharge"
-    ],
-    "antonyms": [
-      "absorb"
-    ],
-    "example": "The factory was fined for emitting excessive amounts of smoke into the atmosphere."
   },
   {
     "word": "seasoned",
@@ -14749,43 +13638,6 @@
     "example": "We are currently investigating the extent of the damage caused by the fire."
   },
   {
-    "word": "unanimous",
-    "phonetic": "/juˈnænɪməs/",
-    "pos": "adj.",
-    "meaning": "全體一致的",
-    "level": "gold",
-    "phrases": [
-      "unanimous decision"
-    ],
-    "synonyms": [
-      "consistent",
-      "undisputed"
-    ],
-    "antonyms": [
-      "divided"
-    ],
-    "example": "The proposal was approved by a unanimous vote of the board members."
-  },
-  {
-    "word": "concise",
-    "phonetic": "/kənˈsaɪs/",
-    "pos": "adj.",
-    "meaning": "簡潔的；明了的",
-    "level": "gold",
-    "phrases": [
-      "concise report"
-    ],
-    "synonyms": [
-      "succinct",
-      "brief"
-    ],
-    "antonyms": [
-      "wordy",
-      "verbose"
-    ],
-    "example": "Please provide a concise summary of the project's progress for the meeting."
-  },
-  {
     "word": "baseness",
     "phonetic": "/ˈbeɪsnəs/",
     "pos": "n.",
@@ -14843,24 +13695,6 @@
     "synonyms": [],
     "antonyms": [],
     "example": "He had to see a neurologist after experiencing recurring headaches and dizziness."
-  },
-  {
-    "word": "recipient",
-    "phonetic": "/rɪˈsɪpiənt/",
-    "pos": "n.",
-    "meaning": "收件人；接受者",
-    "level": "gold",
-    "phrases": [
-      "award recipient"
-    ],
-    "synonyms": [
-      "receiver"
-    ],
-    "antonyms": [
-      "sender",
-      "giver"
-    ],
-    "example": "The recipient of the 'Employee of the Year' award will be announced tomorrow."
   },
   {
     "word": "antique",
@@ -14934,22 +13768,6 @@
     "example": "The company's extravagant spending on the launch party was criticized by shareholders."
   },
   {
-    "word": "excursion",
-    "phonetic": "/ɪkˈskɜːrʒn/",
-    "pos": "n.",
-    "meaning": "短途旅行；遠足",
-    "level": "gold",
-    "phrases": [
-      "day excursion"
-    ],
-    "synonyms": [
-      "trip",
-      "outing"
-    ],
-    "antonyms": [],
-    "example": "The company is organizing a weekend excursion to the mountains for all staff members."
-  },
-  {
     "word": "cottage",
     "phonetic": "/ˈkɑːtɪdʒ/",
     "pos": "n.",
@@ -14982,23 +13800,6 @@
     ],
     "antonyms": [],
     "example": "The investment broker provided useful advice on diversifying the company's portfolio."
-  },
-  {
-    "word": "rebate",
-    "phonetic": "/ˈriːbeɪt/",
-    "pos": "n./v.",
-    "meaning": "退還款；折扣",
-    "level": "gold",
-    "phrases": [
-      "tax rebate",
-      "mail-in rebate"
-    ],
-    "synonyms": [
-      "refund",
-      "discount"
-    ],
-    "antonyms": [],
-    "example": "You can apply for a fifty-dollar rebate after purchasing the new appliance."
   },
   {
     "word": "allot",
@@ -15101,26 +13902,6 @@
       "accidental"
     ],
     "example": "The marketing campaign was designed to appeal to its intended audience of young professionals."
-  },
-  {
-    "word": "vulnerable",
-    "phonetic": "/ˈvʌlnərəbl/",
-    "pos": "adj.",
-    "meaning": "易受傷的；脆弱的",
-    "level": "gold",
-    "phrases": [
-      "vulnerable group"
-    ],
-    "synonyms": [
-      "susceptible",
-      "weak"
-    ],
-    "antonyms": [
-      "resistant",
-      "immune",
-      "robust"
-    ],
-    "example": "Small businesses are particularly vulnerable to sudden changes in interest rates."
   },
   {
     "word": "burglary",
@@ -15792,25 +14573,6 @@
     "example": "The food processing facility is sanitized every night to ensure product safety."
   },
   {
-    "word": "contamination",
-    "phonetic": "/kənˌtæmɪˈneɪʃn/",
-    "pos": "n.",
-    "meaning": "污染；弄髒",
-    "level": "gold",
-    "phrases": [
-      "water contamination"
-    ],
-    "synonyms": [
-      "pollution",
-      "impurity"
-    ],
-    "antonyms": [
-      "purity",
-      "cleanness"
-    ],
-    "example": "The factory was closed following reports of chemical contamination in the local area."
-  },
-  {
     "word": "faucet",
     "phonetic": "/ˈfɔːsɪt/",
     "pos": "n.",
@@ -15982,26 +14744,6 @@
     "example": "Many modern medical treatments are derived from natural plant extracts."
   },
   {
-    "word": "associate",
-    "phonetic": "/əˈsoʊʃieɪt/ (v.) /əˈsoʊʃiət/ (n.)",
-    "pos": "v./n./adj.",
-    "meaning": "聯想；夥伴；副的",
-    "level": "gold",
-    "phrases": [
-      "business associate",
-      "associate professor"
-    ],
-    "synonyms": [
-      "partner",
-      "colleague",
-      "connect"
-    ],
-    "antonyms": [
-      "disconnect"
-    ],
-    "example": "He met with several business associates to discuss the details of the new project."
-  },
-  {
     "word": "farewell",
     "phonetic": "/ˌferˈwel/",
     "pos": "n./int.",
@@ -16124,24 +14866,6 @@
       "irrelevant"
     ],
     "example": "The new safety regulations are applicable to all employees working in the factory."
-  },
-  {
-    "word": "eloquent",
-    "phonetic": "/ˈeləkwənt/",
-    "pos": "adj.",
-    "meaning": "雄辯的；口才流利的",
-    "level": "gold",
-    "phrases": [
-      "eloquent speaker"
-    ],
-    "synonyms": [
-      "articulate",
-      "persuasive"
-    ],
-    "antonyms": [
-      "inarticulate"
-    ],
-    "example": "The CEO gave an eloquent speech about the company's future vision and goals."
   },
   {
     "word": "tableware",
@@ -16341,22 +15065,6 @@
     "example": "The new mobile device is designed to be lightweight and extremely powerful."
   },
   {
-    "word": "proofread",
-    "phonetic": "/ˈpruːfriːd/",
-    "pos": "v.",
-    "meaning": "校對",
-    "level": "gold",
-    "phrases": [
-      "proofread a report"
-    ],
-    "synonyms": [
-      "correct",
-      "edit"
-    ],
-    "antonyms": [],
-    "example": "Please remember to proofread your report carefully before you submit it to the manager."
-  },
-  {
     "word": "outlet",
     "phonetic": "/ˈaʊtlet/",
     "pos": "n.",
@@ -16401,23 +15109,6 @@
     ],
     "antonyms": [],
     "example": "Many tourists buy traditional handicrafts as souvenirs when they visit the island."
-  },
-  {
-    "word": "attire",
-    "phonetic": "/əˈtaɪər/",
-    "pos": "n.",
-    "meaning": "服裝；衣著",
-    "level": "gold",
-    "phrases": [
-      "business attire",
-      "formal attire"
-    ],
-    "synonyms": [
-      "clothing",
-      "garment"
-    ],
-    "antonyms": [],
-    "example": "The company expects all employees to wear appropriate business attire at all times."
   },
   {
     "word": "segregation",
@@ -16535,20 +15226,6 @@
       "forward"
     ],
     "example": "The company decided to reverse its decision to close the local branch office."
-  },
-  {
-    "word": "portfolio",
-    "phonetic": "/pɔːrtˈfoʊlioʊ/",
-    "pos": "n.",
-    "meaning": "投資組合；作品集",
-    "level": "gold",
-    "phrases": [
-      "investment portfolio",
-      "design portfolio"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "example": "The investor has a diversified portfolio that includes stocks, bonds, and real estate."
   },
   {
     "word": "turnout",
@@ -16894,25 +15571,6 @@
     "example": "The manager seemed indifferent to the complaints made by the staff."
   },
   {
-    "word": "abstract",
-    "phonetic": "/ˈæbstrækt/",
-    "pos": "adj./n./v.",
-    "meaning": "抽象的；摘要；提取",
-    "level": "gold",
-    "phrases": [
-      "abstract idea",
-      "extended abstract"
-    ],
-    "synonyms": [
-      "theoretical",
-      "summary"
-    ],
-    "antonyms": [
-      "concrete"
-    ],
-    "example": "Please provide a short abstract of your research paper before the deadline."
-  },
-  {
     "word": "lucratively",
     "phonetic": "/ˈluːkrətɪvli/",
     "pos": "adv.",
@@ -16944,22 +15602,6 @@
       "carelessly"
     ],
     "example": "The data was meticulously checked for any errors before the report was released."
-  },
-  {
-    "word": "credential",
-    "phonetic": "/krəˈdenʃl/",
-    "pos": "n.",
-    "meaning": "證書；憑據；資格",
-    "level": "gold",
-    "phrases": [
-      "academic credentials"
-    ],
-    "synonyms": [
-      "qualification",
-      "certificate"
-    ],
-    "antonyms": [],
-    "example": "You need to provide your professional credentials when applying for the senior role."
   },
   {
     "word": "fraud",
@@ -17202,26 +15844,6 @@
     "example": "It is inadvisable to make a major financial decision without professional advice."
   },
   {
-    "word": "preliminary",
-    "phonetic": "/prɪˈlɪmɪneri/",
-    "pos": "adj./n.",
-    "meaning": "初步的；預備的",
-    "level": "gold",
-    "phrases": [
-      "preliminary results",
-      "preliminary investigation"
-    ],
-    "synonyms": [
-      "initial",
-      "introductory"
-    ],
-    "antonyms": [
-      "final",
-      "concluding"
-    ],
-    "example": "The preliminary results of the market research show a strong demand for our new product."
-  },
-  {
     "word": "money order",
     "phonetic": "/ˈmʌni ˈɔːrdər/",
     "pos": "n. phr.",
@@ -17233,26 +15855,6 @@
     "synonyms": [],
     "antonyms": [],
     "example": "You can pay your utility bills by sending a money order through the mail."
-  },
-  {
-    "word": "counterfeit",
-    "phonetic": "/ˈkaʊntərfɪt/",
-    "pos": "adj./n./v.",
-    "meaning": "偽造的；贗品；偽造",
-    "level": "gold",
-    "phrases": [
-      "counterfeit money",
-      "counterfeit goods"
-    ],
-    "synonyms": [
-      "fake",
-      "forged"
-    ],
-    "antonyms": [
-      "genuine",
-      "authentic"
-    ],
-    "example": "The police seized thousands of dollars in counterfeit notes during the raid."
   },
   {
     "word": "forge",
@@ -17379,21 +15981,6 @@
     "example": "The restaurant has strict regulations regarding food hygiene in its kitchen."
   },
   {
-    "word": "entail",
-    "phonetic": "/ɪnˈteɪl/",
-    "pos": "v.",
-    "meaning": "牽涉；意味著",
-    "level": "gold",
-    "phrases": [],
-    "synonyms": [
-      "involve",
-      "require",
-      "necessitate"
-    ],
-    "antonyms": [],
-    "example": "The new project will entail a lot of travel to our international branch offices."
-  },
-  {
     "word": "correspondent",
     "phonetic": "/ˌkɔːrəˈspɑːndənt/",
     "pos": "n./adj.",
@@ -17408,25 +15995,6 @@
     ],
     "antonyms": [],
     "example": "The TV station sent a correspondent to the region to report on the latest developments."
-  },
-  {
-    "word": "forfeit",
-    "phonetic": "/ˈfɔːrfɪt/",
-    "pos": "v./n./adj.",
-    "meaning": "喪失；沒收；罰金",
-    "level": "gold",
-    "phrases": [
-      "forfeit a deposit"
-    ],
-    "synonyms": [
-      "lose",
-      "surrender"
-    ],
-    "antonyms": [
-      "keep",
-      "gain"
-    ],
-    "example": "You will forfeit your deposit if you cancel the reservation less than twenty-four hours before."
   },
   {
     "word": "refuel",
@@ -17603,39 +16171,6 @@
     "example": "I'm sorry I'm late; I got stuck in a massive traffic jam on the way here."
   },
   {
-    "word": "delegate",
-    "phonetic": "/ˈdelɪɡət/ (n.) /ˈdelɪɡeɪt/ (v.)",
-    "pos": "n./v.",
-    "meaning": "代表；授權；委派",
-    "level": "gold",
-    "phrases": [
-      "conference delegate",
-      "delegate tasks"
-    ],
-    "synonyms": [
-      "representative",
-      "assign"
-    ],
-    "antonyms": [],
-    "example": "A good manager should know how to delegate tasks effectively to their team members."
-  },
-  {
-    "word": "respective",
-    "phonetic": "/rɪˈspektɪv/",
-    "pos": "adj.",
-    "meaning": "各自的；個別的",
-    "level": "gold",
-    "phrases": [
-      "respective roles"
-    ],
-    "synonyms": [
-      "individual",
-      "separate"
-    ],
-    "antonyms": [],
-    "example": "After the meeting, the department heads returned to their respective offices."
-  },
-  {
     "word": "archive",
     "phonetic": "/ˈɑːrkaɪv/",
     "pos": "n./v.",
@@ -17734,24 +16269,6 @@
       "worst"
     ],
     "example": "The design was optimized to achieve the optimal balance between performance and cost."
-  },
-  {
-    "word": "conducive",
-    "phonetic": "/kənˈduːsɪv/",
-    "pos": "adj.",
-    "meaning": "有助於...的",
-    "level": "gold",
-    "phrases": [
-      "conducive to success"
-    ],
-    "synonyms": [
-      "helpful",
-      "beneficial"
-    ],
-    "antonyms": [
-      "unhelpful"
-    ],
-    "example": "A quiet environment is conducive to concentration and productive work."
   },
   {
     "word": "enviable",
@@ -18166,26 +16683,6 @@
     "example": "The budget makes provision for any unexpected expenses that may arise."
   },
   {
-    "word": "endorse",
-    "phonetic": "/ɪnˈdɔːrs/",
-    "pos": "v.",
-    "meaning": "背書；認可；代言",
-    "level": "gold",
-    "phrases": [
-      "endorse a check"
-    ],
-    "synonyms": [
-      "support",
-      "approve",
-      "sign"
-    ],
-    "antonyms": [
-      "oppose",
-      "reject"
-    ],
-    "example": "The board of directors unanimously decided to endorse the new investment plan."
-  },
-  {
     "word": "extinction",
     "phonetic": "/ɪkˈstɪŋkʃn/",
     "pos": "n.",
@@ -18205,25 +16702,6 @@
     "example": "The organization works to protect endangered species from the threat of extinction."
   },
   {
-    "word": "mandatory",
-    "phonetic": "/ˈmændətɔːri/",
-    "pos": "adj.",
-    "meaning": "強制的；義務的",
-    "level": "gold",
-    "phrases": [
-      "mandatory training"
-    ],
-    "synonyms": [
-      "compulsory",
-      "required"
-    ],
-    "antonyms": [
-      "optional",
-      "voluntary"
-    ],
-    "example": "It is mandatory for all new employees to participate in the safety training session."
-  },
-  {
     "word": "halfway",
     "phonetic": "/ˌhæfˈweɪ/",
     "pos": "adv./adj.",
@@ -18238,26 +16716,6 @@
     ],
     "antonyms": [],
     "example": "We are now halfway through the project and everything is on schedule."
-  },
-  {
-    "word": "complex",
-    "phonetic": "/kəmˈpleks/ (adj.) /ˈkɑːmpleks/ (n.)",
-    "pos": "adj./n.",
-    "meaning": "複雜的；綜合建築物",
-    "level": "gold",
-    "phrases": [
-      "office complex",
-      "complex issue"
-    ],
-    "synonyms": [
-      "complicated",
-      "intricate",
-      "compound"
-    ],
-    "antonyms": [
-      "simple"
-    ],
-    "example": "The two companies are planning to build a large research complex in the city center."
   },
   {
     "word": "in conjunction with",
@@ -18658,25 +17116,6 @@
     ],
     "antonyms": [],
     "example": "They decided to settle their dispute out of court for the sake of the company's reputation."
-  },
-  {
-    "word": "temporary",
-    "phonetic": "/ˈtempəreri/",
-    "pos": "adj.",
-    "meaning": "暫時的；臨時的",
-    "level": "gold",
-    "phrases": [
-      "temporary job",
-      "temporary staff"
-    ],
-    "synonyms": [
-      "provisional",
-      "short-term"
-    ],
-    "antonyms": [
-      "permanent"
-    ],
-    "example": "The company hired several temporary workers to help during the busy holiday season."
   },
   {
     "word": "exile",
@@ -19619,23 +18058,6 @@
     "example": "Scientists are searching for signs of extra-terrestrial life on distant planets."
   },
   {
-    "word": "collision",
-    "phonetic": "/kəˈlɪʒn/",
-    "pos": "n.",
-    "meaning": "碰撞；衝突",
-    "level": "gold",
-    "phrases": [
-      "mid-air collision"
-    ],
-    "synonyms": [
-      "crash",
-      "impact",
-      "conflict"
-    ],
-    "antonyms": [],
-    "example": "The accident was caused by a head-on collision between two delivery trucks."
-  },
-  {
     "word": "asteroid",
     "phonetic": "/ˈæstərɔɪd/",
     "pos": "n.",
@@ -19766,22 +18188,6 @@
     "synonyms": [],
     "antonyms": [],
     "example": "The technology firm was founded by a billionaire who started the business in his garage."
-  },
-  {
-    "word": "predecessor",
-    "phonetic": "/ˈpredəsesər/",
-    "pos": "n.",
-    "meaning": "前任；前輩；原先的東西",
-    "level": "gold",
-    "phrases": [],
-    "synonyms": [
-      "ancestor",
-      "forerunner"
-    ],
-    "antonyms": [
-      "successor"
-    ],
-    "example": "The new manager has introduced several changes that differ from his predecessor's approach."
   },
   {
     "word": "circuit",
@@ -20138,24 +18544,6 @@
     "example": "It was such a great job offer that she couldn't afford to pass it up."
   },
   {
-    "word": "lucrative",
-    "phonetic": "/ˈluːkrətɪv/",
-    "pos": "adj.",
-    "meaning": "獲利的；有利可圖的",
-    "level": "gold",
-    "phrases": [
-      "lucrative contract"
-    ],
-    "synonyms": [
-      "profitable",
-      "rewarding"
-    ],
-    "antonyms": [
-      "unprofitable"
-    ],
-    "example": "The company signed a lucrative contract to provide security services to several major airports."
-  },
-  {
     "word": "public office",
     "phonetic": "/ˈpʌblɪk ˈɑːfɪs/",
     "pos": "n. phr.",
@@ -20169,27 +18557,6 @@
     ],
     "antonyms": [],
     "example": "He decided to resign from his business career to run for public office in his home city."
-  },
-  {
-    "word": "breach",
-    "phonetic": "/briːtʃ/",
-    "pos": "n./v.",
-    "meaning": "違約；違反；破壞；裂痕",
-    "level": "gold",
-    "phrases": [
-      "security breach",
-      "breach of contract"
-    ],
-    "synonyms": [
-      "violation",
-      "failure",
-      "rupture"
-    ],
-    "antonyms": [
-      "fulfillment",
-      "observance"
-    ],
-    "example": "The data breach affected millions of customers and damaged the company's reputation."
   },
   {
     "word": "confidentiality",

@@ -1,71 +1,53 @@
 import json
+import os
 
-# 第 151-200 個高品質單字對應表 (藍色等級)
-enriched_data_blue_4 = {
-    "pioneer": {"phonetic": "/ˌpaɪəˈnɪr/", "pos": "n./v.", "meaning": "先驅；開創", "phrases": ["pioneer in"], "synonyms": ["innovator", "trailblazer"], "antonyms": ["follower"], "example": "The company is a pioneer in the field of renewable energy and has many patents."},
-    "ponder": {"phonetic": "/ˈpɑːndər/", "pos": "v.", "meaning": "沉思；仔細考慮", "phrases": ["ponder over"], "synonyms": ["consider", "contemplate"], "antonyms": ["ignore"], "example": "The manager took some time to ponder the proposal before giving his final approval."},
-    "precondition": {"phonetic": "/ˌpriːkənˈdɪʃn/", "pos": "n.", "meaning": "前提條件", "phrases": ["essential precondition"], "synonyms": ["prerequisite"], "antonyms": [], "example": "Having a valid business license is a precondition for applying for the government grant."},
-    "predominate": {"phonetic": "/prɪˈdɑːmɪneɪt/", "pos": "v.", "meaning": "佔優勢；主導", "phrases": [], "synonyms": ["dominate", "prevail"], "antonyms": [], "example": "Our products currently predominate in the local market, but competition is increasing."},
-    "preempt": {"phonetic": "/priˈempt/", "pos": "v.", "meaning": "先發制人；取代", "phrases": ["preemptive strike"], "synonyms": ["forestall", "preclude"], "antonyms": [], "example": "The news broadcast was preempted by a special announcement from the president."},
-    "proliferate": {"phonetic": "/prəˈlɪfəreɪt/", "pos": "v.", "meaning": "激增；擴散", "phrases": ["proliferate rapidly"], "synonyms": ["multiply", "expand"], "antonyms": ["decrease", "stagnate"], "example": "Fast food restaurants have continued to proliferate in the city center over the last decade."},
-    "prolong": {"phonetic": "/prəˈlɔːŋ/", "pos": "v.", "meaning": "延長", "phrases": ["prolong life"], "synonyms": ["extend", "lengthen"], "antonyms": ["shorten", "curtail"], "example": "The meeting was prolonged by several hours due to the intense discussion about the budget."},
-    "riterate": {"word": "reiterate", "phonetic": "/riˈɪtəreɪt/", "pos": "v.", "meaning": "重申；反覆說", "phrases": ["reiterate a point"], "synonyms": ["repeat", "restate"], "antonyms": [], "example": "I would like to reiterate that all employees must follow the new safety regulations."},
-    "relinquish": {"phonetic": "/rɪˈlɪŋkwɪʃ/", "pos": "v.", "meaning": "放棄；交出", "phrases": ["relinquish control"], "synonyms": ["abandon", "surrender"], "antonyms": ["retain", "keep"], "example": "He was forced to relinquish his position as CEO after the company's financial scandal."},
-    "remit": {"phonetic": "/rɪˈmɪt/", "pos": "v./n.", "meaning": "匯款；豁免", "phrases": ["remit payment"], "synonyms": ["send", "forward"], "antonyms": [], "example": "Please remit the payment to our bank account by the end of the month."},
-    "scrutinize": {"phonetic": "/ˈskruːtənaɪz/", "pos": "v.", "meaning": "詳察；仔細檢查", "phrases": ["scrutinize data"], "synonyms": ["examine", "inspect"], "antonyms": ["glance", "overlook"], "example": "The auditors will scrutinize the company's financial records for any inconsistencies."},
-    "slander": {"phonetic": "/ˈslændər/", "pos": "n./v.", "meaning": "誹謗；詆毀", "phrases": ["slanderous remarks"], "synonyms": ["defamation", "vilification"], "antonyms": ["praise", "compliment"], "example": "The company filed a lawsuit for slander after the competitor made false claims about its products."},
-    "tackle": {"phonetic": "/ˈtækl/", "pos": "v./n.", "meaning": "處理；應對", "phrases": ["tackle a problem"], "synonyms": ["handle", "address"], "antonyms": ["avoid", "neglect"], "example": "The government is planning new measures to tackle the problem of youth unemployment."},
-    "instinctively": {"phonetic": "/ɪnˈstɪŋktɪvli/", "pos": "adv.", "meaning": "本能地；直覺地", "phrases": [], "synonyms": ["naturally", "intuitively"], "antonyms": ["deliberately"], "example": "He instinctively knew that something was wrong when he saw the empty office."},
-    "intensive": {"phonetic": "/ɪnˈtensɪv/", "pos": "adj.", "meaning": "密集的；徹底的", "phrases": ["intensive care", "intensive training"], "synonyms": ["thorough", "concentrated"], "antonyms": ["superficial"], "example": "New employees are required to undergo a week of intensive training before they start work."},
-    "intent": {"phonetic": "/ɪnˈtent/", "pos": "n./adj.", "meaning": "意圖；專注的", "phrases": ["clear intent", "intent on doing"], "synonyms": ["purpose", "aim"], "antonyms": [], "example": "The company's clear intent is to become the market leader in the next three years."},
-    "interchangeable": {"phonetic": "/ˌɪntərˈtʃeɪndʒəbl/", "pos": "adj.", "meaning": "可互換的", "phrases": ["interchangeable parts"], "synonyms": ["exchangeable", "equivalent"], "antonyms": ["unique", "specific"], "example": "These two spare parts are interchangeable and can be used in either model of the machine."},
-    "interim": {"phonetic": "/ˈɪntərɪm/", "pos": "adj./n.", "meaning": "暫時的；中期", "phrases": ["interim report", "interim manager"], "synonyms": ["temporary", "provisional"], "antonyms": ["permanent"], "example": "An interim manager was appointed to lead the department until a permanent replacement is found."},
-    "intermittent": {"phonetic": "/ˌɪntərˈmɪtənt/", "pos": "adj.", "meaning": "間歇的；斷斷續續的", "phrases": ["intermittent power failure"], "synonyms": ["sporadic", "occasional"], "antonyms": ["constant", "continuous"], "example": "The region has been experiencing intermittent power failures due to the severe weather."},
-    "intricate": {"phonetic": "/ˈintrikət/", "pos": "adj.", "meaning": "複雜的；精緻的", "phrases": ["intricate design"], "synonyms": ["complex", "elaborate"], "antonyms": ["simple", "plain"], "example": "The new watch design features an intricate mechanism with hundreds of tiny parts."},
-    "legitimate": {"phonetic": "/ləˈdʒɪtɪmət/", "pos": "adj./v.", "meaning": "合法的；正當的", "phrases": ["legitimate concern"], "synonyms": ["legal", "valid"], "antonyms": ["illegal", "invalid"], "example": "The company has a legitimate reason for wanting to terminate the contract."},
-    "liable": {"phonetic": "/ˈlaɪəbl/", "pos": "adj.", "meaning": "法律上負責的；易於...的", "phrases": ["be liable for"], "synonyms": ["responsible", "accountable"], "antonyms": [], "example": "You will be held liable for any damage caused to the equipment while it is in your care."},
-    "maternal": {"phonetic": "/məˈtɜːrnl/", "pos": "adj.", "meaning": "母親的；母性的", "phrases": ["maternal leave"], "synonyms": [], "antonyms": ["paternal"], "example": "The company offers six months of paid maternal leave to its female employees."},
-    "mediocre": {"phonetic": "/ˌmiːdiˈoʊkər/", "pos": "adj.", "meaning": "平庸的；二流的", "phrases": [], "synonyms": ["average", "ordinary"], "antonyms": ["excellent", "superior"], "example": "The restaurant received a mediocre review from the food critic for its uninspiring menu."},
-    "meticulous": {"phonetic": "/məˈtɪkjələs/", "pos": "adj.", "meaning": "嚴謹的；一絲不苟的", "phrases": ["meticulous attention to detail"], "synonyms": ["thorough", "careful"], "antonyms": ["careless", "sloppy"], "example": "He is a meticulous researcher who always checks his data multiple times."},
-    "myriad": {"phonetic": "/ˈmɪriəd/", "pos": "n./adj.", "meaning": "無數的；大量", "phrases": ["a myriad of"], "synonyms": ["countless", "innumerable"], "antonyms": ["few", "scarce"], "example": "There are a myriad of factors to consider before making a decision about the merger."},
-    "opportune": {"phonetic": "/ˌɑːpərˈtuːn/", "pos": "adj.", "meaning": "湊巧的；適切的", "phrases": ["opportune moment"], "synonyms": ["timely", "appropriate"], "antonyms": ["inopportune"], "example": "The sudden drop in interest rates provided an opportune moment for the company to expand."},
-    "ostensibly": {"phonetic": "/ɑːˈstensəbli/", "pos": "adv.", "meaning": "表面上地；假裝地", "phrases": [], "synonyms": ["apparently", "seemingly"], "antonyms": [], "example": "He resigned ostensibly for health reasons, but many believe there were other factors involved."},
-    "paramount": {"phonetic": "/ˈpærəmaʊnt/", "pos": "adj.", "meaning": "首要的；至高無上的", "phrases": ["paramount importance"], "synonyms": ["supreme", "primary"], "antonyms": ["secondary"], "example": "The safety of our employees is of paramount importance to the company."},
-    "peculiar": {"phonetic": "/pɪˈkjuːliər/", "pos": "adj.", "meaning": "特別的；古怪的", "phrases": ["peculiar behavior"], "synonyms": ["odd", "strange"], "antonyms": ["normal", "common"], "example": "The machine was making a peculiar noise, so we called the maintenance team to check it."},
-    "perennial": {"phonetic": "/pəˈreniəl/", "pos": "adj./n.", "meaning": "終年的；長期的", "phrases": ["perennial problem"], "synonyms": ["enduring", "lasting"], "antonyms": ["temporary"], "example": "Finding enough skilled workers is a perennial problem for many companies in the industry."},
-    "placid": {"phonetic": "/ˈplæsɪd/", "pos": "adj.", "meaning": "平靜的；寧靜的", "phrases": ["placid lake"], "synonyms": ["calm", "peaceful"], "antonyms": ["turbulent", "agitated"], "example": "The lake was calm and placid in the early morning sunlight."},
-    "pertinent": {"phonetic": "/ˈpɜːrtnənt/", "pos": "adj.", "meaning": "相關的；中肯的", "phrases": ["pertinent question"], "synonyms": ["relevant", "applicable"], "antonyms": ["irrelevant"], "example": "Please provide all pertinent information regarding your previous work experience."},
-    "plain": {"phonetic": "/pleɪn/", "pos": "adj./n.", "meaning": "明白的；樸素的", "phrases": ["plain English", "make it plain"], "synonyms": ["simple", "clear"], "antonyms": ["complex", "elaborate"], "example": "The instructions were written in plain English so that everyone could understand them."},
-    "portable": {"phonetic": "/ˈpɔːrtəbl/", "pos": "adj./n.", "meaning": "手提式的；可攜帶的", "phrases": ["portable device"], "synonyms": ["handy", "mobile"], "antonyms": ["fixed", "stationary"], "example": "The new laptop is lightweight and portable, making it perfect for business travel."},
-    "pretentious": {"phonetic": "/prɪˈtenʃəs/", "pos": "adj.", "meaning": "自命不凡的；虛飾的", "phrases": [], "synonyms": ["showy", "pompous"], "antonyms": ["humble", "modest"], "example": "The new restaurant was criticized for its pretentious atmosphere and overpriced menu."},
-    "prolific": {"phonetic": "/prəˈlɪfɪk/", "pos": "adj.", "meaning": "多產的；豐富的", "phrases": ["prolific writer"], "synonyms": ["productive", "fruitful"], "antonyms": ["unproductive"], "example": "He is a prolific writer who has published more than twenty books in the last ten years."},
-    "prosaic": {"phonetic": "/prəˈzeɪɪk/", "pos": "adj.", "meaning": "平凡的；乏味的", "phrases": [], "synonyms": ["mundane", "ordinary"], "antonyms": ["extraordinary", "imaginative"], "example": "Despite the exciting headlines, the actual results of the research were quite prosaic."},
-    "pushy": {"phonetic": "/ˈpʊʃi/", "pos": "adj.", "meaning": "咄咄逼人的；愛強求的", "phrases": ["pushy salesperson"], "synonyms": ["assertive", "aggressive"], "antonyms": ["passive", "timid"], "example": "Customers often complain about the pushy sales tactics used by some of the staff."},
-    "reticent": {"phonetic": "/ˈretɪsnt/", "pos": "adj.", "meaning": "沉默寡言的；謹慎的", "phrases": ["be reticent about"], "synonyms": ["reserved", "quiet"], "antonyms": ["talkative", "open"], "example": "The manager was reticent about the company's future plans during the press conference."},
-    "residual": {"phonetic": "/rɪˈzɪdʒuəl/", "pos": "adj./n.", "meaning": "剩餘的；殘留的", "phrases": ["residual income"], "synonyms": ["remaining", "leftover"], "antonyms": [], "example": "The company still earns residual income from the patents it sold several years ago."},
-    "rotten": {"phonetic": "/ˈrɑːtn/", "pos": "adj.", "meaning": "腐爛的；極糟的", "phrases": [], "synonyms": ["decaying", "bad"], "antonyms": ["fresh"], "example": "The smell from the kitchen was horrible due to some rotten vegetables in the bin."},
-    "salient": {"phonetic": "/ˈseɪliənt/", "pos": "adj.", "meaning": "顯著的；主要的", "phrases": ["salient point"], "synonyms": ["prominent", "conspicuous"], "antonyms": ["insignificant"], "example": "The report highlights the salient features of the new marketing strategy."},
-    "scatterbrained": {"phonetic": "/ˈskætərbreɪnd/", "pos": "adj.", "meaning": "沒頭腦的；注意力不集中的", "phrases": [], "synonyms": ["forgetful", "absent-minded"], "antonyms": ["focused", "attentive"], "example": "She is a bit scatterbrained and often forgets where she put her office keys."},
-    "scrupulous": {"phonetic": "/ˈskruːpjələs/", "pos": "adj.", "meaning": "嚴謹的；誠實的", "phrases": ["scrupulous adherence"], "synonyms": ["meticulous", "honest"], "antonyms": ["unscrupulous", "careless"], "example": "The company is known for its scrupulous adherence to ethical business practices."},
-    "seamlessly": {"phonetic": "/ˈsiːmləsli/", "pos": "adv.", "meaning": "無縫地；順暢地", "phrases": ["integrate seamlessly"], "synonyms": ["smoothly"], "antonyms": [], "example": "The new software was designed to integrate seamlessly with the existing computer system."},
-    "slantwise": {"phonetic": "/ˈslæntwaɪz/", "pos": "adv./adj.", "meaning": "傾斜地", "phrases": [], "synonyms": ["obliquely", "diagonally"], "antonyms": ["straight"], "example": "The light from the window fell slantwise across the desk in the late afternoon."},
-    "somber": {"phonetic": "/ˈsɑːmbər/", "pos": "adj.", "meaning": "陰沉的；憂鬱的", "phrases": ["somber mood"], "synonyms": ["gloomy", "serious"], "antonyms": ["cheerful", "bright"], "example": "The CEO's somber tone during the meeting suggested that bad news was coming."},
-    "steadfast": {"phonetic": "/ˈstedfæst/", "pos": "adj.", "meaning": "堅定的；不動搖的", "phrases": ["steadfast support"], "synonyms": ["loyal", "firm"], "antonyms": ["fickle", "unreliable"], "example": "We are grateful for your steadfast support during the company's difficult transition period."},
-    "stationary": {"phonetic": "/ˈsteɪʃəneri/", "pos": "adj.", "meaning": "靜止的；不動的", "phrases": ["stationary vehicle"], "synonyms": ["motionless", "fixed"], "antonyms": ["moving", "mobile"], "example": "The truck remained stationary for several hours while the workers loaded the cargo."}
-}
+def update_vocab():
+    # 第四批 20 個商務進階單字 (藍色等級)
+    new_data = [
+        {"word": "Downsize", "phonetic": "/ˈdaʊnsaɪz/", "pos": "v.", "meaning": "裁員, 縮小規模", "level": "blue", "phrases": ["corporate downsizing", "downsize the workforce"], "synonyms": ["reduce", "cut back"], "antonyms": ["expand", "enlarge"], "example": "The company decided to downsize its middle management to reduce operational costs."},
+        {"word": "Drastic", "phonetic": "/ˈdræstɪk/", "pos": "adj.", "meaning": "劇烈的, 徹底的", "level": "blue", "phrases": ["drastic measures", "drastic change"], "synonyms": ["extreme", "severe"], "antonyms": ["mild", "slight"], "example": "The government had to take drastic measures to stabilize the falling currency."},
+        {"word": "Durable", "phonetic": "/ˈdʊrəbl/", "pos": "adj.", "meaning": "耐用的, 持久的", "level": "blue", "phrases": ["durable goods", "durable relationship"], "synonyms": ["sturdy", "long-lasting"], "antonyms": ["fragile", "perishable"], "example": "These outdoor furniture pieces are made from highly durable materials that resist weathering."},
+        {"word": "Eligible", "phonetic": "/ˈelɪdʒəbl/", "pos": "adj.", "meaning": "有資格的, 合適的", "level": "blue", "phrases": ["eligible for a promotion", "eligible candidate"], "synonyms": ["qualified", "suitable"], "antonyms": ["ineligible", "unqualified"], "example": "Full-time employees are eligible for the company's comprehensive health insurance plan."},
+        {"word": "Embark", "phonetic": "/ɪmˈbɑːrk/", "pos": "v.", "meaning": "著手, 開始, 上船/飛機", "level": "blue", "phrases": ["embark on a project", "embark on a journey"], "synonyms": ["commence", "undertake"], "antonyms": ["conclude", "finish"], "example": "The organization is about to embark on a major fundraising campaign for the new library."},
+        {"word": "Enclose", "phonetic": "/ɪnˈkloʊz/", "pos": "v.", "meaning": "隨函附上, 把...圍起來", "level": "blue", "phrases": ["please find enclosed", "enclose a check"], "synonyms": ["attach", "insert"], "antonyms": [], "example": "I enclose a copy of the signed contract for your personal records."},
+        {"word": "Endeavor", "phonetic": "/ɪnˈdevər/", "pos": "v./n.", "meaning": "努力, 盡力", "level": "blue", "phrases": ["scientific endeavor", "make every endeavor"], "synonyms": ["strive", "attempt"], "antonyms": [], "example": "We will endeavor to resolve the technical issues as quickly as possible."},
+        {"word": "Enforce", "phonetic": "/ɪnˈfɔːrs/", "pos": "v.", "meaning": "執行, 強制, 實施", "level": "blue", "phrases": ["law enforcement", "enforce regulations"], "synonyms": ["implement", "administer"], "antonyms": ["disregard", "ignore"], "example": "The security guards are hired to enforce the building's safety and access rules."},
+        {"word": "Enhance", "phonetic": "/ɪnˈhæns/", "pos": "v.", "meaning": "提升, 增加, 強化", "level": "blue", "phrases": ["enhance productivity", "enhance the image"], "synonyms": ["improve", "boost"], "antonyms": ["diminish", "reduce"], "example": "The new software update is designed to enhance the overall user experience and performance."},
+        {"word": "Entail", "phonetic": "/ɪnˈteɪl/", "pos": "v.", "meaning": "牽涉, 需要, 使必要", "level": "blue", "phrases": ["entail risks", "what the job entails"], "synonyms": ["involve", "require"], "antonyms": [], "example": "The proposed expansion will entail a significant increase in the company's annual budget."},
+        {"word": "Enterprise", "phonetic": "/ˈentərpraɪz/", "pos": "n.", "meaning": "企業, 公司, 事業心", "level": "blue", "phrases": ["private enterprise", "joint enterprise"], "synonyms": ["corporation", "venture"], "antonyms": [], "example": "The government is encouraging the development of small and medium-sized enterprises (SMEs)."},
+        {"word": "Entrepreneur", "phonetic": "/ˌɑːntrəprəˈnɜːr/", "pos": "n.", "meaning": "企業家, 創業者", "level": "blue", "phrases": ["aspiring entrepreneur", "serial entrepreneur"], "synonyms": ["businessperson", "founder"], "antonyms": [], "example": "Successful entrepreneurs are often characterized by their willingness to take calculated risks."},
+        {"word": "Eradicate", "phonetic": "/ɪˈrædɪkeɪt/", "pos": "v.", "meaning": "根除, 杜絕", "level": "blue", "phrases": ["eradicate poverty", "eradicate corruption"], "synonyms": ["eliminate", "wipe out"], "antonyms": ["promote", "create"], "example": "The new management team is determined to eradicate corruption within the organization."},
+        {"word": "Escalate", "phonetic": "/ˈeskəleɪt/", "pos": "v.", "meaning": "升級, 擴大, 惡化", "level": "blue", "phrases": ["escalate the issue", "escalating costs"], "synonyms": ["intensify", "increase"], "antonyms": ["diminish", "de-escalate"], "example": "If the problem is not resolved locally, it will be escalated to the regional manager."},
+        {"word": "Estate", "phonetic": "/ɪˈsteɪt/", "pos": "n.", "meaning": "地產, 遺產, 莊園", "level": "blue", "phrases": ["real estate", "industrial estate"], "synonyms": ["property", "assets"], "antonyms": [], "example": "The agent specializes in high-end real estate in the downtown financial district."},
+        {"word": "Eviction", "phonetic": "/ɪˈvɪkʃn/", "pos": "n.", "meaning": "驅逐, 趕出", "level": "blue", "phrases": ["eviction notice", "face eviction"], "synonyms": ["expulsion", "removal"], "antonyms": [], "example": "The tenant was served an eviction notice for failing to pay rent for four consecutive months."},
+        {"word": "Exacerbate", "phonetic": "/ɪɡˈzæsərbeɪt/", "pos": "v.", "meaning": "使惡化, 加重", "level": "blue", "phrases": ["exacerbate the problem", "exacerbate tensions"], "synonyms": ["worsen", "aggravate"], "antonyms": ["alleviate", "mitigate"], "example": "The sudden increase in fuel prices will only exacerbate the current economic crisis."},
+        {"word": "Exceed", "phonetic": "/ɪkˈsiːd/", "pos": "v.", "meaning": "超過, 勝過", "level": "blue", "phrases": ["exceed expectations", "exceed the limit"], "synonyms": ["surpass", "outperform"], "antonyms": ["fall short", "fail"], "example": "The quarterly sales figures are expected to exceed the company's initial projections."},
+        {"word": "Excerpt", "phonetic": "/ˈeksɜːrpt/", "pos": "n./v.", "meaning": "摘錄, 節錄", "level": "blue", "phrases": ["an excerpt from the report", "brief excerpt"], "synonyms": ["extract", "selection"], "antonyms": [], "example": "The newsletter contains a brief excerpt from the CEO's keynote speech at the conference."},
+        {"word": "Exclude", "phonetic": "/ɪkˈskluːd/", "pos": "v.", "meaning": "排除, 不包括", "level": "blue", "phrases": ["exclude from the list", "tax excluded"], "synonyms": ["omit", "eliminate"], "antonyms": ["include", "incorporate"], "example": "The total price listed in the catalog excludes shipping and handling charges."}
+    ]
+    
+    file_path = "data_blue.json"
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            try:
+                current_data = json.load(f)
+            except:
+                current_data = []
+    else:
+        current_data = []
 
-with open('data_blue.json', 'r', encoding='utf-8') as f:
-    data = json.load(f)
+    # 避免重複 (根據 word)
+    existing_words = {item['word'].lower() for item in current_data}
+    added_count = 0
+    for item in new_data:
+        if item['word'].lower() not in existing_words:
+            current_data.append(item)
+            added_count += 1
+            
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(current_data, f, ensure_ascii=False, indent=2)
+        
+    print(f"成功合併！新增了 {added_count} 個單字到 {file_path}，目前總計 {len(current_data)} 個單字。")
 
-for item in data:
-    word = item['word']
-    if word in enriched_data_blue_4:
-        update_info = enriched_data_blue_4[word].copy()
-        if 'word' in update_info:
-            item['word'] = update_info.pop('word')
-        item.update(update_info)
-
-with open('data_blue.json', 'w', encoding='utf-8') as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-
-print("成功精修藍色等級第 151-200 個單字，並修正拼寫與翻譯錯誤。")
+if __name__ == "__main__":
+    update_vocab()
