@@ -97,23 +97,68 @@ function loadVoices() {
 window.speechSynthesis.onvoiceschanged = loadVoices;
 loadVoices();
 
-// 語音朗讀
+// 核心朗讀邏輯：支援中英文自動偵測與分段播放
+function speakText(text) {
+    if (!text) return;
+
+    // 將文字依中文字元與非中文字元（英文、符號）切分
+    const segments = text.match(/[\u4e00-\u9fa5]+|[^\u4e00-\u9fa5]+/g) || [];
+
+    segments.forEach(segment => {
+        const trimmed = segment.trim();
+        if (!trimmed) return;
+
+        const msg = new SpeechSynthesisUtterance(trimmed);
+        const isChinese = /[\u4e00-\u9fa5]/.test(trimmed);
+        
+        if (isChinese) {
+            msg.lang = 'zh-TW';
+            const zhVoice = voices.find(v => v.lang.includes('zh-TW') || v.lang.includes('zh-HK') || v.lang.includes('zh-CN'));
+            if (zhVoice) msg.voice = zhVoice;
+        } else {
+            msg.lang = 'en-US';
+            const enVoice = voices.find(v => v.lang.includes('en-US') || v.lang.includes('en-GB') || v.lang.includes('en-AU'));
+            if (enVoice) msg.voice = enVoice;
+        }
+
+        msg.volume = 1;
+        msg.rate = 0.9; 
+        msg.pitch = 1;
+        
+        // 瀏覽器會自動排隊播放
+        window.speechSynthesis.speak(msg);
+    });
+}
+
+// 語音朗讀單字
 function speak() {
     if (!currentWord) return;
-
     window.speechSynthesis.cancel();
-    const msg = new SpeechSynthesisUtterance();
-    msg.text = currentWord.word;
+    speakText(currentWord.word);
+}
+
+// 語音朗讀全卡片內容
+function speakAll() {
+    if (!currentWord) return;
     
-    const englishVoice = voices.find(v => v.lang.includes('en-US') || v.lang.includes('en-GB'));
-    if (englishVoice) msg.voice = englishVoice;
+    // 先停止當前所有朗讀
+    window.speechSynthesis.cancel();
 
-    msg.lang = 'en-US';
-    msg.volume = 1;
-    msg.rate = 0.9; 
-    msg.pitch = 1;
+    // 依序加入播放隊列
+    // 1. 單字與詞性
+    speakText(currentWord.word);
+    if (currentWord.pos) speakText(currentWord.pos);
+    
+    // 2. 中文解釋
+    speakText(currentWord.meaning);
 
-    window.speechSynthesis.speak(msg);
+    // 3. 片語
+    if (currentWord.phrases && currentWord.phrases.length > 0) {
+        currentWord.phrases.forEach(p => speakText(p));
+    }
+
+    // 4. 例句
+    if (currentWord.example) speakText(currentWord.example);
 }
 
 // 啟動程式
