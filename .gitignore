@@ -1,0 +1,15 @@
+# 排除 Python 編譯暫存檔
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 排除系統垃圾檔案
+.DS_Store
+Thumbs.db
+
+# 排除本地開發用的備份或計畫書 (如果您不想上傳的話)
+# PROJECT_PLAN.md
+
+# 如果想要保留 serve.sh，則不要在下面加
+# serve.sh

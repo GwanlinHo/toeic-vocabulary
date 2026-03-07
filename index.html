@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>多益單字隨身卡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-green">
+    <div class="container">
+        <!-- 等級選擇器 -->
+        <div class="level-selector">
+            <button onclick="setLevel('green')" id="btn-green" class="active">綠色</button>
+            <button onclick="setLevel('blue')" id="btn-blue">藍色</button>
+            <button onclick="setLevel('gold')" id="btn-gold">金色</button>
+        </div>
+
+        <!-- 單字卡片 -->
+        <div class="card" id="word-card">
+            <div class="card-header">
+                <h1 id="word">Loading...</h1>
+                <div class="header-tools">
+                    <span id="pos" class="badge">POS</span>
+                    <button onclick="speak()" class="speak-btn" aria-label="播放語音">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                        </svg>
+                    </button>
+                </div>
+                <p id="phonetic" class="phonetic">/ phonetic /</p>
+            </div>
+            
+            <div class="card-body">
+                <div class="section">
+                    <h3>中文解釋</h3>
+                    <p id="meaning" class="meaning">點擊下方按鈕開始學習</p>
+                </div>
+
+                <div class="section">
+                    <h3>片語 / 搭配詞</h3>
+                    <ul id="phrases" class="list"></ul>
+                </div>
+
+                <div class="grid-section">
+                    <div>
+                        <h3>同義詞</h3>
+                        <p id="synonyms">-</p>
+                    </div>
+                    <div>
+                        <h3>反義詞</h3>
+                        <p id="antonyms">-</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>例句</h3>
+                    <p id="example" class="example"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 操作區 -->
+        <div class="actions">
+            <button onclick="nextWord()" class="next-btn">下一個單字</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

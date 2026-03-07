@@ -1,0 +1,71 @@
+import json
+
+# 第 251-300 個高品質單字對應表 (金色等級)
+enriched_data_gold_6 = {
+    "foreign exchange": {"phonetic": "/ˈfɔːrən ɪksˈtʃeɪndʒ/", "pos": "n. phr.", "meaning": "外匯", "phrases": ["foreign exchange market"], "synonyms": ["forex"], "antonyms": [], "example": "Companies that export goods are often affected by fluctuations in foreign exchange rates."},
+    "devaluation": {"phonetic": "/ˌdiːvæljuˈeɪʃn/", "pos": "n.", "meaning": "貶值", "phrases": ["currency devaluation"], "synonyms": ["depreciation"], "antonyms": ["revaluation"], "example": "The devaluation of the currency has made imported goods more expensive for local consumers."},
+    "revaluation": {"phonetic": "/ˌriːvæljuˈeɪʃn/", "pos": "n.", "meaning": "升值；重新估價", "phrases": ["asset revaluation"], "synonyms": ["appreciation"], "antonyms": ["devaluation"], "example": "The government is considering a revaluation of the national currency to combat inflation."},
+    "convertible": {"phonetic": "/kənˈvɜːrtəbl/", "pos": "adj.", "meaning": "可轉換的", "phrases": ["convertible currency", "convertible bond"], "synonyms": ["exchangeable"], "antonyms": ["inconvertible"], "example": "The company issued convertible bonds that can be changed into common shares at a later date."},
+    "clearing house": {"phonetic": "/ˈklɪrɪŋ haʊs/", "pos": "n. phr.", "meaning": "票據交換所；結算中心", "phrases": [], "synonyms": [], "antonyms": [], "example": "The clearing house processes thousands of financial transactions between banks every day."},
+    "wire transfer": {"phonetic": "/ˈwaɪər ˈtrænsfɜːr/", "pos": "n. phr.", "meaning": "電匯", "phrases": ["send a wire transfer"], "synonyms": ["telegraphic transfer"], "antonyms": [], "example": "Please provide your bank details so that we can send the payment via wire transfer."},
+    "direct debit": {"phonetic": "/dəˈrekt ˈdebɪt/", "pos": "n. phr.", "meaning": "直接轉帳；定期扣款", "phrases": ["pay by direct debit"], "synonyms": [], "antonyms": [], "example": "Many customers prefer to pay their monthly utility bills by direct debit from their bank accounts."},
+    "overdraft": {"phonetic": "/ˈoʊvərdræft/", "pos": "n.", "meaning": "透支", "phrases": ["bank overdraft"], "synonyms": [], "antonyms": [], "example": "The company had to arrange a temporary overdraft with the bank to cover its short-term expenses."},
+    "credit limit": {"phonetic": "/dəˈrekt ˈdebɪt/", "pos": "n. phr.", "meaning": "直接轉帳；定期扣款", "phrases": ["pay by direct debit"], "synonyms": [], "antonyms": [], "example": "Many customers prefer to pay their monthly utility bills by direct debit from their bank accounts."},
+    "credit limit": {"phonetic": "/ˈkredɪt ˈlɪmɪt/", "pos": "n. phr.", "meaning": "信用額度", "phrases": ["increase credit limit"], "synonyms": [], "antonyms": [], "example": "The bank agreed to increase his credit limit after reviewing his financial history."},
+    "credit rating": {"phonetic": "/ˈkredɪt ˈreɪtɪŋ/", "pos": "n. phr.", "meaning": "信用評等", "phrases": ["high credit rating"], "synonyms": ["credit score"], "antonyms": [], "example": "A good credit rating makes it easier for businesses to obtain loans with favorable interest rates."},
+    "default": {"phonetic": "/ˈdiːfɔːlt/", "pos": "n./v.", "meaning": "違約；預設值", "phrases": ["default on a loan"], "synonyms": ["failure", "non-payment"], "antonyms": ["fulfillment"], "example": "The company was forced to declare bankruptcy after it defaulted on its international debts."},
+    "foreclosure": {"phonetic": "/fɔːrˈkloʊʒər/", "pos": "n.", "meaning": "法拍；喪失抵押品贖回權", "phrases": ["foreclosure notice"], "synonyms": [], "antonyms": [], "example": "The bank started foreclosure proceedings on the property after the owner failed to make payments."},
+    "repossession": {"phonetic": "/ˌriːpəˈzeʃn/", "pos": "n.", "meaning": "回收；奪回(財產)", "phrases": [], "synonyms": ["recovery"], "antonyms": [], "example": "The finance company threatened the repossession of the car due to unpaid installments."},
+    "insurance policy": {"phonetic": "/ɪnˈʃʊrəns ˈpɑːləsi/", "pos": "n. phr.", "meaning": "保險單", "phrases": ["comprehensive insurance policy"], "synonyms": [], "antonyms": [], "example": "Please read your insurance policy carefully to understand what is covered."},
+    "premium": {"phonetic": "/ˈpriːmiəm/", "pos": "n./adj.", "meaning": "保費；高級的", "phrases": ["insurance premium", "premium quality"], "synonyms": ["fee", "superior"], "antonyms": ["discount"], "example": "Your monthly insurance premium will depend on several factors, including your age and health."},
+    "claim": {"phonetic": "/kleɪm/", "pos": "n./v.", "meaning": "索賠；主張", "phrases": ["insurance claim", "make a claim"], "synonyms": ["request", "demand"], "antonyms": ["denial"], "example": "The company filed an insurance claim for the damage caused by the fire in the warehouse."},
+    "beneficiary": {"phonetic": "/ˌbenɪˈfɪʃieri/", "pos": "n.", "meaning": "受益人", "phrases": ["named beneficiary"], "synonyms": ["recipient", "heir"], "antonyms": [], "example": "He named his wife as the primary beneficiary of his life insurance policy."},
+    "coverage": {"phonetic": "/ˈkʌvərɪdʒ/", "pos": "n.", "meaning": "保險範圍；報導", "phrases": ["full coverage", "media coverage"], "synonyms": ["protection", "reporting"], "antonyms": [], "example": "You should check if your current policy provides enough coverage for medical emergencies."},
+    "underwriter": {"phonetic": "/ˈʌndərraɪtər/", "pos": "n.", "meaning": "承保人；擔保人", "phrases": [], "synonyms": ["insurer"], "antonyms": [], "example": "The insurance underwriter evaluated the risk before deciding to approve the policy."},
+    "actuary": {"phonetic": "/ˈæktʃueri/", "pos": "n.", "meaning": "精算師", "phrases": [], "synonyms": [], "antonyms": [], "example": "The company hired an actuary to calculate the potential risks and costs of the new insurance scheme."},
+    "brokerage": {"phonetic": "/ˈbroʊkərɪdʒ/", "pos": "n.", "meaning": "經紀業務；佣金", "phrases": ["brokerage firm"], "synonyms": ["commission"], "antonyms": [], "example": "The brokerage firm provides investment advice and processes stock transactions for its clients."},
+    "consignment": {"phonetic": "/kənˈsaɪnmənt/", "pos": "n.", "meaning": "寄售；委託貨物", "phrases": ["on consignment"], "synonyms": ["shipment", "delivery"], "antonyms": [], "example": "The store agreed to sell the artist's paintings on consignment for a small percentage of the price."},
+    "inventory": {"phonetic": "/ˈɪnvəntɔːri/", "pos": "n./v.", "meaning": "庫存；盤點", "phrases": ["inventory management", "take inventory"], "synonyms": ["stock"], "antonyms": [], "example": "We need to carry out a full inventory of the warehouse before the end of the month."},
+    "logistics": {"phonetic": "/ləˈdʒɪstɪks/", "pos": "n.", "meaning": "物流；後勤", "phrases": ["logistics department"], "synonyms": ["distribution", "planning"], "antonyms": [], "example": "The company is planning to invest in a new software system to improve its logistics operations."},
+    "supply chain": {"phonetic": "/səˈplaɪ tʃeɪn/", "pos": "n. phr.", "meaning": "供應鏈", "phrases": ["supply chain management"], "synonyms": [], "antonyms": [], "example": "Disruptions in the global supply chain have caused delays in the delivery of many products."},
+    "procurement": {"phonetic": "/prəˈkjʊrmənt/", "pos": "n.", "meaning": "採購", "phrases": ["procurement department"], "synonyms": ["acquisition", "sourcing"], "antonyms": [], "example": "The procurement department is responsible for finding reliable suppliers for raw materials."},
+    "wholesale": {"phonetic": "/ˈhoʊlseɪl/", "pos": "n./adj./adv.", "meaning": "批發", "phrases": ["wholesale price"], "synonyms": ["bulk sale"], "antonyms": ["retail"], "example": "The company sells its products at wholesale prices to retailers across the country."},
+    "retail": {"phonetic": "/ˈriːteɪl/", "pos": "n./adj./adv.", "meaning": "零售", "phrases": ["retail outlet", "retail price"], "synonyms": [], "antonyms": ["wholesale"], "example": "The new shopping center will feature many well-known retail brands and restaurants."},
+    "distributor": {"phonetic": "/dɪˈstrɪbjətər/", "pos": "n.", "meaning": "分銷商；經銷商", "phrases": ["authorized distributor"], "synonyms": ["wholesaler", "supplier"], "antonyms": [], "example": "We are currently looking for a local distributor to sell our products in the Asian market."},
+    "merchandise": {"phonetic": "/ˈmɜːrtʃəndaɪz/", "pos": "n./v.", "meaning": "商品；買賣", "phrases": ["official merchandise"], "synonyms": ["goods", "products"], "antonyms": [], "example": "The store offers a wide variety of merchandise, ranging from electronics to clothing."},
+    "commodities": {"phonetic": "/kəˈmɑːdətiːz/", "pos": "n.", "meaning": "商品；日用品(複數)", "phrases": ["primary commodities"], "synonyms": ["goods", "products"], "antonyms": [], "example": "Agricultural commodities such as coffee and wheat are traded globally on major markets."},
+    "packaging": {"phonetic": "/ˈpækɪdʒɪŋ/", "pos": "n.", "meaning": "包裝", "phrases": ["attractive packaging"], "synonyms": ["wrapping"], "antonyms": [], "example": "The company decided to redesign its packaging to make the product more environmentally friendly."},
+    "branding": {"phonetic": "/ˈbrændɪŋ/", "pos": "n.", "meaning": "品牌推廣；品牌形象", "phrases": ["branding strategy"], "synonyms": [], "antonyms": [], "example": "The company's success is largely due to its strong branding and consistent marketing."},
+    "trademark": {"phonetic": "/ˈtreɪdmɑːrk/", "pos": "n./v.", "meaning": "商標", "phrases": ["registered trademark"], "synonyms": ["brand", "logo"], "antonyms": [], "example": "The company's distinctive logo is a registered trademark and cannot be used by others."},
+    "patent": {"phonetic": "/ˈpætnt/", "pos": "n./v.", "meaning": "專利", "phrases": ["apply for a patent"], "synonyms": ["license"], "antonyms": [], "example": "The inventor was granted a patent for his new technology after years of research."},
+    "copyright": {"phonetic": "/ˈkɑːpiraɪt/", "pos": "n./v.", "meaning": "著作權", "phrases": ["copyright infringement"], "synonyms": [], "antonyms": [], "example": "You must obtain permission from the copyright owner before you can use the music."},
+    "advertisement": {"phonetic": "/ˌædvərˈtaɪzmənt/", "pos": "n.", "meaning": "廣告", "phrases": ["online advertisement"], "synonyms": ["ad", "commercial"], "antonyms": [], "example": "The company placed an advertisement in several national newspapers to attract more customers."},
+    "commercial": {"phonetic": "/kəˈmɜːrʃl/", "pos": "adj./n.", "meaning": "商業的；(電視廣播)廣告", "phrases": ["commercial success", "TV commercial"], "synonyms": ["business", "advertisement"], "antonyms": ["non-profit"], "example": "The new product was a huge commercial success and sold millions of units in its first year."},
+    "marketing campaign": {"phonetic": "/ˈmɑːrkɪtɪŋ kæmˈpeɪn/", "pos": "n. phr.", "meaning": "行銷活動", "phrases": ["launch a marketing campaign"], "synonyms": [], "antonyms": [], "example": "The company is planning a major marketing campaign to promote its new summer collection."},
+    "target audience": {"phonetic": "/ˈtɑːrɡɪt ˈɔːdiəns/", "pos": "n. phr.", "meaning": "目標受眾", "phrases": ["reach target audience"], "synonyms": ["target market"], "antonyms": [], "example": "The advertisement was specifically designed to appeal to our young target audience."},
+    "public relations": {"phonetic": "/ˈpʌblɪk rɪˈleɪʃnz/", "pos": "n. phr.", "meaning": "公共關係(PR)", "phrases": ["public relations department"], "synonyms": ["PR"], "antonyms": [], "example": "The company's public relations team worked hard to improve its image after the scandal."},
+    "press release": {"phonetic": "/pres rɪˈliːs/", "pos": "n. phr.", "meaning": "新聞稿", "phrases": ["issue a press release"], "synonyms": ["media release"], "antonyms": [], "example": "The company issued a press release to announce the appointment of its new CEO."},
+    "market research": {"phonetic": "/ˈmɑːrkɪt rɪˈsɜːrtʃ/", "pos": "n. phr.", "meaning": "市場調查", "phrases": ["conduct market research"], "synonyms": ["market study"], "antonyms": [], "example": "Extensive market research showed that there was a growing demand for eco-friendly products."},
+    "focus group": {"phonetic": "/ˈfoʊkəs ɡruːp/", "pos": "n. phr.", "meaning": "焦點小組", "phrases": ["conduct a focus group"], "synonyms": [], "antonyms": [], "example": "The marketing team used a focus group to gather feedback on the new product design."},
+    "consumer behavior": {"phonetic": "/kənˈsuːmər bɪˈheɪvjər/", "pos": "n. phr.", "meaning": "消費者行為", "phrases": ["study consumer behavior"], "synonyms": [], "antonyms": [], "example": "Understanding consumer behavior is essential for developing effective marketing strategies."},
+    "loyalty program": {"phonetic": "/ˈlɔɪəlti ˈproʊɡræm/", "pos": "n. phr.", "meaning": "會員忠誠計畫", "phrases": ["customer loyalty program"], "synonyms": [], "antonyms": [], "example": "The supermarket's loyalty program offers discounts and rewards to regular customers."},
+    "after-sales service": {"phonetic": "/ˈæftər seɪlz ˈsɜːrvɪs/", "pos": "n. phr.", "meaning": "售後服務", "phrases": ["excellent after-sales service"], "synonyms": [], "antonyms": [], "example": "We are known for our excellent after-sales service and support for all our products."},
+    "warranty": {"phonetic": "/ˈwɔːrənti/", "pos": "n.", "meaning": "保固；保證書", "phrases": ["two-year warranty"], "synonyms": ["guarantee"], "antonyms": [], "example": "The new laptop comes with a two-year warranty against any manufacturing defects."},
+    "endorsement": {"phonetic": "/ɪnˈdɔːrsmənt/", "pos": "n.", "meaning": "背書；代言；支持", "phrases": ["celebrity endorsement"], "synonyms": ["support", "approval"], "antonyms": [], "example": "The product's sales increased significantly after the celebrity endorsement was released."}
+}
+
+with open('data_gold.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+for item in data:
+    word = item['word']
+    if word in enriched_data_gold_6:
+        update_info = enriched_data_gold_6[word].copy()
+        if 'word' in update_info:
+            item['word'] = update_info.pop('word')
+        item.update(update_info)
+
+with open('data_gold.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print("成功精修金色等級第 251-300 個單字。")

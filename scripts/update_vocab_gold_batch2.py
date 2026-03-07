@@ -1,0 +1,71 @@
+import json
+
+# 第 51-100 個高品質單字對應表 (金色等級)
+enriched_data_gold_2 = {
+    "deadline": {"phonetic": "/ˈdedlaɪn/", "pos": "n.", "meaning": "截止日期", "phrases": ["meet the deadline", "strict deadline"], "synonyms": ["cutoff date"], "antonyms": [], "example": "We are working hard to meet the deadline for the submission of the final report."},
+    "be behind schedule": {"phonetic": "/bi bɪˈhaɪnd ˈskedʒuːl/", "pos": "v. phr.", "meaning": "進度落後", "phrases": [], "synonyms": ["running late"], "antonyms": ["ahead of schedule"], "example": "The construction project is currently two weeks behind schedule due to the bad weather."},
+    "be on schedule": {"phonetic": "/bi ɑːn ˈskedʒuːl/", "pos": "v. phr.", "meaning": "進度準時", "phrases": ["remain on schedule"], "synonyms": ["on time"], "antonyms": [], "example": "Despite the initial delays, the project is now back on schedule and should be finished on time."},
+    "be ahead of schedule": {"phonetic": "/bi əˈhed əv ˈskedʒuːl/", "pos": "v. phr.", "meaning": "進度超前", "phrases": [], "synonyms": ["early"], "antonyms": ["behind schedule"], "example": "The team has worked very efficiently, and we are currently ahead of schedule."},
+    "pensioner": {"phonetic": "/ˈpenʃənər/", "pos": "n.", "meaning": "領養老金者", "phrases": ["old-age pensioner"], "synonyms": ["retiree"], "antonyms": [], "example": "Many pensioners have complained about the rising cost of living in the city."},
+    "unemployed": {"phonetic": "/ˌʌnɪmˈplɔɪd/", "pos": "adj.", "meaning": "失業的", "phrases": ["unemployed workers"], "synonyms": ["jobless"], "antonyms": ["employed"], "example": "The government is offering free training programs to help unemployed people find jobs."},
+    "redundant": {"phonetic": "/rɪˈdʌndənt/", "pos": "adj.", "meaning": "被裁減的；多餘的", "phrases": ["make someone redundant"], "synonyms": ["unnecessary", "surplus"], "antonyms": ["essential"], "example": "He was made redundant after the company closed its local factory last month."},
+    "retire": {"phonetic": "/rɪˈtaɪər/", "pos": "v.", "meaning": "退休", "phrases": ["retire from work"], "synonyms": ["step down"], "antonyms": ["work"], "example": "The manager plans to retire at the end of the year after thirty years with the company."},
+    "resign": {"phonetic": "/rɪˈzaɪn/", "pos": "v.", "meaning": "辭職", "phrases": ["resign from a position"], "synonyms": ["quit", "leave"], "antonyms": ["join", "remain"], "example": "She decided to resign from her position to pursue a career in international law."},
+    "quit": {"phonetic": "/kwɪt/", "pos": "v.", "meaning": "離開(工作)；放棄", "phrases": ["quit a job"], "synonyms": ["resign", "leave"], "antonyms": ["start", "continue"], "example": "He decided to quit his job and start his own technology consulting business."},
+    "fire": {"phonetic": "/ˈfaɪər/", "pos": "v.", "meaning": "解雇；開除", "phrases": ["be fired"], "synonyms": ["dismiss", "sack"], "antonyms": ["hire", "employ"], "example": "The company had to fire several employees for repeatedly violating safety regulations."},
+    "dismiss": {"phonetic": "/dɪsˈmɪs/", "pos": "v.", "meaning": "遣散；解雇", "phrases": ["dismiss an employee"], "synonyms": ["fire", "discharge"], "antonyms": ["engage", "hire"], "example": "The manager was dismissed from his post following an internal investigation into his conduct."},
+    "part-timer": {"phonetic": "/ˌpɑːrt ˈtaɪmər/", "pos": "n.", "meaning": "兼職人員", "phrases": ["work as a part-timer"], "synonyms": ["part-time worker"], "antonyms": ["full-timer"], "example": "Many college students work as part-timers in restaurants and retail stores."},
+    "full-timer": {"phonetic": "/ˌfʊl ˈtaɪmər/", "pos": "n.", "meaning": "全職人員", "phrases": ["permanent full-timer"], "synonyms": ["full-time worker"], "antonyms": ["part-timer"], "example": "The company is planning to hire more full-timers to replace the temporary staff."},
+    "freelancer": {"phonetic": "/ˈfriːlænsər/", "pos": "n.", "meaning": "自由職業者", "phrases": ["work as a freelancer"], "synonyms": ["independent contractor"], "antonyms": [], "example": "As a freelancer, she has the flexibility to work from home and choose her own projects."},
+    "intern": {"phonetic": "/ˈɪntɜːrn/", "pos": "n./v.", "meaning": "實習生；實習", "phrases": ["unpaid intern", "marketing intern"], "synonyms": ["apprentice", "trainee"], "antonyms": [], "example": "The marketing department is looking for an intern to help with social media campaigns."},
+    "trainee": {"phonetic": "/ˌtreɪˈniː/", "pos": "n.", "meaning": "受訓者", "phrases": ["management trainee"], "synonyms": ["apprentice", "learner"], "antonyms": [], "example": "New trainees receive two weeks of intensive training before starting their actual work."},
+    "apprentice": {"phonetic": "/əˈprentɪs/", "pos": "n.", "meaning": "學徒", "phrases": ["engineering apprentice"], "synonyms": ["intern", "trainee"], "antonyms": [], "example": "He started his career as an apprentice in a local engineering firm ten years ago."},
+    "consultant": {"phonetic": "/kənˈsʌltənt/", "pos": "n.", "meaning": "顧問", "phrases": ["management consultant", "financial consultant"], "synonyms": ["advisor", "expert"], "antonyms": [], "example": "The company hired a financial consultant to help improve its investment strategy."},
+    "expert": {"phonetic": "/ˈekspɜːrt/", "pos": "n./adj.", "meaning": "專家；專業的", "phrases": ["technical expert"], "synonyms": ["specialist", "authority"], "antonyms": ["amateur", "novice"], "example": "She is widely recognized as an expert in the field of renewable energy technology."},
+    "specialist": {"phonetic": "/ˈspeʃəlɪst/", "pos": "n.", "meaning": "專員；專家", "phrases": ["IT specialist", "marketing specialist"], "synonyms": ["expert", "professional"], "antonyms": ["generalist"], "example": "Our IT specialist is currently working to resolve the network issues in the office."},
+    "professional": {"phonetic": "/prəˈfeʃənl/", "pos": "n./adj.", "meaning": "專業人士；專業的", "phrases": ["professional attitude", "healthcare professional"], "synonyms": ["expert", "competent"], "antonyms": ["unprofessional", "amateur"], "example": "It is important to maintain a professional attitude when dealing with difficult clients."},
+    "executive": {"phonetic": "/ɪɡˈzekjətɪv/", "pos": "n./adj.", "meaning": "高階主管；執行性的", "phrases": ["chief executive officer", "executive summary"], "synonyms": ["manager", "administrator"], "antonyms": [], "example": "The company's chief executive officer will give a keynote speech at the conference."},
+    "manager": {"phonetic": "/ˈmænɪdʒər/", "pos": "n.", "meaning": "經理", "phrases": ["department manager", "general manager"], "synonyms": ["director", "supervisor"], "antonyms": ["subordinate"], "example": "The new department manager is planning to implement several changes to improve efficiency."},
+    "director": {"phonetic": "/dəˈrektər/", "pos": "n.", "meaning": "總監；董事", "phrases": ["sales director", "board director"], "synonyms": ["manager", "executive"], "antonyms": [], "example": "The sales director is responsible for managing the company's international sales team."},
+    "supervisor": {"phonetic": "/ˈsuːpərvaɪzər/", "pos": "n.", "meaning": "主管；監督者", "phrases": ["immediate supervisor"], "synonyms": ["manager", "overseer"], "antonyms": [], "example": "If you have any problems with the equipment, please inform your supervisor immediately."},
+    "foreman": {"phonetic": "/ˈfɔːrmən/", "pos": "n.", "meaning": "領班；工頭", "phrases": ["factory foreman"], "synonyms": ["supervisor", "overseer"], "antonyms": [], "example": "The foreman is responsible for overseeing the daily operations on the construction site."},
+    "colleague": {"phonetic": "/ˈkɑːliːɡ/", "pos": "n.", "meaning": "同事", "phrases": ["work colleague", "senior colleague"], "synonyms": ["coworker", "associate"], "antonyms": [], "example": "He is well-respected by all his colleagues for his hard work and dedication."},
+    "coworker": {"phonetic": "/ˌkoʊˈwɜːrkər/", "pos": "n.", "meaning": "同事(常用於美式)", "phrases": [], "synonyms": ["colleague"], "antonyms": [], "example": "She often goes out to lunch with her coworkers from the marketing department."},
+    "staff": {"phonetic": "/stæf/", "pos": "n.", "meaning": "員工(總稱)", "phrases": ["staff member", "hospital staff"], "synonyms": ["employees", "personnel"], "antonyms": ["management"], "example": "The company's staff members are entitled to free health insurance and other benefits."},
+    "personnel": {"phonetic": "/ˌpɜːrsəˈnel/", "pos": "n.", "meaning": "人事；人員", "phrases": ["personnel department", "military personnel"], "synonyms": ["staff", "workforce"], "antonyms": [], "example": "Please contact the personnel department if you have any questions about your contract."},
+    "workforce": {"phonetic": "/ˈwɜːrkfɔːrs/", "pos": "n.", "meaning": "勞動力", "phrases": ["skilled workforce", "total workforce"], "synonyms": ["labor force", "manpower"], "antonyms": [], "example": "The company has a highly skilled and motivated workforce of over five hundred people."},
+    "manpower": {"phonetic": "/ˈmænpaʊər/", "pos": "n.", "meaning": "人力", "phrases": ["lack of manpower"], "synonyms": ["workforce", "labor"], "antonyms": [], "example": "We need to increase our manpower to complete the project before the deadline."},
+    "employee": {"phonetic": "/ɪmˈplɔɪiː/", "pos": "n.", "meaning": "員工", "phrases": ["full-time employee", "new employee"], "synonyms": ["worker", "staff"], "antonyms": ["employer"], "example": "The company encourages every employee to participate in the new training program."},
+    "employer": {"phonetic": "/ɪmˈplɔɪər/", "pos": "n.", "meaning": "雇主", "phrases": ["major employer"], "synonyms": ["boss", "company"], "antonyms": ["employee"], "example": "As an employer, the company is committed to providing a safe and healthy workplace."},
+    "laborer": {"phonetic": "/ˈleɪbərər/", "pos": "n.", "meaning": "體力勞動者", "phrases": ["migrant laborer", "skilled laborer"], "synonyms": ["worker", "manual worker"], "antonyms": [], "example": "Many migrant laborers are employed in the local construction and agriculture industries."},
+    "blue-collar": {"phonetic": "/ˌbluː ˈkɑːlər/", "pos": "adj.", "meaning": "藍領的", "phrases": ["blue-collar worker"], "synonyms": ["manual"], "antonyms": ["white-collar"], "example": "The factory employs hundreds of blue-collar workers on its production lines."},
+    "white-collar": {"phonetic": "/ˌwaɪt ˈkɑːlər/", "pos": "adj.", "meaning": "白領的", "phrases": ["white-collar employee"], "synonyms": ["professional", "office"], "antonyms": ["blue-collar"], "example": "Most white-collar employees in the city center work in offices and service industries."},
+    "clerical": {"phonetic": "/ˈklerɪkl/", "pos": "adj.", "meaning": "辦公室事務的", "phrases": ["clerical work", "clerical assistant"], "synonyms": ["administrative"], "antonyms": [], "example": "She spent the afternoon performing various clerical tasks such as filing and data entry."},
+    "technical": {"phonetic": "/ˈteknɪkl/", "pos": "adj.", "meaning": "技術性的", "phrases": ["technical support", "technical skills"], "synonyms": ["scientific", "specialized"], "antonyms": [], "example": "Our technical support team is available twenty-four hours a day to assist customers."},
+    "skilled": {"phonetic": "/skɪld/", "pos": "adj.", "meaning": "有技能的；熟練的", "phrases": ["skilled technician"], "synonyms": ["expert", "experienced"], "antonyms": ["unskilled"], "example": "The company is currently looking for skilled technicians to join its maintenance team."},
+    "unskilled": {"phonetic": "/ˌʌnˈskɪld/", "pos": "adj.", "meaning": "無技能的", "phrases": ["unskilled labor"], "synonyms": ["inexperienced"], "antonyms": ["skilled"], "example": "Unskilled workers often find it difficult to obtain high-paying jobs in the industry."},
+    "semiskilled": {"phonetic": "/ˌsemiˈskɪld/", "pos": "adj.", "meaning": "半熟練的", "phrases": ["semiskilled worker"], "synonyms": [], "antonyms": [], "example": "Many of the workers on the production line are semiskilled and receive on-the-job training."},
+    "headhunt": {"phonetic": "/ˈhedhʌnt/", "pos": "v.", "meaning": "獵人頭(招募)", "phrases": [], "synonyms": ["recruit"], "antonyms": [], "example": "The company decided to headhunt a new CEO from one of its major competitors."},
+    "fill a position": {"phonetic": "/fɪl ə pəˈzɪʃn/", "pos": "v. phr.", "meaning": "填補職缺", "phrases": [], "synonyms": ["hire", "recruit"], "antonyms": [], "example": "We are working hard to fill the position of sales director as quickly as possible."},
+    "shortlist": {"phonetic": "/ˈʃɔːrtlɪst/", "pos": "n./v.", "meaning": "入圍名單；篩選", "phrases": ["be on the shortlist"], "synonyms": ["selection"], "antonyms": [], "example": "The human resources department has short-listed five candidates for the second interview."},
+    "interview": {"phonetic": "/ˈɪntərvjuː/", "pos": "n./v.", "meaning": "面試", "phrases": ["conduct an interview", "job interview"], "synonyms": ["meeting"], "antonyms": [], "example": "She was very nervous before her job interview with the board of directors."},
+    "reference check": {"phonetic": "/ˈrefrəns tʃek/", "pos": "n. phr.", "meaning": "推薦人查核", "phrases": [], "synonyms": ["background check"], "antonyms": [], "example": "The company will conduct a reference check before making a final job offer."},
+    "offer": {"phonetic": "/ˈɔːfər/", "pos": "n./v.", "meaning": "錄取通知；提供", "phrases": ["job offer", "accept an offer"], "synonyms": ["propose", "provide"], "antonyms": [], "example": "He was delighted to receive a job offer from the company just two days after his interview."},
+    "outsource": {"phonetic": "/ˈaʊtsɔːrs/", "pos": "v.", "meaning": "外包", "phrases": ["outsource services"], "synonyms": ["contract out"], "antonyms": ["insource"], "example": "The company decided to outsource its IT services to save on operational costs."}
+}
+
+with open('data_gold.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+for item in data:
+    word = item['word']
+    if word in enriched_data_gold_2:
+        update_info = enriched_data_gold_2[word].copy()
+        if 'word' in update_info:
+            item['word'] = update_info.pop('word')
+        item.update(update_info)
+
+with open('data_gold.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print("成功精修金色等級第 51-100 個單字。")

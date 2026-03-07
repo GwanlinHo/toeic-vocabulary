@@ -1,0 +1,71 @@
+import json
+
+# 第 1051-1100 個高品質單字對應表 (金色等級)
+enriched_data_gold_22 = {
+    "courthouse": {"phonetic": "/ˈkɔːrthaʊs/", "pos": "n.", "meaning": "法院；地方法院大樓", "phrases": ["county courthouse"], "synonyms": ["court"], "antonyms": [], "example": "The hearing will take place at the local courthouse tomorrow morning."},
+    "evenly": {"phonetic": "/ˈiːvnli/", "pos": "adv.", "meaning": "均勻地；平等地；平靜地", "phrases": ["evenly distributed"], "synonyms": ["uniformly", "equally"], "antonyms": ["unevenly"], "example": "The workload was evenly distributed among all the members of the team."},
+    "indifferent": {"phonetic": "/ɪnˈdɪfrənt/", "pos": "adj.", "meaning": "冷淡的；不感興趣的；中等的", "phrases": ["indifferent to"], "synonyms": ["apathetic", "unconcerned"], "antonyms": ["enthusiastic", "caring"], "example": "The manager seemed indifferent to the complaints made by the staff."},
+    "abstract": {"phonetic": "/ˈæbstrækt/", "pos": "adj./n./v.", "meaning": "抽象的；摘要；提取", "phrases": ["abstract idea", "extended abstract"], "synonyms": ["theoretical", "summary"], "antonyms": ["concrete"], "example": "Please provide a short abstract of your research paper before the deadline."},
+    "lucratively": {"phonetic": "/ˈluːkrətɪvli/", "pos": "adv.", "meaning": "獲利地；有利可圖地", "phrases": [], "synonyms": ["profitably"], "antonyms": ["unprofitably"], "example": "The company has been operating lucratively in the international market for years."},
+    "meticulously": {"phonetic": "/məˈtɪkjələsli/", "pos": "adv.", "meaning": "極其細心地；一絲不苟地", "phrases": ["meticulously planned"], "synonyms": ["thoroughly", "carefully"], "antonyms": ["carelessly"], "example": "The data was meticulously checked for any errors before the report was released."},
+    "credential": {"phonetic": "/krəˈdenʃl/", "pos": "n.", "meaning": "證書；憑據；資格", "phrases": ["academic credentials"], "synonyms": ["qualification", "certificate"], "antonyms": [], "example": "You need to provide your professional credentials when applying for the senior role."},
+    "fraud": {"phonetic": "/frɔːd/", "pos": "n.", "meaning": "詐騙；騙子", "phrases": ["credit card fraud", "insurance fraud"], "synonyms": ["deception", "scam"], "antonyms": ["honesty"], "example": "He was charged with financial fraud after an investigation into his business activities."},
+    "as to": {"phonetic": "/æz tuː/", "pos": "prep. phr.", "meaning": "關於；至於", "phrases": ["as to whether"], "synonyms": ["concerning", "regarding"], "antonyms": [], "example": "There is still some uncertainty as to whether the project will be approved."},
+    "but for": {"phonetic": "/bʌt fər/", "pos": "prep. phr.", "meaning": "要不是因為...", "phrases": [], "synonyms": ["without"], "antonyms": [], "example": "But for your help, we would not have finished the project on time."},
+    "reproduce": {"phonetic": "/ˌriːprəˈduːs/", "pos": "v.", "meaning": "複製；繁殖；重現", "phrases": ["reproduce a document"], "synonyms": ["duplicate", "copy"], "antonyms": [], "example": "You need permission from the author to reproduce any part of the book."},
+    "elapsed": {"phonetic": "/ɪˈlæpst/", "pos": "adj./v. (past)", "meaning": "過去的；(時間)消逝的", "phrases": ["time elapsed"], "synonyms": ["passed", "gone by"], "antonyms": [], "example": "Two hours had elapsed before the technician finally arrived to fix the problem."},
+    "heritage": {"phonetic": "/ˈherɪtɪdʒ/", "pos": "n.", "meaning": "遺產；繼承物；傳統", "phrases": ["cultural heritage", "world heritage site"], "synonyms": ["inheritance", "legacy"], "antonyms": [], "example": "The museum is dedicated to preserving the cultural heritage of the local community."},
+    "vibrant": {"phonetic": "/ˈvaɪbrənt/", "pos": "adj.", "meaning": "充滿活力的；響亮的；鮮豔的", "phrases": ["vibrant city", "vibrant colors"], "synonyms": ["energetic", "lively"], "antonyms": ["dull", "lifeless"], "example": "The city center has a vibrant atmosphere with many shops, cafes, and theaters."},
+    "observer": {"phonetic": "/əbˈzɜːrvər/", "pos": "n.", "meaning": "觀察員；目擊者", "phrases": ["election observer"], "synonyms": ["onlooker", "witness"], "antonyms": [], "example": "The meeting was attended by several international observers from the UN."},
+    "squad": {"phonetic": "/skwɑːd/", "pos": "n.", "meaning": "小隊；班", "phrases": ["rescue squad", "police squad"], "synonyms": ["team", "unit"], "antonyms": [], "example": "A specialized squad of technicians was sent to investigate the network failure."},
+    "recharge": {"phonetic": "/ˌriːˈtʃɑːrdʒ/", "pos": "v./n.", "meaning": "再充電；休整", "phrases": ["recharge batteries"], "synonyms": ["refill", "refresh"], "antonyms": ["drain"], "example": "I need to take a short break to recharge before the next meeting."},
+    "fatigue": {"phonetic": "/fəˈtiːɡ/", "pos": "n./v.", "meaning": "疲勞；勞累", "phrases": ["chronic fatigue", "metal fatigue"], "synonyms": ["tiredness", "exhaustion"], "antonyms": ["energy", "vigor"], "example": "Driver fatigue is a major cause of accidents on the highway during the night."},
+    "notion": {"phonetic": "/ˈnoʊʃn/", "pos": "n.", "meaning": "觀念；想法；見解", "phrases": ["vague notion"], "synonyms": ["idea", "concept", "belief"], "antonyms": [], "example": "The company's new strategy is based on the notion that sustainability is key to success."},
+    "premises": {"phonetic": "/ˈpremɪsɪz/", "pos": "n.", "meaning": "營業場所；建築物及其範圍(複數)", "phrases": ["on the premises"], "synonyms": ["property", "grounds"], "antonyms": [], "example": "Smoking is strictly prohibited on the company's premises at all times."},
+    "inadvisable": {"phonetic": "/ˌɪnədˈvaɪzəbl/", "pos": "adj.", "meaning": "不明智的；不合適的", "phrases": ["highly inadvisable"], "synonyms": ["unwise", "imprudent"], "antonyms": ["advisable", "wise"], "example": "It is inadvisable to make a major financial decision without professional advice."},
+    "preliminary": {"phonetic": "/prɪˈlɪmɪneri/", "pos": "adj./n.", "meaning": "初步的；預備的", "phrases": ["preliminary results", "preliminary investigation"], "synonyms": ["initial", "introductory"], "antonyms": ["final", "concluding"], "example": "The preliminary results of the market research show a strong demand for our new product."},
+    "money order": {"phonetic": "/ˈmʌni ˈɔːrdər/", "pos": "n. phr.", "meaning": "匯票", "phrases": ["postal money order"], "synonyms": [], "antonyms": [], "example": "You can pay your utility bills by sending a money order through the mail."},
+    "counterfeit": {"phonetic": "/ˈkaʊntərfɪt/", "pos": "adj./n./v.", "meaning": "偽造的；贗品；偽造", "phrases": ["counterfeit money", "counterfeit goods"], "synonyms": ["fake", "forged"], "antonyms": ["genuine", "authentic"], "example": "The police seized thousands of dollars in counterfeit notes during the raid."},
+    "forge": {"phonetic": "/fɔːrdʒ/", "pos": "v./n.", "meaning": "偽造；鍛造；建立", "phrases": ["forge a signature", "forge a partnership"], "synonyms": ["counterfeit", "shape", "create"], "antonyms": [], "example": "The two companies are planning to forge a strong partnership to develop new technology."},
+    "clearance": {"phonetic": "/ˈklɪrəns/", "pos": "n.", "meaning": "清除；結關；出清；許可", "phrases": ["security clearance", "clearance sale"], "synonyms": ["authorization", "removal"], "antonyms": [], "example": "You need to obtain high-level security clearance to access this department."},
+    "textile": {"phonetic": "/ˈtekstaɪl/", "pos": "n./adj.", "meaning": "紡織品；織物的", "phrases": ["textile industry"], "synonyms": ["fabric", "cloth"], "antonyms": [], "example": "The local economy is heavily dependent on the production and export of textiles."},
+    "raffle": {"phonetic": "/ˈræfl/", "pos": "n./v.", "meaning": "抽獎活動；以抽獎售出", "phrases": ["charity raffle"], "synonyms": ["lottery"], "antonyms": [], "example": "The company held a raffle at the end-of-year party, with several expensive prizes up for grabs."},
+    "rapport": {"phonetic": "/ræˈpɔːr/", "pos": "n.", "meaning": "融洽關係；和諧", "phrases": ["build a rapport"], "synonyms": ["harmony", "connection", "bond"], "antonyms": ["discord"], "example": "It is important for sales representatives to build a good rapport with their clients."},
+    "notable": {"phonetic": "/ˈnoʊtəbl/", "pos": "adj.", "meaning": "顯著的；值得注意的", "phrases": ["notable achievement"], "synonyms": ["remarkable", "significant", "striking"], "antonyms": ["insignificant", "ordinary"], "example": "There has been a notable increase in the company's annual revenue this year."},
+    "hygiene": {"phonetic": "/ˈhaɪdʒiːn/", "pos": "n.", "meaning": "衛生", "phrases": ["personal hygiene", "food hygiene"], "synonyms": ["cleanliness", "sanitation"], "antonyms": ["filth"], "example": "The restaurant has strict regulations regarding food hygiene in its kitchen."},
+    "entail": {"phonetic": "/ɪnˈteɪl/", "pos": "v.", "meaning": "牽涉；意味著", "phrases": [], "synonyms": ["involve", "require", "necessitate"], "antonyms": [], "example": "The new project will entail a lot of travel to our international branch offices."},
+    "correspondent": {"phonetic": "/ˌkɔːrəˈspɑːndənt/", "pos": "n./adj.", "meaning": "通訊員；對等的人；通信的", "phrases": ["foreign correspondent"], "synonyms": ["reporter", "journalist"], "antonyms": [], "example": "The TV station sent a correspondent to the region to report on the latest developments."},
+    "forfeit": {"phonetic": "/ˈfɔːrfɪt/", "pos": "v./n./adj.", "meaning": "喪失；沒收；罰金", "phrases": ["forfeit a deposit"], "synonyms": ["lose", "surrender"], "antonyms": ["keep", "gain"], "example": "You will forfeit your deposit if you cancel the reservation less than twenty-four hours before."},
+    "refuel": {"phonetic": "/ˌriːˈfjuːəl/", "pos": "v.", "meaning": "補給燃料；加油", "phrases": ["refuel a plane"], "synonyms": ["gas up"], "antonyms": [], "example": "The truck stopped at the gas station to refuel before continuing its journey."},
+    "windshield": {"phonetic": "/ˈwɪndʃiːld/", "pos": "n.", "meaning": "擋風玻璃", "phrases": ["windshield wipers"], "synonyms": ["windscreen"], "antonyms": [], "example": "The driver had to replace the windshield after it was damaged by a stone."},
+    "lumber": {"phonetic": "/ˈlʌmbər/", "pos": "n./v.", "meaning": "木材；笨重地移動", "phrases": ["lumber yard"], "synonyms": ["timber", "wood"], "antonyms": [], "example": "The construction company ordered a large shipment of lumber for the new housing project."},
+    "sort": {"phonetic": "/sɔːrt/", "pos": "n./v.", "meaning": "種類；分類；整理", "phrases": ["sort out a problem", "all sorts of"], "synonyms": ["type", "kind", "classify"], "antonyms": [], "example": "Please sort the incoming mail into the appropriate department folders."},
+    "bother": {"phonetic": "/ˈbɑːðər/", "pos": "v./n.", "meaning": "打擾；煩惱；麻煩", "phrases": ["don't bother"], "synonyms": ["disturb", "annoy", "trouble"], "antonyms": ["please", "aid"], "example": "I'm sorry to bother you, but do you have a moment to answer a few questions?"},
+    "flyer": {"phonetic": "/ˈflaɪər/", "pos": "n.", "meaning": "傳單；飛行員", "phrases": ["distribute flyers", "frequent flyer"], "synonyms": ["leaflet", "handbill"], "antonyms": [], "example": "The company distributed thousands of flyers to promote its end-of-season sale."},
+    "headcount": {"phonetic": "/ˈhedkaʊnt/", "pos": "n.", "meaning": "人數統計；員額", "phrases": ["reduce headcount"], "synonyms": ["census", "tally"], "antonyms": [], "example": "The manager carried out a headcount to ensure everyone was safely out of the building."},
+    "mobile": {"phonetic": "/ˈmoʊbl/", "pos": "adj./n.", "meaning": "可移動的；手機", "phrases": ["mobile phone", "mobile apps"], "synonyms": ["portable", "movable"], "antonyms": ["fixed", "stationary"], "example": "Our technical support team is fully mobile and can visit clients at their offices."},
+    "acquaintance": {"phonetic": "/əˈkweɪntəns/", "pos": "n.", "meaning": "相識的人；了解", "phrases": ["business acquaintance"], "synonyms": ["contact", "knowledge"], "antonyms": ["stranger"], "example": "He met several business acquaintances at the international technology conference."},
+    "stuck": {"phonetic": "/stʌk/", "pos": "adj./v. (past)", "meaning": "卡住的；陷於困境的", "phrases": ["get stuck in traffic"], "synonyms": ["trapped", "jammed"], "antonyms": ["free", "loose"], "example": "I'm sorry I'm late; I got stuck in a massive traffic jam on the way here."},
+    "delegate": {"phonetic": "/ˈdelɪɡət/ (n.) /ˈdelɪɡeɪt/ (v.)", "pos": "n./v.", "meaning": "代表；授權；委派", "phrases": ["conference delegate", "delegate tasks"], "synonyms": ["representative", "assign"], "antonyms": [], "example": "A good manager should know how to delegate tasks effectively to their team members."},
+    "respective": {"phonetic": "/rɪˈspektɪv/", "pos": "adj.", "meaning": "各自的；個別的", "phrases": ["respective roles"], "synonyms": ["individual", "separate"], "antonyms": [], "example": "After the meeting, the department heads returned to their respective offices."},
+    "archive": {"phonetic": "/ˈɑːrkaɪv/", "pos": "n./v.", "meaning": "檔案館；檔案；歸檔", "phrases": ["company archives"], "synonyms": ["records", "store"], "antonyms": [], "example": "The company decided to archive all its old financial records from the 1990s."},
+    "ministry": {"phonetic": "/ˈmɪnɪstri/", "pos": "n.", "meaning": "部；內閣部", "phrases": ["Ministry of Finance", "Ministry of Health"], "synonyms": ["department"], "antonyms": [], "example": "The Ministry of Foreign Affairs is responsible for the country's international relations."},
+    "dial": {"phonetic": "/ˈdaɪəl/", "pos": "n./v.", "meaning": "儀表盤；撥號", "phrases": ["speed dial"], "synonyms": ["call"], "antonyms": [], "example": "You need to dial the country code before the phone number for international calls."},
+    "versatility": {"phonetic": "/ˌvɜːrsəˈtɪləti/", "pos": "n.", "meaning": "多才多藝；多用途", "phrases": [], "synonyms": ["flexibility", "adaptability"], "antonyms": ["rigidity"], "example": "The new device is popular due to its high level of versatility and ease of use."}
+}
+
+with open('data_gold.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+for item in data:
+    word = item['word']
+    if word in enriched_data_gold_22:
+        update_info = enriched_data_gold_22[word].copy()
+        if 'word' in update_info:
+            item['word'] = update_info.pop('word')
+        item.update(update_info)
+
+with open('data_gold.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print("成功精修金色等級第 1051-1100 個單字。")

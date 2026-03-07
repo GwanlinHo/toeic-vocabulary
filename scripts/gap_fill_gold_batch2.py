@@ -1,0 +1,77 @@
+import json
+
+# 金色等級補漏第 2 部分
+gap_fill_gold_2 = {
+    "eclipse": {"phonetic": "/ɪˈklɪps/", "pos": "n./v.", "meaning": "日蝕；月蝕；使失色", "phrases": ["solar eclipse", "total eclipse"], "synonyms": ["shadow", "obscure"], "antonyms": [], "example": "A total solar eclipse will be visible from parts of North America next year."},
+    "solar": {"phonetic": "/ˈsoʊlər/", "pos": "adj.", "meaning": "太陽的；日光的", "phrases": ["solar energy", "solar panel"], "synonyms": [], "antonyms": ["lunar"], "example": "The company is investing heavily in solar power to reduce its carbon footprint."},
+    "lunar": {"phonetic": "/ˈluːnər/", "pos": "adj.", "meaning": "月亮的；陰曆的", "phrases": ["lunar calendar", "lunar module"], "synonyms": [], "antonyms": ["solar"], "example": "The traditional festival is celebrated according to the lunar calendar every year."},
+    "warrior": {"phonetic": "/ˈwɔːriər/", "pos": "n.", "meaning": "戰士；勇士", "phrases": ["brave warrior"], "synonyms": ["soldier", "fighter"], "antonyms": [], "example": "The book tells the story of a legendary warrior who protected his kingdom."},
+    "astronomer": {"phonetic": "/əˈstrɑːnəmər/", "pos": "n.", "meaning": "天文學家", "phrases": ["amateur astronomer"], "synonyms": [], "antonyms": [], "example": "Astronomers use powerful telescopes to study distant stars and galaxies."},
+    "cruise ship": {"phonetic": "/kruːz ʃɪp/", "pos": "n. phr.", "meaning": "郵輪；遊輪", "phrases": ["luxury cruise ship"], "synonyms": [], "antonyms": [], "example": "The massive cruise ship can carry over three thousand passengers and crew members."},
+    "stateroom": {"phonetic": "/ˈsteɪtruːm/", "pos": "n.", "meaning": "特等客艙；(郵輪)套房", "phrases": ["luxury stateroom"], "synonyms": ["cabin"], "antonyms": [], "example": "We decided to book a luxury stateroom with a private balcony for our cruise."},
+    "porthole": {"phonetic": "/ˈpɔːrthoʊl/", "pos": "n.", "meaning": "舷窗；圓窗", "phrases": [], "synonyms": ["window"], "antonyms": [], "example": "I looked through the small porthole and saw the waves crashing against the ship."},
+    "a junior suite": {"phonetic": "/ə ˈdʒuːniər swiːt/", "pos": "n. phr.", "meaning": "小套房", "phrases": [], "synonyms": [], "antonyms": [], "example": "The hotel offered us a complimentary upgrade to a junior suite."},
+    "an executive suite": {"phonetic": "/ən ɪɡˈzekjətɪv swiːt/", "pos": "n. phr.", "meaning": "高級套房；行政套房", "phrases": [], "synonyms": [], "antonyms": [], "example": "The CEO stayed in an executive suite during the international business conference."},
+    "due": {"phonetic": "/duː/", "pos": "adj./n./adv.", "meaning": "預期的；應支付的；正當的", "phrases": ["due date", "in due course"], "synonyms": ["expected", "owed"], "antonyms": [], "example": "The final report is due on Friday afternoon, so please finish it on time."},
+    "cruise": {"phonetic": "/kruːz/", "pos": "n./v.", "meaning": "航遊；乘船遊覽", "phrases": ["go on a cruise"], "synonyms": ["voyage", "sail"], "antonyms": [], "example": "They are planning to go on a two-week cruise around the Mediterranean this summer."},
+    "launch": {"phonetic": "/lɔːntʃ/", "pos": "v./n.", "meaning": "發射；發動；開展；產品發布", "phrases": ["product launch", "launch a campaign"], "synonyms": ["initiate", "start", "release"], "antonyms": ["terminate", "close"], "example": "The company is preparing for the global launch of its new smartphone next month."},
+    "installment": {"phonetic": "/ɪnˈstɔːlmənt/", "pos": "n.", "meaning": "分期付款；(連載)一期", "phrases": ["monthly installments"], "synonyms": ["payment", "part"], "antonyms": [], "example": "You can pay for the new refrigerator in twelve equal monthly installments."},
+    "fairness": {"phonetic": "/ˈfernəs/", "pos": "n.", "meaning": "公平；公正", "phrases": ["sense of fairness"], "synonyms": ["equity", "justice"], "antonyms": ["unfairness", "bias"], "example": "The company is committed to maintaining fairness and transparency in its hiring process."},
+    "remainder": {"phonetic": "/rɪˈmeɪndər/", "pos": "n.", "meaning": "剩餘物；餘數", "phrases": ["the remainder of the year"], "synonyms": ["rest", "remnant"], "antonyms": [], "example": "The manager will be away for the remainder of the week on a business trip."},
+    "intimate": {"phonetic": "/ˈɪntɪmət/ (adj.) /ˈɪntɪmeɪt/ (v.)", "pos": "adj./v.", "meaning": "親密的；隱私的；暗示", "phrases": ["intimate relationship"], "synonyms": ["close", "private", "suggest"], "antonyms": ["distant", "formal"], "example": "The restaurant has a very cozy and intimate atmosphere, perfect for a romantic dinner."},
+    "out on the town": {"phonetic": "/aʊt ɑːn ðə taʊn/", "pos": "phr.", "meaning": "去城裡玩；社交活動", "phrases": [], "synonyms": ["socializing"], "antonyms": [], "example": "The team decided to go out on the town to celebrate the successful completion of the project."},
+    "establishment": {"phonetic": "/ɪˈstæblɪʃmənt/", "pos": "n.", "meaning": "機構；企業；建立", "phrases": ["business establishment"], "synonyms": ["institution", "firm", "founding"], "antonyms": [], "example": "The local government is offering grants to help new business establishments in the area."},
+    "greet": {"phonetic": "/ɡriːt/", "pos": "v.", "meaning": "問候；迎接", "phrases": ["greet a customer"], "synonyms": ["welcome", "hail"], "antonyms": ["ignore"], "example": "The receptionist will greet you and show you to the conference room when you arrive."},
+    "bid an farewell": {"word": "bid farewell", "phonetic": "/bɪd ˌferˈwel/", "pos": "v. phr.", "meaning": "告別；辭行", "phrases": [], "synonyms": ["say goodbye"], "antonyms": ["welcome"], "example": "We gathered in the lobby to bid farewell to the manager before he left for his new post."},
+    "specialty": {"phonetic": "/ˈspeʃəlti/", "pos": "n.", "meaning": "專長；特色菜", "phrases": ["local specialty"], "synonyms": ["expertise", "feature"], "antonyms": [], "example": "Seafood is a local specialty of this coastal region and is served in most restaurants."},
+    "Mediterranean": {"phonetic": "/ˌmedɪtəˈreɪniən/", "pos": "adj./n.", "meaning": "地中海的；地中海", "phrases": ["Mediterranean diet", "Mediterranean Sea"], "synonyms": [], "antonyms": [], "example": "They are planning a cruise around the Mediterranean for their summer vacation."},
+    "dim": {"phonetic": "/dɪm/", "pos": "adj./v.", "meaning": "昏暗的；模糊的；變暗", "phrases": ["dim light"], "synonyms": ["dark", "faint", "obscure"], "antonyms": ["bright", "clear"], "example": "The lights in the theater began to dim as the performance was about to start."},
+    "veterinarin": {"word": "veterinarian", "phonetic": "/ˌvetərɪˈneriən/", "pos": "n.", "meaning": "獸醫", "phrases": ["local veterinarian"], "synonyms": ["vet"], "antonyms": [], "example": "He decided to become a veterinarian because he has always loved working with animals."},
+    "be around the corner": {"phonetic": "/bi əˈraʊnd ðə ˈkɔːrnər/", "pos": "v. phr.", "meaning": "即將到來；就在附近", "phrases": [], "synonyms": ["imminent", "near"], "antonyms": [], "example": "The deadline for the project is just around the corner, so we need to work fast."},
+    "unheard-of": {"phonetic": "/ʌnˈhɜːrd əv/", "pos": "adj.", "meaning": "前所未有的；史無前例的", "phrases": [], "synonyms": ["unprecedented", "extraordinary"], "antonyms": ["common", "usual"], "example": "Such a high level of growth was unheard-of in the industry until last year."},
+    "identical": {"phonetic": "/aɪˈdentɪkl/", "pos": "adj.", "meaning": "完全相同的", "phrases": ["identical twins"], "synonyms": ["same", "equal"], "antonyms": ["different", "dissimilar"], "example": "The two models are virtually identical in terms of features and performance."},
+    "notepad": {"phonetic": "/ˈnoʊtpæd/", "pos": "n.", "meaning": "記事本", "phrases": [], "synonyms": ["notebook"], "antonyms": [], "example": "The manager always carries a small notepad to write down important ideas during meetings."},
+    "handbag": {"phonetic": "/ˈhændbæɡ/", "pos": "n.", "meaning": "手提包", "phrases": ["leather handbag"], "synonyms": ["purse"], "antonyms": [], "example": "The store sells a wide variety of high-quality leather handbags and accessories."},
+    "backpack": {"phonetic": "/ˈbækpæk/", "pos": "n./v.", "meaning": "背包；背負", "phrases": ["go backpacking"], "synonyms": ["knapsack", "rucksack"], "antonyms": [], "example": "The student carried all her heavy textbooks in a sturdy black backpack."},
+    "be cleared to V": {"phonetic": "/bi klɪrd tuː/", "pos": "v. phr.", "meaning": "獲得許可(做某事)", "phrases": [], "synonyms": ["be authorized to"], "antonyms": [], "example": "The pilot was cleared to take off as soon as the runway was free."},
+    "take-off": {"phonetic": "/ˈteɪk ɔːf/", "pos": "n./v.", "meaning": "起飛；脫下；模仿", "phrases": ["smooth take-off"], "synonyms": ["departure", "ascent"], "antonyms": ["landing"], "example": "Please ensure your seatbelt is fastened before the plane prepares for take-off."},
+    "superstore": {"phonetic": "/ˈsuːpərstɔːr/", "pos": "n.", "meaning": "超級商店；大型量販店", "phrases": ["electronics superstore"], "synonyms": ["megastore", "hypermarket"], "antonyms": [], "example": "The new electronics superstore in the city center has a huge selection of products."},
+    "be under construction": {"phonetic": "/bi ˈʌndər kənˈstrʌkʃn/", "pos": "v. phr.", "meaning": "正在施工中", "phrases": [], "synonyms": ["being built"], "antonyms": [], "example": "The new research center is currently under construction and will be finished next year."},
+    "a security guard": {"phonetic": "/ə sɪˈkjʊrəti ɡɑːrd/", "pos": "n. phr.", "meaning": "警衛；保安人員", "phrases": [], "synonyms": ["watchman"], "antonyms": [], "example": "A security guard is on duty at the main entrance of the building twenty-four hours a day."},
+    "administrator": {"phonetic": "/ədˈmɪnɪstreɪtər/", "pos": "n.", "meaning": "管理員；行政官", "phrases": ["system administrator"], "synonyms": ["manager", "executive"], "antonyms": [], "example": "The network administrator is working to resolve the server issues as quickly as possible."},
+    "ground-breaking ceremony": {"phonetic": "/ˈɡraʊndˌbreɪkɪŋ ˈserəmoʊni/", "pos": "n. phr.", "meaning": "動工儀式；開工典禮", "phrases": [], "synonyms": [], "antonyms": [], "example": "The mayor attended the ground-breaking ceremony for the new public library today."},
+    "showroom": {"phonetic": "/ˈʃoʊruːm/", "pos": "n.", "meaning": "展示間", "phrases": ["car showroom"], "synonyms": ["display room"], "antonyms": [], "example": "The furniture company has a large showroom where customers can see its latest designs."},
+    "no later than+時間": {"word": "no later than", "phonetic": "/noʊ ˈleɪtər ðæn/", "pos": "phr.", "meaning": "不遲於...", "phrases": [], "synonyms": ["by"], "antonyms": [], "example": "Please submit your monthly expense reports no later than Friday afternoon."},
+    "The authorities": {"phonetic": "/ðə əˈθɔːrətiz/", "pos": "n. phr.", "meaning": "當局；官方(複數)", "phrases": ["local authorities"], "synonyms": ["government", "officials"], "antonyms": [], "example": "The authorities are investigating the cause of the sudden power failure in the city center."},
+    "navigate": {"phonetic": "/ˈnævɪɡeɪt/", "pos": "v.", "meaning": "導航；駕駛；操縱", "phrases": ["navigate a ship", "navigate a website"], "synonyms": ["steer", "guide", "direct"], "antonyms": [], "example": "The new software includes an easy-to-use interface that helps users navigate the system."},
+    "unforeseen": {"phonetic": "/ˌʌnfɔːrˈsiːn/", "pos": "adj.", "meaning": "未預料到的；意外的", "phrases": ["unforeseen circumstances"], "synonyms": ["unexpected", "unpredicted"], "antonyms": ["foreseen", "expected"], "example": "The project was delayed due to several unforeseen technical challenges."},
+    "place an order for sth": {"phonetic": "/pleɪs ən ˈɔːrdər fər/", "pos": "v. phr.", "meaning": "下訂單買...", "phrases": [], "synonyms": ["order"], "antonyms": [], "example": "We would like to place an order for five hundred units of your new office chairs."},
+    "draw up a contract": {"phonetic": "/drɔː ʌp ə ˈkɑːntrækt/", "pos": "v. phr.", "meaning": "擬定合約", "phrases": [], "synonyms": ["formulate a contract"], "antonyms": [], "example": "The legal department is working to draw up a contract for the new partnership."},
+    "sign a contract": {"phonetic": "/saɪn ə ˈkɑːntrækt/", "pos": "v. phr.", "meaning": "簽署合約", "phrases": [], "synonyms": [], "antonyms": [], "example": "The two companies are expected to sign a contract early next month after the negotiations."},
+    "unfold": {"phonetic": "/ʌnˈfoʊld/", "pos": "v.", "meaning": "展開；顯露", "phrases": ["unfold a map"], "synonyms": ["open", "reveal", "develop"], "antonyms": ["fold", "conceal"], "example": "We watched the dramatic events unfold on live television as they happened."},
+    "timely": {"phonetic": "/ˈtaɪmli/", "pos": "adj./adv.", "meaning": "及時的；適時的", "phrases": ["timely manner"], "synonyms": ["opportune", "well-timed"], "antonyms": ["untimely", "late"], "example": "We would like to thank you for your timely response to our urgent inquiry."},
+    "logistical": {"phonetic": "/ləˈdʒɪstɪkl/", "pos": "adj.", "meaning": "物流的；後勤的", "phrases": ["logistical support"], "synonyms": ["distributional"], "antonyms": [], "example": "The company faced several logistical challenges when expanding its operations into Asia."},
+    "take sb to court": {"phonetic": "/teɪk ˈsʌmbədi tuː kɔːrt/", "pos": "v. phr.", "meaning": "控告某人；訴諸法律", "phrases": [], "synonyms": ["sue", "litigate"], "antonyms": [], "example": "The company decided to take its former partner to court for trademark infringement."},
+    "under sb's guidance": {"phonetic": "/ˈʌndər ˈsʌmbədiz ˈɡaɪdns/", "pos": "phr.", "meaning": "在某人的指導下", "phrases": [], "synonyms": ["under sb's supervision"], "antonyms": [], "example": "The project was completed successfully under the guidance of the senior manager."},
+    "chest": {"phonetic": "/tʃest/", "pos": "n.", "meaning": "胸膛；大箱子", "phrases": ["chest pain", "treasure chest"], "synonyms": ["thorax", "trunk", "box"], "antonyms": [], "example": "The old office records were stored in a large wooden chest in the basement."},
+    "pail": {"phonetic": "/peɪl/", "pos": "n.", "meaning": "桶；提桶", "phrases": ["a pail of water"], "synonyms": ["bucket"], "antonyms": [], "example": "The worker used a large plastic pail to carry the cleaning solution."},
+    "assorted": {"phonetic": "/əˈsɔːrtɪd/", "pos": "adj.", "meaning": "各式各樣的；混雜的", "phrases": ["assorted chocolates"], "synonyms": ["various", "varied", "diverse"], "antonyms": ["uniform"], "example": "The box contains an assorted selection of office supplies, including pens, clips, and paper."},
+    "inner": {"phonetic": "/ˈɪnər/", "pos": "adj.", "meaning": "內部的；內心的", "phrases": ["inner circle", "inner city"], "synonyms": ["internal", "inside"], "antonyms": ["outer", "external"], "example": "The machine features a complex inner mechanism that requires regular maintenance."},
+    "inner tube": {"phonetic": "/ˈɪnər tuːb/", "pos": "n. phr.", "meaning": "內胎", "phrases": ["bicycle inner tube"], "synonyms": [], "antonyms": [], "example": "He had to replace the inner tube of his bicycle tire after it got a puncture."}
+}
+
+with open('data_gold.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+for item in data:
+    word = item['word']
+    if word in gap_fill_gold_2:
+        update_info = gap_fill_gold_2[word].copy()
+        if 'word' in update_info:
+            item['word'] = update_info.pop('word')
+        item.update(update_info)
+
+with open('data_gold.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print("完成金色等級補漏第 2 部分 (Eclipse 到 Inner tube)。")

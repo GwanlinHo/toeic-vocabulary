@@ -1,0 +1,4198 @@
+[
+  {
+    "word": "postage",
+    "phonetic": "/ˈpoʊstɪdʒ/",
+    "pos": "n.",
+    "meaning": "郵資",
+    "level": "blue",
+    "phrases": [
+      "postage stamp",
+      "postage paid"
+    ],
+    "synonyms": [
+      "mailing cost"
+    ],
+    "antonyms": [],
+    "example": "Please make sure you have the correct postage on the envelope before mailing it."
+  },
+  {
+    "word": "prescription",
+    "phonetic": "/prɪˈskrɪpʃn/",
+    "pos": "n.",
+    "meaning": "處方箋",
+    "level": "blue",
+    "phrases": [
+      "prescription drug",
+      "fill a prescription"
+    ],
+    "synonyms": [
+      "instruction",
+      "remedy"
+    ],
+    "antonyms": [],
+    "example": "The doctor wrote a prescription for some antibiotics to treat the infection."
+  },
+  {
+    "word": "press",
+    "phonetic": "/pres/",
+    "pos": "n./v.",
+    "meaning": "媒體；新聞界；按",
+    "level": "blue",
+    "phrases": [
+      "press conference",
+      "press release"
+    ],
+    "synonyms": [
+      "media",
+      "journalism"
+    ],
+    "antonyms": [],
+    "example": "The company held a press conference to announce its new product line."
+  },
+  {
+    "word": "promotional",
+    "phonetic": "/prəˈmoʊʃənl/",
+    "pos": "adj.",
+    "meaning": "促銷的；宣傳的",
+    "level": "blue",
+    "phrases": [
+      "promotional material",
+      "promotional campaign"
+    ],
+    "synonyms": [
+      "advertising"
+    ],
+    "antonyms": [],
+    "example": "We are distributing promotional leaflets in the city center to attract more customers."
+  },
+  {
+    "word": "publication",
+    "phonetic": "/ˌpʌblɪˈkeɪʃn/",
+    "pos": "n.",
+    "meaning": "出版；刊物",
+    "level": "blue",
+    "phrases": [
+      "daily publication",
+      "scientific publication"
+    ],
+    "synonyms": [
+      "issue",
+      "printing"
+    ],
+    "antonyms": [],
+    "example": "The new book is scheduled for publication in early September."
+  },
+  {
+    "word": "queue",
+    "phonetic": "/kjuː/",
+    "pos": "n./v.",
+    "meaning": "隊列；排隊",
+    "level": "blue",
+    "phrases": [
+      "stand in a queue",
+      "jump the queue"
+    ],
+    "synonyms": [
+      "line"
+    ],
+    "antonyms": [],
+    "example": "There was a long queue of people waiting to buy tickets for the concert."
+  },
+  {
+    "word": "railroad",
+    "phonetic": "/ˈreɪlroʊd/",
+    "pos": "n.",
+    "meaning": "鐵路",
+    "level": "blue",
+    "phrases": [
+      "railroad station",
+      "railroad track"
+    ],
+    "synonyms": [
+      "railway"
+    ],
+    "antonyms": [],
+    "example": "The new railroad line will connect the two cities and reduce travel time."
+  },
+  {
+    "word": "ranch",
+    "phonetic": "/ræntʃ/",
+    "pos": "n.",
+    "meaning": "大牧場；農場",
+    "level": "blue",
+    "phrases": [
+      "cattle ranch",
+      "guest ranch"
+    ],
+    "synonyms": [
+      "farm",
+      "estate"
+    ],
+    "antonyms": [],
+    "example": "He spent his summer working on a cattle ranch in the countryside."
+  },
+  {
+    "word": "residence",
+    "phonetic": "/ˈrezɪdəns/",
+    "pos": "n.",
+    "meaning": "住宅；居住權",
+    "level": "blue",
+    "phrases": [
+      "permanent residence",
+      "official residence"
+    ],
+    "synonyms": [
+      "home",
+      "dwelling"
+    ],
+    "antonyms": [],
+    "example": "The ambassador's official residence is located near the city center."
+  },
+  {
+    "word": "resident",
+    "phonetic": "/ˈrezɪdənt/",
+    "pos": "n.",
+    "meaning": "居民",
+    "level": "blue",
+    "phrases": [
+      "local resident",
+      "permanent resident"
+    ],
+    "synonyms": [
+      "inhabitant",
+      "citizen"
+    ],
+    "antonyms": [],
+    "example": "Local residents have complained about the noise from the nearby construction site."
+  },
+  {
+    "word": "semester",
+    "phonetic": "/sɪˈmestər/",
+    "pos": "n.",
+    "meaning": "學期",
+    "level": "blue",
+    "phrases": [
+      "spring semester",
+      "fall semester"
+    ],
+    "synonyms": [
+      "term"
+    ],
+    "antonyms": [],
+    "example": "The final exams will take place at the end of the fall semester."
+  },
+  {
+    "word": "sneakers",
+    "phonetic": "/ˈsniːkərz/",
+    "pos": "n.",
+    "meaning": "運動鞋",
+    "level": "blue",
+    "phrases": [
+      "a pair of sneakers"
+    ],
+    "synonyms": [
+      "training shoes",
+      "tennis shoes"
+    ],
+    "antonyms": [],
+    "example": "You should wear comfortable sneakers if you plan to go for a long walk."
+  },
+  {
+    "word": "sick in mind and body",
+    "phonetic": "/sɪk ɪn maɪnd ænd ˈbɑːdi/",
+    "pos": "adj.",
+    "meaning": "身心疲憊",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "exhausted"
+    ],
+    "antonyms": [
+      "healthy"
+    ],
+    "example": "After working long hours for months, he felt sick in mind and body."
+  },
+  {
+    "word": "society",
+    "phonetic": "/səˈsaɪəti/",
+    "pos": "n.",
+    "meaning": "社會；協會",
+    "level": "blue",
+    "phrases": [
+      "modern society",
+      "professional society"
+    ],
+    "synonyms": [
+      "community",
+      "association"
+    ],
+    "antonyms": [],
+    "example": "Technology has had a profound impact on all aspects of modern society."
+  },
+  {
+    "word": "square",
+    "phonetic": "/skwer/",
+    "pos": "n./adj.",
+    "meaning": "廣場；正方形的",
+    "level": "blue",
+    "phrases": [
+      "town square",
+      "square meter"
+    ],
+    "synonyms": [
+      "plaza"
+    ],
+    "antonyms": [],
+    "example": "The city's main square is a popular gathering place for locals and tourists."
+  },
+  {
+    "word": "stable",
+    "phonetic": "/ˈsteɪbl/",
+    "pos": "adj./n.",
+    "meaning": "穩定的；馬廄",
+    "level": "blue",
+    "phrases": [
+      "stable condition",
+      "stable price"
+    ],
+    "synonyms": [
+      "steady",
+      "firm"
+    ],
+    "antonyms": [
+      "unstable",
+      "shaky"
+    ],
+    "example": "The company's financial situation has remained stable over the last few years."
+  },
+  {
+    "word": "suit",
+    "phonetic": "/suːt/",
+    "pos": "n./v.",
+    "meaning": "西裝；適合",
+    "level": "blue",
+    "phrases": [
+      "business suit",
+      "lawsuit"
+    ],
+    "synonyms": [
+      "outfit",
+      "fit"
+    ],
+    "antonyms": [],
+    "example": "The candidate wore a dark blue suit for his job interview."
+  },
+  {
+    "word": "suitcase",
+    "phonetic": "/ˈsuːtkeɪs/",
+    "pos": "n.",
+    "meaning": "手提箱；行李箱",
+    "level": "blue",
+    "phrases": [
+      "pack a suitcase",
+      "heavy suitcase"
+    ],
+    "synonyms": [
+      "bag",
+      "luggage"
+    ],
+    "antonyms": [],
+    "example": "She packed her suitcase and headed to the airport for her vacation."
+  },
+  {
+    "word": "tailor",
+    "phonetic": "/ˈteɪlər/",
+    "pos": "n./v.",
+    "meaning": "裁縫；量身打造",
+    "level": "blue",
+    "phrases": [
+      "tailor-made",
+      "professional tailor"
+    ],
+    "synonyms": [
+      "adjust",
+      "customize"
+    ],
+    "antonyms": [],
+    "example": "The training program was tailored to meet the specific needs of our employees."
+  },
+  {
+    "word": "terminal",
+    "phonetic": "/ˈtɜːrmɪnl/",
+    "pos": "n./adj.",
+    "meaning": "航站；終端機；晚期的",
+    "level": "blue",
+    "phrases": [
+      "airport terminal",
+      "computer terminal"
+    ],
+    "synonyms": [
+      "station",
+      "end"
+    ],
+    "antonyms": [],
+    "example": "Please proceed to terminal two for all international flight departures."
+  },
+  {
+    "word": "tenant",
+    "phonetic": "/ˈtenənt/",
+    "pos": "n.",
+    "meaning": "租戶；房客",
+    "level": "blue",
+    "phrases": [
+      "new tenant",
+      "sitting tenant"
+    ],
+    "synonyms": [
+      "lessee",
+      "occupant"
+    ],
+    "antonyms": [
+      "landlord"
+    ],
+    "example": "The landlord is looking for a new tenant to rent the vacant apartment."
+  },
+  {
+    "word": "toll",
+    "phonetic": "/toʊl/",
+    "pos": "n.",
+    "meaning": "通行費；代價",
+    "level": "blue",
+    "phrases": [
+      "toll road",
+      "toll bridge"
+    ],
+    "synonyms": [
+      "fee",
+      "charge"
+    ],
+    "antonyms": [],
+    "example": "You have to pay a toll to cross the bridge into the city center."
+  },
+  {
+    "word": "tour",
+    "phonetic": "/tʊr/",
+    "pos": "n./v.",
+    "meaning": "導覽；旅遊",
+    "level": "blue",
+    "phrases": [
+      "guided tour",
+      "business tour"
+    ],
+    "synonyms": [
+      "trip",
+      "excursion"
+    ],
+    "antonyms": [],
+    "example": "We took a guided tour of the factory to see how the products are made."
+  },
+  {
+    "word": "track",
+    "phonetic": "/træk/",
+    "pos": "n./v.",
+    "meaning": "軌道；追蹤",
+    "level": "blue",
+    "phrases": [
+      "keep track of",
+      "on track"
+    ],
+    "synonyms": [
+      "path",
+      "monitor"
+    ],
+    "antonyms": [],
+    "example": "It's important to keep track of all your business expenses for tax purposes."
+  },
+  {
+    "word": "traditional",
+    "phonetic": "/trəˈdɪʃənl/",
+    "pos": "adj.",
+    "meaning": "傳統的",
+    "level": "blue",
+    "phrases": [
+      "traditional values",
+      "traditional method"
+    ],
+    "synonyms": [
+      "conventional",
+      "customary"
+    ],
+    "antonyms": [
+      "modern",
+      "innovative"
+    ],
+    "example": "The company still uses some traditional methods of production alongside new technology."
+  },
+  {
+    "word": "unsanitary",
+    "phonetic": "/ʌnˈsænɪteri/",
+    "pos": "adj.",
+    "meaning": "不衛生的",
+    "level": "blue",
+    "phrases": [
+      "unsanitary conditions"
+    ],
+    "synonyms": [
+      "unhygienic",
+      "dirty"
+    ],
+    "antonyms": [
+      "sanitary",
+      "clean"
+    ],
+    "example": "The restaurant was closed down due to its extremely unsanitary kitchen conditions."
+  },
+  {
+    "word": "vaccinate",
+    "phonetic": "/ˈvæksɪneɪt/",
+    "pos": "v.",
+    "meaning": "接種疫苗",
+    "level": "blue",
+    "phrases": [
+      "get vaccinated"
+    ],
+    "synonyms": [
+      "immunize"
+    ],
+    "antonyms": [],
+    "example": "It is recommended that all international travelers be vaccinated against certain diseases."
+  },
+  {
+    "word": "vegetarian",
+    "phonetic": "/ˌvedʒəˈteriən/",
+    "pos": "n./adj.",
+    "meaning": "素食者；素食的",
+    "level": "blue",
+    "phrases": [
+      "vegetarian meal",
+      "strict vegetarian"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "The restaurant offers a variety of delicious vegetarian dishes on its menu."
+  },
+  {
+    "word": "vehicle",
+    "phonetic": "/ˈviːəkl/",
+    "pos": "n.",
+    "meaning": "車輛；工具",
+    "level": "blue",
+    "phrases": [
+      "motor vehicle",
+      "commercial vehicle"
+    ],
+    "synonyms": [
+      "car",
+      "conveyance"
+    ],
+    "antonyms": [],
+    "example": "All commercial vehicles must be registered with the local transportation authority."
+  },
+  {
+    "word": "vending machine",
+    "phonetic": "/ˈvendɪŋ məˈʃiːn/",
+    "pos": "n.",
+    "meaning": "販賣機",
+    "level": "blue",
+    "phrases": [
+      "beverage vending machine"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "You can get cold drinks and snacks from the vending machine in the lobby."
+  },
+  {
+    "word": "voyage",
+    "phonetic": "/ˈvɔɪɪdʒ/",
+    "pos": "n./v.",
+    "meaning": "航程；旅程",
+    "level": "blue",
+    "phrases": [
+      "maiden voyage",
+      "sea voyage"
+    ],
+    "synonyms": [
+      "journey",
+      "trip"
+    ],
+    "antonyms": [],
+    "example": "The ship is preparing for its maiden voyage across the Atlantic Ocean."
+  },
+  {
+    "word": "spy",
+    "phonetic": "/spaɪ/",
+    "pos": "n./v.",
+    "meaning": "間諜；暗中監視",
+    "level": "blue",
+    "phrases": [
+      "industrial spy",
+      "spy on"
+    ],
+    "synonyms": [
+      "secret agent",
+      "monitor"
+    ],
+    "antonyms": [],
+    "example": "The company was accused of hiring an industrial spy to steal its competitor's secrets."
+  },
+  {
+    "word": "stack",
+    "phonetic": "/stæk/",
+    "pos": "n./v.",
+    "meaning": "疊；堆",
+    "level": "blue",
+    "phrases": [
+      "a stack of paper",
+      "stack the boxes"
+    ],
+    "synonyms": [
+      "pile",
+      "heap"
+    ],
+    "antonyms": [],
+    "example": "Please place the new files in the stack on the corner of my desk."
+  },
+  {
+    "word": "strive",
+    "phonetic": "/straɪv/",
+    "pos": "v.",
+    "meaning": "努力；奮鬥",
+    "level": "blue",
+    "phrases": [
+      "strive for success",
+      "strive to do"
+    ],
+    "synonyms": [
+      "endeavor",
+      "attempt"
+    ],
+    "antonyms": [
+      "give up"
+    ],
+    "example": "Our company strives to provide the highest quality of service to our customers."
+  },
+  {
+    "word": "structure",
+    "phonetic": "/ˈstrʌktʃər/",
+    "pos": "n./v.",
+    "meaning": "結構；建築物",
+    "level": "blue",
+    "phrases": [
+      "organizational structure",
+      "social structure"
+    ],
+    "synonyms": [
+      "framework",
+      "organization"
+    ],
+    "antonyms": [],
+    "example": "The company is planning to change its organizational structure to improve efficiency."
+  },
+  {
+    "word": "substantiate",
+    "phonetic": "/səbˈstænʃieɪt/",
+    "pos": "v.",
+    "meaning": "證實",
+    "level": "blue",
+    "phrases": [
+      "substantiate a claim",
+      "fully substantiate"
+    ],
+    "synonyms": [
+      "verify",
+      "confirm"
+    ],
+    "antonyms": [
+      "disprove",
+      "refute"
+    ],
+    "example": "You need to provide some evidence to substantiate your claims against the manager."
+  },
+  {
+    "word": "support",
+    "phonetic": "/səˈpɔːrt/",
+    "pos": "v./n.",
+    "meaning": "支持；擁護",
+    "level": "blue",
+    "phrases": [
+      "technical support",
+      "customer support"
+    ],
+    "synonyms": [
+      "assist",
+      "aid"
+    ],
+    "antonyms": [
+      "oppose",
+      "hinder"
+    ],
+    "example": "Please contact our technical support team if you have any problems with the software."
+  },
+  {
+    "word": "suppose",
+    "phonetic": "/səˈpoʊz/",
+    "pos": "v.",
+    "meaning": "猜想；假設",
+    "level": "blue",
+    "phrases": [
+      "be supposed to",
+      "supposedly"
+    ],
+    "synonyms": [
+      "assume",
+      "think"
+    ],
+    "antonyms": [],
+    "example": "I suppose that the meeting will take place in the conference room as usual."
+  },
+  {
+    "word": "surmize",
+    "phonetic": "/sərˈmaɪz/",
+    "pos": "v./n.",
+    "meaning": "推測；猜度",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "guess",
+      "conjecture"
+    ],
+    "antonyms": [],
+    "example": "We can only surmize that the drop in sales was due to the recent price increase."
+  },
+  {
+    "word": "survey",
+    "phonetic": "/ˈsɜːrveɪ/",
+    "pos": "n./v.",
+    "meaning": "調查；測量",
+    "level": "blue",
+    "phrases": [
+      "customer survey",
+      "conduct a survey"
+    ],
+    "synonyms": [
+      "poll",
+      "study"
+    ],
+    "antonyms": [],
+    "example": "According to a recent customer survey, most people are happy with our new products."
+  },
+  {
+    "word": "survive",
+    "phonetic": "/sərˈvaɪv/",
+    "pos": "v.",
+    "meaning": "倖存；活下來",
+    "level": "blue",
+    "phrases": [
+      "survive the crisis",
+      "survival rate"
+    ],
+    "synonyms": [
+      "endure",
+      "persist"
+    ],
+    "antonyms": [
+      "die",
+      "perish"
+    ],
+    "example": "Few businesses were able to survive the severe economic crisis last year."
+  },
+  {
+    "word": "sustain",
+    "phonetic": "/səˈsteɪn/",
+    "pos": "v.",
+    "meaning": "維持；遭受(損失)",
+    "level": "blue",
+    "phrases": [
+      "sustain growth",
+      "sustain a loss"
+    ],
+    "synonyms": [
+      "maintain",
+      "undergo"
+    ],
+    "antonyms": [
+      "end",
+      "stop"
+    ],
+    "example": "The company has managed to sustain a high level of growth over the last five years."
+  },
+  {
+    "word": "swap",
+    "phonetic": "/swɑːp/",
+    "pos": "v./n.",
+    "meaning": "交換",
+    "level": "blue",
+    "phrases": [
+      "swap ideas",
+      "swap places"
+    ],
+    "synonyms": [
+      "exchange",
+      "trade"
+    ],
+    "antonyms": [],
+    "example": "I'd like to swap my morning shift for your afternoon shift next Tuesday."
+  },
+  {
+    "word": "sway",
+    "phonetic": "/sweɪ/",
+    "pos": "v./n.",
+    "meaning": "搖擺；影響",
+    "level": "blue",
+    "phrases": [
+      "hold sway",
+      "sway public opinion"
+    ],
+    "synonyms": [
+      "influence",
+      "persuade"
+    ],
+    "antonyms": [],
+    "example": "The manager's persuasive arguments were able to sway the board's decision."
+  },
+  {
+    "word": "temper",
+    "phonetic": "/ˈtempər/",
+    "pos": "n./v.",
+    "meaning": "脾氣；調和",
+    "level": "blue",
+    "phrases": [
+      "lose one's temper",
+      "bad temper"
+    ],
+    "synonyms": [
+      "mood",
+      "disposition"
+    ],
+    "antonyms": [],
+    "example": "It is important to keep your temper even when dealing with difficult customers."
+  },
+  {
+    "word": "testify",
+    "phonetic": "/ˈtestɪfaɪ/",
+    "pos": "v.",
+    "meaning": "作證；證實",
+    "level": "blue",
+    "phrases": [
+      "testify against",
+      "testify to"
+    ],
+    "synonyms": [
+      "bear witness",
+      "certify"
+    ],
+    "antonyms": [],
+    "example": "Several witnesses were called to testify during the court case last week."
+  },
+  {
+    "word": "thrive",
+    "phonetic": "/θraɪv/",
+    "pos": "v.",
+    "meaning": "繁榮；興旺",
+    "level": "blue",
+    "phrases": [
+      "thrive on competition",
+      "thriving business"
+    ],
+    "synonyms": [
+      "prosper",
+      "flourish"
+    ],
+    "antonyms": [
+      "fail",
+      "decline"
+    ],
+    "example": "The local tourism industry has continued to thrive despite the economic downturn."
+  },
+  {
+    "word": "transcend",
+    "phonetic": "/trænˈsend/",
+    "pos": "v.",
+    "meaning": "超越；凌駕",
+    "level": "blue",
+    "phrases": [
+      "transcend boundaries",
+      "transcend limitations"
+    ],
+    "synonyms": [
+      "surpass",
+      "exceed"
+    ],
+    "antonyms": [],
+    "example": "His innovative ideas transcend the traditional boundaries of the industry."
+  },
+  {
+    "word": "underline",
+    "phonetic": "/ˌʌndərˈlaɪn/",
+    "pos": "v.",
+    "meaning": "畫底線；強調",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "emphasize",
+      "highlight"
+    ],
+    "antonyms": [],
+    "example": "The manager wanted to underline the importance of meeting the project deadline."
+  },
+  {
+    "word": "unveil",
+    "phonetic": "/ˌʌnˈveɪl/",
+    "pos": "v.",
+    "meaning": "揭幕；公開",
+    "level": "blue",
+    "phrases": [
+      "unveil a statue",
+      "unveil a plan"
+    ],
+    "synonyms": [
+      "reveal",
+      "disclose"
+    ],
+    "antonyms": [
+      "hide",
+      "conceal"
+    ],
+    "example": "The company is planning to unveil its new marketing strategy next month."
+  },
+  {
+    "word": "vacillate",
+    "phonetic": "/ˈvæsəleɪt/",
+    "pos": "v.",
+    "meaning": "動搖不定；猶豫",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "hesitate",
+      "waver"
+    ],
+    "antonyms": [],
+    "example": "He tended to vacillate between the two options before making a final decision."
+  },
+  {
+    "word": "validate",
+    "phonetic": "/ˈvælɪdeɪt/",
+    "pos": "v.",
+    "meaning": "證實；使有效",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "verify",
+      "confirm"
+    ],
+    "antonyms": [
+      "invalidate"
+    ],
+    "example": "The data from the survey helped to validate the marketing team's initial assumptions."
+  },
+  {
+    "word": "veil",
+    "phonetic": "/veɪl/",
+    "pos": "n./v.",
+    "meaning": "遮蓋；面紗",
+    "level": "blue",
+    "phrases": [
+      "under a veil of secrecy"
+    ],
+    "synonyms": [
+      "cover",
+      "mask"
+    ],
+    "antonyms": [
+      "reveal"
+    ],
+    "example": "The new product design was kept under a veil of secrecy until the official launch."
+  },
+  {
+    "word": "verify",
+    "phonetic": "/ˈverɪfaɪ/",
+    "pos": "v.",
+    "meaning": "證實；驗證",
+    "level": "blue",
+    "phrases": [
+      "verify account"
+    ],
+    "synonyms": [
+      "confirm",
+      "check"
+    ],
+    "antonyms": [],
+    "example": "Please verify your account details before submitting the online application form."
+  },
+  {
+    "word": "vilify",
+    "phonetic": "/ˈvɪlɪfaɪ/",
+    "pos": "v.",
+    "meaning": "誹謗；詆毀",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "slander",
+      "defame"
+    ],
+    "antonyms": [
+      "praise",
+      "honor"
+    ],
+    "example": "The politician was vilified by the press for his controversial remarks."
+  },
+  {
+    "word": "withstand",
+    "phonetic": "/wɪðˈstænd/",
+    "pos": "v.",
+    "meaning": "抵擋；經受住",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "endure",
+      "resist"
+    ],
+    "antonyms": [
+      "surrender",
+      "yield"
+    ],
+    "example": "The new building was designed to withstand even the most severe earthquakes."
+  },
+  {
+    "word": "wrench",
+    "phonetic": "/rentʃ/",
+    "pos": "v./n.",
+    "meaning": "扭轉；猛扭",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "twist",
+      "jerk"
+    ],
+    "antonyms": [],
+    "example": "He managed to wrench the door open and escape from the burning building."
+  },
+  {
+    "word": "adamant",
+    "phonetic": "/ˈædəmənt/",
+    "pos": "adj.",
+    "meaning": "堅定不移的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "stubborn",
+      "unyielding"
+    ],
+    "antonyms": [
+      "flexible"
+    ],
+    "example": "The manager was adamant that the project must be completed by Friday."
+  },
+  {
+    "word": "adequate",
+    "phonetic": "/ˈædəkwət/",
+    "pos": "adj.",
+    "meaning": "足夠的；適當的",
+    "level": "blue",
+    "phrases": [
+      "adequate resources"
+    ],
+    "synonyms": [
+      "sufficient",
+      "enough"
+    ],
+    "antonyms": [
+      "inadequate"
+    ],
+    "example": "We need to ensure that we have adequate resources to complete the project on time."
+  },
+  {
+    "word": "admirable",
+    "phonetic": "/ˈædmərəbl/",
+    "pos": "adj.",
+    "meaning": "令人欽佩的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "praiseworthy",
+      "commendable"
+    ],
+    "antonyms": [],
+    "example": "Her dedication to her work is truly admirable and inspires the whole team."
+  },
+  {
+    "word": "adroit",
+    "phonetic": "/əˈdrɔɪt/",
+    "pos": "adj.",
+    "meaning": "敏捷的；熟練的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "skillful",
+      "expert"
+    ],
+    "antonyms": [
+      "clumsy"
+    ],
+    "example": "The negotiator was adroit at finding common ground between the two parties."
+  },
+  {
+    "word": "ahead",
+    "phonetic": "/əˈhed/",
+    "pos": "adv./adj.",
+    "meaning": "領先；在前面",
+    "level": "blue",
+    "phrases": [
+      "ahead of time",
+      "straight ahead"
+    ],
+    "synonyms": [
+      "forward"
+    ],
+    "antonyms": [
+      "behind"
+    ],
+    "example": "The company is currently ahead of its competitors in terms of technological innovation."
+  },
+  {
+    "word": "alive",
+    "phonetic": "/əˈlaɪv/",
+    "pos": "adj.",
+    "meaning": "活著的；有活力的",
+    "level": "blue",
+    "phrases": [
+      "come alive"
+    ],
+    "synonyms": [
+      "living",
+      "animated"
+    ],
+    "antonyms": [
+      "dead"
+    ],
+    "example": "The city center comes alive at night with many restaurants and entertainment venues."
+  },
+  {
+    "word": "ambiguous",
+    "phonetic": "/æmˈbɪɡjuəs/",
+    "pos": "adj.",
+    "meaning": "模稜兩可的",
+    "level": "blue",
+    "phrases": [
+      "ambiguous meaning"
+    ],
+    "synonyms": [
+      "unclear",
+      "vague"
+    ],
+    "antonyms": [
+      "clear",
+      "explicit"
+    ],
+    "example": "The instructions were somewhat ambiguous, leading to confusion among the staff."
+  },
+  {
+    "word": "ample",
+    "phonetic": "/ˈæmpl/",
+    "pos": "adj.",
+    "meaning": "豐富的；充足的",
+    "level": "blue",
+    "phrases": [
+      "ample opportunity"
+    ],
+    "synonyms": [
+      "abundant",
+      "plentiful"
+    ],
+    "antonyms": [
+      "scant",
+      "meager"
+    ],
+    "example": "There will be ample opportunity for questions at the end of the presentation."
+  },
+  {
+    "word": "annoying",
+    "phonetic": "/əˈnɔɪɪŋ/",
+    "pos": "adj.",
+    "meaning": "討厭的；惱人的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "irritating",
+      "bothersome"
+    ],
+    "antonyms": [
+      "pleasing"
+    ],
+    "example": "The constant noise from the construction site was extremely annoying for local residents."
+  },
+  {
+    "word": "apart",
+    "phonetic": "/əˈpɑːrt/",
+    "pos": "adv./adj.",
+    "meaning": "分開地；除~外",
+    "level": "blue",
+    "phrases": [
+      "apart from"
+    ],
+    "synonyms": [
+      "separate",
+      "aside"
+    ],
+    "antonyms": [
+      "together"
+    ],
+    "example": "Apart from the minor technical issues, the product launch was a great success."
+  },
+  {
+    "word": "apparently",
+    "phonetic": "/əˈpærəntli/",
+    "pos": "adv.",
+    "meaning": "顯然地；據說",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "seemingly",
+      "evidently"
+    ],
+    "antonyms": [],
+    "example": "Apparently, the company is planning to expand its operations into the Asian market."
+  },
+  {
+    "word": "artificial",
+    "phonetic": "/ˌɑːrtɪˈfɪʃl/",
+    "pos": "adj.",
+    "meaning": "人工的；人造的",
+    "level": "blue",
+    "phrases": [
+      "artificial intelligence"
+    ],
+    "synonyms": [
+      "synthetic",
+      "man-made"
+    ],
+    "antonyms": [
+      "natural"
+    ],
+    "example": "The flowers in the lobby are artificial, but they look very realistic."
+  },
+  {
+    "word": "becoming",
+    "phonetic": "/bɪˈkʌmɪŋ/",
+    "pos": "adj.",
+    "meaning": "合適的；相稱的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "fitting",
+      "appropriate"
+    ],
+    "antonyms": [
+      "unbecoming"
+    ],
+    "example": "That dark blue suit is very becoming on you and perfect for the interview."
+  },
+  {
+    "word": "beneath",
+    "phonetic": "/bɪˈniːθ/",
+    "pos": "prep./adv.",
+    "meaning": "在...下面",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "under",
+      "below"
+    ],
+    "antonyms": [
+      "above"
+    ],
+    "example": "The storage room is located beneath the main office on the ground floor."
+  },
+  {
+    "word": "beneficent",
+    "phonetic": "/bəˈnefɪsnt/",
+    "pos": "adj.",
+    "meaning": "慈善的；行善的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "charitable",
+      "benevolent"
+    ],
+    "antonyms": [
+      "malicious"
+    ],
+    "example": "The billionaire is well-known for his beneficent contributions to various local charities."
+  },
+  {
+    "word": "beyond",
+    "phonetic": "/bɪˈjɑːnd/",
+    "pos": "prep./adv.",
+    "meaning": "超過；在...那邊",
+    "level": "blue",
+    "phrases": [
+      "beyond doubt",
+      "beyond reach"
+    ],
+    "synonyms": [
+      "outside"
+    ],
+    "antonyms": [
+      "within"
+    ],
+    "example": "The success of the new product was far beyond the company's initial expectations."
+  },
+  {
+    "word": "bothersome",
+    "phonetic": "/ˈbɑːðərsəm/",
+    "pos": "adj.",
+    "meaning": "令人煩惱的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "annoying",
+      "troublesome"
+    ],
+    "antonyms": [
+      "convenient"
+    ],
+    "example": "Having to fill out so much paperwork for a simple request is quite bothersome."
+  },
+  {
+    "word": "bulk",
+    "phonetic": "/bʌlk/",
+    "pos": "n./adj.",
+    "meaning": "大量；大部份",
+    "level": "blue",
+    "phrases": [
+      "in bulk",
+      "bulk purchase"
+    ],
+    "synonyms": [
+      "mass",
+      "majority"
+    ],
+    "antonyms": [],
+    "example": "The bulk of the company's revenue comes from its international operations."
+  },
+  {
+    "word": "buoyant",
+    "phonetic": "/ˈɔɪənt/",
+    "pos": "adj.",
+    "meaning": "看漲的；心情愉快的",
+    "level": "blue",
+    "phrases": [
+      "buoyant market"
+    ],
+    "synonyms": [
+      "cheerful",
+      "vibrant"
+    ],
+    "antonyms": [
+      "depressed",
+      "gloomy"
+    ],
+    "example": "The stock market remained buoyant despite the recent economic uncertainty."
+  },
+  {
+    "word": "candid",
+    "phonetic": "/ˈkændɪd/",
+    "pos": "adj.",
+    "meaning": "坦率的；誠實的",
+    "level": "blue",
+    "phrases": [
+      "candid opinion"
+    ],
+    "synonyms": [
+      "honest",
+      "frank"
+    ],
+    "antonyms": [
+      "dishonest",
+      "evasive"
+    ],
+    "example": "The manager gave a candid assessment of the project's current progress and challenges."
+  },
+  {
+    "word": "capital",
+    "phonetic": "/ˈkæpɪtl/",
+    "pos": "n./adj.",
+    "meaning": "資本；主要的",
+    "level": "blue",
+    "phrases": [
+      "venture capital",
+      "capital city"
+    ],
+    "synonyms": [
+      "funds",
+      "primary"
+    ],
+    "antonyms": [],
+    "example": "The company needs to raise more capital to fund its future expansion plans."
+  },
+  {
+    "word": "circumspect",
+    "phonetic": "/ˈsɜːrkəmspekt/",
+    "pos": "adj.",
+    "meaning": "慎重的；小心的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "cautious",
+      "wary"
+    ],
+    "antonyms": [
+      "careless",
+      "reckless"
+    ],
+    "example": "It is important to be circumspect when discussing confidential business information."
+  },
+  {
+    "word": "coherent",
+    "phonetic": "/koʊˈhɪrənt/",
+    "pos": "adj.",
+    "meaning": "有條理的；連貫的",
+    "level": "blue",
+    "phrases": [
+      "coherent argument"
+    ],
+    "synonyms": [
+      "logical",
+      "consistent"
+    ],
+    "antonyms": [
+      "incoherent",
+      "confusing"
+    ],
+    "example": "The presenter failed to provide a coherent explanation for the sudden drop in sales."
+  },
+  {
+    "word": "cohesive",
+    "phonetic": "/koʊˈhiːsɪv/",
+    "pos": "adj.",
+    "meaning": "有凝聚力的",
+    "level": "blue",
+    "phrases": [
+      "cohesive team"
+    ],
+    "synonyms": [
+      "unified"
+    ],
+    "antonyms": [
+      "fragmented"
+    ],
+    "example": "Our team is very cohesive and works well together to achieve our goals."
+  },
+  {
+    "word": "collateral",
+    "phonetic": "/kəˈlætərəl/",
+    "pos": "n./adj.",
+    "meaning": "抵押品；附加的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "security",
+      "guarantee"
+    ],
+    "antonyms": [],
+    "example": "He used his house as collateral to secure a loan for his new business venture."
+  },
+  {
+    "word": "colloquial",
+    "phonetic": "/kəˈloʊkwiəl/",
+    "pos": "adj.",
+    "meaning": "口語的；通俗的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "informal",
+      "conversational"
+    ],
+    "antonyms": [
+      "formal"
+    ],
+    "example": "The training manual was written in a colloquial style to make it easier to understand."
+  },
+  {
+    "word": "come across",
+    "phonetic": "/kʌm əˈkrɔːs/",
+    "pos": "v. phr.",
+    "meaning": "偶然發現；給人印象",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "encounter",
+      "find"
+    ],
+    "antonyms": [],
+    "example": "I came across some interesting data while researching for the annual report."
+  },
+  {
+    "word": "come along",
+    "phonetic": "/kʌm əˈlɔːŋ/",
+    "pos": "v. phr.",
+    "meaning": "進展；伴隨",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "progress",
+      "advance"
+    ],
+    "antonyms": [],
+    "example": "The new project is coming along nicely and should be finished on schedule."
+  },
+  {
+    "word": "comforting",
+    "phonetic": "/ˈkʌmfərtɪŋ/",
+    "pos": "adj.",
+    "meaning": "令人欣慰的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "reassuring",
+      "soothing"
+    ],
+    "antonyms": [
+      "distressing"
+    ],
+    "example": "It was comforting to know that we had the full support of the board of directors."
+  },
+  {
+    "word": "committed",
+    "phonetic": "/kəˈmɪtɪd/",
+    "pos": "adj.",
+    "meaning": "忠誠的；堅定的",
+    "level": "blue",
+    "phrases": [
+      "be committed to"
+    ],
+    "synonyms": [
+      "dedicated",
+      "loyal"
+    ],
+    "antonyms": [
+      "unfaithful"
+    ],
+    "example": "The company is committed to providing its customers with the highest quality of service."
+  },
+  {
+    "word": "complacent",
+    "phonetic": "/kəmˈpleɪsnt/",
+    "pos": "adj.",
+    "meaning": "自滿的；得意的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "satisfied",
+      "smug"
+    ],
+    "antonyms": [
+      "humble",
+      "modest"
+    ],
+    "example": "We cannot afford to be complacent despite our recent success in the market."
+  },
+  {
+    "word": "compliant",
+    "phonetic": "/kəmˈplaɪənt/",
+    "pos": "adj.",
+    "meaning": "順從的；符合規定的",
+    "level": "blue",
+    "phrases": [
+      "be compliant with"
+    ],
+    "synonyms": [
+      "obedient",
+      "conforming"
+    ],
+    "antonyms": [
+      "defiant"
+    ],
+    "example": "All new products must be fully compliant with the latest safety regulations."
+  },
+  {
+    "word": "concrete",
+    "phonetic": "/ˈkɑːnkriːt/",
+    "pos": "adj./n.",
+    "meaning": "具體的；混凝土",
+    "level": "blue",
+    "phrases": [
+      "concrete evidence",
+      "reinforced concrete"
+    ],
+    "synonyms": [
+      "specific",
+      "tangible"
+    ],
+    "antonyms": [
+      "abstract"
+    ],
+    "example": "We need to see some concrete evidence before we can approve the new project proposal."
+  },
+  {
+    "word": "confident",
+    "phonetic": "/ˈkɑːnfɪdənt/",
+    "pos": "adj.",
+    "meaning": "有信心的",
+    "level": "blue",
+    "phrases": [
+      "confident in"
+    ],
+    "synonyms": [
+      "certain",
+      "assured"
+    ],
+    "antonyms": [
+      "doubtful",
+      "hesitant"
+    ],
+    "example": "The CEO is confident that the company will achieve its sales targets this year."
+  },
+  {
+    "word": "confidential",
+    "phonetic": "/ˌkɑːnfɪˈdenʃl/",
+    "pos": "adj.",
+    "meaning": "機密的",
+    "level": "blue",
+    "phrases": [
+      "strictly confidential"
+    ],
+    "synonyms": [
+      "secret",
+      "private"
+    ],
+    "antonyms": [
+      "public"
+    ],
+    "example": "Please ensure that all confidential documents are kept in a secure location."
+  },
+  {
+    "word": "congruent",
+    "phonetic": "/ˈkɑːŋɡruənt/",
+    "pos": "adj.",
+    "meaning": "一致的；合適的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "consistent",
+      "harmonious"
+    ],
+    "antonyms": [
+      "incongruent"
+    ],
+    "example": "The company's actions must be congruent with its stated values and mission."
+  },
+  {
+    "word": "conscientious",
+    "phonetic": "/ˌkɑːnʃiˈenʃəs/",
+    "pos": "adj.",
+    "meaning": "認真負責的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "diligent",
+      "careful"
+    ],
+    "antonyms": [
+      "irresponsible"
+    ],
+    "example": "He is a very conscientious worker who always pays close attention to detail."
+  },
+  {
+    "word": "consecutive",
+    "phonetic": "/kənˈsekjətɪv/",
+    "pos": "adj.",
+    "meaning": "連續的",
+    "level": "blue",
+    "phrases": [
+      "consecutive days"
+    ],
+    "synonyms": [
+      "successive",
+      "sequential"
+    ],
+    "antonyms": [],
+    "example": "The company has seen an increase in profits for five consecutive quarters."
+  },
+  {
+    "word": "contemporary",
+    "phonetic": "/kənˈtempəreri/",
+    "pos": "adj./n.",
+    "meaning": "當代的；同時代的人",
+    "level": "blue",
+    "phrases": [
+      "contemporary art"
+    ],
+    "synonyms": [
+      "modern",
+      "current"
+    ],
+    "antonyms": [
+      "ancient",
+      "old-fashioned"
+    ],
+    "example": "The new office building features a contemporary design with lots of glass and steel."
+  },
+  {
+    "word": "controlling",
+    "phonetic": "/kənˈtroʊlɪŋ/",
+    "pos": "adj.",
+    "meaning": "支配的；控制的",
+    "level": "blue",
+    "phrases": [
+      "controlling interest"
+    ],
+    "synonyms": [
+      "dominant"
+    ],
+    "antonyms": [],
+    "example": "The parent company holds a controlling interest in several smaller businesses."
+  },
+  {
+    "word": "conventional",
+    "phonetic": "/kənˈvenʃənl/",
+    "pos": "adj.",
+    "meaning": "傳統的；慣例的",
+    "level": "blue",
+    "phrases": [
+      "conventional wisdom"
+    ],
+    "synonyms": [
+      "traditional",
+      "standard"
+    ],
+    "antonyms": [
+      "unconventional",
+      "innovative"
+    ],
+    "example": "Conventional wisdom suggests that it is better to save money for a rainy day."
+  },
+  {
+    "word": "conversant",
+    "phonetic": "/kənˈvɜːrsənt/",
+    "pos": "adj.",
+    "meaning": "熟悉的；精通的",
+    "level": "blue",
+    "phrases": [
+      "be conversant with"
+    ],
+    "synonyms": [
+      "familiar",
+      "acquainted"
+    ],
+    "antonyms": [
+      "ignorant"
+    ],
+    "example": "Our sales team is fully conversant with all the features of our new product line."
+  },
+  {
+    "word": "credible",
+    "phonetic": "/ˈkredəbl/",
+    "pos": "adj.",
+    "meaning": "可信的；可靠的",
+    "level": "blue",
+    "phrases": [
+      "credible source"
+    ],
+    "synonyms": [
+      "believable",
+      "trustworthy"
+    ],
+    "antonyms": [
+      "unreliable"
+    ],
+    "example": "We need to find a credible source of information before we can make a decision."
+  },
+  {
+    "word": "crucial",
+    "phonetic": "/ˈkruːʃl/",
+    "pos": "adj.",
+    "meaning": "至關重要的；決定性的",
+    "level": "blue",
+    "phrases": [
+      "crucial factor",
+      "play a crucial role"
+    ],
+    "synonyms": [
+      "essential",
+      "critical"
+    ],
+    "antonyms": [
+      "insignificant"
+    ],
+    "example": "The success of the project is crucial to the company's future growth."
+  },
+  {
+    "word": "curious",
+    "phonetic": "/ˈkjʊriəs/",
+    "pos": "adj.",
+    "meaning": "好奇的；奇特的",
+    "level": "blue",
+    "phrases": [
+      "curious about"
+    ],
+    "synonyms": [
+      "inquisitive"
+    ],
+    "antonyms": [
+      "indifferent"
+    ],
+    "example": "The child was curious about how the toy car worked and tried to take it apart."
+  },
+  {
+    "word": "curt",
+    "phonetic": "/kɜːrt/",
+    "pos": "adj.",
+    "meaning": "簡短而失禮的",
+    "level": "blue",
+    "phrases": [
+      "curt reply"
+    ],
+    "synonyms": [
+      "abrupt",
+      "blunt"
+    ],
+    "antonyms": [
+      "polite",
+      "courteous"
+    ],
+    "example": "The manager's curt reply suggested that he was too busy to discuss the matter further."
+  },
+  {
+    "word": "diligent",
+    "phonetic": "/ˈdɪlɪdʒənt/",
+    "pos": "adj.",
+    "meaning": "勤勉的；孜孜不倦的",
+    "level": "blue",
+    "phrases": [
+      "diligent worker"
+    ],
+    "synonyms": [
+      "hardworking",
+      "industrious"
+    ],
+    "antonyms": [
+      "lazy",
+      "negligent"
+    ],
+    "example": "She is a diligent student who spends hours in the library every day."
+  },
+  {
+    "word": "distinctive",
+    "phonetic": "/dɪˈstɪŋktɪv/",
+    "pos": "adj.",
+    "meaning": "獨特的；有特色的",
+    "level": "blue",
+    "phrases": [
+      "distinctive feature"
+    ],
+    "synonyms": [
+      "unique",
+      "characteristic"
+    ],
+    "antonyms": [
+      "common",
+      "ordinary"
+    ],
+    "example": "The brand's distinctive logo makes its products easily recognizable."
+  },
+  {
+    "word": "domestic affairs",
+    "phonetic": "/dəˈmestɪk əˈferz/",
+    "pos": "n. phr.",
+    "meaning": "國內事務；家務",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "internal affairs"
+    ],
+    "antonyms": [
+      "foreign affairs"
+    ],
+    "example": "The minister is responsible for managing the country's domestic affairs."
+  },
+  {
+    "word": "drastic",
+    "phonetic": "/ˈdræstɪk/",
+    "pos": "adj.",
+    "meaning": "激烈的；嚴厲的",
+    "level": "blue",
+    "phrases": [
+      "drastic measures"
+    ],
+    "synonyms": [
+      "extreme",
+      "severe"
+    ],
+    "antonyms": [
+      "mild",
+      "slight"
+    ],
+    "example": "The company had to take drastic measures to reduce costs and avoid bankruptcy."
+  },
+  {
+    "word": "drastically",
+    "phonetic": "/ˈdræstɪkli/",
+    "pos": "adv.",
+    "meaning": "徹底地；激烈地",
+    "level": "blue",
+    "phrases": [
+      "drastically reduce"
+    ],
+    "synonyms": [
+      "severely",
+      "extremely"
+    ],
+    "antonyms": [
+      "slightly"
+    ],
+    "example": "The price of the product has been drastically reduced to attract more customers."
+  },
+  {
+    "word": "dynamic",
+    "phonetic": "/daɪˈnæmɪk/",
+    "pos": "adj.",
+    "meaning": "動態的；充滿活力的",
+    "level": "blue",
+    "phrases": [
+      "dynamic market"
+    ],
+    "synonyms": [
+      "energetic",
+      "vibrant"
+    ],
+    "antonyms": [
+      "static",
+      "lethargic"
+    ],
+    "example": "We are looking for a dynamic individual to lead our marketing team."
+  },
+  {
+    "word": "earnest",
+    "phonetic": "/ˈɜːrnɪst/",
+    "pos": "adj.",
+    "meaning": "認真的；誠摯的",
+    "level": "blue",
+    "phrases": [
+      "in earnest"
+    ],
+    "synonyms": [
+      "serious",
+      "sincere"
+    ],
+    "antonyms": [
+      "insincere",
+      "frivolous"
+    ],
+    "example": "He made an earnest attempt to resolve the conflict between the two departments."
+  },
+  {
+    "word": "elect",
+    "phonetic": "/ɪˈlekt/",
+    "pos": "v./adj.",
+    "meaning": "選舉；當選的",
+    "level": "blue",
+    "phrases": [
+      "president-elect"
+    ],
+    "synonyms": [
+      "choose",
+      "vote in"
+    ],
+    "antonyms": [],
+    "example": "The board of directors will meet next week to elect a new chairperson."
+  },
+  {
+    "word": "elemental",
+    "phonetic": "/ˌelɪˈmentl/",
+    "pos": "adj.",
+    "meaning": "基本的；自然的",
+    "level": "blue",
+    "phrases": [
+      "elemental forces"
+    ],
+    "synonyms": [
+      "basic",
+      "fundamental"
+    ],
+    "antonyms": [],
+    "example": "Understanding the elemental principles of economics is essential for business students."
+  },
+  {
+    "word": "eligible",
+    "phonetic": "/ˈelɪdʒəbl/",
+    "pos": "adj.",
+    "meaning": "合格的；有資格的",
+    "level": "blue",
+    "phrases": [
+      "be eligible for"
+    ],
+    "synonyms": [
+      "qualified",
+      "entitled"
+    ],
+    "antonyms": [
+      "ineligible"
+    ],
+    "example": "Only employees with more than three years of service are eligible for the bonus."
+  },
+  {
+    "word": "entitled",
+    "phonetic": "/ɪnˈtaɪtld/",
+    "pos": "adj.",
+    "meaning": "有權利的；有資格的",
+    "level": "blue",
+    "phrases": [
+      "be entitled to"
+    ],
+    "synonyms": [
+      "privileged",
+      "eligible"
+    ],
+    "antonyms": [],
+    "example": "You are entitled to a full refund if the product is found to be defective."
+  },
+  {
+    "word": "evasive",
+    "phonetic": "/ɪˈveɪsɪv/",
+    "pos": "adj.",
+    "meaning": "逃避的；含糊其辭的",
+    "level": "blue",
+    "phrases": [
+      "evasive answer"
+    ],
+    "synonyms": [
+      "ambiguous",
+      "vague"
+    ],
+    "antonyms": [
+      "direct",
+      "frank"
+    ],
+    "example": "The manager's evasive answers during the meeting only served to increase our suspicion."
+  },
+  {
+    "word": "extensive",
+    "phonetic": "/ɪkˈstensɪv/",
+    "pos": "adj.",
+    "meaning": "廣泛的；大規模的",
+    "level": "blue",
+    "phrases": [
+      "extensive research"
+    ],
+    "synonyms": [
+      "wide",
+      "broad"
+    ],
+    "antonyms": [
+      "limited",
+      "narrow"
+    ],
+    "example": "The company carried out extensive market research before launching the new product."
+  },
+  {
+    "word": "extraordinary",
+    "phonetic": "/ɪkˈstrɔːrdəneri/",
+    "pos": "adj.",
+    "meaning": "非凡的；特別的",
+    "level": "blue",
+    "phrases": [
+      "extraordinary talent"
+    ],
+    "synonyms": [
+      "exceptional",
+      "remarkable"
+    ],
+    "antonyms": [
+      "ordinary",
+      "average"
+    ],
+    "example": "His extraordinary talent for music was recognized at a very young age."
+  },
+  {
+    "word": "feasible",
+    "phonetic": "/ˈfiːzəbl/",
+    "pos": "adj.",
+    "meaning": "可行的；可能的",
+    "level": "blue",
+    "phrases": [
+      "financially feasible"
+    ],
+    "synonyms": [
+      "practicable",
+      "viable"
+    ],
+    "antonyms": [
+      "impossible",
+      "impractical"
+    ],
+    "example": "We need to determine if the new project is financially feasible before we proceed."
+  },
+  {
+    "word": "fall off",
+    "phonetic": "/fɔːl ɔːf/",
+    "pos": "v. phr.",
+    "meaning": "跌落；減少",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "decrease",
+      "decline"
+    ],
+    "antonyms": [
+      "increase"
+    ],
+    "example": "Sales typically fall off during the winter months after the holiday season."
+  },
+  {
+    "word": "fellow",
+    "phonetic": "/ˈfeloʊ/",
+    "pos": "n./adj.",
+    "meaning": "同伴；同類的",
+    "level": "blue",
+    "phrases": [
+      "fellow worker",
+      "fellow citizen"
+    ],
+    "synonyms": [
+      "companion",
+      "peer"
+    ],
+    "antonyms": [],
+    "example": "He is well-respected by his fellow researchers for his innovative work."
+  },
+  {
+    "word": "firm",
+    "phonetic": "/fɜːrm/",
+    "pos": "n./adj.",
+    "meaning": "公司；穩固的",
+    "level": "blue",
+    "phrases": [
+      "law firm",
+      "firm belief"
+    ],
+    "synonyms": [
+      "company",
+      "stable"
+    ],
+    "antonyms": [
+      "weak",
+      "unstable"
+    ],
+    "example": "The law firm specializes in providing legal advice to international corporations."
+  },
+  {
+    "word": "fleet",
+    "phonetic": "/fliːt/",
+    "pos": "n./adj.",
+    "meaning": "船隊；敏捷的",
+    "level": "blue",
+    "phrases": [
+      "vehicle fleet"
+    ],
+    "synonyms": [
+      "swift",
+      "rapid"
+    ],
+    "antonyms": [
+      "slow"
+    ],
+    "example": "The company operates a large fleet of delivery trucks across the country."
+  },
+  {
+    "word": "foremost",
+    "phonetic": "/ˈfɔːrmoʊst/",
+    "pos": "adj.",
+    "meaning": "最重要的；首要的",
+    "level": "blue",
+    "phrases": [
+      "first and foremost"
+    ],
+    "synonyms": [
+      "leading",
+      "primary"
+    ],
+    "antonyms": [],
+    "example": "He is widely recognized as one of the foremost experts in the field of medicine."
+  },
+  {
+    "word": "formatted",
+    "phonetic": "/ˈfɔːrmætɪd/",
+    "pos": "adj.",
+    "meaning": "格式化好的",
+    "level": "blue",
+    "phrases": [
+      "properly formatted"
+    ],
+    "synonyms": [
+      "arranged"
+    ],
+    "antonyms": [],
+    "example": "Please ensure that the report is properly formatted before you submit it."
+  },
+  {
+    "word": "forward",
+    "phonetic": "/ˈfɔːrwərd/",
+    "pos": "adv./adj.",
+    "meaning": "向前地；未來的",
+    "level": "blue",
+    "phrases": [
+      "look forward to"
+    ],
+    "synonyms": [
+      "ahead"
+    ],
+    "antonyms": [
+      "backward"
+    ],
+    "example": "We look forward to receiving your application and meeting you for an interview."
+  },
+  {
+    "word": "foster",
+    "phonetic": "/ˈfɔːstər/",
+    "pos": "v./adj.",
+    "meaning": "促進；領養的",
+    "level": "blue",
+    "phrases": [
+      "foster care"
+    ],
+    "synonyms": [
+      "promote",
+      "encourage"
+    ],
+    "antonyms": [
+      "hinder",
+      "discourage"
+    ],
+    "example": "The workshop was designed to foster better communication between team members."
+  },
+  {
+    "word": "fraught",
+    "phonetic": "/frɔːt/",
+    "pos": "adj.",
+    "meaning": "充滿(困難/危險)的",
+    "level": "blue",
+    "phrases": [
+      "fraught with"
+    ],
+    "synonyms": [
+      "filled"
+    ],
+    "antonyms": [],
+    "example": "The situation in the region remains fraught with tension and uncertainty."
+  },
+  {
+    "word": "frisky",
+    "phonetic": "/ˈfrɪski/",
+    "pos": "adj.",
+    "meaning": "活潑的；愛鬧的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "playful",
+      "lively"
+    ],
+    "antonyms": [
+      "lethargic"
+    ],
+    "example": "The young kittens were very frisky and spent all afternoon playing together."
+  },
+  {
+    "word": "fundamental",
+    "phonetic": "/ˌfʌndəˈmentl/",
+    "pos": "adj.",
+    "meaning": "基礎的；根本的",
+    "level": "blue",
+    "phrases": [
+      "fundamental principles"
+    ],
+    "synonyms": [
+      "basic",
+      "essential"
+    ],
+    "antonyms": [
+      "secondary"
+    ],
+    "example": "A fundamental understanding of mathematics is essential for this engineering course."
+  },
+  {
+    "word": "funneled",
+    "phonetic": "/ˈfʌnld/",
+    "pos": "adj.",
+    "meaning": "匯集的；過濾的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "directed"
+    ],
+    "antonyms": [],
+    "example": "The government funds were funneled into the new education program."
+  },
+  {
+    "word": "get through with",
+    "phonetic": "/ɡet θruː wɪð/",
+    "pos": "v. phr.",
+    "meaning": "完成；結束",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "finish",
+      "complete"
+    ],
+    "antonyms": [
+      "start",
+      "begin"
+    ],
+    "example": "I hope to get through with this report by the end of the day."
+  },
+  {
+    "word": "glossy",
+    "phonetic": "/ˈɡlɔːsi/",
+    "pos": "adj.",
+    "meaning": "光滑的；有光澤的",
+    "level": "blue",
+    "phrases": [
+      "glossy brochure"
+    ],
+    "synonyms": [
+      "shiny",
+      "slick"
+    ],
+    "antonyms": [
+      "matte",
+      "dull"
+    ],
+    "example": "The company produced a glossy brochure to showcase its latest luxury products."
+  },
+  {
+    "word": "go after",
+    "phonetic": "/ɡoʊ ˈæftər/",
+    "pos": "v. phr.",
+    "meaning": "追求；追趕",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "pursue",
+      "chase"
+    ],
+    "antonyms": [],
+    "example": "The company is planning to go after a larger share of the international market."
+  },
+  {
+    "word": "go along with",
+    "phonetic": "/ɡoʊ əˈlɔːŋ wɪð/",
+    "pos": "v. phr.",
+    "meaning": "贊同；伴隨",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "agree",
+      "comply"
+    ],
+    "antonyms": [
+      "oppose"
+    ],
+    "example": "I'm happy to go along with your suggestion regarding the new marketing plan."
+  },
+  {
+    "word": "guilty",
+    "phonetic": "/ˈɡɪlti/",
+    "pos": "adj.",
+    "meaning": "有罪的；內疚的",
+    "level": "blue",
+    "phrases": [
+      "feel guilty"
+    ],
+    "synonyms": [
+      "culpable"
+    ],
+    "antonyms": [
+      "innocent"
+    ],
+    "example": "The jury found the defendant guilty of all charges at the end of the trial."
+  },
+  {
+    "word": "hazardous",
+    "phonetic": "/ˈhæzərdəs/",
+    "pos": "adj.",
+    "meaning": "危險的；有害的",
+    "level": "blue",
+    "phrases": [
+      "hazardous waste"
+    ],
+    "synonyms": [
+      "dangerous",
+      "risky"
+    ],
+    "antonyms": [
+      "safe"
+    ],
+    "example": "All hazardous waste must be disposed of according to strict safety regulations."
+  },
+  {
+    "word": "horrible",
+    "phonetic": "/ˈhɔːrəbl/",
+    "pos": "adj.",
+    "meaning": "可怕的；極糟的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "terrible",
+      "awful"
+    ],
+    "antonyms": [
+      "wonderful"
+    ],
+    "example": "The weather during our vacation was absolutely horrible with constant rain."
+  },
+  {
+    "word": "imperative",
+    "phonetic": "/ɪmˈperətɪv/",
+    "pos": "adj./n.",
+    "meaning": "必須的；命令",
+    "level": "blue",
+    "phrases": [
+      "it is imperative that"
+    ],
+    "synonyms": [
+      "essential",
+      "crucial"
+    ],
+    "antonyms": [
+      "optional"
+    ],
+    "example": "It is imperative that we complete the project before the deadline."
+  },
+  {
+    "word": "inalienable",
+    "phonetic": "/ɪnˈeɪliənəbl/",
+    "pos": "adj.",
+    "meaning": "不可剝奪的",
+    "level": "blue",
+    "phrases": [
+      "inalienable rights"
+    ],
+    "synonyms": [
+      "absolute"
+    ],
+    "antonyms": [],
+    "example": "Freedom of speech is considered an inalienable right in many democratic countries."
+  },
+  {
+    "word": "inanimate",
+    "phonetic": "/ɪnˈænɪmət/",
+    "pos": "adj.",
+    "meaning": "無生命的；單調的",
+    "level": "blue",
+    "phrases": [
+      "inanimate object"
+    ],
+    "synonyms": [
+      "lifeless"
+    ],
+    "antonyms": [
+      "animate",
+      "living"
+    ],
+    "example": "The room was filled with inanimate objects that had no sentimental value to him."
+  },
+  {
+    "word": "incumbent",
+    "phonetic": "/ɪnˈkʌmbənt/",
+    "pos": "adj./n.",
+    "meaning": "現任的；義務上的",
+    "level": "blue",
+    "phrases": [
+      "incumbent president"
+    ],
+    "synonyms": [
+      "current",
+      "obligatory"
+    ],
+    "antonyms": [],
+    "example": "It is incumbent upon all employees to follow the company's safety regulations."
+  },
+  {
+    "word": "infant",
+    "phonetic": "/ˈinfənt/",
+    "pos": "n./adj.",
+    "meaning": "嬰兒；初期的",
+    "level": "blue",
+    "phrases": [
+      "infant mortality"
+    ],
+    "synonyms": [
+      "baby",
+      "early"
+    ],
+    "antonyms": [
+      "adult"
+    ],
+    "example": "The new company is still in its infant stage and has many challenges to overcome."
+  },
+  {
+    "word": "preterm infant",
+    "phonetic": "/ˈpriːtɜːrm ˈinfənt/",
+    "pos": "n. phr.",
+    "meaning": "早產兒",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "premature baby"
+    ],
+    "antonyms": [],
+    "example": "The hospital has a special unit for providing intensive care to preterm infants."
+  },
+  {
+    "word": "infant school",
+    "phonetic": "/ˈinfənt skuːl/",
+    "pos": "n. phr.",
+    "meaning": "幼稚園/幼兒學校",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "nursery school",
+      "kindergarten"
+    ],
+    "antonyms": [],
+    "example": "My daughter will be starting infant school in the city center next September."
+  },
+  {
+    "word": "innocent",
+    "phonetic": "/ˈɪnəsnt/",
+    "pos": "adj.",
+    "meaning": "純真的；無罪的",
+    "level": "blue",
+    "phrases": [
+      "innocent of"
+    ],
+    "synonyms": [
+      "naive",
+      "blameless"
+    ],
+    "antonyms": [
+      "guilty",
+      "corrupt"
+    ],
+    "example": "He was found to be innocent of the crime after new evidence came to light."
+  },
+  {
+    "word": "instant",
+    "phonetic": "/ˈɪnstənt/",
+    "pos": "adj./n.",
+    "meaning": "立即的；瞬間",
+    "level": "blue",
+    "phrases": [
+      "instant coffee",
+      "in an instant"
+    ],
+    "synonyms": [
+      "immediate"
+    ],
+    "antonyms": [
+      "delayed"
+    ],
+    "example": "The new product was an instant success and sold out within just a few hours."
+  },
+  {
+    "word": "instantaneously",
+    "phonetic": "/ˌɪnstənˈteɪniəsli/",
+    "pos": "adv.",
+    "meaning": "即刻地；瞬間地",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "immediately",
+      "instantly"
+    ],
+    "antonyms": [],
+    "example": "The message was delivered instantaneously to all employees via the internal network."
+  },
+  {
+    "word": "itemize",
+    "phonetic": "/ˈaɪtəmaɪz/",
+    "pos": "v.",
+    "meaning": "詳細列舉",
+    "level": "blue",
+    "phrases": [
+      "itemized bill"
+    ],
+    "synonyms": [
+      "list",
+      "detail"
+    ],
+    "antonyms": [],
+    "example": "Could you please itemize the expenses so that we can process your claim?"
+  },
+  {
+    "word": "jeopardize",
+    "phonetic": "/ˈjepərdaɪz/",
+    "pos": "v.",
+    "meaning": "危及；損害",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "endanger",
+      "threaten"
+    ],
+    "antonyms": [
+      "protect",
+      "secure"
+    ],
+    "example": "The sudden drop in sales could jeopardize the company's future expansion plans."
+  },
+  {
+    "word": "leverage",
+    "phonetic": "/ˈlevərɪdʒ/",
+    "pos": "n./v.",
+    "meaning": "利用；槓桿",
+    "level": "blue",
+    "phrases": [
+      "financial leverage"
+    ],
+    "synonyms": [
+      "influence",
+      "exploit"
+    ],
+    "antonyms": [],
+    "example": "The company plans to leverage its strong brand name to enter the new market."
+  },
+  {
+    "word": "litter",
+    "phonetic": "/ˈlɪtər/",
+    "pos": "n./v.",
+    "meaning": "垃圾；亂丟",
+    "level": "blue",
+    "phrases": [
+      "litter bin"
+    ],
+    "synonyms": [
+      "rubbish",
+      "clutter"
+    ],
+    "antonyms": [
+      "cleanliness"
+    ],
+    "example": "Please do not litter in the park and use the designated waste bins instead."
+  },
+  {
+    "word": "pioneer",
+    "phonetic": "/ˌpaɪəˈnɪr/",
+    "pos": "n./v.",
+    "meaning": "先驅；開創",
+    "level": "blue",
+    "phrases": [
+      "pioneer in"
+    ],
+    "synonyms": [
+      "innovator",
+      "trailblazer"
+    ],
+    "antonyms": [
+      "follower"
+    ],
+    "example": "The company is a pioneer in the field of renewable energy and has many patents."
+  },
+  {
+    "word": "ponder",
+    "phonetic": "/ˈpɑːndər/",
+    "pos": "v.",
+    "meaning": "沉思；仔細考慮",
+    "level": "blue",
+    "phrases": [
+      "ponder over"
+    ],
+    "synonyms": [
+      "consider",
+      "contemplate"
+    ],
+    "antonyms": [
+      "ignore"
+    ],
+    "example": "The manager took some time to ponder the proposal before giving his final approval."
+  },
+  {
+    "word": "precondition",
+    "phonetic": "/ˌpriːkənˈdɪʃn/",
+    "pos": "n.",
+    "meaning": "前提條件",
+    "level": "blue",
+    "phrases": [
+      "essential precondition"
+    ],
+    "synonyms": [
+      "prerequisite"
+    ],
+    "antonyms": [],
+    "example": "Having a valid business license is a precondition for applying for the government grant."
+  },
+  {
+    "word": "predominate",
+    "phonetic": "/prɪˈdɑːmɪneɪt/",
+    "pos": "v.",
+    "meaning": "佔優勢；主導",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "dominate",
+      "prevail"
+    ],
+    "antonyms": [],
+    "example": "Our products currently predominate in the local market, but competition is increasing."
+  },
+  {
+    "word": "preempt",
+    "phonetic": "/priˈempt/",
+    "pos": "v.",
+    "meaning": "先發制人；取代",
+    "level": "blue",
+    "phrases": [
+      "preemptive strike"
+    ],
+    "synonyms": [
+      "forestall",
+      "preclude"
+    ],
+    "antonyms": [],
+    "example": "The news broadcast was preempted by a special announcement from the president."
+  },
+  {
+    "word": "proliferate",
+    "phonetic": "/prəˈlɪfəreɪt/",
+    "pos": "v.",
+    "meaning": "激增；擴散",
+    "level": "blue",
+    "phrases": [
+      "proliferate rapidly"
+    ],
+    "synonyms": [
+      "multiply",
+      "expand"
+    ],
+    "antonyms": [
+      "decrease",
+      "stagnate"
+    ],
+    "example": "Fast food restaurants have continued to proliferate in the city center over the last decade."
+  },
+  {
+    "word": "prolong",
+    "phonetic": "/prəˈlɔːŋ/",
+    "pos": "v.",
+    "meaning": "延長",
+    "level": "blue",
+    "phrases": [
+      "prolong life"
+    ],
+    "synonyms": [
+      "extend",
+      "lengthen"
+    ],
+    "antonyms": [
+      "shorten",
+      "curtail"
+    ],
+    "example": "The meeting was prolonged by several hours due to the intense discussion about the budget."
+  },
+  {
+    "word": "reiterate",
+    "phonetic": "/riˈɪtəreɪt/",
+    "pos": "v.",
+    "meaning": "重申；反覆說",
+    "level": "blue",
+    "phrases": [
+      "reiterate a point"
+    ],
+    "synonyms": [
+      "repeat",
+      "restate"
+    ],
+    "antonyms": [],
+    "example": "I would like to reiterate that all employees must follow the new safety regulations."
+  },
+  {
+    "word": "relinquish",
+    "phonetic": "/rɪˈlɪŋkwɪʃ/",
+    "pos": "v.",
+    "meaning": "放棄；交出",
+    "level": "blue",
+    "phrases": [
+      "relinquish control"
+    ],
+    "synonyms": [
+      "abandon",
+      "surrender"
+    ],
+    "antonyms": [
+      "retain",
+      "keep"
+    ],
+    "example": "He was forced to relinquish his position as CEO after the company's financial scandal."
+  },
+  {
+    "word": "remit",
+    "phonetic": "/rɪˈmɪt/",
+    "pos": "v./n.",
+    "meaning": "匯款；豁免",
+    "level": "blue",
+    "phrases": [
+      "remit payment"
+    ],
+    "synonyms": [
+      "send",
+      "forward"
+    ],
+    "antonyms": [],
+    "example": "Please remit the payment to our bank account by the end of the month."
+  },
+  {
+    "word": "scrutinize",
+    "phonetic": "/ˈskruːtənaɪz/",
+    "pos": "v.",
+    "meaning": "詳察；仔細檢查",
+    "level": "blue",
+    "phrases": [
+      "scrutinize data"
+    ],
+    "synonyms": [
+      "examine",
+      "inspect"
+    ],
+    "antonyms": [
+      "glance",
+      "overlook"
+    ],
+    "example": "The auditors will scrutinize the company's financial records for any inconsistencies."
+  },
+  {
+    "word": "slander",
+    "phonetic": "/ˈslændər/",
+    "pos": "n./v.",
+    "meaning": "誹謗；詆毀",
+    "level": "blue",
+    "phrases": [
+      "slanderous remarks"
+    ],
+    "synonyms": [
+      "defamation",
+      "vilification"
+    ],
+    "antonyms": [
+      "praise",
+      "compliment"
+    ],
+    "example": "The company filed a lawsuit for slander after the competitor made false claims about its products."
+  },
+  {
+    "word": "tackle",
+    "phonetic": "/ˈtækl/",
+    "pos": "v./n.",
+    "meaning": "處理；應對",
+    "level": "blue",
+    "phrases": [
+      "tackle a problem"
+    ],
+    "synonyms": [
+      "handle",
+      "address"
+    ],
+    "antonyms": [
+      "avoid",
+      "neglect"
+    ],
+    "example": "The government is planning new measures to tackle the problem of youth unemployment."
+  },
+  {
+    "word": "instinctively",
+    "phonetic": "/ɪnˈstɪŋktɪvli/",
+    "pos": "adv.",
+    "meaning": "本能地；直覺地",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "naturally",
+      "intuitively"
+    ],
+    "antonyms": [
+      "deliberately"
+    ],
+    "example": "He instinctively knew that something was wrong when he saw the empty office."
+  },
+  {
+    "word": "intensive",
+    "phonetic": "/ɪnˈtensɪv/",
+    "pos": "adj.",
+    "meaning": "密集的；徹底的",
+    "level": "blue",
+    "phrases": [
+      "intensive care",
+      "intensive training"
+    ],
+    "synonyms": [
+      "thorough",
+      "concentrated"
+    ],
+    "antonyms": [
+      "superficial"
+    ],
+    "example": "New employees are required to undergo a week of intensive training before they start work."
+  },
+  {
+    "word": "intent",
+    "phonetic": "/ɪnˈtent/",
+    "pos": "n./adj.",
+    "meaning": "意圖；專注的",
+    "level": "blue",
+    "phrases": [
+      "clear intent",
+      "intent on doing"
+    ],
+    "synonyms": [
+      "purpose",
+      "aim"
+    ],
+    "antonyms": [],
+    "example": "The company's clear intent is to become the market leader in the next three years."
+  },
+  {
+    "word": "interchangeable",
+    "phonetic": "/ˌɪntərˈtʃeɪndʒəbl/",
+    "pos": "adj.",
+    "meaning": "可互換的",
+    "level": "blue",
+    "phrases": [
+      "interchangeable parts"
+    ],
+    "synonyms": [
+      "exchangeable",
+      "equivalent"
+    ],
+    "antonyms": [
+      "unique",
+      "specific"
+    ],
+    "example": "These two spare parts are interchangeable and can be used in either model of the machine."
+  },
+  {
+    "word": "interim",
+    "phonetic": "/ˈɪntərɪm/",
+    "pos": "adj./n.",
+    "meaning": "暫時的；中期",
+    "level": "blue",
+    "phrases": [
+      "interim report",
+      "interim manager"
+    ],
+    "synonyms": [
+      "temporary",
+      "provisional"
+    ],
+    "antonyms": [
+      "permanent"
+    ],
+    "example": "An interim manager was appointed to lead the department until a permanent replacement is found."
+  },
+  {
+    "word": "intermittent",
+    "phonetic": "/ˌɪntərˈmɪtənt/",
+    "pos": "adj.",
+    "meaning": "間歇的；斷斷續續的",
+    "level": "blue",
+    "phrases": [
+      "intermittent power failure"
+    ],
+    "synonyms": [
+      "sporadic",
+      "occasional"
+    ],
+    "antonyms": [
+      "constant",
+      "continuous"
+    ],
+    "example": "The region has been experiencing intermittent power failures due to the severe weather."
+  },
+  {
+    "word": "intricate",
+    "phonetic": "/ˈintrikət/",
+    "pos": "adj.",
+    "meaning": "複雜的；精緻的",
+    "level": "blue",
+    "phrases": [
+      "intricate design"
+    ],
+    "synonyms": [
+      "complex",
+      "elaborate"
+    ],
+    "antonyms": [
+      "simple",
+      "plain"
+    ],
+    "example": "The new watch design features an intricate mechanism with hundreds of tiny parts."
+  },
+  {
+    "word": "legitimate",
+    "phonetic": "/ləˈdʒɪtɪmət/",
+    "pos": "adj./v.",
+    "meaning": "合法的；正當的",
+    "level": "blue",
+    "phrases": [
+      "legitimate concern"
+    ],
+    "synonyms": [
+      "legal",
+      "valid"
+    ],
+    "antonyms": [
+      "illegal",
+      "invalid"
+    ],
+    "example": "The company has a legitimate reason for wanting to terminate the contract."
+  },
+  {
+    "word": "liable",
+    "phonetic": "/ˈlaɪəbl/",
+    "pos": "adj.",
+    "meaning": "法律上負責的；易於...的",
+    "level": "blue",
+    "phrases": [
+      "be liable for"
+    ],
+    "synonyms": [
+      "responsible",
+      "accountable"
+    ],
+    "antonyms": [],
+    "example": "You will be held liable for any damage caused to the equipment while it is in your care."
+  },
+  {
+    "word": "maternal",
+    "phonetic": "/məˈtɜːrnl/",
+    "pos": "adj.",
+    "meaning": "母親的；母性的",
+    "level": "blue",
+    "phrases": [
+      "maternal leave"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "paternal"
+    ],
+    "example": "The company offers six months of paid maternal leave to its female employees."
+  },
+  {
+    "word": "mediocre",
+    "phonetic": "/ˌmiːdiˈoʊkər/",
+    "pos": "adj.",
+    "meaning": "平庸的；二流的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "average",
+      "ordinary"
+    ],
+    "antonyms": [
+      "excellent",
+      "superior"
+    ],
+    "example": "The restaurant received a mediocre review from the food critic for its uninspiring menu."
+  },
+  {
+    "word": "meticulous",
+    "phonetic": "/məˈtɪkjələs/",
+    "pos": "adj.",
+    "meaning": "嚴謹的；一絲不苟的",
+    "level": "blue",
+    "phrases": [
+      "meticulous attention to detail"
+    ],
+    "synonyms": [
+      "thorough",
+      "careful"
+    ],
+    "antonyms": [
+      "careless",
+      "sloppy"
+    ],
+    "example": "He is a meticulous researcher who always checks his data multiple times."
+  },
+  {
+    "word": "myriad",
+    "phonetic": "/ˈmɪriəd/",
+    "pos": "n./adj.",
+    "meaning": "無數的；大量",
+    "level": "blue",
+    "phrases": [
+      "a myriad of"
+    ],
+    "synonyms": [
+      "countless",
+      "innumerable"
+    ],
+    "antonyms": [
+      "few",
+      "scarce"
+    ],
+    "example": "There are a myriad of factors to consider before making a decision about the merger."
+  },
+  {
+    "word": "opportune",
+    "phonetic": "/ˌɑːpərˈtuːn/",
+    "pos": "adj.",
+    "meaning": "湊巧的；適切的",
+    "level": "blue",
+    "phrases": [
+      "opportune moment"
+    ],
+    "synonyms": [
+      "timely",
+      "appropriate"
+    ],
+    "antonyms": [
+      "inopportune"
+    ],
+    "example": "The sudden drop in interest rates provided an opportune moment for the company to expand."
+  },
+  {
+    "word": "ostensibly",
+    "phonetic": "/ɑːˈstensəbli/",
+    "pos": "adv.",
+    "meaning": "表面上地；假裝地",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "apparently",
+      "seemingly"
+    ],
+    "antonyms": [],
+    "example": "He resigned ostensibly for health reasons, but many believe there were other factors involved."
+  },
+  {
+    "word": "paramount",
+    "phonetic": "/ˈpærəmaʊnt/",
+    "pos": "adj.",
+    "meaning": "首要的；至高無上的",
+    "level": "blue",
+    "phrases": [
+      "paramount importance"
+    ],
+    "synonyms": [
+      "supreme",
+      "primary"
+    ],
+    "antonyms": [
+      "secondary"
+    ],
+    "example": "The safety of our employees is of paramount importance to the company."
+  },
+  {
+    "word": "peculiar",
+    "phonetic": "/pɪˈkjuːliər/",
+    "pos": "adj.",
+    "meaning": "特別的；古怪的",
+    "level": "blue",
+    "phrases": [
+      "peculiar behavior"
+    ],
+    "synonyms": [
+      "odd",
+      "strange"
+    ],
+    "antonyms": [
+      "normal",
+      "common"
+    ],
+    "example": "The machine was making a peculiar noise, so we called the maintenance team to check it."
+  },
+  {
+    "word": "perennial",
+    "phonetic": "/pəˈreniəl/",
+    "pos": "adj./n.",
+    "meaning": "終年的；長期的",
+    "level": "blue",
+    "phrases": [
+      "perennial problem"
+    ],
+    "synonyms": [
+      "enduring",
+      "lasting"
+    ],
+    "antonyms": [
+      "temporary"
+    ],
+    "example": "Finding enough skilled workers is a perennial problem for many companies in the industry."
+  },
+  {
+    "word": "placid",
+    "phonetic": "/ˈplæsɪd/",
+    "pos": "adj.",
+    "meaning": "平靜的；寧靜的",
+    "level": "blue",
+    "phrases": [
+      "placid lake"
+    ],
+    "synonyms": [
+      "calm",
+      "peaceful"
+    ],
+    "antonyms": [
+      "turbulent",
+      "agitated"
+    ],
+    "example": "The lake was calm and placid in the early morning sunlight."
+  },
+  {
+    "word": "pertinent",
+    "phonetic": "/ˈpɜːrtnənt/",
+    "pos": "adj.",
+    "meaning": "相關的；中肯的",
+    "level": "blue",
+    "phrases": [
+      "pertinent question"
+    ],
+    "synonyms": [
+      "relevant",
+      "applicable"
+    ],
+    "antonyms": [
+      "irrelevant"
+    ],
+    "example": "Please provide all pertinent information regarding your previous work experience."
+  },
+  {
+    "word": "plain",
+    "phonetic": "/pleɪn/",
+    "pos": "adj./n.",
+    "meaning": "明白的；樸素的",
+    "level": "blue",
+    "phrases": [
+      "plain English",
+      "make it plain"
+    ],
+    "synonyms": [
+      "simple",
+      "clear"
+    ],
+    "antonyms": [
+      "complex",
+      "elaborate"
+    ],
+    "example": "The instructions were written in plain English so that everyone could understand them."
+  },
+  {
+    "word": "portable",
+    "phonetic": "/ˈpɔːrtəbl/",
+    "pos": "adj./n.",
+    "meaning": "手提式的；可攜帶的",
+    "level": "blue",
+    "phrases": [
+      "portable device"
+    ],
+    "synonyms": [
+      "handy",
+      "mobile"
+    ],
+    "antonyms": [
+      "fixed",
+      "stationary"
+    ],
+    "example": "The new laptop is lightweight and portable, making it perfect for business travel."
+  },
+  {
+    "word": "pretentious",
+    "phonetic": "/prɪˈtenʃəs/",
+    "pos": "adj.",
+    "meaning": "自命不凡的；虛飾的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "showy",
+      "pompous"
+    ],
+    "antonyms": [
+      "humble",
+      "modest"
+    ],
+    "example": "The new restaurant was criticized for its pretentious atmosphere and overpriced menu."
+  },
+  {
+    "word": "prolific",
+    "phonetic": "/prəˈlɪfɪk/",
+    "pos": "adj.",
+    "meaning": "多產的；豐富的",
+    "level": "blue",
+    "phrases": [
+      "prolific writer"
+    ],
+    "synonyms": [
+      "productive",
+      "fruitful"
+    ],
+    "antonyms": [
+      "unproductive"
+    ],
+    "example": "He is a prolific writer who has published more than twenty books in the last ten years."
+  },
+  {
+    "word": "prosaic",
+    "phonetic": "/prəˈzeɪɪk/",
+    "pos": "adj.",
+    "meaning": "平凡的；乏味的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "mundane",
+      "ordinary"
+    ],
+    "antonyms": [
+      "extraordinary",
+      "imaginative"
+    ],
+    "example": "Despite the exciting headlines, the actual results of the research were quite prosaic."
+  },
+  {
+    "word": "pushy",
+    "phonetic": "/ˈpʊʃi/",
+    "pos": "adj.",
+    "meaning": "咄咄逼人的；愛強求的",
+    "level": "blue",
+    "phrases": [
+      "pushy salesperson"
+    ],
+    "synonyms": [
+      "assertive",
+      "aggressive"
+    ],
+    "antonyms": [
+      "passive",
+      "timid"
+    ],
+    "example": "Customers often complain about the pushy sales tactics used by some of the staff."
+  },
+  {
+    "word": "reticent",
+    "phonetic": "/ˈretɪsnt/",
+    "pos": "adj.",
+    "meaning": "沉默寡言的；謹慎的",
+    "level": "blue",
+    "phrases": [
+      "be reticent about"
+    ],
+    "synonyms": [
+      "reserved",
+      "quiet"
+    ],
+    "antonyms": [
+      "talkative",
+      "open"
+    ],
+    "example": "The manager was reticent about the company's future plans during the press conference."
+  },
+  {
+    "word": "residual",
+    "phonetic": "/rɪˈzɪdʒuəl/",
+    "pos": "adj./n.",
+    "meaning": "剩餘的；殘留的",
+    "level": "blue",
+    "phrases": [
+      "residual income"
+    ],
+    "synonyms": [
+      "remaining",
+      "leftover"
+    ],
+    "antonyms": [],
+    "example": "The company still earns residual income from the patents it sold several years ago."
+  },
+  {
+    "word": "rotten",
+    "phonetic": "/ˈrɑːtn/",
+    "pos": "adj.",
+    "meaning": "腐爛的；極糟的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "decaying",
+      "bad"
+    ],
+    "antonyms": [
+      "fresh"
+    ],
+    "example": "The smell from the kitchen was horrible due to some rotten vegetables in the bin."
+  },
+  {
+    "word": "salient",
+    "phonetic": "/ˈseɪliənt/",
+    "pos": "adj.",
+    "meaning": "顯著的；主要的",
+    "level": "blue",
+    "phrases": [
+      "salient point"
+    ],
+    "synonyms": [
+      "prominent",
+      "conspicuous"
+    ],
+    "antonyms": [
+      "insignificant"
+    ],
+    "example": "The report highlights the salient features of the new marketing strategy."
+  },
+  {
+    "word": "scatterbrained",
+    "phonetic": "/ˈskætərbreɪnd/",
+    "pos": "adj.",
+    "meaning": "沒頭腦的；注意力不集中的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "forgetful",
+      "absent-minded"
+    ],
+    "antonyms": [
+      "focused",
+      "attentive"
+    ],
+    "example": "She is a bit scatterbrained and often forgets where she put her office keys."
+  },
+  {
+    "word": "scrupulous",
+    "phonetic": "/ˈskruːpjələs/",
+    "pos": "adj.",
+    "meaning": "嚴謹的；誠實的",
+    "level": "blue",
+    "phrases": [
+      "scrupulous adherence"
+    ],
+    "synonyms": [
+      "meticulous",
+      "honest"
+    ],
+    "antonyms": [
+      "unscrupulous",
+      "careless"
+    ],
+    "example": "The company is known for its scrupulous adherence to ethical business practices."
+  },
+  {
+    "word": "seamlessly",
+    "phonetic": "/ˈsiːmləsli/",
+    "pos": "adv.",
+    "meaning": "無縫地；順暢地",
+    "level": "blue",
+    "phrases": [
+      "integrate seamlessly"
+    ],
+    "synonyms": [
+      "smoothly"
+    ],
+    "antonyms": [],
+    "example": "The new software was designed to integrate seamlessly with the existing computer system."
+  },
+  {
+    "word": "slantwise",
+    "phonetic": "/ˈslæntwaɪz/",
+    "pos": "adv./adj.",
+    "meaning": "傾斜地",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "obliquely",
+      "diagonally"
+    ],
+    "antonyms": [
+      "straight"
+    ],
+    "example": "The light from the window fell slantwise across the desk in the late afternoon."
+  },
+  {
+    "word": "somber",
+    "phonetic": "/ˈsɑːmbər/",
+    "pos": "adj.",
+    "meaning": "陰沉的；憂鬱的",
+    "level": "blue",
+    "phrases": [
+      "somber mood"
+    ],
+    "synonyms": [
+      "gloomy",
+      "serious"
+    ],
+    "antonyms": [
+      "cheerful",
+      "bright"
+    ],
+    "example": "The CEO's somber tone during the meeting suggested that bad news was coming."
+  },
+  {
+    "word": "steadfast",
+    "phonetic": "/ˈstedfæst/",
+    "pos": "adj.",
+    "meaning": "堅定的；不動搖的",
+    "level": "blue",
+    "phrases": [
+      "steadfast support"
+    ],
+    "synonyms": [
+      "loyal",
+      "firm"
+    ],
+    "antonyms": [
+      "fickle",
+      "unreliable"
+    ],
+    "example": "We are grateful for your steadfast support during the company's difficult transition period."
+  },
+  {
+    "word": "stationary",
+    "phonetic": "/ˈsteɪʃəneri/",
+    "pos": "adj.",
+    "meaning": "靜止的；不動的",
+    "level": "blue",
+    "phrases": [
+      "stationary vehicle"
+    ],
+    "synonyms": [
+      "motionless",
+      "fixed"
+    ],
+    "antonyms": [
+      "moving",
+      "mobile"
+    ],
+    "example": "The truck remained stationary for several hours while the workers loaded the cargo."
+  },
+  {
+    "word": "sporadic",
+    "phonetic": "/spəˈrædɪk/",
+    "pos": "adj.",
+    "meaning": "零星的；斷斷續續的",
+    "level": "blue",
+    "phrases": [
+      "sporadic fighting"
+    ],
+    "synonyms": [
+      "intermittent",
+      "occasional"
+    ],
+    "antonyms": [
+      "constant",
+      "continuous"
+    ],
+    "example": "There has been sporadic fighting in the region despite the recent ceasefire agreement."
+  },
+  {
+    "word": "straightforward",
+    "phonetic": "/ˌstreɪtˈfɔːrwərd/",
+    "pos": "adj.",
+    "meaning": "簡單直截的；坦率的",
+    "level": "blue",
+    "phrases": [
+      "straightforward process"
+    ],
+    "synonyms": [
+      "simple",
+      "direct"
+    ],
+    "antonyms": [
+      "complex",
+      "complicated"
+    ],
+    "example": "The application process is quite straightforward and should only take a few minutes."
+  },
+  {
+    "word": "succinct",
+    "phonetic": "/səkˈsɪŋkt/",
+    "pos": "adj.",
+    "meaning": "簡潔扼要的",
+    "level": "blue",
+    "phrases": [
+      "succinct summary"
+    ],
+    "synonyms": [
+      "concise",
+      "brief"
+    ],
+    "antonyms": [
+      "wordy",
+      "verbose"
+    ],
+    "example": "The manager gave a succinct summary of the project's progress during the meeting."
+  },
+  {
+    "word": "superb",
+    "phonetic": "/suːˈpɜːrb/",
+    "pos": "adj.",
+    "meaning": "極好的；卓越的",
+    "level": "blue",
+    "phrases": [
+      "superb service"
+    ],
+    "synonyms": [
+      "excellent",
+      "outstanding"
+    ],
+    "antonyms": [
+      "poor",
+      "inferior"
+    ],
+    "example": "The restaurant is famous for its superb service and delicious international cuisine."
+  },
+  {
+    "word": "superfluous",
+    "phonetic": "/suːˈpɜːrfluəs/",
+    "pos": "adj.",
+    "meaning": "多餘的；累贅的",
+    "level": "blue",
+    "phrases": [
+      "superfluous information"
+    ],
+    "synonyms": [
+      "excess",
+      "redundant"
+    ],
+    "antonyms": [
+      "necessary",
+      "essential"
+    ],
+    "example": "Please remove any superfluous information from the report to make it more concise."
+  },
+  {
+    "word": "susceptible",
+    "phonetic": "/səˈseptəbl/",
+    "pos": "adj.",
+    "meaning": "易受影響的；易受感染的",
+    "level": "blue",
+    "phrases": [
+      "be susceptible to"
+    ],
+    "synonyms": [
+      "vulnerable",
+      "prone"
+    ],
+    "antonyms": [
+      "resistant",
+      "immune"
+    ],
+    "example": "Children and the elderly are more susceptible to certain types of respiratory diseases."
+  },
+  {
+    "word": "suspect",
+    "phonetic": "/səˈspekt/",
+    "pos": "v./n./adj.",
+    "meaning": "懷疑；嫌疑犯",
+    "level": "blue",
+    "phrases": [
+      "prime suspect"
+    ],
+    "synonyms": [
+      "doubt",
+      "distrust"
+    ],
+    "antonyms": [
+      "trust",
+      "believe"
+    ],
+    "example": "The police suspect that the fire was started deliberately by someone inside the building."
+  },
+  {
+    "word": "swift",
+    "phonetic": "/swɪft/",
+    "pos": "adj.",
+    "meaning": "快速的；敏捷的",
+    "level": "blue",
+    "phrases": [
+      "swift action"
+    ],
+    "synonyms": [
+      "rapid",
+      "fast"
+    ],
+    "antonyms": [
+      "slow",
+      "sluggish"
+    ],
+    "example": "The company took swift action to address the customer's complaints about the service."
+  },
+  {
+    "word": "talkative",
+    "phonetic": "/ˈtɔːkətɪv/",
+    "pos": "adj.",
+    "meaning": "愛說話的",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "chatty",
+      "garrulous"
+    ],
+    "antonyms": [
+      "quiet",
+      "reticent"
+    ],
+    "example": "He is a very talkative person who enjoys meeting and chatting with new people."
+  },
+  {
+    "word": "tender",
+    "phonetic": "/ˈtendər/",
+    "pos": "adj./v./n.",
+    "meaning": "溫柔的；投標；償付",
+    "level": "blue",
+    "phrases": [
+      "legal tender",
+      "submit a tender"
+    ],
+    "synonyms": [
+      "gentle",
+      "bid"
+    ],
+    "antonyms": [
+      "tough",
+      "hard"
+    ],
+    "example": "The company decided to submit a tender for the new government construction project."
+  },
+  {
+    "word": "tantamount",
+    "phonetic": "/ˈtæntəmaʊnt/",
+    "pos": "adj.",
+    "meaning": "相當於；等於",
+    "level": "blue",
+    "phrases": [
+      "be tantamount to"
+    ],
+    "synonyms": [
+      "equivalent"
+    ],
+    "antonyms": [],
+    "example": "Her refusal to answer the question was seen as tantamount to an admission of guilt."
+  },
+  {
+    "word": "zone",
+    "phonetic": "/zoʊn/",
+    "pos": "n./v.",
+    "meaning": "區域；地帶",
+    "level": "blue",
+    "phrases": [
+      "time zone",
+      "pedestrian zone"
+    ],
+    "synonyms": [
+      "area",
+      "region"
+    ],
+    "antonyms": [],
+    "example": "The city center has been designated as a pedestrian-only zone for the weekend."
+  },
+  {
+    "word": "stopwatch",
+    "phonetic": "/ˈstɑːpwɑːtʃ/",
+    "pos": "n.",
+    "meaning": "秒錶；跑錶",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "timer"
+    ],
+    "antonyms": [],
+    "example": "The coach used a stopwatch to time the runners during the training session."
+  },
+  {
+    "word": "timepiece",
+    "phonetic": "/ˈtaɪmpiːs/",
+    "pos": "n.",
+    "meaning": "鐘；錶",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "clock",
+      "watch"
+    ],
+    "antonyms": [],
+    "example": "The antique timepiece was handed down through several generations of his family."
+  },
+  {
+    "word": "timeless",
+    "phonetic": "/ˈtaɪmləs/",
+    "pos": "adj.",
+    "meaning": "永恆的；不受時間影響的",
+    "level": "blue",
+    "phrases": [
+      "timeless design"
+    ],
+    "synonyms": [
+      "eternal",
+      "enduring"
+    ],
+    "antonyms": [
+      "temporary"
+    ],
+    "example": "The design of the classic car is truly timeless and still looks modern today."
+  },
+  {
+    "word": "chronometer",
+    "phonetic": "/krəˈnɑːmɪtər/",
+    "pos": "n.",
+    "meaning": "精密計時器",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "chronograph"
+    ],
+    "antonyms": [],
+    "example": "The ship's captain used a chronometer to determine the exact time for navigation."
+  },
+  {
+    "word": "guarantee",
+    "phonetic": "/ˌɡærənˈtiː/",
+    "pos": "n./v.",
+    "meaning": "保證；擔保",
+    "level": "blue",
+    "phrases": [
+      "money-back guarantee"
+    ],
+    "synonyms": [
+      "warranty",
+      "assurance"
+    ],
+    "antonyms": [],
+    "example": "The new laptop comes with a two-year guarantee against any manufacturing defects."
+  },
+  {
+    "word": "alarm clock",
+    "phonetic": "/əˈlɑːrm klɑːk/",
+    "pos": "n. phr.",
+    "meaning": "鬧鐘",
+    "level": "blue",
+    "phrases": [
+      "set an alarm clock"
+    ],
+    "synonyms": [
+      "alarm"
+    ],
+    "antonyms": [],
+    "example": "I set my alarm clock for 6 AM so that I would have enough time to get to the airport."
+  },
+  {
+    "word": "grandfather clock",
+    "phonetic": "/ˈɡrænˌfɑːðər klɑːk/",
+    "pos": "n. phr.",
+    "meaning": "老式大擺鐘",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "longcase clock"
+    ],
+    "antonyms": [],
+    "example": "The large grandfather clock in the hallway chimed every hour on the hour."
+  },
+  {
+    "word": "announcements",
+    "phonetic": "/əˈnaʊnsmənts/",
+    "pos": "n.",
+    "meaning": "公告；宣佈(複數)",
+    "level": "blue",
+    "phrases": [
+      "public announcements"
+    ],
+    "synonyms": [
+      "notifications",
+      "proclamations"
+    ],
+    "antonyms": [],
+    "example": "Please listen carefully to the announcements for information about your flight."
+  },
+  {
+    "word": "notices",
+    "phonetic": "/ˈnoʊtɪsɪz/",
+    "pos": "n.",
+    "meaning": "通知；告示(複數)",
+    "level": "blue",
+    "phrases": [
+      "legal notices"
+    ],
+    "synonyms": [
+      "posters",
+      "leaflets"
+    ],
+    "antonyms": [],
+    "example": "Several notices were posted on the bulletin board regarding the upcoming office move."
+  },
+  {
+    "word": "cut down on",
+    "phonetic": "/kʌt daʊn ɑːn/",
+    "pos": "v. phr.",
+    "meaning": "減少；削減",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "reduce",
+      "decrease"
+    ],
+    "antonyms": [
+      "increase"
+    ],
+    "example": "The company is trying to cut down on unnecessary expenses to improve its profits."
+  },
+  {
+    "word": "put~into operation",
+    "phonetic": "/pʊt ˈɪntuː ˌɑːpəˈreɪʃn/",
+    "pos": "v. phr.",
+    "meaning": "實施；使運作",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "implement",
+      "activate"
+    ],
+    "antonyms": [
+      "halt",
+      "suspend"
+    ],
+    "example": "The new security system is expected to be put into operation early next month."
+  },
+  {
+    "word": "call off",
+    "phonetic": "/kɔːl ɔːf/",
+    "pos": "v. phr.",
+    "meaning": "取消",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "cancel",
+      "abandon"
+    ],
+    "antonyms": [
+      "confirm",
+      "proceed"
+    ],
+    "example": "The meeting was called off at the last minute because the CEO was unable to attend."
+  },
+  {
+    "word": "transportation",
+    "phonetic": "/ˌtrænspərˈteɪʃn/",
+    "pos": "n.",
+    "meaning": "運輸；交通工具",
+    "level": "blue",
+    "phrases": [
+      "public transportation"
+    ],
+    "synonyms": [
+      "transit",
+      "conveyance"
+    ],
+    "antonyms": [],
+    "example": "Public transportation in the city is very efficient and relatively inexpensive."
+  },
+  {
+    "word": "fill out/in a form",
+    "phonetic": "/fɪl aʊt ə fɔːrm/",
+    "pos": "v. phr.",
+    "meaning": "填寫表格",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "complete a form"
+    ],
+    "antonyms": [],
+    "example": "Please fill out the application form and return it to the human resources department."
+  },
+  {
+    "word": "admission",
+    "phonetic": "/ədˈmɪʃn/",
+    "pos": "n.",
+    "meaning": "入場費；承認",
+    "level": "blue",
+    "phrases": [
+      "admission fee"
+    ],
+    "synonyms": [
+      "entry",
+      "entrance"
+    ],
+    "antonyms": [
+      "exit",
+      "denial"
+    ],
+    "example": "The cost of admission to the museum is ten dollars for adults and five dollars for children."
+  },
+  {
+    "word": "courteous",
+    "phonetic": "/ˈkɜːrtiəs/",
+    "pos": "adj.",
+    "meaning": "彬彬有禮的",
+    "level": "blue",
+    "phrases": [
+      "courteous staff"
+    ],
+    "synonyms": [
+      "polite",
+      "respectful"
+    ],
+    "antonyms": [
+      "rude",
+      "impolite"
+    ],
+    "example": "The hotel staff were very courteous and helpful during our stay."
+  },
+  {
+    "word": "spacious",
+    "phonetic": "/ˈspeɪʃəs/",
+    "pos": "adj.",
+    "meaning": "寬敞的",
+    "level": "blue",
+    "phrases": [
+      "spacious office"
+    ],
+    "synonyms": [
+      "roomy",
+      "large"
+    ],
+    "antonyms": [
+      "cramped",
+      "small"
+    ],
+    "example": "Our new office is much more spacious than the old one and has better facilities."
+  },
+  {
+    "word": "well-equipped",
+    "phonetic": "/ˌwel ɪˈkwɪpt/",
+    "pos": "adj.",
+    "meaning": "裝備精良的",
+    "level": "blue",
+    "phrases": [
+      "well-equipped gym"
+    ],
+    "synonyms": [
+      "modernized"
+    ],
+    "antonyms": [
+      "poorly-equipped"
+    ],
+    "example": "The new research facility is well-equipped with the latest scientific instruments."
+  },
+  {
+    "word": "resort",
+    "phonetic": "/rɪˈzɔːrt/",
+    "pos": "n./v.",
+    "meaning": "度假勝地；訴諸",
+    "level": "blue",
+    "phrases": [
+      "summer resort",
+      "resort to"
+    ],
+    "synonyms": [
+      "holiday spot"
+    ],
+    "antonyms": [],
+    "example": "The company is building a new luxury resort on the island to attract more tourists."
+  },
+  {
+    "word": "canoe",
+    "phonetic": "/kəˈnuː/",
+    "pos": "n./v.",
+    "meaning": "獨木舟",
+    "level": "blue",
+    "phrases": [
+      "paddling a canoe"
+    ],
+    "synonyms": [
+      "boat",
+      "kayak"
+    ],
+    "antonyms": [],
+    "example": "We spent the afternoon paddling a canoe along the calm waters of the river."
+  },
+  {
+    "word": "check out",
+    "phonetic": "/tʃek aʊt/",
+    "pos": "v. phr.",
+    "meaning": "結帳退房；檢查",
+    "level": "blue",
+    "phrases": [
+      "late check-out"
+    ],
+    "synonyms": [
+      "leave",
+      "inspect"
+    ],
+    "antonyms": [
+      "check in"
+    ],
+    "example": "Please remember to return your room key when you check out of the hotel."
+  },
+  {
+    "word": "speedy",
+    "phonetic": "/ˈspiːdi/",
+    "pos": "adj.",
+    "meaning": "快速的",
+    "level": "blue",
+    "phrases": [
+      "speedy recovery",
+      "speedy response"
+    ],
+    "synonyms": [
+      "quick",
+      "rapid"
+    ],
+    "antonyms": [
+      "slow"
+    ],
+    "example": "We would like to thank you for your speedy response to our inquiry."
+  },
+  {
+    "word": "receptionist",
+    "phonetic": "/rɪˈsepʃənɪst/",
+    "pos": "n.",
+    "meaning": "接待員",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "clerk"
+    ],
+    "antonyms": [],
+    "example": "The receptionist will show you to the conference room when you arrive."
+  },
+  {
+    "word": "reception",
+    "phonetic": "/rɪˈsepʃn/",
+    "pos": "n.",
+    "meaning": "接待處；歡迎會",
+    "level": "blue",
+    "phrases": [
+      "wedding reception",
+      "reception desk"
+    ],
+    "synonyms": [
+      "welcome",
+      "greeting"
+    ],
+    "antonyms": [],
+    "example": "The company held a special reception to welcome the new international clients."
+  },
+  {
+    "word": "come to one's assistance",
+    "phonetic": "/kʌm tuː wʌnz əˈsɪstəns/",
+    "pos": "v. phr.",
+    "meaning": "前來援助",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "help",
+      "aid"
+    ],
+    "antonyms": [
+      "abandon"
+    ],
+    "example": "Several colleagues came to my assistance when I was struggling with the heavy boxes."
+  },
+  {
+    "word": "non-profit",
+    "phonetic": "/ˌnɑːnˈprɑːfɪt/",
+    "pos": "adj./n.",
+    "meaning": "非營利的；非營利組織",
+    "level": "blue",
+    "phrases": [
+      "non-profit organization"
+    ],
+    "synonyms": [
+      "charitable"
+    ],
+    "antonyms": [
+      "for-profit"
+    ],
+    "example": "He decided to leave his corporate job to work for a non-profit organization."
+  },
+  {
+    "word": "promising",
+    "phonetic": "/ˈprɑːmɪsɪŋ/",
+    "pos": "adj.",
+    "meaning": "有前途的；有希望的",
+    "level": "blue",
+    "phrases": [
+      "promising future"
+    ],
+    "synonyms": [
+      "hopeful",
+      "encouraging"
+    ],
+    "antonyms": [
+      "hopeless",
+      "discouraging"
+    ],
+    "example": "The new marketing strategy has shown some promising results in the initial testing phase."
+  },
+  {
+    "word": "entrepreneur",
+    "phonetic": "/ˌɑːntrəprəˈnɜːr/",
+    "pos": "n.",
+    "meaning": "企業家；創業家",
+    "level": "blue",
+    "phrases": [
+      "successful entrepreneur"
+    ],
+    "synonyms": [
+      "businessman",
+      "founder"
+    ],
+    "antonyms": [],
+    "example": "He is a successful entrepreneur who has started several technology companies."
+  },
+  {
+    "word": "headquarters",
+    "phonetic": "/ˈhedkwɔːrtərz/",
+    "pos": "n.",
+    "meaning": "總部",
+    "level": "blue",
+    "phrases": [
+      "corporate headquarters"
+    ],
+    "synonyms": [
+      "HQ",
+      "main office"
+    ],
+    "antonyms": [],
+    "example": "The company's international headquarters are located in a modern building in London."
+  },
+  {
+    "word": "finalist",
+    "phonetic": "/ˈfaɪnəlɪst/",
+    "pos": "n.",
+    "meaning": "決賽選手",
+    "level": "blue",
+    "phrases": [
+      "competition finalist"
+    ],
+    "synonyms": [
+      "contender"
+    ],
+    "antonyms": [],
+    "example": "The three finalists will be invited to give a presentation to the board of directors."
+  },
+  {
+    "word": "seed money/capital",
+    "phonetic": "/siːd ˈmʌni/",
+    "pos": "n. phr.",
+    "meaning": "種子資金；創業資本",
+    "level": "blue",
+    "phrases": [
+      "startup seed money"
+    ],
+    "synonyms": [
+      "initial capital"
+    ],
+    "antonyms": [],
+    "example": "The entrepreneur is looking for seed money to help fund his new technology startup."
+  },
+  {
+    "word": "application",
+    "phonetic": "/ˌæplɪˈkeɪʃn/",
+    "pos": "n.",
+    "meaning": "申請；應用",
+    "level": "blue",
+    "phrases": [
+      "job application",
+      "application form"
+    ],
+    "synonyms": [
+      "petition",
+      "request"
+    ],
+    "antonyms": [],
+    "example": "Please submit your job application via the company's online recruitment portal."
+  }
+]
