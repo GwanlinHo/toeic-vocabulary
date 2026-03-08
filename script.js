@@ -156,7 +156,7 @@ loadVoices();
 /**
  * 智慧型語音選擇器
  * 優先尋找各系統的高品質自然音 (iOS: Samantha/Siri, Android: Google)
- * 優先選用台灣國語 (zh-TW) 語音包
+ * 優先選用台灣腔調 (zh-TW) 語音包
  */
 function getBestVoice(isChinese) {
     // 優先順序關鍵字
