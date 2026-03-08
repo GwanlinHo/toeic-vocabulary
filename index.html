@@ -31,6 +31,11 @@
                             <path d="M3 10h11v2H3v-2zm0-4h11v2H3V6zm0 8h7v2H3v-2zm13-1v8l7-4-7-4z"/>
                         </svg>
                     </button>
+                    <button onclick="markAsLearned()" class="learned-btn" title="標記為已學會" aria-label="標記為已學會">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                    </button>
                 </div>
                 <p id="phonetic" class="phonetic">/ phonetic /</p>
             </div>
@@ -67,6 +72,12 @@
         <!-- 操作區 -->
         <div class="actions">
             <button onclick="nextWord()" class="next-btn">下一個單字</button>
+        </div>
+
+        <!-- 統計與重設區 -->
+        <div class="footer-info">
+            <span id="progress-text">進度：載入中...</span>
+            <button onclick="resetProgress()" class="reset-link">重設進度</button>
         </div>
     </div>
 

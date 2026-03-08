@@ -5,12 +5,25 @@ let cachedWords = {
 };
 let currentLevel = 'green';
 let currentWord = null;
+let learnedWords = JSON.parse(localStorage.getItem('toeic_learned_words') || '[]');
 
 // 初始化：讀取上次存儲的等級並載入
 async function init() {
     // 讀取上次存儲的等級
     const savedLevel = localStorage.getItem('toeic_level') || 'green';
     await setLevel(savedLevel);
+}
+
+// 更新進度顯示
+function updateProgressUI() {
+    const words = cachedWords[currentLevel];
+    if (!words || words.length === 0) return;
+    
+    // 計算目前等級中，有多少字已經被標記為已學會
+    const currentLearnedCount = words.filter(w => learnedWords.includes(w.word)).length;
+    const remainingCount = words.length - currentLearnedCount;
+    
+    document.getElementById('progress-text').innerText = `剩餘：${remainingCount} / ${words.length} 字`;
 }
 
 // 設定等級並動態下載單字
@@ -37,29 +50,72 @@ async function setLevel(level) {
         }
     }
     
+    updateProgressUI();
     nextWord();
 }
 
 // 隨機抽取下一個單字
 function nextWord() {
-    const words = cachedWords[currentLevel];
-    if (!words || words.length === 0) {
+    const allWords = cachedWords[currentLevel];
+    if (!allWords || allWords.length === 0) {
         document.getElementById('word').innerText = "無資料";
         return;
     }
 
-    // 隨機抽取（確保不與上一個重複，若只有一字則不檢查）
+    // 過濾掉已學會的單字
+    const availableWords = allWords.filter(w => !learnedWords.includes(w.word));
+
+    if (availableWords.length === 0) {
+        document.getElementById('word').innerText = "恭喜完成！";
+        document.getElementById('meaning').innerText = "此等級所有單字已學完。";
+        document.getElementById('phonetic').innerText = "";
+        document.getElementById('pos').innerText = "Done";
+        return;
+    }
+
+    // 隨機抽取（確保不與上一個重複）
     let randomIndex;
-    if (words.length > 1) {
+    if (availableWords.length > 1) {
         do {
-            randomIndex = Math.floor(Math.random() * words.length);
-        } while (words[randomIndex] === currentWord);
+            randomIndex = Math.floor(Math.random() * availableWords.length);
+        } while (availableWords[randomIndex] === currentWord);
     } else {
         randomIndex = 0;
     }
 
-    currentWord = words[randomIndex];
+    currentWord = availableWords[randomIndex];
     displayWord(currentWord);
+}
+
+// 標記目前單字為已學會
+function markAsLearned() {
+    if (!currentWord) return;
+    
+    const confirmMark = confirm(`確定要將「${currentWord.word}」標記為已學會並排除嗎？\n(此動作下次不會再出現該字)`);
+    
+    if (confirmMark) {
+        if (!learnedWords.includes(currentWord.word)) {
+            learnedWords.push(currentWord.word);
+            localStorage.setItem('toeic_learned_words', JSON.stringify(learnedWords));
+            updateProgressUI();
+            nextWord(); // 自動跳轉到下一個
+        }
+    }
+}
+
+// 重設進度
+function resetProgress() {
+    const words = cachedWords[currentLevel];
+    const confirmReset = confirm(`確定要重設「${currentLevel}」等級的學習進度嗎？\n這將會讓所有已標記的單字重新出現。`);
+    
+    if (confirmReset) {
+        // 僅移除目前等級相關的已學會單字（或是全部移除，此處選擇全部移除較簡單直觀）
+        learnedWords = [];
+        localStorage.removeItem('toeic_learned_words');
+        updateProgressUI();
+        nextWord();
+        alert("進度已重設。");
+    }
 }
 
 // 顯示單字到網頁

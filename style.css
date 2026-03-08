@@ -82,7 +82,7 @@ body {
 .header-tools {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     margin-top: 5px;
 }
 
@@ -95,18 +95,20 @@ body {
     color: var(--text-sub);
 }
 
-.speak-btn {
+.speak-btn, .learned-btn {
     background: none;
     border: none;
-    font-size: 1.2rem;
     cursor: pointer;
     color: var(--text-sub);
     transition: 0.2s;
     display: flex;
     align-items: center;
+    padding: 6px;
+    border-radius: 50%;
 }
 
-.speak-btn:hover { color: var(--theme-color); }
+.speak-btn:hover { color: var(--theme-color); background: rgba(0,0,0,0.05); }
+.learned-btn:hover { color: #27ae60; background: rgba(39, 174, 96, 0.1); }
 .speak-all { opacity: 0.7; }
 
 .phonetic {
@@ -147,3 +149,29 @@ body {
 }
 
 .next-btn:active { transform: scale(0.98); }
+
+/* 底部資訊區 */
+.footer-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--text-sub);
+    padding: 0 5px;
+}
+
+.reset-link {
+    background: none;
+    border: none;
+    color: var(--text-sub);
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.reset-link:hover {
+    opacity: 1;
+    color: #e74c3c;
+}
