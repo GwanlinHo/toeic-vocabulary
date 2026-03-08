@@ -100,26 +100,34 @@ loadVoices();
 /**
  * 智慧型語音選擇器
  * 優先尋找各系統的高品質自然音 (iOS: Samantha/Siri, Android: Google)
+ * 強制過濾中國腔調，僅保留台灣腔調
  */
 function getBestVoice(isChinese) {
     // 優先順序關鍵字
-    const enKeywords = ['Samantha', 'Google US English', 'Alex', 'Siri', 'Google', 'Microsoft Zira'];
+    const enKeywords = ['Samantha (Enhanced)', 'Samantha', 'Google US English', 'Alex', 'Siri', 'Google', 'Microsoft Zira'];
+    // 針對台灣腔調優化，排除了中國腔調常見關鍵字
     const zhKeywords = ['Mei-Jia', 'Google 國語（台灣）', 'Tingting', 'Siri', 'Google', 'Microsoft Hanhan'];
     
     const keywords = isChinese ? zhKeywords : enKeywords;
-    const langPrefix = isChinese ? 'zh' : 'en';
+    const langPrefix = isChinese ? 'zh-tw' : 'en-us'; // 強制鎖定台灣與美國英文
 
-    // 1. 嘗試匹配高品質關鍵字
+    // 1. 嘗試匹配高品質關鍵字且語系正確
     for (const keyword of keywords) {
-        const voice = voices.find(v => 
-            v.name.includes(keyword) && v.lang.toLowerCase().startsWith(langPrefix)
-        );
+        const voice = voices.find(v => {
+            const nameMatch = v.name.includes(keyword);
+            const langMatch = v.lang.toLowerCase().replace('_', '-').startsWith(isChinese ? 'zh-tw' : 'en');
+            // 額外確保中文不會選到 zh-CN
+            const notChina = isChinese ? !v.lang.toLowerCase().includes('cn') : true;
+            return nameMatch && langMatch && notChina;
+        });
         if (voice) return voice;
     }
 
-    // 2. 回退方案：尋找該語系的任何語音
-    return voices.find(v => v.lang.toLowerCase().startsWith(isChinese ? 'zh-tw' : 'en-us')) ||
-           voices.find(v => v.lang.toLowerCase().startsWith(langPrefix));
+    // 2. 回退方案：尋找該語系的任何語音（嚴格過濾中國腔）
+    return voices.find(v => {
+        const l = v.lang.toLowerCase().replace('_', '-');
+        return isChinese ? (l.startsWith('zh-tw') || l.startsWith('zh-hk')) : l.startsWith('en-us');
+    }) || voices.find(v => v.lang.toLowerCase().startsWith(isChinese ? 'zh' : 'en'));
 }
 
 // 核心朗讀邏輯：支援中英文自動偵測與分段播放
@@ -146,8 +154,8 @@ function speakText(text) {
         }
 
         msg.volume = 1;
-        // 針對不同語系微調語速，使其聽起來更流暢
-        msg.rate = isChinese ? 0.95 : 0.88; 
+        // 調慢語速以利聽力與發音練習 (EN: 0.8, ZH: 0.85)
+        msg.rate = isChinese ? 0.85 : 0.8; 
         msg.pitch = 1;
         
         // 瀏覽器會自動排隊播放
