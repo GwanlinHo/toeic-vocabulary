@@ -105,20 +105,25 @@ loadVoices();
 function getBestVoice(isChinese) {
     // 優先順序關鍵字
     const enKeywords = ['Samantha (Enhanced)', 'Samantha', 'Google US English', 'Alex', 'Siri', 'Google', 'Microsoft Zira'];
-    // 針對台灣腔調優化，排除了中國腔調常見關鍵字
-    const zhKeywords = ['Mei-Jia', 'Google 國語（台灣）', 'Tingting', 'Siri', 'Google', 'Microsoft Hanhan'];
+    // 優先使用 Siri 聲音 2 (iOS 台灣國語最自然音)，移除 Tingting
+    const zhKeywords = ['Siri 聲音 2', 'Siri', 'Mei-Jia', 'Google 國語（台灣）', 'Google', 'Microsoft Hanhan'];
     
     const keywords = isChinese ? zhKeywords : enKeywords;
-    const langPrefix = isChinese ? 'zh-tw' : 'en-us'; // 強制鎖定台灣與美國英文
 
     // 1. 嘗試匹配高品質關鍵字且語系正確
     for (const keyword of keywords) {
         const voice = voices.find(v => {
             const nameMatch = v.name.includes(keyword);
-            const langMatch = v.lang.toLowerCase().replace('_', '-').startsWith(isChinese ? 'zh-tw' : 'en');
-            // 額外確保中文不會選到 zh-CN
-            const notChina = isChinese ? !v.lang.toLowerCase().includes('cn') : true;
-            return nameMatch && langMatch && notChina;
+            const lang = v.lang.toLowerCase().replace('_', '-');
+            const isTW = lang.includes('tw') || lang.includes('hant');
+            const isEN = lang.startsWith('en');
+            
+            if (isChinese) {
+                // 強制要求中文必須包含 TW 或 Hant，且絕對不能包含 CN 或 Mainland
+                return nameMatch && isTW && !lang.includes('cn') && !v.name.includes('China');
+            } else {
+                return nameMatch && isEN;
+            }
         });
         if (voice) return voice;
     }
@@ -126,7 +131,7 @@ function getBestVoice(isChinese) {
     // 2. 回退方案：尋找該語系的任何語音（嚴格過濾中國腔）
     return voices.find(v => {
         const l = v.lang.toLowerCase().replace('_', '-');
-        return isChinese ? (l.startsWith('zh-tw') || l.startsWith('zh-hk')) : l.startsWith('en-us');
+        return isChinese ? (l.includes('tw') || l.includes('hant')) : l.startsWith('en-us');
     }) || voices.find(v => v.lang.toLowerCase().startsWith(isChinese ? 'zh' : 'en'));
 }
 
