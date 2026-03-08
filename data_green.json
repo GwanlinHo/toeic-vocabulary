@@ -9958,5 +9958,137 @@
     "synonyms": [],
     "antonyms": [],
     "example": "Fresh herbs like basil and parsley can really liven up a dish."
+  },
+  {
+    "word": "forecast",
+    "phonetic": "/ˈfɔːrkæst/",
+    "pos": "n./v.",
+    "meaning": "預報",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "The weather forecast says it will be sunny all weekend."
+  },
+  {
+    "word": "temperature",
+    "phonetic": "/ˈtemprətʃər/",
+    "pos": "n.",
+    "meaning": "溫度",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "The temperature is expected to drop significantly tonight."
+  },
+  {
+    "word": "humidity",
+    "phonetic": "/hjuːˈmɪdəti/",
+    "pos": "n.",
+    "meaning": "濕度",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "The high humidity makes the air feel much hotter than it is."
+  },
+  {
+    "word": "thunderstorm",
+    "phonetic": "/ˈθʌndərstɔːrm/",
+    "pos": "n.",
+    "meaning": "雷陣雨",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "The flight was delayed due to a severe thunderstorm over the airport."
+  },
+  {
+    "word": "shower",
+    "phonetic": "/ˈʃaʊər/",
+    "pos": "n.",
+    "meaning": "陣雨；淋浴",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "There might be a few light showers in the afternoon, so bring an umbrella."
+  },
+  {
+    "word": "degree",
+    "phonetic": "/dɪˈɡriː/",
+    "pos": "n.",
+    "meaning": "度數；學位",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "It's thirty degrees Celsius outside, which is quite warm for this time of year."
+  },
+  {
+    "word": "visibility",
+    "phonetic": "/ˌvɪzəˈbɪləti/",
+    "pos": "n.",
+    "meaning": "能見度",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "The heavy fog reduced visibility to less than fifty meters on the highway."
+  },
+  {
+    "word": "environment",
+    "phonetic": "/ɪnˈvaɪrənmənt/",
+    "pos": "n.",
+    "meaning": "環境",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "We should all work together to protect the natural environment."
+  },
+  {
+    "word": "pollution",
+    "phonetic": "/pəˈluːʃn/",
+    "pos": "n.",
+    "meaning": "污染",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "Air pollution is a major problem in many large cities worldwide."
+  },
+  {
+    "word": "recycle",
+    "phonetic": "/ˌriːˈsaɪkl/",
+    "pos": "v.",
+    "meaning": "回收；循環利用",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "Please recycle your plastic bottles and glass containers."
+  },
+  {
+    "word": "climate",
+    "phonetic": "/ˈklaɪmət/",
+    "pos": "n.",
+    "meaning": "氣候",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "The tropical climate is characterized by high temperatures and heavy rainfall."
+  },
+  {
+    "word": "conservation",
+    "phonetic": "/ˌkɒnsərˈveɪʃn/",
+    "pos": "n.",
+    "meaning": "保育；節約",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "Energy conservation is essential to reduce our carbon footprint."
   }
 ]
