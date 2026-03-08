@@ -171,12 +171,14 @@ function getBestVoice(isChinese) {
         const voice = voices.find(v => {
             const name = v.name;
             const lang = v.lang.toLowerCase().replace('_', '-');
-            const isTW = lang.includes('tw') || lang.includes('hant');
+            const isTW = lang.includes('tw'); // 嚴格鎖定 TW
             const isEN = lang.startsWith('en');
             
             if (isChinese) {
-                // 確保語系符合繁體中文 (zh-TW)
-                const isOtherRegion = lang.includes('cn') || name.includes('China') || name.includes('Mainland');
+                // 確保語系符合繁體中文 (zh-TW)，並嚴格排除中國大陸 (cn) 與香港 (hk)
+                const isOtherRegion = lang.includes('cn') || lang.includes('hk') || 
+                                     name.includes('China') || name.includes('Mainland') || 
+                                     name.includes('Hong Kong') || name.includes('Cantonese');
                 if (!isTW || isOtherRegion) return false;
 
                 // 針對 Siri 的特殊處理：優先尋找「聲音 2」或「Voice 2」
@@ -192,17 +194,20 @@ function getBestVoice(isChinese) {
         if (voice) return voice;
     }
 
-    // 2. 二次嘗試：若找不到 Siri 2，則找任何 Siri 或符合語系的台灣語音
+    // 2. 二次嘗試：若找不到高品質，則找任何符合語系的台灣語音（排除香港粵語）
     if (isChinese) {
-        const anySiri = voices.find(v => v.name.includes('Siri') && (v.lang.includes('tw') || v.lang.includes('hant')));
-        if (anySiri) return anySiri;
+        const anyTW = voices.find(v => {
+            const l = v.lang.toLowerCase().replace('_', '-');
+            return l.includes('tw') && !l.includes('hk');
+        });
+        if (anyTW) return anyTW;
     }
 
-    // 3. 回退方案：嚴格過濾後的台灣語音
+    // 3. 最終回退方案
     return voices.find(v => {
         const l = v.lang.toLowerCase().replace('_', '-');
-        return isChinese ? (l.includes('tw') || l.includes('hant')) : l.startsWith('en-us');
-    }) || voices.find(v => v.lang.toLowerCase().startsWith(isChinese ? 'zh' : 'en'));
+        return isChinese ? (l.includes('tw') && !l.includes('hk')) : l.startsWith('en-us');
+    }) || voices.find(v => v.lang.toLowerCase().startsWith(isChinese ? 'zh-tw' : 'en-us'));
 }
 
 // 核心朗讀邏輯：支援中英文自動偵測與分段播放
