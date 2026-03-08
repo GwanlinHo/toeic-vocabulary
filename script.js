@@ -156,12 +156,12 @@ loadVoices();
 /**
  * 智慧型語音選擇器
  * 優先尋找各系統的高品質自然音 (iOS: Samantha/Siri, Android: Google)
- * 強制過濾中國腔調，僅保留台灣腔調
+ * 優先選用台灣國語 (zh-TW) 語音包
  */
 function getBestVoice(isChinese) {
     // 優先順序關鍵字
     const enKeywords = ['Samantha (Enhanced)', 'Samantha', 'Google US English', 'Alex', 'Siri', 'Google', 'Microsoft Zira'];
-    // 徹底移除 Mei-Jia，優先權給予 Siri 與 Google 台灣
+    // 優先權給予 Siri 與 Google 台灣
     const zhKeywords = ['Siri', 'Google 國語（台灣）', 'Google', 'Microsoft Hanhan'];
     
     const keywords = isChinese ? zhKeywords : enKeywords;
@@ -175,9 +175,9 @@ function getBestVoice(isChinese) {
             const isEN = lang.startsWith('en');
             
             if (isChinese) {
-                // 強制過濾中國腔
-                const isChina = lang.includes('cn') || name.includes('China') || name.includes('Mainland');
-                if (!isTW || isChina) return false;
+                // 確保語系符合繁體中文 (zh-TW)
+                const isOtherRegion = lang.includes('cn') || name.includes('China') || name.includes('Mainland');
+                if (!isTW || isOtherRegion) return false;
 
                 // 針對 Siri 的特殊處理：優先尋找「聲音 2」或「Voice 2」
                 if (keyword === 'Siri') {
