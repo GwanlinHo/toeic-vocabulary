@@ -10024,5 +10024,60 @@
     "synonyms": [],
     "antonyms": [],
     "example": "Energy conservation is essential to reduce our carbon footprint."
+  },
+  {
+    "word": "postcard",
+    "phonetic": "/ˈpəʊstkɑːrd/",
+    "pos": "n.",
+    "meaning": "明信片",
+    "example": "I sent a postcard to my family while I was on vacation in Paris.",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "umbrella",
+    "phonetic": "/ʌmˈbrelə/",
+    "pos": "n.",
+    "meaning": "雨傘",
+    "example": "Don’t forget to take an umbrella with you; the forecast says it might rain.",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "sunscreen",
+    "phonetic": "/ˈsʌnskriːn/",
+    "pos": "n.",
+    "meaning": "防曬乳",
+    "example": "You should apply sunscreen before going to the beach to avoid sunburn.",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "sunglasses",
+    "phonetic": "/ˈsʌnɡlæsɪz/",
+    "pos": "n. pl.",
+    "meaning": "太陽眼鏡",
+    "example": "She wore her sunglasses to protect her eyes from the bright sunlight.",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "luggage tag",
+    "phonetic": "/ˈlʌɡɪdʒ tæɡ/",
+    "pos": "n. phrase",
+    "meaning": "行李吊牌",
+    "example": "Please make sure each of your bags has a clearly marked luggage tag.",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": []
   }
 ]
