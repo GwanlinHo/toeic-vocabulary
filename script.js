@@ -97,6 +97,31 @@ function loadVoices() {
 window.speechSynthesis.onvoiceschanged = loadVoices;
 loadVoices();
 
+/**
+ * 智慧型語音選擇器
+ * 優先尋找各系統的高品質自然音 (iOS: Samantha/Siri, Android: Google)
+ */
+function getBestVoice(isChinese) {
+    // 優先順序關鍵字
+    const enKeywords = ['Samantha', 'Google US English', 'Alex', 'Siri', 'Google', 'Microsoft Zira'];
+    const zhKeywords = ['Mei-Jia', 'Google 國語（台灣）', 'Tingting', 'Siri', 'Google', 'Microsoft Hanhan'];
+    
+    const keywords = isChinese ? zhKeywords : enKeywords;
+    const langPrefix = isChinese ? 'zh' : 'en';
+
+    // 1. 嘗試匹配高品質關鍵字
+    for (const keyword of keywords) {
+        const voice = voices.find(v => 
+            v.name.includes(keyword) && v.lang.toLowerCase().startsWith(langPrefix)
+        );
+        if (voice) return voice;
+    }
+
+    // 2. 回退方案：尋找該語系的任何語音
+    return voices.find(v => v.lang.toLowerCase().startsWith(isChinese ? 'zh-tw' : 'en-us')) ||
+           voices.find(v => v.lang.toLowerCase().startsWith(langPrefix));
+}
+
 // 核心朗讀邏輯：支援中英文自動偵測與分段播放
 function speakText(text) {
     if (!text) return;
@@ -111,18 +136,18 @@ function speakText(text) {
         const msg = new SpeechSynthesisUtterance(trimmed);
         const isChinese = /[\u4e00-\u9fa5]/.test(trimmed);
         
-        if (isChinese) {
-            msg.lang = 'zh-TW';
-            const zhVoice = voices.find(v => v.lang.includes('zh-TW') || v.lang.includes('zh-HK') || v.lang.includes('zh-CN'));
-            if (zhVoice) msg.voice = zhVoice;
+        // 取得最佳語音包
+        const bestVoice = getBestVoice(isChinese);
+        if (bestVoice) {
+            msg.voice = bestVoice;
+            msg.lang = bestVoice.lang;
         } else {
-            msg.lang = 'en-US';
-            const enVoice = voices.find(v => v.lang.includes('en-US') || v.lang.includes('en-GB') || v.lang.includes('en-AU'));
-            if (enVoice) msg.voice = enVoice;
+            msg.lang = isChinese ? 'zh-TW' : 'en-US';
         }
 
         msg.volume = 1;
-        msg.rate = 0.9; 
+        // 針對不同語系微調語速，使其聽起來更流暢
+        msg.rate = isChinese ? 0.95 : 0.88; 
         msg.pitch = 1;
         
         // 瀏覽器會自動排隊播放
