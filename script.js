@@ -173,8 +173,8 @@ function speakText(text) {
         }
 
         msg.volume = 1;
-        // 調慢語速以利聽力與發音練習 (EN: 0.8, ZH: 0.85)
-        msg.rate = isChinese ? 0.85 : 0.8; 
+        // 進一步調慢語速：英文 0.72 (更利於辨識細節)，中文 0.8
+        msg.rate = isChinese ? 0.8 : 0.72; 
         msg.pitch = 1;
         
         // 瀏覽器會自動排隊播放
