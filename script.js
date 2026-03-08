@@ -105,30 +105,44 @@ loadVoices();
 function getBestVoice(isChinese) {
     // 優先順序關鍵字
     const enKeywords = ['Samantha (Enhanced)', 'Samantha', 'Google US English', 'Alex', 'Siri', 'Google', 'Microsoft Zira'];
-    // 優先使用 Siri 聲音 2 (iOS 台灣國語最自然音)，移除 Tingting
-    const zhKeywords = ['Siri 聲音 2', 'Siri', 'Mei-Jia', 'Google 國語（台灣）', 'Google', 'Microsoft Hanhan'];
+    // 徹底移除 Mei-Jia，優先權給予 Siri 與 Google 台灣
+    const zhKeywords = ['Siri', 'Google 國語（台灣）', 'Google', 'Microsoft Hanhan'];
     
     const keywords = isChinese ? zhKeywords : enKeywords;
 
     // 1. 嘗試匹配高品質關鍵字且語系正確
     for (const keyword of keywords) {
         const voice = voices.find(v => {
-            const nameMatch = v.name.includes(keyword);
+            const name = v.name;
             const lang = v.lang.toLowerCase().replace('_', '-');
             const isTW = lang.includes('tw') || lang.includes('hant');
             const isEN = lang.startsWith('en');
             
             if (isChinese) {
-                // 強制要求中文必須包含 TW 或 Hant，且絕對不能包含 CN 或 Mainland
-                return nameMatch && isTW && !lang.includes('cn') && !v.name.includes('China');
+                // 強制過濾中國腔
+                const isChina = lang.includes('cn') || name.includes('China') || name.includes('Mainland');
+                if (!isTW || isChina) return false;
+
+                // 針對 Siri 的特殊處理：優先尋找「聲音 2」或「Voice 2」
+                if (keyword === 'Siri') {
+                    return name.includes('Siri') && (name.includes('2') || name.includes('Voice 2') || name.includes('聲音 2'));
+                }
+                
+                return name.includes(keyword);
             } else {
-                return nameMatch && isEN;
+                return name.includes(keyword) && isEN;
             }
         });
         if (voice) return voice;
     }
 
-    // 2. 回退方案：尋找該語系的任何語音（嚴格過濾中國腔）
+    // 2. 二次嘗試：若找不到 Siri 2，則找任何 Siri 或符合語系的台灣語音
+    if (isChinese) {
+        const anySiri = voices.find(v => v.name.includes('Siri') && (v.lang.includes('tw') || v.lang.includes('hant')));
+        if (anySiri) return anySiri;
+    }
+
+    // 3. 回退方案：嚴格過濾後的台灣語音
     return voices.find(v => {
         const l = v.lang.toLowerCase().replace('_', '-');
         return isChinese ? (l.includes('tw') || l.includes('hant')) : l.startsWith('en-us');
