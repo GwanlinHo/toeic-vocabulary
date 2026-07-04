@@ -1,136 +1,5 @@
 [
   {
-    "word": "resolution",
-    "phonetic": "/ˌrezəˈluːʃn/",
-    "pos": "n.",
-    "meaning": "決議, 解決, 解析度",
-    "level": "blue",
-    "phrases": [
-      "pass a resolution",
-      "conflict resolution"
-    ],
-    "synonyms": [
-      "decision",
-      "settlement"
-    ],
-    "antonyms": [],
-    "example": "The board passed a resolution to increase the annual research and development budget."
-  },
-  {
-    "word": "second a motion",
-    "phonetic": "/ˈsekənd ə ˈməʊʃn/",
-    "pos": "v. phrase",
-    "meaning": "附議",
-    "level": "blue",
-    "phrases": [],
-    "synonyms": [],
-    "antonyms": [],
-    "example": "I would like to second the motion to approve the new marketing strategy."
-  },
-  {
-    "word": "top dollar",
-    "phonetic": "/tɑːp ˈdɑːlər/",
-    "pos": "n. phr.",
-    "meaning": "最高價錢；極高薪水",
-    "level": "blue",
-    "phrases": [
-      "pay top dollar"
-    ],
-    "synonyms": [
-      "premium price"
-    ],
-    "antonyms": [
-      "bargain"
-    ],
-    "example": "The company is willing to pay top dollar to attract the best engineering talent."
-  },
-  {
-    "word": "admit",
-    "phonetic": "/ədˈmɪt/",
-    "pos": "v.",
-    "meaning": "承認；准許進入",
-    "level": "blue",
-    "phrases": [
-      "admit defeat"
-    ],
-    "synonyms": [
-      "confess",
-      "allow"
-    ],
-    "antonyms": [
-      "deny",
-      "refuse"
-    ],
-    "example": "The manager was forced to admit that the project was behind schedule."
-  },
-  {
-    "word": "attitude",
-    "phonetic": "/ˈætɪtuːd/",
-    "pos": "n.",
-    "meaning": "態度, 看法",
-    "level": "blue",
-    "phrases": [
-      "positive attitude",
-      "professional attitude"
-    ],
-    "synonyms": [
-      "outlook",
-      "mindset"
-    ],
-    "antonyms": [],
-    "example": "A positive and professional attitude is essential for success in any customer-facing role."
-  },
-  {
-    "word": "back to the drawing board",
-    "phonetic": "/bæk tə ðə ˈdrɔːɪŋ bɔːrd/",
-    "pos": "idiom",
-    "meaning": "推倒重來；重新開始",
-    "example": "The initial prototype failed the safety test, so it's back to the drawing board for the design team.",
-    "level": "blue",
-    "phrases": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  {
-    "word": "branch",
-    "phonetic": "/.../",
-    "pos": "n./v.",
-    "meaning": "分支",
-    "level": "blue",
-    "phrases": [],
-    "synonyms": [],
-    "antonyms": [],
-    "example": "This is a sample sentence for the word: Branch."
-  },
-  {
-    "word": "definition",
-    "phonetic": "/ˌdefɪˈnɪʃn/",
-    "pos": "n.",
-    "meaning": "定義, 清晰度",
-    "level": "blue",
-    "phrases": [
-      "by definition",
-      "high definition"
-    ],
-    "synonyms": [
-      "meaning",
-      "explanation"
-    ],
-    "antonyms": [],
-    "example": "The standard legal definition of a 'small business' varies from one country to another."
-  },
-  {
-    "word": "guest",
-    "phonetic": "/ɡest/",
-    "pos": "n.",
-    "meaning": "客人",
-    "level": "blue",
-    "phrases": [],
-    "synonyms": [],
-    "antonyms": [],
-    "example": "How many guests are you expecting for dinner?"
-  },
-  {
     "word": "in favor of sb/sth",
     "phonetic": "/ɪn ˈfeɪvər əv/",
     "pos": "phr.",
@@ -3236,6 +3105,23 @@
     "example": "The board of directors meets quarterly to review the company's financial performance."
   },
   {
+    "word": "bonus",
+    "pos": "n.",
+    "meaning": "獎金；紅利",
+    "phrases": [
+      "year-end bonus",
+      "performance bonus"
+    ],
+    "synonyms": [
+      "incentive",
+      "reward"
+    ],
+    "antonyms": [],
+    "example": "Employees receive a bonus when the team exceeds its quarterly target.",
+    "phonetic": "/ˈboʊnəs/",
+    "level": "blue"
+  },
+  {
     "word": "charity",
     "phonetic": "/ˈtʃærəti/",
     "pos": "n.",
@@ -3409,6 +3295,23 @@
     ],
     "antonyms": [],
     "example": "The new book is scheduled for publication in early September."
+  },
+  {
+    "word": "rating",
+    "pos": "n.",
+    "meaning": "評分；評等",
+    "phrases": [
+      "credit rating",
+      "customer rating"
+    ],
+    "synonyms": [
+      "score",
+      "ranking"
+    ],
+    "antonyms": [],
+    "example": "The hotel improved its rating by upgrading customer service.",
+    "phonetic": "/ˈreɪtɪŋ/",
+    "level": "blue"
   },
   {
     "word": "refer to",
@@ -4815,6 +4718,22 @@
     "example": "True friendship is a rare and precious thing."
   },
   {
+    "word": "handling",
+    "pos": "n.",
+    "meaning": "處理；經手（費）",
+    "phrases": [
+      "shipping and handling",
+      "careful handling"
+    ],
+    "synonyms": [
+      "processing"
+    ],
+    "antonyms": [],
+    "example": "A small handling fee is added to every mail order.",
+    "phonetic": "/ˈhændəlɪŋ/",
+    "level": "blue"
+  },
+  {
     "word": "mortgage",
     "phonetic": "/ˈmɔːrɡɪdʒ/",
     "pos": "n./v.",
@@ -4853,6 +4772,26 @@
       "youth"
     ],
     "example": "The museum offers a discounted admission price for senior citizens."
+  },
+  {
+    "word": "subsequent",
+    "pos": "adj.",
+    "meaning": "隨後的；接下來的",
+    "phrases": [
+      "subsequent meetings",
+      "in subsequent years"
+    ],
+    "synonyms": [
+      "following",
+      "later"
+    ],
+    "antonyms": [
+      "previous",
+      "preceding"
+    ],
+    "example": "The issue was resolved in a subsequent update to the software.",
+    "phonetic": "/ˈsəbsəkwənt/",
+    "level": "blue"
   },
   {
     "word": "translation",
@@ -7733,6 +7672,22 @@
     "example": "The company's clear intent is to become the market leader in the next three years."
   },
   {
+    "word": "logo",
+    "pos": "n.",
+    "meaning": "商標圖案；標誌",
+    "phrases": [
+      "company logo",
+      "logo design"
+    ],
+    "synonyms": [
+      "emblem"
+    ],
+    "antonyms": [],
+    "example": "The redesigned logo will appear on all packaging next year.",
+    "phonetic": "/ˈloʊgoʊ/",
+    "level": "blue"
+  },
+  {
     "word": "mature",
     "phonetic": "/məˈtʃʊr/",
     "pos": "adj./v.",
@@ -8517,6 +8472,22 @@
     "example": "Please provide your authorized signature at the bottom of the last page of the contract."
   },
   {
+    "word": "tracking",
+    "pos": "n.",
+    "meaning": "追蹤（貨件）",
+    "phrases": [
+      "tracking number",
+      "order tracking"
+    ],
+    "synonyms": [
+      "monitoring"
+    ],
+    "antonyms": [],
+    "example": "Use the tracking number to check where your parcel is.",
+    "phonetic": "/ˈtrækɪŋ/",
+    "level": "blue"
+  },
+  {
     "word": "venue",
     "phonetic": "/ˈvenjuː/",
     "pos": "n.",
@@ -8630,6 +8601,20 @@
     "example": "Improving the checkout process led to a significant increase in the website's conversion rate."
   },
   {
+    "word": "copyright",
+    "pos": "n.",
+    "meaning": "著作權；版權",
+    "phrases": [
+      "copyright infringement",
+      "copyright notice"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "All images on the website are protected by copyright.",
+    "phonetic": "/ˈkɑpiˌraɪt/",
+    "level": "blue"
+  },
+  {
     "word": "copyright law",
     "phonetic": "/ˈkɒpiraɪt lɔː/",
     "pos": "n. phrase",
@@ -8688,6 +8673,22 @@
       "uniform"
     ],
     "example": "The company has a diverse workforce with employees from many different backgrounds."
+  },
+  {
+    "word": "export",
+    "pos": "n.",
+    "meaning": "出口（貨物）",
+    "phrases": [
+      "export market",
+      "export license"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "import"
+    ],
+    "example": "Electronics remain the country's largest export.",
+    "phonetic": "/ˈɛkspɔrt/",
+    "level": "blue"
   },
   {
     "word": "grandfather clock",
@@ -11297,6 +11298,24 @@
     "example": "I must apologize for being late to the meeting."
   },
   {
+    "word": "connecting",
+    "pos": "adj.",
+    "meaning": "轉接的；銜接的",
+    "phrases": [
+      "connecting flight",
+      "connecting room"
+    ],
+    "synonyms": [
+      "linking"
+    ],
+    "antonyms": [
+      "direct"
+    ],
+    "example": "He missed his connecting flight because the first leg was delayed.",
+    "phonetic": "/kəˈnɛktɪŋ/",
+    "level": "blue"
+  },
+  {
     "word": "connecting flight",
     "phonetic": "/kəˈnektɪŋ flaɪt/",
     "pos": "n. phrase",
@@ -12057,6 +12076,24 @@
       "concrete"
     ],
     "example": "Please submit a 200-word abstract of your research proposal by the end of the month."
+  },
+  {
+    "word": "binding",
+    "pos": "adj.",
+    "meaning": "有約束力的",
+    "phrases": [
+      "legally binding",
+      "binding agreement"
+    ],
+    "synonyms": [
+      "enforceable"
+    ],
+    "antonyms": [
+      "nonbinding"
+    ],
+    "example": "Once signed, the contract is legally binding on both parties.",
+    "phonetic": "/ˈbaɪndɪŋ/",
+    "level": "blue"
   },
   {
     "word": "capital intensity",
@@ -13427,6 +13464,22 @@
     "example": "You must fill out a customs declaration form even if you have nothing to declare."
   },
   {
+    "word": "import",
+    "pos": "n.",
+    "meaning": "進口（貨物）",
+    "phrases": [
+      "import duty",
+      "import license"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "export"
+    ],
+    "example": "The government raised the tax on certain imports this year.",
+    "phonetic": "/ˌɪmˈpɔrt/",
+    "level": "blue"
+  },
+  {
     "word": "innovative",
     "phonetic": "/ˈɪnəveɪtɪv/",
     "pos": "adj.",
@@ -14751,6 +14804,22 @@
       "dull"
     ],
     "example": "The new office building offers spectacular views of the mountains and the sea."
+  },
+  {
+    "word": "subscription",
+    "pos": "n.",
+    "meaning": "訂閱；訂購",
+    "phrases": [
+      "annual subscription",
+      "cancel a subscription"
+    ],
+    "synonyms": [
+      "membership"
+    ],
+    "antonyms": [],
+    "example": "Your subscription will renew automatically unless you cancel it.",
+    "phonetic": "/səbˈskrɪpʃən/",
+    "level": "blue"
   },
   {
     "word": "subscription model",
@@ -16781,6 +16850,24 @@
     "example": "The company has announced that the deputy manager will be the CEO's official successor."
   },
   {
+    "word": "upload",
+    "pos": "v.",
+    "meaning": "上傳",
+    "phrases": [
+      "upload a file",
+      "upload speed"
+    ],
+    "synonyms": [
+      "post"
+    ],
+    "antonyms": [
+      "download"
+    ],
+    "example": "Please upload your report to the shared drive before Friday.",
+    "phonetic": "/ˈəˌploʊd/",
+    "level": "blue"
+  },
+  {
     "word": "adapt",
     "phonetic": "/əˈdæpt/",
     "pos": "n./v.",
@@ -17037,6 +17124,22 @@
     "example": "Drivers are advised to use caution when traveling on wet and slippery roads."
   },
   {
+    "word": "certification",
+    "pos": "n.",
+    "meaning": "認證；證書",
+    "phrases": [
+      "safety certification",
+      "professional certification"
+    ],
+    "synonyms": [
+      "accreditation"
+    ],
+    "antonyms": [],
+    "example": "The factory earned certification for its quality management system.",
+    "phonetic": "/ˌsərtəfəˈkeɪʃən/",
+    "level": "blue"
+  },
+  {
     "word": "compatible",
     "phonetic": "/kəmˈpætəbl/",
     "pos": "adj.",
@@ -17188,6 +17291,25 @@
     "example": "The new laptop is lightweight and portable, making it perfect for business travel."
   },
   {
+    "word": "resign",
+    "pos": "v.",
+    "meaning": "辭職；辭去",
+    "phrases": [
+      "resign from a post",
+      "tender one's resignation"
+    ],
+    "synonyms": [
+      "step down",
+      "quit"
+    ],
+    "antonyms": [
+      "stay on"
+    ],
+    "example": "She decided to resign after accepting a position at another firm.",
+    "phonetic": "/rɪˈzaɪn/",
+    "level": "blue"
+  },
+  {
     "word": "revealing",
     "phonetic": "/rɪˈviːlɪŋ/",
     "pos": "adj.",
@@ -17335,6 +17457,22 @@
     "synonyms": [],
     "antonyms": [],
     "example": "Please have your boarding pass and passport ready at the gate."
+  },
+  {
+    "word": "circular",
+    "pos": "n.",
+    "meaning": "通函；傳閱通知",
+    "phrases": [
+      "company circular"
+    ],
+    "synonyms": [
+      "notice",
+      "bulletin"
+    ],
+    "antonyms": [],
+    "example": "A circular was sent to all branches announcing the new policy.",
+    "phonetic": "/ˈsərkjələr/",
+    "level": "blue"
   },
   {
     "word": "circular design",
@@ -17561,6 +17699,22 @@
     "synonyms": [],
     "antonyms": [],
     "example": "The board announced the names of the nominees for the upcoming election."
+  },
+  {
+    "word": "packaging",
+    "pos": "n.",
+    "meaning": "包裝",
+    "phrases": [
+      "eco-friendly packaging",
+      "product packaging"
+    ],
+    "synonyms": [
+      "wrapping"
+    ],
+    "antonyms": [],
+    "example": "The fragile items arrived intact thanks to sturdy packaging.",
+    "phonetic": "/ˈpækɪʤɪŋ/",
+    "level": "blue"
   },
   {
     "word": "priority boarding",
@@ -18354,6 +18508,22 @@
     "example": "In the aggregate, the company's performance has been strong this year."
   },
   {
+    "word": "networking",
+    "pos": "n.",
+    "meaning": "建立人脈；社交聯誼",
+    "phrases": [
+      "networking event",
+      "business networking"
+    ],
+    "synonyms": [
+      "socializing"
+    ],
+    "antonyms": [],
+    "example": "The reception is a great opportunity for networking with potential clients.",
+    "phonetic": "/ˈnɛtˌwərkɪŋ/",
+    "level": "blue"
+  },
+  {
     "word": "networking event",
     "phonetic": "/ˈnetwɜːrkɪŋ ɪˈvent/",
     "pos": "n. phrase",
@@ -18677,6 +18847,23 @@
     "synonyms": [],
     "antonyms": [],
     "example": "He has been a mentor to many young entrepreneurs in the city."
+  },
+  {
+    "word": "merchandise",
+    "pos": "n.",
+    "meaning": "商品；貨品",
+    "phrases": [
+      "general merchandise",
+      "display merchandise"
+    ],
+    "synonyms": [
+      "goods",
+      "products"
+    ],
+    "antonyms": [],
+    "example": "All merchandise on the top shelf is currently on sale.",
+    "phonetic": "/ˈmərʧənˌdaɪz/",
+    "level": "blue"
   },
   {
     "word": "overhead",
@@ -19164,6 +19351,22 @@
     "example": "The company is making steady progress, albeit at a slower pace than initially expected."
   },
   {
+    "word": "catalog",
+    "pos": "n.",
+    "meaning": "目錄；型錄",
+    "phrases": [
+      "product catalog",
+      "online catalog"
+    ],
+    "synonyms": [
+      "directory"
+    ],
+    "antonyms": [],
+    "example": "Browse our latest catalog to see the full range of products.",
+    "phonetic": "/ˈkætəlɔg/",
+    "level": "blue"
+  },
+  {
     "word": "compliment",
     "phonetic": "/ˈkɑːmplɪmənt/",
     "pos": "n./v.",
@@ -19296,6 +19499,25 @@
     "phrases": [],
     "synonyms": [],
     "antonyms": []
+  },
+  {
+    "word": "optional",
+    "pos": "adj.",
+    "meaning": "可選的；非強制的",
+    "phrases": [
+      "optional feature",
+      "optional insurance"
+    ],
+    "synonyms": [
+      "voluntary"
+    ],
+    "antonyms": [
+      "mandatory",
+      "compulsory"
+    ],
+    "example": "Attendance at the workshop is optional but strongly encouraged.",
+    "phonetic": "/ˈɔpʃənəl/",
+    "level": "blue"
   },
   {
     "word": "pioneer",
@@ -19952,6 +20174,23 @@
     "example": "We held a special farewell lunch for the manager before he left for his new job."
   },
   {
+    "word": "landlord",
+    "pos": "n.",
+    "meaning": "房東",
+    "phrases": [
+      "landlord and tenant"
+    ],
+    "synonyms": [
+      "property owner"
+    ],
+    "antonyms": [
+      "tenant"
+    ],
+    "example": "The landlord agreed to repaint the office before we moved in.",
+    "phonetic": "/ˈlænˌdlɔrd/",
+    "level": "blue"
+  },
+  {
     "word": "landmark",
     "phonetic": "/ˈlændmɑːrk/",
     "pos": "n./adj.",
@@ -20067,6 +20306,22 @@
     "example": "Seafood is a local specialty of this coastal region and is served in most restaurants."
   },
   {
+    "word": "trademark",
+    "pos": "n.",
+    "meaning": "商標",
+    "phrases": [
+      "registered trademark",
+      "trademark infringement"
+    ],
+    "synonyms": [
+      "brand"
+    ],
+    "antonyms": [],
+    "example": "The company registered its trademark in over thirty countries.",
+    "phonetic": "/ˈtreɪdˌmɑrk/",
+    "level": "blue"
+  },
+  {
     "word": "trademark protection",
     "phonetic": "/ˈtreɪdmɑːrk prəˈtekʃn/",
     "pos": "n. phrase",
@@ -20087,6 +20342,22 @@
     "phrases": [],
     "synonyms": [],
     "antonyms": []
+  },
+  {
+    "word": "utilities",
+    "pos": "n.",
+    "meaning": "水電瓦斯等公用事業費",
+    "phrases": [
+      "utilities included",
+      "utility bill"
+    ],
+    "synonyms": [
+      "services"
+    ],
+    "antonyms": [],
+    "example": "The monthly rent covers utilities such as water and electricity.",
+    "phonetic": "/juˈtɪlətiz/",
+    "level": "blue"
   },
   {
     "word": "voyage",
@@ -20339,6 +20610,21 @@
     ],
     "antonyms": [],
     "example": "Construction of the new research facility is already underway and should be finished by next year."
+  },
+  {
+    "word": "billboard",
+    "pos": "n.",
+    "meaning": "大型廣告看板",
+    "phrases": [
+      "billboard advertising"
+    ],
+    "synonyms": [
+      "hoarding"
+    ],
+    "antonyms": [],
+    "example": "The company booked a billboard near the highway for its campaign.",
+    "phonetic": "/ˈbɪlˌbɔrd/",
+    "level": "blue"
   },
   {
     "word": "capital account surplus",
@@ -20862,6 +21148,24 @@
       "inactive"
     ],
     "example": "The new security system will become fully operative next Monday."
+  },
+  {
+    "word": "pickup",
+    "pos": "n.",
+    "meaning": "取貨；領取",
+    "phrases": [
+      "curbside pickup",
+      "pickup point"
+    ],
+    "synonyms": [
+      "collection"
+    ],
+    "antonyms": [
+      "delivery"
+    ],
+    "example": "You can choose free store pickup instead of home delivery.",
+    "phonetic": "/ˈpɪˌkəp/",
+    "level": "blue"
   },
   {
     "word": "prestigious",
@@ -21455,6 +21759,25 @@
     "example": "The company's profits have increased steadily over the last five years."
   },
   {
+    "word": "supplier",
+    "pos": "n.",
+    "meaning": "供應商",
+    "phrases": [
+      "key supplier",
+      "supplier network"
+    ],
+    "synonyms": [
+      "vendor",
+      "provider"
+    ],
+    "antonyms": [
+      "buyer"
+    ],
+    "example": "We switched to a local supplier to shorten delivery times.",
+    "phonetic": "/səˈplaɪər/",
+    "level": "blue"
+  },
+  {
     "word": "supplier relationship management",
     "phonetic": "/səˈplaɪər rɪˈleɪʃnʃɪp ˈmænɪdʒmənt/",
     "pos": "n. phrase",
@@ -21492,6 +21815,24 @@
     ],
     "antonyms": [],
     "example": "Several witnesses were called to testify during the court case last week."
+  },
+  {
+    "word": "activation",
+    "pos": "n.",
+    "meaning": "啟用；開通",
+    "phrases": [
+      "account activation",
+      "activation code"
+    ],
+    "synonyms": [
+      "enabling"
+    ],
+    "antonyms": [
+      "deactivation"
+    ],
+    "example": "You will receive an activation link by email after signing up.",
+    "phonetic": "/ˌæktəˈveɪʃən/",
+    "level": "blue"
   },
   {
     "word": "dessert",
@@ -22271,6 +22612,23 @@
     "example": "Check the date on the milk to make sure it hasn't expired."
   },
   {
+    "word": "memo",
+    "pos": "n.",
+    "meaning": "備忘錄；通知",
+    "phrases": [
+      "internal memo",
+      "send a memo"
+    ],
+    "synonyms": [
+      "memorandum",
+      "note"
+    ],
+    "antonyms": [],
+    "example": "The manager circulated a memo about the updated dress code.",
+    "phonetic": "/ˈmɛˌmoʊ/",
+    "level": "blue"
+  },
+  {
     "word": "obesity",
     "phonetic": "/oʊˈbiːsəti/",
     "pos": "n.",
@@ -22673,6 +23031,23 @@
     "phrases": [],
     "synonyms": [],
     "antonyms": []
+  },
+  {
+    "word": "bulletin",
+    "pos": "n.",
+    "meaning": "公告；簡報",
+    "phrases": [
+      "bulletin board",
+      "news bulletin"
+    ],
+    "synonyms": [
+      "notice",
+      "announcement"
+    ],
+    "antonyms": [],
+    "example": "Job openings are posted on the bulletin board near the entrance.",
+    "phonetic": "/ˈbʊlɪtən/",
+    "level": "blue"
   },
   {
     "word": "cooperate",
@@ -23742,6 +24117,24 @@
     "example": "The technology firm was founded by a billionaire who started the business in his garage."
   },
   {
+    "word": "cancellation",
+    "pos": "n.",
+    "meaning": "取消",
+    "phrases": [
+      "cancellation policy",
+      "cancellation fee"
+    ],
+    "synonyms": [
+      "annulment"
+    ],
+    "antonyms": [
+      "confirmation"
+    ],
+    "example": "Please review the cancellation policy before booking the tour.",
+    "phonetic": "/ˌkænsəˈleɪʃən/",
+    "level": "blue"
+  },
+  {
     "word": "designation",
     "phonetic": "/ˌdezɪɡˈneɪʃn/",
     "pos": "n.",
@@ -23987,6 +24380,25 @@
     "example": "The new fitness app received an official endorsement from the national health association."
   },
   {
+    "word": "forthcoming",
+    "pos": "adj.",
+    "meaning": "即將到來的",
+    "phrases": [
+      "forthcoming event",
+      "forthcoming report"
+    ],
+    "synonyms": [
+      "upcoming",
+      "imminent"
+    ],
+    "antonyms": [
+      "past"
+    ],
+    "example": "Details of the forthcoming product launch will be announced soon.",
+    "phonetic": "/ˈfɔrθˈkəmɪŋ/",
+    "level": "blue"
+  },
+  {
     "word": "merge",
     "phonetic": "/mɜːrdʒ/",
     "pos": "v./n.",
@@ -24016,6 +24428,25 @@
       "insignificance"
     ],
     "example": "The award has added significant prestige to the university's architecture department."
+  },
+  {
+    "word": "retailer",
+    "pos": "n.",
+    "meaning": "零售商",
+    "phrases": [
+      "online retailer",
+      "major retailer"
+    ],
+    "synonyms": [
+      "merchant",
+      "seller"
+    ],
+    "antonyms": [
+      "wholesaler"
+    ],
+    "example": "The clothing brand sells through more than 200 retailers nationwide.",
+    "phonetic": "/ˈriˌteɪlər/",
+    "level": "blue"
   },
   {
     "word": "sampling bias",
@@ -24484,6 +24915,23 @@
       "ineffective"
     ],
     "example": "The company's new advertising strategy proved to be a potent tool for increasing sales."
+  },
+  {
+    "word": "renovation",
+    "pos": "n.",
+    "meaning": "翻新；整修",
+    "phrases": [
+      "under renovation",
+      "major renovation"
+    ],
+    "synonyms": [
+      "remodeling",
+      "refurbishment"
+    ],
+    "antonyms": [],
+    "example": "The lobby will be closed during the renovation next month.",
+    "phonetic": "/ˌrɛnəˈveɪʃən/",
+    "level": "blue"
   },
   {
     "word": "resource allocation",
@@ -27482,6 +27930,23 @@
     "example": "Please disregard the previous email as it contained some incorrect information."
   },
   {
+    "word": "distributor",
+    "pos": "n.",
+    "meaning": "經銷商；配銷商",
+    "phrases": [
+      "exclusive distributor",
+      "authorized distributor"
+    ],
+    "synonyms": [
+      "wholesaler",
+      "dealer"
+    ],
+    "antonyms": [],
+    "example": "The company appointed a new distributor for the Asian market.",
+    "phonetic": "/dɪˈstrɪbjətər/",
+    "level": "blue"
+  },
+  {
     "word": "earnest",
     "phonetic": "/ˈɜːrnɪst/",
     "pos": "adj.",
@@ -27848,5 +28313,156 @@
     ],
     "antonyms": [],
     "example": "The manager's persuasive arguments were able to sway the board's decision."
+  },
+  {
+    "word": "tax exemption",
+    "phonetic": "/tæks ɪɡˈzempʃn/",
+    "pos": "n. phrase",
+    "meaning": "免稅；稅收豁免",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "The non-profit organization applied for a tax exemption status from the local government."
+  },
+  {
+    "word": "terminate",
+    "phonetic": "/ˈtɜːrmɪneɪt/",
+    "pos": "v.",
+    "meaning": "終止, 結束",
+    "level": "blue",
+    "phrases": [
+      "terminate a contract",
+      "terminate employment"
+    ],
+    "synonyms": [
+      "end",
+      "conclude"
+    ],
+    "antonyms": [
+      "initiate",
+      "commence"
+    ],
+    "example": "The company has the right to terminate the agreement if the terms are not met by the client."
+  },
+  {
+    "word": "undermine",
+    "phonetic": "/ˌʌndərˈmaɪn/",
+    "pos": "v.",
+    "meaning": "削弱, 暗中破壞",
+    "level": "blue",
+    "phrases": [
+      "undermine authority",
+      "undermine confidence"
+    ],
+    "synonyms": [
+      "weaken",
+      "sabotage"
+    ],
+    "antonyms": [
+      "strengthen",
+      "support"
+    ],
+    "example": "Constant criticism from management can seriously undermine employee morale."
+  },
+  {
+    "word": "vacancy",
+    "phonetic": "/ˈveɪkənsi/",
+    "pos": "n.",
+    "meaning": "空缺, 職缺, 空房",
+    "level": "blue",
+    "phrases": [
+      "job vacancy",
+      "no vacancies"
+    ],
+    "synonyms": [
+      "opening",
+      "gap"
+    ],
+    "antonyms": [],
+    "example": "There is currently a vacancy for a senior accountant in our financial department."
+  },
+  {
+    "word": "veto",
+    "phonetic": "/ˈviːtəʊ/",
+    "pos": "n./v.",
+    "meaning": "否決；否決權",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "The CEO has the power to veto any decision made by the regional managers."
+  },
+  {
+    "word": "vocational",
+    "phonetic": "/voʊˈkeɪʃənl/",
+    "pos": "adj.",
+    "meaning": "職業的, 職業技術的",
+    "level": "blue",
+    "phrases": [
+      "vocational training",
+      "vocational school"
+    ],
+    "synonyms": [
+      "professional",
+      "occupational"
+    ],
+    "antonyms": [
+      "academic"
+    ],
+    "example": "The government is increasing funding for vocational training programs to help reduce unemployment."
+  },
+  {
+    "word": "withstand",
+    "phonetic": "/wɪðˈstænd/",
+    "pos": "v.",
+    "meaning": "抵擋；經受住",
+    "level": "blue",
+    "phrases": [],
+    "synonyms": [
+      "endure",
+      "resist"
+    ],
+    "antonyms": [
+      "surrender",
+      "yield"
+    ],
+    "example": "The new building was designed to withstand even the most severe earthquakes."
+  },
+  {
+    "word": "accustomed",
+    "phonetic": "/əˈkʌstəmd/",
+    "pos": "adj.",
+    "meaning": "習慣的, 通常的",
+    "level": "blue",
+    "phrases": [
+      "accustomed to",
+      "become accustomed"
+    ],
+    "synonyms": [
+      "used",
+      "familiar"
+    ],
+    "antonyms": [
+      "unaccustomed"
+    ],
+    "example": "New employees often take a few weeks to become accustomed to the company's internal software systems."
+  },
+  {
+    "word": "applicant",
+    "phonetic": "/ˈæplɪkənt/",
+    "pos": "n.",
+    "meaning": "申請人, 應徵者",
+    "level": "blue",
+    "phrases": [
+      "job applicant",
+      "successful applicant"
+    ],
+    "synonyms": [
+      "candidate",
+      "bidder"
+    ],
+    "antonyms": [],
+    "example": "All qualified applicants will be contacted for an initial phone interview within the next two weeks."
   }
 ]

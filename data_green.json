@@ -1805,6 +1805,23 @@
     "example": "If you need any further information, please do not hesitate to contact us."
   },
   {
+    "word": "minutes",
+    "pos": "n.",
+    "meaning": "會議紀錄",
+    "phrases": [
+      "take the minutes",
+      "meeting minutes"
+    ],
+    "synonyms": [
+      "proceedings",
+      "record"
+    ],
+    "antonyms": [],
+    "example": "Please email the minutes to everyone who attended the meeting.",
+    "phonetic": "/ˈmɪnəts/",
+    "level": "green"
+  },
+  {
     "word": "take the minutes",
     "phonetic": "/teɪk ðə ˈmɪnɪts/",
     "pos": "v. phr.",
@@ -2568,6 +2585,20 @@
     ],
     "antonyms": [],
     "example": "The marketing department is working on a new design for our corporate newsletter and website."
+  },
+  {
+    "word": "interest",
+    "pos": "n.",
+    "meaning": "利息",
+    "phrases": [
+      "interest rate",
+      "accrued interest"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "The loan carries an annual interest of five percent.",
+    "phonetic": "/ˈɪntəˌrɛst/",
+    "level": "green"
   },
   {
     "word": "policy",
@@ -5462,6 +5493,23 @@
     "synonyms": [],
     "antonyms": [],
     "example": "Machine learning models are used to predict customer churn and improve retention strategies."
+  },
+  {
+    "word": "notice",
+    "pos": "n.",
+    "meaning": "通知；公告；預告期",
+    "phrases": [
+      "give notice",
+      "short notice"
+    ],
+    "synonyms": [
+      "notification",
+      "announcement"
+    ],
+    "antonyms": [],
+    "example": "Employees must give two weeks' notice before leaving.",
+    "phonetic": "/ˈnoʊtɪs/",
+    "level": "green"
   },
   {
     "word": "x-ray machine",
@@ -8784,6 +8832,24 @@
     "example": "Good communication is essential for a successful marriage."
   },
   {
+    "word": "download",
+    "pos": "v.",
+    "meaning": "下載",
+    "phrases": [
+      "download the app",
+      "free download"
+    ],
+    "synonyms": [
+      "retrieve"
+    ],
+    "antonyms": [
+      "upload"
+    ],
+    "example": "You can download the invoice as a PDF from your account.",
+    "phonetic": "/ˈdaʊnˌloʊd/",
+    "level": "green"
+  },
+  {
     "word": "email",
     "phonetic": "/ˈiːmeɪl/",
     "pos": "n./v.",
@@ -8925,6 +8991,25 @@
       "unsuitable"
     ],
     "example": "The committee will take appropriate action once the full investigation has been completed."
+  },
+  {
+    "word": "confirmed",
+    "pos": "adj.",
+    "meaning": "已確認的",
+    "phrases": [
+      "confirmed booking",
+      "confirmed order"
+    ],
+    "synonyms": [
+      "verified"
+    ],
+    "antonyms": [
+      "tentative",
+      "pending"
+    ],
+    "example": "Your reservation is confirmed for two nights starting Monday.",
+    "phonetic": "/kənˈfərmd/",
+    "level": "green"
   },
   {
     "word": "device",
@@ -10552,5 +10637,136 @@
     ],
     "antonyms": [],
     "example": "All participants are required to register for the conference by the end of the month."
+  },
+  {
+    "word": "resolution",
+    "phonetic": "/ˌrezəˈluːʃn/",
+    "pos": "n.",
+    "meaning": "決議, 解決, 解析度",
+    "level": "green",
+    "phrases": [
+      "pass a resolution",
+      "conflict resolution"
+    ],
+    "synonyms": [
+      "decision",
+      "settlement"
+    ],
+    "antonyms": [],
+    "example": "The board passed a resolution to increase the annual research and development budget."
+  },
+  {
+    "word": "second a motion",
+    "phonetic": "/ˈsekənd ə ˈməʊʃn/",
+    "pos": "v. phrase",
+    "meaning": "附議",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "I would like to second the motion to approve the new marketing strategy."
+  },
+  {
+    "word": "top dollar",
+    "phonetic": "/tɑːp ˈdɑːlər/",
+    "pos": "n. phr.",
+    "meaning": "最高價錢；極高薪水",
+    "level": "green",
+    "phrases": [
+      "pay top dollar"
+    ],
+    "synonyms": [
+      "premium price"
+    ],
+    "antonyms": [
+      "bargain"
+    ],
+    "example": "The company is willing to pay top dollar to attract the best engineering talent."
+  },
+  {
+    "word": "admit",
+    "phonetic": "/ədˈmɪt/",
+    "pos": "v.",
+    "meaning": "承認；准許進入",
+    "level": "green",
+    "phrases": [
+      "admit defeat"
+    ],
+    "synonyms": [
+      "confess",
+      "allow"
+    ],
+    "antonyms": [
+      "deny",
+      "refuse"
+    ],
+    "example": "The manager was forced to admit that the project was behind schedule."
+  },
+  {
+    "word": "attitude",
+    "phonetic": "/ˈætɪtuːd/",
+    "pos": "n.",
+    "meaning": "態度, 看法",
+    "level": "green",
+    "phrases": [
+      "positive attitude",
+      "professional attitude"
+    ],
+    "synonyms": [
+      "outlook",
+      "mindset"
+    ],
+    "antonyms": [],
+    "example": "A positive and professional attitude is essential for success in any customer-facing role."
+  },
+  {
+    "word": "back to the drawing board",
+    "phonetic": "/bæk tə ðə ˈdrɔːɪŋ bɔːrd/",
+    "pos": "idiom",
+    "meaning": "推倒重來；重新開始",
+    "example": "The initial prototype failed the safety test, so it's back to the drawing board for the design team.",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "branch",
+    "phonetic": "/.../",
+    "pos": "n./v.",
+    "meaning": "分支",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "This is a sample sentence for the word: Branch."
+  },
+  {
+    "word": "definition",
+    "phonetic": "/ˌdefɪˈnɪʃn/",
+    "pos": "n.",
+    "meaning": "定義, 清晰度",
+    "level": "green",
+    "phrases": [
+      "by definition",
+      "high definition"
+    ],
+    "synonyms": [
+      "meaning",
+      "explanation"
+    ],
+    "antonyms": [],
+    "example": "The standard legal definition of a 'small business' varies from one country to another."
+  },
+  {
+    "word": "guest",
+    "phonetic": "/ɡest/",
+    "pos": "n.",
+    "meaning": "客人",
+    "level": "green",
+    "phrases": [],
+    "synonyms": [],
+    "antonyms": [],
+    "example": "How many guests are you expecting for dinner?"
   }
 ]

@@ -1,156 +1,5 @@
 [
   {
-    "word": "tax exemption",
-    "phonetic": "/tæks ɪɡˈzempʃn/",
-    "pos": "n. phrase",
-    "meaning": "免稅；稅收豁免",
-    "level": "gold",
-    "phrases": [],
-    "synonyms": [],
-    "antonyms": [],
-    "example": "The non-profit organization applied for a tax exemption status from the local government."
-  },
-  {
-    "word": "terminate",
-    "phonetic": "/ˈtɜːrmɪneɪt/",
-    "pos": "v.",
-    "meaning": "終止, 結束",
-    "level": "gold",
-    "phrases": [
-      "terminate a contract",
-      "terminate employment"
-    ],
-    "synonyms": [
-      "end",
-      "conclude"
-    ],
-    "antonyms": [
-      "initiate",
-      "commence"
-    ],
-    "example": "The company has the right to terminate the agreement if the terms are not met by the client."
-  },
-  {
-    "word": "undermine",
-    "phonetic": "/ˌʌndərˈmaɪn/",
-    "pos": "v.",
-    "meaning": "削弱, 暗中破壞",
-    "level": "gold",
-    "phrases": [
-      "undermine authority",
-      "undermine confidence"
-    ],
-    "synonyms": [
-      "weaken",
-      "sabotage"
-    ],
-    "antonyms": [
-      "strengthen",
-      "support"
-    ],
-    "example": "Constant criticism from management can seriously undermine employee morale."
-  },
-  {
-    "word": "vacancy",
-    "phonetic": "/ˈveɪkənsi/",
-    "pos": "n.",
-    "meaning": "空缺, 職缺, 空房",
-    "level": "gold",
-    "phrases": [
-      "job vacancy",
-      "no vacancies"
-    ],
-    "synonyms": [
-      "opening",
-      "gap"
-    ],
-    "antonyms": [],
-    "example": "There is currently a vacancy for a senior accountant in our financial department."
-  },
-  {
-    "word": "veto",
-    "phonetic": "/ˈviːtəʊ/",
-    "pos": "n./v.",
-    "meaning": "否決；否決權",
-    "level": "gold",
-    "phrases": [],
-    "synonyms": [],
-    "antonyms": [],
-    "example": "The CEO has the power to veto any decision made by the regional managers."
-  },
-  {
-    "word": "vocational",
-    "phonetic": "/voʊˈkeɪʃənl/",
-    "pos": "adj.",
-    "meaning": "職業的, 職業技術的",
-    "level": "gold",
-    "phrases": [
-      "vocational training",
-      "vocational school"
-    ],
-    "synonyms": [
-      "professional",
-      "occupational"
-    ],
-    "antonyms": [
-      "academic"
-    ],
-    "example": "The government is increasing funding for vocational training programs to help reduce unemployment."
-  },
-  {
-    "word": "withstand",
-    "phonetic": "/wɪðˈstænd/",
-    "pos": "v.",
-    "meaning": "抵擋；經受住",
-    "level": "gold",
-    "phrases": [],
-    "synonyms": [
-      "endure",
-      "resist"
-    ],
-    "antonyms": [
-      "surrender",
-      "yield"
-    ],
-    "example": "The new building was designed to withstand even the most severe earthquakes."
-  },
-  {
-    "word": "accustomed",
-    "phonetic": "/əˈkʌstəmd/",
-    "pos": "adj.",
-    "meaning": "習慣的, 通常的",
-    "level": "gold",
-    "phrases": [
-      "accustomed to",
-      "become accustomed"
-    ],
-    "synonyms": [
-      "used",
-      "familiar"
-    ],
-    "antonyms": [
-      "unaccustomed"
-    ],
-    "example": "New employees often take a few weeks to become accustomed to the company's internal software systems."
-  },
-  {
-    "word": "applicant",
-    "phonetic": "/ˈæplɪkənt/",
-    "pos": "n.",
-    "meaning": "申請人, 應徵者",
-    "level": "gold",
-    "phrases": [
-      "job applicant",
-      "successful applicant"
-    ],
-    "synonyms": [
-      "candidate",
-      "bidder"
-    ],
-    "antonyms": [],
-    "example": "All qualified applicants will be contacted for an initial phone interview within the next two weeks."
-  },
-  {
     "word": "approximate",
     "phonetic": "/əˈprɑːksɪmət/",
     "pos": "adj./v.",
@@ -263,6 +112,22 @@
     "synonyms": [],
     "antonyms": [],
     "example": "The airline's catering service provides thousands of meals for international flights every day."
+  },
+  {
+    "word": "checkout",
+    "pos": "n.",
+    "meaning": "結帳櫃檯；結帳",
+    "phrases": [
+      "self-checkout",
+      "checkout counter"
+    ],
+    "synonyms": [
+      "cashier"
+    ],
+    "antonyms": [],
+    "example": "Customers can complete the payment quickly at the self-checkout.",
+    "phonetic": "/ˈʧɛˌkaʊt/",
+    "level": "gold"
   },
   {
     "word": "comet",
@@ -2860,6 +2725,22 @@
     "example": "The new watch design features an intricate mechanism with hundreds of tiny parts."
   },
   {
+    "word": "labeling",
+    "pos": "n.",
+    "meaning": "標示；貼標",
+    "phrases": [
+      "product labeling",
+      "nutrition labeling"
+    ],
+    "synonyms": [
+      "marking"
+    ],
+    "antonyms": [],
+    "example": "Accurate labeling is required for all exported food products.",
+    "phonetic": "/ˈleɪbəlɪŋ/",
+    "level": "gold"
+  },
+  {
     "word": "longevity",
     "phonetic": "/lɔːnˈdʒevəti/",
     "pos": "n.",
@@ -3004,6 +2885,22 @@
       "smooth"
     ],
     "example": "The economic recovery has been uneven, with some industries growing faster than others."
+  },
+  {
+    "word": "accreditation",
+    "pos": "n.",
+    "meaning": "（機構）認證；資格認定",
+    "phrases": [
+      "accreditation body",
+      "gain accreditation"
+    ],
+    "synonyms": [
+      "certification"
+    ],
+    "antonyms": [],
+    "example": "The training center is seeking accreditation from the industry board.",
+    "phonetic": "/əˌkrɛdəˈteɪʃən/",
+    "level": "gold"
   },
   {
     "word": "articulate",
@@ -4420,6 +4317,24 @@
     "example": "All employees are expected to wear professional business attire when meeting with clients at the headquarters."
   },
   {
+    "word": "breakout",
+    "pos": "n.",
+    "meaning": "分組討論；突破",
+    "phrases": [
+      "breakout session",
+      "breakout room"
+    ],
+    "synonyms": [
+      "small-group session"
+    ],
+    "antonyms": [
+      "plenary"
+    ],
+    "example": "After lunch, attendees will split into breakout sessions by department.",
+    "phonetic": "/ˈbreɪˌkaʊt/",
+    "level": "gold"
+  },
+  {
     "word": "breakout room",
     "phonetic": "/ˈbreɪkaʊt ruːm/",
     "pos": "n. phrase",
@@ -4573,6 +4488,24 @@
     ],
     "antonyms": [],
     "example": "All financial transactions must be recorded accurately in the company's general ledger."
+  },
+  {
+    "word": "login",
+    "pos": "n.",
+    "meaning": "登入",
+    "phrases": [
+      "login credentials",
+      "login page"
+    ],
+    "synonyms": [
+      "sign-in"
+    ],
+    "antonyms": [
+      "logout"
+    ],
+    "example": "Enter your login details to access the employee portal.",
+    "phonetic": "/login/",
+    "level": "gold"
   },
   {
     "word": "malware",
@@ -4862,6 +4795,22 @@
     "synonyms": [],
     "antonyms": [],
     "example": "The court issued a preliminary injunction to prevent the company from selling the disputed product."
+  },
+  {
+    "word": "keynote",
+    "pos": "n.",
+    "meaning": "主題演講；基調",
+    "phrases": [
+      "keynote speech",
+      "keynote speaker"
+    ],
+    "synonyms": [
+      "main address"
+    ],
+    "antonyms": [],
+    "example": "The CEO will deliver the keynote at the annual conference.",
+    "phonetic": "/ˈkiˌnoʊt/",
+    "level": "gold"
   },
   {
     "word": "keynote speech",
@@ -5740,6 +5689,22 @@
     "example": "The accountant noticed a significant variance between the actual spending and the initial budget."
   },
   {
+    "word": "workload",
+    "pos": "n.",
+    "meaning": "工作量",
+    "phrases": [
+      "heavy workload",
+      "balance the workload"
+    ],
+    "synonyms": [
+      "burden"
+    ],
+    "antonyms": [],
+    "example": "We hired two assistants to ease the team's growing workload.",
+    "phonetic": "/ˈwərˌkloʊd/",
+    "level": "gold"
+  },
+  {
     "word": "burglary",
     "phonetic": "/ˈbɜːrɡləri/",
     "pos": "n.",
@@ -5939,6 +5904,22 @@
     "synonyms": [],
     "antonyms": [],
     "example": "The QC team performs regular checks on the production line to identify any defects."
+  },
+  {
+    "word": "questionnaire",
+    "pos": "n.",
+    "meaning": "問卷",
+    "phrases": [
+      "fill out a questionnaire",
+      "customer questionnaire"
+    ],
+    "synonyms": [
+      "survey"
+    ],
+    "antonyms": [],
+    "example": "Please complete the questionnaire so we can improve our service.",
+    "phonetic": "/kˌwɛsʧəˈnɛr/",
+    "level": "gold"
   },
   {
     "word": "relocate",
@@ -7584,6 +7565,23 @@
     "example": "Social attitudes toward motherhood without marriage have changed significantly in recent decades."
   },
   {
+    "word": "nonstop",
+    "pos": "adj.",
+    "meaning": "直達的；不停的",
+    "phrases": [
+      "nonstop flight"
+    ],
+    "synonyms": [
+      "direct"
+    ],
+    "antonyms": [
+      "connecting"
+    ],
+    "example": "They booked a nonstop flight to save several hours of travel.",
+    "phonetic": "/ˌnɑnˈstɑp/",
+    "level": "gold"
+  },
+  {
     "word": "predictive analytics",
     "phonetic": "/prɪˈdɪktɪv ˌænəˈlɪtɪks/",
     "pos": "n. phrase",
@@ -9117,6 +9115,22 @@
     "example": "The hotel is located right on the shoreline, offering spectacular views of the ocean."
   },
   {
+    "word": "spreadsheet",
+    "pos": "n.",
+    "meaning": "試算表",
+    "phrases": [
+      "update the spreadsheet",
+      "budget spreadsheet"
+    ],
+    "synonyms": [
+      "worksheet"
+    ],
+    "antonyms": [],
+    "example": "He tracked all the expenses in a shared spreadsheet.",
+    "phonetic": "/ˈsprɛdˌʃit/",
+    "level": "gold"
+  },
+  {
     "word": "stagnant",
     "phonetic": "/ˈstæɡnənt/",
     "pos": "adj.",
@@ -10121,6 +10135,22 @@
     ],
     "antonyms": [],
     "example": "The receptionist will show you to the conference room when you arrive."
+  },
+  {
+    "word": "recruiter",
+    "pos": "n.",
+    "meaning": "招募人員；徵才專員",
+    "phrases": [
+      "corporate recruiter",
+      "technical recruiter"
+    ],
+    "synonyms": [
+      "hiring manager"
+    ],
+    "antonyms": [],
+    "example": "The recruiter scheduled interviews with five qualified candidates.",
+    "phonetic": "/rɪˈkrutər/",
+    "level": "gold"
   },
   {
     "word": "remuneration",
@@ -11727,6 +11757,23 @@
     "example": "Eating a large chocolate cake was a rare indulgence for him."
   },
   {
+    "word": "perk",
+    "pos": "n.",
+    "meaning": "福利；額外津貼",
+    "phrases": [
+      "employee perks",
+      "job perks"
+    ],
+    "synonyms": [
+      "benefit",
+      "fringe benefit"
+    ],
+    "antonyms": [],
+    "example": "Free gym membership is one of the perks of working here.",
+    "phonetic": "/pərk/",
+    "level": "gold"
+  },
+  {
     "word": "perpetuate",
     "phonetic": "/pərˈpetʃueɪt/",
     "pos": "v.",
@@ -11782,6 +11829,22 @@
     "synonyms": [],
     "antonyms": [],
     "example": "The court ordered the defendant to make full restitution to the victims of the financial fraud."
+  },
+  {
+    "word": "signage",
+    "pos": "n.",
+    "meaning": "招牌；標示",
+    "phrases": [
+      "store signage",
+      "directional signage"
+    ],
+    "synonyms": [
+      "signs"
+    ],
+    "antonyms": [],
+    "example": "Clear signage helps visitors find the conference rooms easily.",
+    "phonetic": "/ˈsaɪnɪʤ/",
+    "level": "gold"
   },
   {
     "word": "stagnation",
@@ -12946,6 +13009,22 @@
     "example": "The archaeologist discovered the remains of an ancient city during the excavation."
   },
   {
+    "word": "atrium",
+    "pos": "n.",
+    "meaning": "中庭",
+    "phrases": [
+      "central atrium",
+      "glass atrium"
+    ],
+    "synonyms": [
+      "courtyard"
+    ],
+    "antonyms": [],
+    "example": "The office building has a bright atrium with indoor plants.",
+    "phonetic": "/ˈeɪtriəm/",
+    "level": "gold"
+  },
+  {
     "word": "be fraught with",
     "phonetic": "/bi frɔːt wɪð/",
     "pos": "v. phr.",
@@ -13112,6 +13191,24 @@
       "insignificant"
     ],
     "example": "The report highlights the salient features of the new marketing strategy."
+  },
+  {
+    "word": "surcharge",
+    "pos": "n.",
+    "meaning": "附加費；額外收費",
+    "phrases": [
+      "fuel surcharge",
+      "service surcharge"
+    ],
+    "synonyms": [
+      "extra charge"
+    ],
+    "antonyms": [
+      "discount"
+    ],
+    "example": "A small surcharge applies to orders placed after business hours.",
+    "phonetic": "/ˈsərˌʧɑrʤ/",
+    "level": "gold"
   },
   {
     "word": "alluded",
@@ -13488,6 +13585,22 @@
     "example": "The company issued an emphatic denial of the rumors regarding a potential takeover by its main competitor."
   },
   {
+    "word": "foyer",
+    "pos": "n.",
+    "meaning": "門廳；大廳",
+    "phrases": [
+      "hotel foyer"
+    ],
+    "synonyms": [
+      "lobby",
+      "entrance hall"
+    ],
+    "antonyms": [],
+    "example": "Guests were asked to wait in the foyer until the hall opened.",
+    "phonetic": "/fɔɪər/",
+    "level": "gold"
+  },
+  {
     "word": "fuselage",
     "phonetic": "/ˈfjuːzəlɑːʒ/",
     "pos": "n.",
@@ -13510,6 +13623,24 @@
     "synonyms": [],
     "antonyms": [],
     "example": "His injuries were serious and required several weeks of hospitalization and physical therapy."
+  },
+  {
+    "word": "markup",
+    "pos": "n.",
+    "meaning": "加價；利潤加成",
+    "phrases": [
+      "price markup",
+      "standard markup"
+    ],
+    "synonyms": [
+      "margin"
+    ],
+    "antonyms": [
+      "markdown"
+    ],
+    "example": "The retailer adds a 40 percent markup to the wholesale price.",
+    "phonetic": "/ˈmɑrˌkəp/",
+    "level": "gold"
   },
   {
     "word": "nuance",
@@ -13939,6 +14070,23 @@
     "example": "The embassy assisted with the repatriation of the citizens during the crisis."
   },
   {
+    "word": "rollout",
+    "pos": "n.",
+    "meaning": "（新產品/系統）推出",
+    "phrases": [
+      "product rollout",
+      "phased rollout"
+    ],
+    "synonyms": [
+      "launch",
+      "release"
+    ],
+    "antonyms": [],
+    "example": "The nationwide rollout of the new app begins next quarter.",
+    "phonetic": "/ˈroʊˌlaʊt/",
+    "level": "gold"
+  },
+  {
     "word": "solicit",
     "phonetic": "/səˈlɪsɪt/",
     "pos": "v.",
@@ -13954,6 +14102,22 @@
     ],
     "antonyms": [],
     "example": "The company is soliciting feedback from its customers about the new service."
+  },
+  {
+    "word": "tagline",
+    "pos": "n.",
+    "meaning": "廣告標語",
+    "phrases": [
+      "catchy tagline",
+      "brand tagline"
+    ],
+    "synonyms": [
+      "slogan"
+    ],
+    "antonyms": [],
+    "example": "The agency proposed a memorable tagline for the new product.",
+    "phonetic": "/ˈtæˌglaɪn/",
+    "level": "gold"
   },
   {
     "word": "assimilate",
@@ -14583,6 +14747,22 @@
     "synonyms": [],
     "antonyms": [],
     "example": "Effective stakeholder management is crucial for the successful implementation of any large-scale project."
+  },
+  {
+    "word": "stipend",
+    "pos": "n.",
+    "meaning": "津貼；定期給付",
+    "phrases": [
+      "monthly stipend",
+      "travel stipend"
+    ],
+    "synonyms": [
+      "allowance"
+    ],
+    "antonyms": [],
+    "example": "Interns receive a modest stipend to cover their living expenses.",
+    "phonetic": "/ˈstaɪpənd/",
+    "level": "gold"
   },
   {
     "word": "unwavering",
@@ -16189,6 +16369,21 @@
     "example": "Please refer to the addendum for the updated technical specifications of the product."
   },
   {
+    "word": "barcode",
+    "pos": "n.",
+    "meaning": "條碼",
+    "phrases": [
+      "scan the barcode"
+    ],
+    "synonyms": [
+      "product code"
+    ],
+    "antonyms": [],
+    "example": "The cashier scanned the barcode to look up the price.",
+    "phonetic": "/barcode/",
+    "level": "gold"
+  },
+  {
     "word": "downsizing",
     "phonetic": "/ˈdaʊnsaɪzɪŋ/",
     "pos": "n.",
@@ -16446,6 +16641,22 @@
     "example": "The company decided to rescind the job offer after discovering discrepancies in the candidate's resume."
   },
   {
+    "word": "storefront",
+    "pos": "n.",
+    "meaning": "店面；店鋪門面",
+    "phrases": [
+      "online storefront",
+      "retail storefront"
+    ],
+    "synonyms": [
+      "shopfront"
+    ],
+    "antonyms": [],
+    "example": "They redesigned the online storefront to boost mobile sales.",
+    "phonetic": "/ˈstɔrˌfrɑnt/",
+    "level": "gold"
+  },
+  {
     "word": "adaptability",
     "phonetic": "/əˌdæptəˈbɪləti/",
     "pos": "n.",
@@ -16614,6 +16825,23 @@
     "synonyms": [],
     "antonyms": [],
     "example": "He managed to smooth over the disagreement between the two colleagues."
+  },
+  {
+    "word": "wholesaler",
+    "pos": "n.",
+    "meaning": "批發商",
+    "phrases": [
+      "authorized wholesaler"
+    ],
+    "synonyms": [
+      "distributor"
+    ],
+    "antonyms": [
+      "retailer"
+    ],
+    "example": "Buying directly from a wholesaler lowers the unit cost significantly.",
+    "phonetic": "/ˈhoʊlˌseɪlər/",
+    "level": "gold"
   },
   {
     "word": "brainstorm",
@@ -16811,6 +17039,22 @@
     "phrases": [],
     "synonyms": [],
     "antonyms": []
+  },
+  {
+    "word": "airfare",
+    "pos": "n.",
+    "meaning": "機票費",
+    "phrases": [
+      "round-trip airfare",
+      "discounted airfare"
+    ],
+    "synonyms": [
+      "plane fare"
+    ],
+    "antonyms": [],
+    "example": "The company reimburses airfare for all business trips.",
+    "phonetic": "/ˈɛrˌfɛr/",
+    "level": "gold"
   },
   {
     "word": "commensurate",
@@ -17310,6 +17554,24 @@
     "example": "The heavy snowfall led to a complete gridlock on all major roads this morning."
   },
   {
+    "word": "layoff",
+    "pos": "n.",
+    "meaning": "裁員",
+    "phrases": [
+      "mass layoff",
+      "announce layoffs"
+    ],
+    "synonyms": [
+      "redundancy"
+    ],
+    "antonyms": [
+      "hiring"
+    ],
+    "example": "The merger led to layoffs in several overlapping departments.",
+    "phonetic": "/leɪɔf/",
+    "level": "gold"
+  },
+  {
     "word": "pail",
     "phonetic": "/peɪl/",
     "pos": "n.",
@@ -17716,6 +17978,22 @@
     "phrases": [],
     "synonyms": [],
     "antonyms": []
+  },
+  {
+    "word": "furlough",
+    "pos": "n.",
+    "meaning": "無薪假；暫時解雇",
+    "phrases": [
+      "temporary furlough",
+      "furlough scheme"
+    ],
+    "synonyms": [
+      "temporary leave"
+    ],
+    "antonyms": [],
+    "example": "During the downturn, staff were placed on furlough for three months.",
+    "phonetic": "/ˈfərloʊ/",
+    "level": "gold"
   },
   {
     "word": "preterm infant",
@@ -18851,6 +19129,24 @@
     "example": "The company's performance began to regress after the departure of the manager."
   },
   {
+    "word": "itemized",
+    "pos": "adj.",
+    "meaning": "逐項列明的",
+    "phrases": [
+      "itemized bill",
+      "itemized receipt"
+    ],
+    "synonyms": [
+      "detailed"
+    ],
+    "antonyms": [
+      "lump-sum"
+    ],
+    "example": "The vendor sent an itemized invoice listing every service charge.",
+    "phonetic": "/ˈaɪtəˌmaɪzd/",
+    "level": "gold"
+  },
+  {
     "word": "prima facie",
     "phonetic": "/ˌpraɪmə ˈfeɪʃi/",
     "pos": "adj./adv.",
@@ -18947,6 +19243,23 @@
     ],
     "antonyms": [],
     "example": "The event arranger is responsible for coordinating with all the suppliers."
+  },
+  {
+    "word": "deactivation",
+    "pos": "n.",
+    "meaning": "停用；關閉",
+    "phrases": [
+      "account deactivation"
+    ],
+    "synonyms": [
+      "disabling"
+    ],
+    "antonyms": [
+      "activation"
+    ],
+    "example": "Deactivation of the old system is scheduled for Friday evening.",
+    "phonetic": "/deactivation/",
+    "level": "gold"
   },
   {
     "word": "deflate",
@@ -19134,6 +19447,24 @@
     "example": "The customer service department is currently understaffed due to the recent flu outbreak."
   },
   {
+    "word": "checkin",
+    "pos": "n.",
+    "meaning": "報到；登記入住",
+    "phrases": [
+      "online checkin",
+      "checkin counter"
+    ],
+    "synonyms": [
+      "registration"
+    ],
+    "antonyms": [
+      "checkout"
+    ],
+    "example": "Online checkin opens 24 hours before departure.",
+    "phonetic": "/checkin/",
+    "level": "gold"
+  },
+  {
     "word": "diatribe",
     "phonetic": "/ˈdaɪətraɪb/",
     "pos": "n.",
@@ -19302,6 +19633,24 @@
       "careless"
     ],
     "example": "The company is known for its scrupulous adherence to ethical business practices."
+  },
+  {
+    "word": "debriefing",
+    "pos": "n.",
+    "meaning": "事後檢討；匯報",
+    "phrases": [
+      "project debriefing"
+    ],
+    "synonyms": [
+      "review",
+      "recap"
+    ],
+    "antonyms": [
+      "briefing"
+    ],
+    "example": "We held a debriefing to review what went well after the event.",
+    "phonetic": "/dɪˈbrifɪŋ/",
+    "level": "gold"
   },
   {
     "word": "delineate",
@@ -19672,6 +20021,22 @@
     "example": "The pilot checked the altimeter to ensure the aircraft was at the correct cruising altitude."
   },
   {
+    "word": "headhunter",
+    "pos": "n.",
+    "meaning": "獵人頭顧問；高階人才招募",
+    "phrases": [
+      "executive headhunter"
+    ],
+    "synonyms": [
+      "talent scout",
+      "recruiter"
+    ],
+    "antonyms": [],
+    "example": "A headhunter contacted him about a senior management role.",
+    "phonetic": "/ˈhɛˌdhəntər/",
+    "level": "gold"
+  },
+  {
     "word": "indemnification",
     "phonetic": "/ɪnˌdemnɪfɪˈkeɪʃn/",
     "pos": "n.",
@@ -19725,6 +20090,21 @@
     "synonyms": [],
     "antonyms": [],
     "example": "The company allows its employees who are reservists to take time off for military training."
+  },
+  {
+    "word": "sublet",
+    "pos": "v.",
+    "meaning": "轉租",
+    "phrases": [
+      "sublet an apartment"
+    ],
+    "synonyms": [
+      "sublease"
+    ],
+    "antonyms": [],
+    "example": "With the landlord's approval, they sublet the spare office to a startup.",
+    "phonetic": "/ˈsəˌblɛt/",
+    "level": "gold"
   },
   {
     "word": "circumspect",
@@ -20165,6 +20545,25 @@
       "respect"
     ],
     "example": "The initial project proposal was derided by some board members as being too ambitious and unrealistic."
+  },
+  {
+    "word": "markdown",
+    "pos": "n.",
+    "meaning": "降價；減價",
+    "phrases": [
+      "seasonal markdown",
+      "price markdown"
+    ],
+    "synonyms": [
+      "price cut",
+      "reduction"
+    ],
+    "antonyms": [
+      "markup"
+    ],
+    "example": "End-of-season markdowns helped clear the remaining inventory.",
+    "phonetic": "/ˈmɑrkˌdaʊn/",
+    "level": "gold"
   },
   {
     "word": "conversant",
@@ -21206,6 +21605,38 @@
     "example": "Technical problems are a common occurrence during the initial stage of a project."
   },
   {
+    "word": "secondment",
+    "pos": "n.",
+    "meaning": "借調；短期外派",
+    "phrases": [
+      "on secondment"
+    ],
+    "synonyms": [
+      "temporary transfer"
+    ],
+    "antonyms": [],
+    "example": "She is on a six-month secondment to the London office.",
+    "phonetic": "/secondment/",
+    "level": "gold"
+  },
+  {
+    "word": "logout",
+    "pos": "n.",
+    "meaning": "登出",
+    "phrases": [
+      "automatic logout"
+    ],
+    "synonyms": [
+      "sign-out"
+    ],
+    "antonyms": [
+      "login"
+    ],
+    "example": "For security, the system forces a logout after ten minutes of inactivity.",
+    "phonetic": "/logout/",
+    "level": "gold"
+  },
+  {
     "word": "accredit",
     "phonetic": "/əˈkredɪt/",
     "pos": "n./v.",
@@ -21287,6 +21718,21 @@
     "synonyms": [],
     "antonyms": [],
     "example": "He had a stomachache after eating too much junk food."
+  },
+  {
+    "word": "sublease",
+    "pos": "n.",
+    "meaning": "轉租（契約）",
+    "phrases": [
+      "sign a sublease"
+    ],
+    "synonyms": [
+      "sublet"
+    ],
+    "antonyms": [],
+    "example": "They signed a one-year sublease for the vacant office space.",
+    "phonetic": "/ˈsəˌblis/",
+    "level": "gold"
   },
   {
     "word": "kaizen",
@@ -21624,6 +22070,22 @@
     "antonyms": []
   },
   {
+    "word": "timesheet",
+    "pos": "n.",
+    "meaning": "工時表",
+    "phrases": [
+      "submit a timesheet",
+      "weekly timesheet"
+    ],
+    "synonyms": [
+      "time record"
+    ],
+    "antonyms": [],
+    "example": "Remember to submit your timesheet before the payroll deadline.",
+    "phonetic": "/timesheet/",
+    "level": "gold"
+  },
+  {
     "word": "waybill",
     "phonetic": "/ˈweɪbɪl/",
     "pos": "n.",
@@ -21897,6 +22359,21 @@
     "synonyms": [],
     "antonyms": [],
     "example": "The busser quickly cleared the table after the guests had finished."
+  },
+  {
+    "word": "payslip",
+    "pos": "n.",
+    "meaning": "薪資單",
+    "phrases": [
+      "monthly payslip"
+    ],
+    "synonyms": [
+      "pay stub"
+    ],
+    "antonyms": [],
+    "example": "Your payslip shows a breakdown of deductions and net pay.",
+    "phonetic": "/payslip/",
+    "level": "gold"
   },
   {
     "word": "endurable",
