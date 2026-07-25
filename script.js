@@ -259,7 +259,8 @@ function speakText(text) {
 // 例句前的停頓（讓片語與例句之間有明顯間隔）
 const SECTION_PAUSE_MS = 2000;
 
-// 組出整張卡片要朗讀的文字清單（順序：單字、詞性、解釋、片語、[停頓]、例句）
+// 組出整張卡片要朗讀的文字清單
+// 順序：單字、詞性、解釋、片語、同義詞、反義詞、[停頓]、例句
 // 陣列元素可為字串（朗讀）或 { pause: 毫秒 }（靜音停頓）
 function cardTexts(w) {
     if (!w) return [];
@@ -267,8 +268,16 @@ function cardTexts(w) {
     if (w.pos) arr.push(w.pos);
     if (w.meaning) arr.push(w.meaning);
     if (w.phrases && w.phrases.length > 0) w.phrases.forEach(p => arr.push(p));
+    if (w.synonyms && w.synonyms.length > 0) {
+        arr.push('同義詞');
+        arr.push(w.synonyms.join(', '));
+    }
+    if (w.antonyms && w.antonyms.length > 0) {
+        arr.push('反義詞');
+        arr.push(w.antonyms.join(', '));
+    }
     if (w.example) {
-        arr.push({ pause: SECTION_PAUSE_MS }); // 片語與例句之間停頓
+        arr.push({ pause: SECTION_PAUSE_MS }); // 同/反義詞與例句之間停頓
         arr.push(w.example);
     }
     return arr;
