@@ -337,7 +337,7 @@ function speakAll() {
 const IMMERSIVE_HOUR_MS = 60 * 60 * 1000; // 最長持續 1 小時
 const IMMERSIVE_REPEAT = 3;               // 每張朗讀 3 次
 const IMMERSIVE_GAP_MS = 3000;            // 同張三次之間間隔 3 秒
-const IMMERSIVE_SWITCH_MS = 5000;         // 換卡後等待 5 秒才開始朗讀
+const IMMERSIVE_SWITCH_MS = 3000;         // 換卡後等待 3 秒才開始朗讀
 
 const immersive = {
     active: false,
