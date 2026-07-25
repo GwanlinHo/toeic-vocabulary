@@ -353,23 +353,10 @@ function stopAudioKeepAlive() {
     } catch (e) { /* 忽略 */ }
 }
 
-// 輕提示音：短促柔和的「叮」，同時把音訊通道撐開
+// 每張卡/播放開頭：確保音訊通道仍開著（無聲，不發提示音）
 function playCue() {
-    const ctx = ensureAudioCtx();
-    if (!ctx) return;
-    try {
-        const osc = ctx.createOscillator();
-        const gain = ctx.createGain();
-        const t = ctx.currentTime;
-        osc.type = 'sine';
-        osc.frequency.value = 880;
-        gain.gain.setValueAtTime(0, t);
-        gain.gain.linearRampToValueAtTime(0.12, t + 0.02);
-        gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.18);
-        osc.connect(gain).connect(ctx.destination);
-        osc.start(t);
-        osc.stop(t + 0.2);
-    } catch (e) { /* 忽略 */ }
+    ensureAudioCtx();      // 已建立的 context 若被暫停則 resume
+    startAudioKeepAlive(); // 保活若因故停止則重新撐開通道
 }
 
 // 循序朗讀一串項目，全部完成後呼叫 onDone（供沉浸模式接力）
