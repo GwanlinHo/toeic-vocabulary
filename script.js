@@ -256,34 +256,62 @@ function speakText(text) {
     });
 }
 
-// 組出整張卡片要朗讀的文字清單（順序：單字、詞性、解釋、片語、例句）
+// 例句前的停頓（讓片語與例句之間有明顯間隔）
+const SECTION_PAUSE_MS = 2000;
+
+// 組出整張卡片要朗讀的文字清單（順序：單字、詞性、解釋、片語、[停頓]、例句）
+// 陣列元素可為字串（朗讀）或 { pause: 毫秒 }（靜音停頓）
 function cardTexts(w) {
     if (!w) return [];
     const arr = [w.word];
     if (w.pos) arr.push(w.pos);
     if (w.meaning) arr.push(w.meaning);
     if (w.phrases && w.phrases.length > 0) w.phrases.forEach(p => arr.push(p));
-    if (w.example) arr.push(w.example);
+    if (w.example) {
+        arr.push({ pause: SECTION_PAUSE_MS }); // 片語與例句之間停頓
+        arr.push(w.example);
+    }
     return arr;
 }
 
-// 循序朗讀一串文字，全部唸完後呼叫 onDone（供沉浸模式接力）
-function speakSequence(texts, onDone) {
+// 播放世代：每次取消/重新開始朗讀就 +1，使進行中的接力（含停頓）失效而中斷
+let speechEpoch = 0;
+function cancelSpeech() {
+    speechEpoch++;
+    window.speechSynthesis.cancel();
+}
+
+// 循序朗讀一串項目，全部完成後呼叫 onDone（供沉浸模式接力）
+// items 元素可為字串（朗讀）或 { pause: 毫秒 }（靜音停頓）
+function speakSequence(items, onDone) {
     const queue = [];
-    texts.forEach(t => splitSegments(t).forEach(s => queue.push(s)));
+    items.forEach(it => {
+        if (it && typeof it === 'object' && it.pause) {
+            queue.push({ pause: it.pause });
+        } else {
+            splitSegments(it).forEach(s => queue.push({ say: s }));
+        }
+    });
     if (queue.length === 0) {
         if (onDone) onDone();
         return;
     }
 
+    const myEpoch = speechEpoch;
     let i = 0;
     function playNext() {
+        if (myEpoch !== speechEpoch) return; // 已被取消/換新一輪，中斷
         if (i >= queue.length) {
             if (onDone) onDone();
             return;
         }
-        const msg = buildUtterance(queue[i]);
+        const item = queue[i];
         i++;
+        if (item.pause) {
+            setTimeout(playNext, item.pause); // 靜音停頓
+            return;
+        }
+        const msg = buildUtterance(item.say);
         msg.onend = playNext;
         msg.onerror = playNext; // 遇錯也繼續，避免卡住
         window.speechSynthesis.speak(msg);
@@ -294,14 +322,14 @@ function speakSequence(texts, onDone) {
 // 語音朗讀單字
 function speak() {
     if (!currentWord) return;
-    window.speechSynthesis.cancel();
+    cancelSpeech();
     speakText(currentWord.word);
 }
 
 // 語音朗讀全卡片內容
 function speakAll() {
     if (!currentWord) return;
-    window.speechSynthesis.cancel();
+    cancelSpeech();
     speakSequence(cardTexts(currentWord));
 }
 
@@ -396,7 +424,7 @@ function startImmersive() {
         if (immersive.active) window.speechSynthesis.resume();
     }, 10000);
 
-    window.speechSynthesis.cancel();
+    cancelSpeech();
     immersivePlayCurrent();
 }
 
@@ -408,7 +436,7 @@ function stopImmersive(reason) {
         clearInterval(immersive.keepAlive);
         immersive.keepAlive = null;
     }
-    window.speechSynthesis.cancel();
+    cancelSpeech();
     releaseWakeLock();
     updateImmersiveButton();
 
