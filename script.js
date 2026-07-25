@@ -229,10 +229,16 @@ function splitSegments(text) {
         .filter(Boolean);
 }
 
+// 英文開頭的墊音：一個短逗號停頓，讓音訊裝置啟動延遲吃掉的是這段停頓，
+// 而非單字真正的第一個音節（改善英文第一個音節出不來的問題）
+const EN_LEAD_IN = ', ';
+
 // 依語言建立一段語音（自動選最佳語音包與語速）
 function buildUtterance(text) {
-    const msg = new SpeechSynthesisUtterance(text);
     const isChinese = /[一-龥]/.test(text);
+    // 英文段前墊短停頓；中文不受此問題影響，維持原樣
+    const spoken = isChinese ? text : EN_LEAD_IN + text;
+    const msg = new SpeechSynthesisUtterance(spoken);
 
     const bestVoice = getBestVoice(isChinese);
     if (bestVoice) {
@@ -265,7 +271,13 @@ const SECTION_PAUSE_MS = 2000;
 function cardTexts(w) {
     if (!w) return [];
     const arr = [w.word];
-    if (w.pos) arr.push(w.pos);
+    if (w.pos) {
+        // 多個詞性以「/」分隔（如 n./v.），拆開分別唸，避免黏在一起
+        w.pos.split('/').forEach(p => {
+            const t = p.trim();
+            if (t) arr.push(t);
+        });
+    }
     if (w.meaning) arr.push(w.meaning);
     if (w.phrases && w.phrases.length > 0) w.phrases.forEach(p => arr.push(p));
     if (w.synonyms && w.synonyms.length > 0) {
@@ -288,6 +300,17 @@ let speechEpoch = 0;
 function cancelSpeech() {
     speechEpoch++;
     window.speechSynthesis.cancel();
+}
+
+// A. 引擎預熱：播放開始時先發一個「無聲極短語音」喚醒音訊管線，
+// 降低第一句話開頭被切音的機率（在使用者手勢中呼叫）
+function primeVoicePipeline() {
+    try {
+        const u = new SpeechSynthesisUtterance(' '); // 不斷行空白，實質無聲
+        u.volume = 0;
+        u.rate = 1;
+        window.speechSynthesis.speak(u);
+    } catch (e) { /* 忽略 */ }
 }
 
 // 循序朗讀一串項目，全部完成後呼叫 onDone（供沉浸模式接力）
@@ -332,6 +355,7 @@ function speakSequence(items, onDone) {
 function speak() {
     if (!currentWord) return;
     cancelSpeech();
+    primeVoicePipeline();
     speakText(currentWord.word);
 }
 
@@ -339,6 +363,7 @@ function speak() {
 function speakAll() {
     if (!currentWord) return;
     cancelSpeech();
+    primeVoicePipeline();
     speakSequence(cardTexts(currentWord));
 }
 
@@ -434,6 +459,7 @@ function startImmersive() {
     }, 10000);
 
     cancelSpeech();
+    primeVoicePipeline();
     immersivePlayCurrent();
 }
 
