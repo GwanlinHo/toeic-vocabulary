@@ -301,16 +301,74 @@ let speechEpoch = 0;
 function cancelSpeech() {
     speechEpoch++;
     window.speechSynthesis.cancel();
+    stopAudioKeepAlive();
 }
 
-// A. 引擎預熱：播放開始時先發一個「無聲極短語音」喚醒音訊管線，
-// 降低第一句話開頭被切音的機率（在使用者手勢中呼叫）
-function primeVoicePipeline() {
+/* ===== iOS 切音改善：Web Audio 音訊保活 + 輕提示音 =====
+ * iOS Safari 的喇叭音訊通道在每段語音起始前是關著的，喚醒延遲會吃掉第一個音節。
+ * 對策：播放期間讓 Web Audio 持續輸出「聽不到的極低訊號」把通道撐開（保活），
+ * 並在每張卡開頭放一個很短的柔和提示音，確保通道確實被開啟。
+ * AudioContext 必須在使用者手勢中建立/resume。
+ */
+let audioCtx = null;
+let keepAliveNode = null;
+
+function ensureAudioCtx() {
     try {
-        const u = new SpeechSynthesisUtterance(' '); // 不斷行空白，實質無聲
-        u.volume = 0;
-        u.rate = 1;
-        window.speechSynthesis.speak(u);
+        if (!audioCtx) {
+            const AC = window.AudioContext || window.webkitAudioContext;
+            if (!AC) return null;
+            audioCtx = new AC();
+        }
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        return audioCtx;
+    } catch (e) {
+        return null;
+    }
+}
+
+// 無聲保活：極低頻、極小音量，聽不到但維持音訊通道開啟
+function startAudioKeepAlive() {
+    const ctx = ensureAudioCtx();
+    if (!ctx || keepAliveNode) return;
+    try {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        gain.gain.value = 0.0001; // 約 -80dB，實質無聲
+        osc.frequency.value = 20; // 極低頻，聽不太到
+        osc.connect(gain).connect(ctx.destination);
+        osc.start();
+        keepAliveNode = { osc: osc, gain: gain };
+    } catch (e) { /* 忽略 */ }
+}
+
+function stopAudioKeepAlive() {
+    try {
+        if (keepAliveNode) {
+            keepAliveNode.osc.stop();
+            keepAliveNode.osc.disconnect();
+            keepAliveNode = null;
+        }
+        if (audioCtx && audioCtx.state === 'running') audioCtx.suspend();
+    } catch (e) { /* 忽略 */ }
+}
+
+// 輕提示音：短促柔和的「叮」，同時把音訊通道撐開
+function playCue() {
+    const ctx = ensureAudioCtx();
+    if (!ctx) return;
+    try {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        const t = ctx.currentTime;
+        osc.type = 'sine';
+        osc.frequency.value = 880;
+        gain.gain.setValueAtTime(0, t);
+        gain.gain.linearRampToValueAtTime(0.12, t + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.18);
+        osc.connect(gain).connect(ctx.destination);
+        osc.start(t);
+        osc.stop(t + 0.2);
     } catch (e) { /* 忽略 */ }
 }
 
@@ -356,16 +414,18 @@ function speakSequence(items, onDone) {
 function speak() {
     if (!currentWord) return;
     cancelSpeech();
-    primeVoicePipeline();
-    speakText(currentWord.word);
+    startAudioKeepAlive();
+    playCue();
+    speakSequence([currentWord.word], stopAudioKeepAlive);
 }
 
 // 語音朗讀全卡片內容
 function speakAll() {
     if (!currentWord) return;
     cancelSpeech();
-    primeVoicePipeline();
-    speakSequence(cardTexts(currentWord));
+    startAudioKeepAlive();
+    playCue();
+    speakSequence(cardTexts(currentWord), stopAudioKeepAlive);
 }
 
 /* ===== 沉浸式連續朗讀模式 ===== */
@@ -460,7 +520,7 @@ function startImmersive() {
     }, 10000);
 
     cancelSpeech();
-    primeVoicePipeline();
+    startAudioKeepAlive();
     immersivePlayCurrent();
 }
 
@@ -487,6 +547,7 @@ function stopImmersive(reason) {
 
 // 開始朗讀目前這張卡（共 3 次）
 function immersivePlayCurrent() {
+    playCue(); // 每張卡開頭的輕提示音（同時撐開音訊通道）
     immersive.repeatLeft = IMMERSIVE_REPEAT;
     immersiveReadOnce();
 }
