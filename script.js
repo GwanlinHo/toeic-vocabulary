@@ -18,19 +18,20 @@ async function init() {
 function updateProgressUI() {
     const words = cachedWords[currentLevel];
     if (!words || words.length === 0) return;
-    
+
     // 計算目前等級中，有多少字已經被標記為已學會
     const currentLearnedCount = words.filter(w => learnedWords.includes(w.word)).length;
     const remainingCount = words.length - currentLearnedCount;
-    
+
     document.getElementById('progress-text').innerText = `剩餘：${remainingCount} / ${words.length} 字`;
 }
 
 // 設定等級並動態下載單字
 async function setLevel(level) {
+    stopImmersive();
     currentLevel = level;
     localStorage.setItem('toeic_level', level);
-    
+
     // 更新 UI 狀態
     document.body.className = `theme-${level}`;
     document.querySelectorAll('.level-selector button').forEach(btn => btn.classList.remove('active'));
@@ -49,17 +50,18 @@ async function setLevel(level) {
             return;
         }
     }
-    
+
     updateProgressUI();
-    nextWord();
+    advanceWord();
 }
 
-// 隨機抽取下一個單字
-function nextWord() {
+// 隨機抽取並顯示下一個單字（內部用，不影響沉浸模式）
+// 回傳 true 表示成功顯示一個有效單字；false 表示無資料或已全部學完
+function advanceWord() {
     const allWords = cachedWords[currentLevel];
     if (!allWords || allWords.length === 0) {
         document.getElementById('word').innerText = "無資料";
-        return;
+        return false;
     }
 
     // 過濾掉已學會的單字
@@ -70,7 +72,7 @@ function nextWord() {
         document.getElementById('meaning').innerText = "此等級所有單字已學完。";
         document.getElementById('phonetic').innerText = "";
         document.getElementById('pos').innerText = "Done";
-        return;
+        return false;
     }
 
     // 隨機抽取（確保不與上一個重複）
@@ -85,35 +87,44 @@ function nextWord() {
 
     currentWord = availableWords[randomIndex];
     displayWord(currentWord);
+    return true;
+}
+
+// 使用者手動點「下一個單字」：會先停止沉浸模式
+function nextWord() {
+    stopImmersive();
+    advanceWord();
 }
 
 // 標記目前單字為已學會
 function markAsLearned() {
+    stopImmersive();
     if (!currentWord) return;
-    
+
     const confirmMark = confirm(`確定要將「${currentWord.word}」標記為已學會並排除嗎？\n(此動作下次不會再出現該字)`);
-    
+
     if (confirmMark) {
         if (!learnedWords.includes(currentWord.word)) {
             learnedWords.push(currentWord.word);
             localStorage.setItem('toeic_learned_words', JSON.stringify(learnedWords));
             updateProgressUI();
-            nextWord(); // 自動跳轉到下一個
+            advanceWord(); // 自動跳轉到下一個
         }
     }
 }
 
 // 重設進度
 function resetProgress() {
+    stopImmersive();
     const words = cachedWords[currentLevel];
     const confirmReset = confirm(`確定要重設「${currentLevel}」等級的學習進度嗎？\n這將會讓所有已標記的單字重新出現。`);
-    
+
     if (confirmReset) {
         // 僅移除目前等級相關的已學會單字（或是全部移除，此處選擇全部移除較簡單直觀）
         learnedWords = [];
         localStorage.removeItem('toeic_learned_words');
         updateProgressUI();
-        nextWord();
+        advanceWord();
         alert("進度已重設。");
     }
 }
@@ -124,7 +135,7 @@ function displayWord(data) {
     document.getElementById('phonetic').innerText = data.phonetic || '';
     document.getElementById('pos').innerText = data.pos || '';
     document.getElementById('meaning').innerText = data.meaning || '無解釋';
-    
+
     // 處理同義詞與反義詞
     document.getElementById('synonyms').innerText = (data.synonyms && data.synonyms.length > 0) ? data.synonyms.join(', ') : '-';
     document.getElementById('antonyms').innerText = (data.antonyms && data.antonyms.length > 0) ? data.antonyms.join(', ') : '-';
@@ -163,7 +174,7 @@ function getBestVoice(isChinese) {
     const enKeywords = ['Samantha (Enhanced)', 'Samantha', 'Google US English', 'Alex', 'Siri', 'Google', 'Microsoft Zira'];
     // 優先權給予 Siri 與 Google 台灣
     const zhKeywords = ['Siri', 'Google 國語（台灣）', 'Google', 'Microsoft Hanhan'];
-    
+
     const keywords = isChinese ? zhKeywords : enKeywords;
 
     // 1. 嘗試匹配高品質關鍵字且語系正確
@@ -173,11 +184,11 @@ function getBestVoice(isChinese) {
             const lang = v.lang.toLowerCase().replace('_', '-');
             const isTW = lang.includes('tw'); // 嚴格鎖定 TW
             const isEN = lang.startsWith('en');
-            
+
             if (isChinese) {
                 // 確保語系符合繁體中文 (zh-TW)，並嚴格排除中國大陸 (cn) 與香港 (hk)
-                const isOtherRegion = lang.includes('cn') || lang.includes('hk') || 
-                                     name.includes('China') || name.includes('Mainland') || 
+                const isOtherRegion = lang.includes('cn') || lang.includes('hk') ||
+                                     name.includes('China') || name.includes('Mainland') ||
                                      name.includes('Hong Kong') || name.includes('Cantonese');
                 if (!isTW || isOtherRegion) return false;
 
@@ -185,7 +196,7 @@ function getBestVoice(isChinese) {
                 if (keyword === 'Siri') {
                     return name.includes('Siri') && (name.includes('2') || name.includes('Voice 2') || name.includes('聲音 2'));
                 }
-                
+
                 return name.includes(keyword);
             } else {
                 return name.includes(keyword) && isEN;
@@ -210,37 +221,74 @@ function getBestVoice(isChinese) {
     }) || voices.find(v => v.lang.toLowerCase().startsWith(isChinese ? 'zh-tw' : 'en-us'));
 }
 
-// 核心朗讀邏輯：支援中英文自動偵測與分段播放
+// 將文字依中文字元與非中文字元（英文、符號）切分成語段
+function splitSegments(text) {
+    if (!text) return [];
+    return (text.match(/[一-龥]+|[^一-龥]+/g) || [])
+        .map(s => s.trim())
+        .filter(Boolean);
+}
+
+// 依語言建立一段語音（自動選最佳語音包與語速）
+function buildUtterance(text) {
+    const msg = new SpeechSynthesisUtterance(text);
+    const isChinese = /[一-龥]/.test(text);
+
+    const bestVoice = getBestVoice(isChinese);
+    if (bestVoice) {
+        msg.voice = bestVoice;
+        msg.lang = bestVoice.lang;
+    } else {
+        msg.lang = isChinese ? 'zh-TW' : 'en-US';
+    }
+
+    msg.volume = 1;
+    // 英文 0.72 (更利於辨識細節)，中文 0.8
+    msg.rate = isChinese ? 0.8 : 0.72;
+    msg.pitch = 1;
+    return msg;
+}
+
+// 核心朗讀邏輯：單次、射後不理（供單鍵朗讀使用）
 function speakText(text) {
-    if (!text) return;
-
-    // 將文字依中文字元與非中文字元（英文、符號）切分
-    const segments = text.match(/[\u4e00-\u9fa5]+|[^\u4e00-\u9fa5]+/g) || [];
-
-    segments.forEach(segment => {
-        const trimmed = segment.trim();
-        if (!trimmed) return;
-
-        const msg = new SpeechSynthesisUtterance(trimmed);
-        const isChinese = /[\u4e00-\u9fa5]/.test(trimmed);
-        
-        // 取得最佳語音包
-        const bestVoice = getBestVoice(isChinese);
-        if (bestVoice) {
-            msg.voice = bestVoice;
-            msg.lang = bestVoice.lang;
-        } else {
-            msg.lang = isChinese ? 'zh-TW' : 'en-US';
-        }
-
-        msg.volume = 1;
-        // 進一步調慢語速：英文 0.72 (更利於辨識細節)，中文 0.8
-        msg.rate = isChinese ? 0.8 : 0.72; 
-        msg.pitch = 1;
-        
-        // 瀏覽器會自動排隊播放
-        window.speechSynthesis.speak(msg);
+    splitSegments(text).forEach(seg => {
+        window.speechSynthesis.speak(buildUtterance(seg));
     });
+}
+
+// 組出整張卡片要朗讀的文字清單（順序：單字、詞性、解釋、片語、例句）
+function cardTexts(w) {
+    if (!w) return [];
+    const arr = [w.word];
+    if (w.pos) arr.push(w.pos);
+    if (w.meaning) arr.push(w.meaning);
+    if (w.phrases && w.phrases.length > 0) w.phrases.forEach(p => arr.push(p));
+    if (w.example) arr.push(w.example);
+    return arr;
+}
+
+// 循序朗讀一串文字，全部唸完後呼叫 onDone（供沉浸模式接力）
+function speakSequence(texts, onDone) {
+    const queue = [];
+    texts.forEach(t => splitSegments(t).forEach(s => queue.push(s)));
+    if (queue.length === 0) {
+        if (onDone) onDone();
+        return;
+    }
+
+    let i = 0;
+    function playNext() {
+        if (i >= queue.length) {
+            if (onDone) onDone();
+            return;
+        }
+        const msg = buildUtterance(queue[i]);
+        i++;
+        msg.onend = playNext;
+        msg.onerror = playNext; // 遇錯也繼續，避免卡住
+        window.speechSynthesis.speak(msg);
+    }
+    playNext();
 }
 
 // 語音朗讀單字
@@ -253,26 +301,171 @@ function speak() {
 // 語音朗讀全卡片內容
 function speakAll() {
     if (!currentWord) return;
-    
-    // 先停止當前所有朗讀
     window.speechSynthesis.cancel();
+    speakSequence(cardTexts(currentWord));
+}
 
-    // 依序加入播放隊列
-    // 1. 單字與詞性
-    speakText(currentWord.word);
-    if (currentWord.pos) speakText(currentWord.pos);
-    
-    // 2. 中文解釋
-    speakText(currentWord.meaning);
+/* ===== 沉浸式連續朗讀模式 ===== */
+const IMMERSIVE_HOUR_MS = 60 * 60 * 1000; // 最長持續 1 小時
+const IMMERSIVE_REPEAT = 3;               // 每張朗讀 3 次
+const IMMERSIVE_GAP_MS = 3000;            // 同張三次之間間隔 3 秒
+const IMMERSIVE_SWITCH_MS = 5000;         // 換卡後等待 5 秒才開始朗讀
 
-    // 3. 片語
-    if (currentWord.phrases && currentWord.phrases.length > 0) {
-        currentWord.phrases.forEach(p => speakText(p));
+const immersive = {
+    active: false,
+    repeatLeft: 0,
+    startTime: 0,
+    wakeLock: null,
+    keepAlive: null,
+    timers: []
+};
+
+// 排入可被統一清除的計時器
+function scheduleTimer(fn, ms) {
+    const id = setTimeout(() => {
+        immersive.timers = immersive.timers.filter(t => t !== id);
+        fn();
+    }, ms);
+    immersive.timers.push(id);
+}
+
+function clearImmersiveTimers() {
+    immersive.timers.forEach(clearTimeout);
+    immersive.timers = [];
+}
+
+// 播放期間維持螢幕恆亮（不支援的瀏覽器自動退回一般行為）
+async function requestWakeLock() {
+    try {
+        if ('wakeLock' in navigator) {
+            immersive.wakeLock = await navigator.wakeLock.request('screen');
+        }
+    } catch (e) {
+        // 不支援或被拒絕時忽略
+    }
+}
+
+function releaseWakeLock() {
+    try {
+        if (immersive.wakeLock) {
+            immersive.wakeLock.release();
+            immersive.wakeLock = null;
+        }
+    } catch (e) { /* 忽略 */ }
+}
+
+function updateImmersiveButton() {
+    const btn = document.getElementById('immersive-btn');
+    if (!btn) return;
+    if (immersive.active) {
+        btn.innerText = '停止沉浸朗讀';
+        btn.classList.add('active');
+    } else {
+        btn.innerText = '開始沉浸朗讀';
+        btn.classList.remove('active');
+    }
+}
+
+function toggleImmersive() {
+    if (immersive.active) {
+        stopImmersive();
+    } else {
+        startImmersive();
+    }
+}
+
+function startImmersive() {
+    const allWords = cachedWords[currentLevel] || [];
+    const available = allWords.filter(w => !learnedWords.includes(w.word));
+    if (available.length === 0) {
+        alert('此等級已無可朗讀的單字。');
+        return;
+    }
+    // 若目前不是有效單字（例如已學會或完成畫面），先抽一張
+    if (!currentWord || learnedWords.includes(currentWord.word)) {
+        advanceWord();
     }
 
-    // 4. 例句
-    if (currentWord.example) speakText(currentWord.example);
+    immersive.active = true;
+    immersive.startTime = Date.now();
+    updateImmersiveButton();
+    requestWakeLock();
+
+    // 保活：部分瀏覽器語音約 15 秒後會自動停頓，定期 resume
+    immersive.keepAlive = setInterval(() => {
+        if (immersive.active) window.speechSynthesis.resume();
+    }, 10000);
+
+    window.speechSynthesis.cancel();
+    immersivePlayCurrent();
 }
+
+function stopImmersive(reason) {
+    if (!immersive.active) return;
+    immersive.active = false;
+    clearImmersiveTimers();
+    if (immersive.keepAlive) {
+        clearInterval(immersive.keepAlive);
+        immersive.keepAlive = null;
+    }
+    window.speechSynthesis.cancel();
+    releaseWakeLock();
+    updateImmersiveButton();
+
+    if (reason) {
+        const el = document.getElementById('progress-text');
+        if (el) {
+            el.innerText = reason;
+            setTimeout(updateProgressUI, 2500);
+        }
+    }
+}
+
+// 開始朗讀目前這張卡（共 3 次）
+function immersivePlayCurrent() {
+    immersive.repeatLeft = IMMERSIVE_REPEAT;
+    immersiveReadOnce();
+}
+
+function immersiveReadOnce() {
+    if (!immersive.active) return;
+    if (Date.now() - immersive.startTime >= IMMERSIVE_HOUR_MS) {
+        stopImmersive('已達 1 小時，自動停止');
+        return;
+    }
+    speakSequence(cardTexts(currentWord), () => {
+        if (!immersive.active) return;
+        immersive.repeatLeft--;
+        if (immersive.repeatLeft > 0) {
+            // 同一張，間隔 3 秒後再讀一次
+            scheduleTimer(immersiveReadOnce, IMMERSIVE_GAP_MS);
+        } else {
+            // 三次讀完，等 5 秒換下一張
+            scheduleTimer(immersiveAdvance, IMMERSIVE_SWITCH_MS);
+        }
+    });
+}
+
+function immersiveAdvance() {
+    if (!immersive.active) return;
+    if (Date.now() - immersive.startTime >= IMMERSIVE_HOUR_MS) {
+        stopImmersive('已達 1 小時，自動停止');
+        return;
+    }
+    const shown = advanceWord(); // 隨機下一張，內建跳過已學會
+    if (!shown) {
+        stopImmersive('此等級已全部學完');
+        return;
+    }
+    immersivePlayCurrent();
+}
+
+// 螢幕重新可見時，若仍在沉浸模式則重新取得 Wake Lock
+document.addEventListener('visibilitychange', () => {
+    if (immersive.active && document.visibilityState === 'visible') {
+        requestWakeLock();
+    }
+});
 
 // 啟動程式
 init();

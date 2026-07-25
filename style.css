@@ -146,6 +146,35 @@ body {
 .grid-section { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
 .example { font-style: italic; color: var(--text-sub); line-height: 1.4; border-left: 3px solid var(--theme-color); padding-left: 10px; }
 
+/* 沉浸朗讀開關 */
+.immersive-btn {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 2px solid var(--theme-color);
+    border-radius: 16px;
+    background: transparent;
+    color: var(--theme-color);
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.immersive-btn:active { transform: scale(0.98); }
+
+.immersive-btn.active {
+    background: #e74c3c;
+    border-color: #e74c3c;
+    color: white;
+    animation: immersive-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes immersive-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(231, 76, 60, 0); }
+}
+
 /* 下一個按鈕 */
 .actions { margin-top: 25px; }
 .next-btn {
