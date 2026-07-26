@@ -133,13 +133,14 @@ function resetProgress() {
 function displayWord(data) {
     document.getElementById('word').innerText = data.word || '-';
     document.getElementById('phonetic').innerText = data.phonetic || '';
-    document.getElementById('pos').innerText = data.pos || '';
+    document.getElementById('pos').innerText = posToChineseList(data.pos).join('／') || '';
     document.getElementById('meaning').innerText = data.meaning || '無解釋';
 
     // 處理同義詞與反義詞
     document.getElementById('synonyms').innerText = (data.synonyms && data.synonyms.length > 0) ? data.synonyms.join(', ') : '-';
     document.getElementById('antonyms').innerText = (data.antonyms && data.antonyms.length > 0) ? data.antonyms.join(', ') : '-';
     document.getElementById('example').innerText = data.example || '';
+    document.getElementById('example-zh').innerText = data.example_zh || '';
 
     // 處理片語清單
     const phrasesEl = document.getElementById('phrases');
@@ -265,19 +266,40 @@ function speakText(text) {
 // 例句前的停頓（讓片語與例句之間有明顯間隔）
 const SECTION_PAUSE_MS = 2000;
 
+// 詞性英文縮寫 → 中文對照（涵蓋資料中所有出現過的 token）
+const POS_ZH = {
+    'n.': '名詞', 'v.': '動詞', 'adj.': '形容詞', 'adv.': '副詞',
+    'prep.': '介系詞', 'conj.': '連接詞', 'pron.': '代名詞', 'int.': '感嘆詞',
+    'phr.': '片語', 'phrase': '片語', 'idiom': '慣用語',
+    'n. phrase': '名詞片語', 'n. phr.': '名詞片語',
+    'v. phr.': '動詞片語', 'v. phrase': '動詞片語',
+    'adj. phrase': '形容詞片語', 'adj. phr.': '形容詞片語',
+    'adv. phr.': '副詞片語',
+    'prep. phr.': '介系詞片語', 'prep. phrase': '介系詞片語',
+    'conj. phr.': '連接詞片語',
+    'n. pl.': '名詞（複數）',
+    'v. (past)': '動詞（過去式）', 'v. phr. (past)': '動詞片語（過去式）',
+    'adj. (comparative)': '形容詞（比較級）',
+    'modal v.': '情態動詞'
+};
+
+// 把 pos 依「/」拆開並各自翻成中文；找不到對照則保留原字串
+function posToChineseList(rawPos) {
+    if (!rawPos) return [];
+    return rawPos.split('/')
+        .map(p => p.trim())
+        .filter(Boolean)
+        .map(t => POS_ZH[t] || t);
+}
+
 // 組出整張卡片要朗讀的文字清單
 // 順序：單字、詞性、解釋、片語、同義詞、反義詞、[停頓]、例句
 // 陣列元素可為字串（朗讀）或 { pause: 毫秒 }（靜音停頓）
 function cardTexts(w) {
     if (!w) return [];
     const arr = [w.word];
-    if (w.pos) {
-        // 多個詞性以「/」分隔（如 n./v.），拆開分別唸，避免黏在一起
-        w.pos.split('/').forEach(p => {
-            const t = p.trim();
-            if (t) arr.push(t);
-        });
-    }
+    // 詞性翻成中文並拆開分別唸（如 n./v. → 名詞、動詞）
+    posToChineseList(w.pos).forEach(p => arr.push(p));
     if (w.meaning) arr.push(w.meaning);
     if (w.phrases && w.phrases.length > 0) w.phrases.forEach(p => arr.push(p));
     if (w.synonyms && w.synonyms.length > 0) {

@@ -145,6 +145,8 @@ body {
 .list { padding-left: 20px; margin: 0; font-size: 1rem; line-height: 1.5; }
 .grid-section { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
 .example { font-style: italic; color: var(--text-sub); line-height: 1.4; border-left: 3px solid var(--theme-color); padding-left: 10px; }
+.example-zh { color: var(--text-sub); line-height: 1.4; border-left: 3px solid var(--theme-color); padding-left: 10px; margin-top: 6px; font-size: 0.95rem; }
+.example-zh:empty { display: none; }
 
 /* 沉浸朗讀開關 */
 .immersive-btn {
