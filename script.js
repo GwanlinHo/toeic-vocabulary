@@ -229,10 +229,9 @@ function splitSegments(text) {
         .filter(Boolean);
 }
 
-// 英文開頭的墊音：一段「句點級」停頓（比逗號更長），讓音訊裝置的喚醒延遲
-// 吃掉的是這段停頓，而非單字真正的第一個音節。
-// iOS Safari 的喚醒延遲較長，故用句點；句點不會被唸出來，只產生較長停頓。
-const EN_LEAD_IN = '. ';
+// 英文開頭墊音：原本用標點停頓試圖蓋住切音，但 iOS 會把句點唸成「dot」、
+// 逗號也無助於切音；改由 Web Audio 無聲保活負責防切音，這裡不再加任何前綴。
+const EN_LEAD_IN = '';
 
 // 依語言建立一段語音（自動選最佳語音包與語速）
 function buildUtterance(text) {
