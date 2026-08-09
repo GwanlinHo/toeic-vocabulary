@@ -313,6 +313,7 @@ function cardTexts(w) {
     if (w.example) {
         arr.push({ pause: SECTION_PAUSE_MS }); // 同/反義詞與例句之間停頓
         arr.push(w.example);
+        if (w.example_zh) arr.push(w.example_zh); // 例句中文翻譯（英文例句後接著唸）
     }
     return arr;
 }
@@ -448,7 +449,8 @@ const immersive = {
     startTime: 0,
     wakeLock: null,
     keepAlive: null,
-    timers: []
+    timers: [],
+    pendingResume: false   // 背景暫停後、回前景需自動接續的旗標
 };
 
 // 排入可被統一清除的計時器
@@ -535,6 +537,7 @@ function startImmersive() {
 function stopImmersive(reason) {
     if (!immersive.active) return;
     immersive.active = false;
+    immersive.pendingResume = false;
     clearImmersiveTimers();
     if (immersive.keepAlive) {
         clearInterval(immersive.keepAlive);
@@ -593,10 +596,23 @@ function immersiveAdvance() {
     immersivePlayCurrent();
 }
 
-// 螢幕重新可見時，若仍在沉浸模式則重新取得 Wake Lock
+// 沉浸模式下切換前景/背景：離開時乾淨暫停，回前景時自動從當前這張卡續讀。
+// （背景時瀏覽器會暫停語音；不主動中斷會在回前景後卡死不續讀。）
 document.addEventListener('visibilitychange', () => {
-    if (immersive.active && document.visibilityState === 'visible') {
-        requestWakeLock();
+    if (!immersive.active) return;
+    if (document.visibilityState === 'hidden') {
+        // 乾淨中斷在飛的朗讀與待觸發計時器，標記待續，active 維持 true
+        cancelSpeech();
+        clearImmersiveTimers();
+        immersive.pendingResume = true;
+    } else if (document.visibilityState === 'visible') {
+        requestWakeLock(); // 背景時 Wake Lock 會被釋放，回前景重取
+        if (immersive.pendingResume) {
+            immersive.pendingResume = false;
+            cancelSpeech();          // 保險：清掉任何殘留接力
+            clearImmersiveTimers();
+            immersivePlayCurrent();  // 從目前這張卡重讀（playCue 會 resume 被暫停的音訊通道）
+        }
     }
 });
 
