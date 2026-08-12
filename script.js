@@ -222,10 +222,20 @@ function getBestVoice(isChinese) {
     }) || voices.find(v => v.lang.toLowerCase().startsWith(isChinese ? 'zh-tw' : 'en-us'));
 }
 
-// 將文字依中文字元與非中文字元（英文、符號）切分成語段
+// 朗讀前清掉會被 TTS 唸出來的標點（Android 會把逗號/句號唸成「comma/dot」，
+// iOS 本就略過）。換成空白以保留詞界；刻意保留撇號(don't 不變 dont)與
+// $ % & @ 等有意義符號。全形/半形標點與 CJK 括號一併處理。
+const SPEECH_PUNCT_RE = /[.,;:!?…"“”„‚«»()\[\]{}\-–—、。，；：！？、「」『』（）〈〉《》【】〔〕～]/g;
+function stripSpeechPunctuation(text) {
+    return String(text).replace(SPEECH_PUNCT_RE, ' ').replace(/\s+/g, ' ').trim();
+}
+
+// 將文字依中文字元與非中文字元（英文、符號）切分成語段（切分前先清標點）
 function splitSegments(text) {
     if (!text) return [];
-    return (text.match(/[一-龥]+|[^一-龥]+/g) || [])
+    const clean = stripSpeechPunctuation(text);
+    if (!clean) return [];
+    return (clean.match(/[一-龥]+|[^一-龥]+/g) || [])
         .map(s => s.trim())
         .filter(Boolean);
 }
@@ -266,6 +276,10 @@ function speakText(text) {
 // 例句前的停頓（讓片語與例句之間有明顯間隔）
 const SECTION_PAUSE_MS = 2000;
 
+// 每張卡開頭主詞重複朗讀次數與間隔（加深印象）
+const WORD_REPEAT = 3;
+const WORD_REPEAT_GAP_MS = 1000;
+
 // 詞性英文縮寫 → 中文對照（涵蓋資料中所有出現過的 token）
 const POS_ZH = {
     'n.': '名詞', 'v.': '動詞', 'adj.': '形容詞', 'adv.': '副詞',
@@ -297,7 +311,12 @@ function posToChineseList(rawPos) {
 // 陣列元素可為字串（朗讀）或 { pause: 毫秒 }（靜音停頓）
 function cardTexts(w) {
     if (!w) return [];
-    const arr = [w.word];
+    // 主詞重複 WORD_REPEAT 遍，每遍間隔 WORD_REPEAT_GAP_MS（加深印象）
+    const arr = [];
+    for (let r = 0; r < WORD_REPEAT; r++) {
+        arr.push(w.word);
+        if (r < WORD_REPEAT - 1) arr.push({ pause: WORD_REPEAT_GAP_MS });
+    }
     // 詞性翻成中文並拆開分別唸（如 n./v. → 名詞、動詞）
     posToChineseList(w.pos).forEach(p => arr.push(p));
     if (w.meaning) arr.push(w.meaning);
