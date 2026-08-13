@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>多益單字隨身卡</title>
     <link rel="stylesheet" href="style.css">
+    <!-- PWA：可安裝、離線 -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#27ae60">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="多益單字">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body class="theme-green">
     <div class="container">
@@ -84,5 +91,13 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // 註冊 Service Worker（離線快取）；相對路徑使 scope 落在本專案子路徑
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('sw.js').catch(function () { /* 忽略註冊失敗 */ });
+            });
+        }
+    </script>
 </body>
 </html>
