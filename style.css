@@ -4,6 +4,7 @@
     --text-main: #2d3436;
     --text-sub: #636e72;
     --theme-color: #2ecc71; /* Default Green */
+    --en-scale: 1.25; /* 英文字體放大倍率(單字/音標/片語/同反義/例句);調這一個數字即可 */
 }
 
 /* 主題顏色定義 */
@@ -75,7 +76,7 @@ body {
 
 #word {
     margin: 0;
-    font-size: 2.2rem;
+    font-size: calc(2.2rem * var(--en-scale));
     color: var(--theme-color);
 }
 
@@ -127,7 +128,7 @@ body {
 
 .phonetic {
     color: var(--text-sub);
-    font-size: 1.1rem;
+    font-size: calc(1.1rem * var(--en-scale));
     margin: 5px 0 0 0;
 }
 
@@ -142,9 +143,10 @@ body {
 }
 
 .meaning { font-size: 1.3rem; font-weight: 600; margin: 0; }
-.list { padding-left: 20px; margin: 0; font-size: 1rem; line-height: 1.5; }
+.list { padding-left: 20px; margin: 0; font-size: calc(1rem * var(--en-scale)); line-height: 1.5; }
 .grid-section { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
-.example { font-style: italic; color: var(--text-sub); line-height: 1.4; border-left: 3px solid var(--theme-color); padding-left: 10px; }
+#synonyms, #antonyms { font-size: calc(1rem * var(--en-scale)); margin: 0; }
+.example { font-style: italic; color: var(--text-sub); line-height: 1.4; border-left: 3px solid var(--theme-color); padding-left: 10px; font-size: calc(1rem * var(--en-scale)); }
 .example-zh { color: var(--text-sub); line-height: 1.4; border-left: 3px solid var(--theme-color); padding-left: 10px; margin-top: 6px; font-size: 0.95rem; }
 .example-zh:empty { display: none; }
 
