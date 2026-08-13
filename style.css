@@ -4,7 +4,8 @@
     --text-main: #2d3436;
     --text-sub: #636e72;
     --theme-color: #2ecc71; /* Default Green */
-    --en-scale: 1.25; /* 英文字體放大倍率(單字/音標/片語/同反義/例句);調這一個數字即可 */
+    --en-scale: 1.25; /* 英文字體額外放大倍率(單字/音標/片語/同反義/例句) */
+    --font-scale: 1.1; /* 卡片內容整體(中+英)等比放大倍率;不含按鈕。調這個數字改整體大小 */
 }
 
 /* 主題顏色定義 */
@@ -76,7 +77,7 @@ body {
 
 #word {
     margin: 0;
-    font-size: calc(2.2rem * var(--en-scale));
+    font-size: calc(2.2rem * var(--en-scale) * var(--font-scale));
     color: var(--theme-color);
 }
 
@@ -92,7 +93,7 @@ body {
     background: #f1f2f6;
     padding: 4px 10px;
     border-radius: 6px;
-    font-size: 0.8rem;
+    font-size: calc(0.8rem * var(--font-scale));
     font-weight: bold;
     color: var(--text-sub);
 }
@@ -128,26 +129,26 @@ body {
 
 .phonetic {
     color: var(--text-sub);
-    font-size: calc(1.1rem * var(--en-scale));
+    font-size: calc(1.1rem * var(--en-scale) * var(--font-scale));
     margin: 5px 0 0 0;
 }
 
 /* 卡片內容區 */
 .section { margin-bottom: 20px; }
 .section h3, .grid-section h3 {
-    font-size: 0.85rem;
+    font-size: calc(0.85rem * var(--font-scale));
     text-transform: uppercase;
     color: var(--text-sub);
     margin-bottom: 8px;
     letter-spacing: 1px;
 }
 
-.meaning { font-size: 1.3rem; font-weight: 600; margin: 0; }
-.list { padding-left: 20px; margin: 0; font-size: calc(1rem * var(--en-scale)); line-height: 1.5; }
+.meaning { font-size: calc(1.3rem * var(--font-scale)); font-weight: 600; margin: 0; }
+.list { padding-left: 20px; margin: 0; font-size: calc(1rem * var(--en-scale) * var(--font-scale)); line-height: 1.5; }
 .grid-section { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
-#synonyms, #antonyms { font-size: calc(1rem * var(--en-scale)); margin: 0; }
-.example { font-style: italic; color: var(--text-sub); line-height: 1.4; border-left: 3px solid var(--theme-color); padding-left: 10px; font-size: calc(1rem * var(--en-scale)); }
-.example-zh { color: var(--text-sub); line-height: 1.4; border-left: 3px solid var(--theme-color); padding-left: 10px; margin-top: 6px; font-size: 0.95rem; }
+#synonyms, #antonyms { font-size: calc(1rem * var(--en-scale) * var(--font-scale)); margin: 0; }
+.example { font-style: italic; color: var(--text-sub); line-height: 1.4; border-left: 3px solid var(--theme-color); padding-left: 10px; font-size: calc(1rem * var(--en-scale) * var(--font-scale)); }
+.example-zh { color: var(--text-sub); line-height: 1.4; border-left: 3px solid var(--theme-color); padding-left: 10px; margin-top: 6px; font-size: calc(0.95rem * var(--font-scale)); }
 .example-zh:empty { display: none; }
 
 /* 沉浸朗讀開關 */
