@@ -1,6 +1,6 @@
 /* 多益單字隨身卡 Service Worker — 離線快取（cache-first）
    更新方式：改動任何檔案後，把 CACHE 版本號 +1，使用者下次開啟即自動更新。 */
-const CACHE = 'toeic-vocab-v1';
+const CACHE = 'toeic-vocab-v2';
 
 // 預先快取的核心資產（相對於 sw.js 所在目錄，故在 project page 子路徑下也正確）
 const ASSETS = [

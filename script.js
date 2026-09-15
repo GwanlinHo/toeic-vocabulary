@@ -467,6 +467,7 @@ const immersive = {
     repeatLeft: 0,
     startTime: 0,
     wakeLock: null,
+    wakePending: false,    // 正在向系統要 Wake Lock（避免重複要求）
     keepAlive: null,
     timers: [],
     pendingResume: false   // 背景暫停後、回前景需自動接續的旗標
@@ -487,22 +488,37 @@ function clearImmersiveTimers() {
 }
 
 // 播放期間維持螢幕恆亮（不支援的瀏覽器自動退回一般行為）
+// WebKit：同一頁面第一次要求必須在使用者手勢當下，成功過之後就不需要手勢；
+// 頁面進背景時系統會收回所有鎖。所以回前景、以及沉浸朗讀中每 10 秒檢查一次，被收回就補回。
 async function requestWakeLock() {
+    if (!('wakeLock' in navigator)) return;
+    if (immersive.wakeLock || immersive.wakePending) return;  // 已握著或正在要，不重複要
+    if (document.visibilityState === 'hidden') return;         // 背景要不到，等回前景
+    immersive.wakePending = true;
     try {
-        if ('wakeLock' in navigator) {
-            immersive.wakeLock = await navigator.wakeLock.request('screen');
+        const lock = await navigator.wakeLock.request('screen');
+        if (!immersive.active) {
+            // 要到的時候沉浸朗讀已經停了，立刻放掉
+            lock.release();
+            return;
         }
+        immersive.wakeLock = lock;
+        lock.addEventListener('release', () => {
+            // 系統收回（切背景、省電）；回前景或下一次定期檢查時補回
+            if (immersive.wakeLock === lock) immersive.wakeLock = null;
+        });
     } catch (e) {
-        // 不支援或被拒絕時忽略
+        // 不支援或被拒絕時忽略，下一次檢查再試
+    } finally {
+        immersive.wakePending = false;
     }
 }
 
 function releaseWakeLock() {
+    const lock = immersive.wakeLock;
+    immersive.wakeLock = null;
     try {
-        if (immersive.wakeLock) {
-            immersive.wakeLock.release();
-            immersive.wakeLock = null;
-        }
+        if (lock) lock.release();
     } catch (e) { /* 忽略 */ }
 }
 
@@ -545,7 +561,10 @@ function startImmersive() {
 
     // 保活：部分瀏覽器語音約 15 秒後會自動停頓，定期 resume
     immersive.keepAlive = setInterval(() => {
-        if (immersive.active) window.speechSynthesis.resume();
+        if (immersive.active) {
+            window.speechSynthesis.resume();
+            requestWakeLock(); // Wake Lock 被系統收回時補回
+        }
     }, 10000);
 
     cancelSpeech();
