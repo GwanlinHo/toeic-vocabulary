@@ -46,6 +46,15 @@
 - `data_*.json`：按等級分類的單字資料庫。
 - `scripts/`：用於產出與整理單字資料庫的 Python 腳本。
 
+## 測試
+
+```bash
+tests/run_tests.sh
+```
+
+驗證沉浸朗讀的螢幕常亮（Wake Lock）行為：被系統收回時會補回、已握著時不重複要求、背景不要求、停止後不殘留。
+用假的語音引擎與假的 Wake Lock 跑真正的頁面，需要 python3、node、chromium 與 puppeteer-core。
+
 ## 部署方式
 
 1. 將本專案推送到您的 GitHub 儲存庫。
