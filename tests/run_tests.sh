@@ -1,5 +1,5 @@
 #!/bin/bash
-# 測試：沉浸朗讀的 Wake Lock 行為（假語音、假 Wake Lock）
+# 測試：沉浸朗讀的 Wake Lock 行為、沉浸中排除單字不中斷（假語音、假 Wake Lock）
 # 需求：python3、node、chromium、puppeteer-core
 set -u
 cd "$(dirname "$0")"
@@ -16,6 +16,9 @@ fi
 FAIL=0
 echo "===== 沉浸朗讀螢幕常亮 ====="
 BASE="http://127.0.0.1:$PORT/index.html" node wake_e2e.js || FAIL=1
+
+echo "===== 沉浸朗讀中排除單字不中斷 ====="
+BASE="http://127.0.0.1:$PORT/index.html" node exclude_immersive_e2e.js || FAIL=1
 
 if [ "$STARTED_SERVER" = "1" ]; then
   kill "$SERVER_PID" 2>/dev/null

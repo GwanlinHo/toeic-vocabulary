@@ -97,9 +97,21 @@ function nextWord() {
 }
 
 // 標記目前單字為已學會
+// 沉浸朗讀中按下排除：只「暫停」不停止（active 維持、Wake Lock 與保活不放），
+// 確認後換下一張繼續讀，取消則從當前這張卡重讀。
 function markAsLearned() {
-    stopImmersive();
-    if (!currentWord) return;
+    if (!currentWord) {
+        stopImmersive();
+        return;
+    }
+
+    const wasImmersive = immersive.active;
+    if (wasImmersive) {
+        cancelSpeech();          // 會 speechEpoch++，在飛的接力不會在恢復後亂排程
+        clearImmersiveTimers();
+    } else {
+        stopImmersive();
+    }
 
     const confirmMark = confirm(`確定要將「${currentWord.word}」標記為已學會並排除嗎？\n(此動作下次不會再出現該字)`);
 
@@ -107,9 +119,15 @@ function markAsLearned() {
         if (!learnedWords.includes(currentWord.word)) {
             learnedWords.push(currentWord.word);
             localStorage.setItem('toeic_learned_words', JSON.stringify(learnedWords));
-            updateProgressUI();
-            advanceWord(); // 自動跳轉到下一個
         }
+        updateProgressUI();
+        if (wasImmersive) {
+            immersiveAdvance();  // 換下一張並續讀（內建 1 小時檢查與全部學完自動停止）
+        } else {
+            advanceWord();       // 自動跳轉到下一個
+        }
+    } else if (wasImmersive) {
+        immersivePlayCurrent();  // 取消：從當前這張卡重讀（playCue 重新撐開音訊通道）
     }
 }
 
