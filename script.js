@@ -90,8 +90,15 @@ function advanceWord() {
     return true;
 }
 
-// 使用者手動點「下一個單字」：會先停止沉浸模式
+// 使用者手動點「下一個單字」
+// 沉浸朗讀中：當作「跳過這張」，立即換下一張並從頭續讀（active 維持、Wake Lock 與保活不放）。
 function nextWord() {
+    if (immersive.active) {
+        cancelSpeech();          // 會 speechEpoch++，在飛的接力不會在換卡後亂排程
+        clearImmersiveTimers();
+        immersiveAdvance();      // 換下一張並續讀（內建 1 小時檢查與全部學完自動停止）
+        return;
+    }
     stopImmersive();
     advanceWord();
 }

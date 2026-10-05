@@ -1,8 +1,9 @@
-/* 多益單字：沉浸朗讀中按下「標記為已學會（排除）」不應中斷朗讀
+/* 多益單字：沉浸朗讀中按下「排除」或「下一個單字」都不應中斷朗讀
  *
  * 用假的語音引擎與假的 Wake Lock 跑真正的頁面，驗證：
  * 確認排除後沉浸仍在、換了下一張並重新開始朗讀；取消則從當前這張卡重讀；
- * 非沉浸狀態下按排除行為不變（不會啟動朗讀）。
+ * 沉浸中按「下一個單字」當作跳過這張，換字並續讀；
+ * 非沉浸狀態下按排除／下一個單字行為不變（不會啟動朗讀）。
  * 執行方式：tests/run_tests.sh（會自己起本機伺服器）。
  * 需要 puppeteer-core，路徑可用環境變數 PUPPETEER_PATH 覆蓋。 */
 const puppeteer = require(process.env.PUPPETEER_PATH || "/home/pi/WorkDir/browser-tool/node_modules/puppeteer-core");
@@ -101,7 +102,18 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   ok(s.spoken > 0, "取消後從當前這張卡重讀 " + JSON.stringify(s));
   ok(await page.evaluate(() => __spoken[0] === currentWord.word), "重讀是從主詞開始");
 
-  // 3. 停止沉浸後按排除：維持原行為（換字但不朗讀）
+  // 3. 沉浸中按「下一個單字」：不中斷、換字、從新卡續讀，且不跳確認框
+  const cur2 = await S();
+  await resetSpoken();
+  await page.click(".next-btn");
+  await sleep(300);
+  s = await S();
+  ok(s.confirms === cur2.confirms, "按下一個單字不會跳確認框 " + JSON.stringify(s));
+  ok(s.active, "沉浸中按下一個單字仍在進行朗讀 " + JSON.stringify(s));
+  ok(s.word !== cur2.word && s.learned === cur2.learned, "換到下一個單字且不記為已學會 " + JSON.stringify(s));
+  ok(s.spoken > 0, "換字後繼續朗讀 " + JSON.stringify(s));
+
+  // 4. 停止沉浸後按排除：維持原行為（換字但不朗讀）
   await page.click("#immersive-btn");
   await sleep(200);
   const off = await S();
@@ -114,6 +126,15 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   ok(!s.active, "非沉浸下按排除不會啟動沉浸 " + JSON.stringify(s));
   ok(s.word !== off.word && s.learned === off.learned + 1, "非沉浸下照舊排除並換字 " + JSON.stringify(s));
   ok(s.spoken === 0, "非沉浸下排除不朗讀 " + JSON.stringify(s));
+
+  // 5. 非沉浸下按「下一個單字」：換字但不朗讀
+  const off2 = await S();
+  await resetSpoken();
+  await page.click(".next-btn");
+  await sleep(300);
+  s = await S();
+  ok(!s.active && s.spoken === 0, "非沉浸下按下一個單字不朗讀 " + JSON.stringify(s));
+  ok(s.word !== off2.word && s.learned === off2.learned, "非沉浸下照舊只換字 " + JSON.stringify(s));
 
   await page.evaluate(() => localStorage.removeItem("toeic_learned_words"));
   await browser.close();
