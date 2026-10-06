@@ -79,7 +79,19 @@ body {
     margin: 0;
     font-size: calc(2.2rem * var(--en-scale) * var(--font-scale));
     color: var(--theme-color);
+    line-height: 1.15;
 }
+
+/* 換行保底：長單字不得衝出卡片造成整頁橫向捲動。
+ * 主詞優先在資料內建的斷字點（軟連字號 U+00AD）換行，見 scripts/add_hyphenation.py；
+ * 字典沒收錄的字則由 break-word 硬切，寧可切得不好看也不溢出。 */
+#word, .phonetic, .meaning, .list, .list li, #synonyms, #antonyms, .example, .example-zh {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+/* grid 項目預設 min-width:auto，長字會把欄位撐寬、連帶撐大卡片；歸零才會乖乖換行 */
+.grid-section > div, #synonyms, #antonyms { min-width: 0; }
 
 .header-tools {
     display: flex;

@@ -154,9 +154,48 @@ function resetProgress() {
     }
 }
 
+// 主詞換行與字級
+// 先讓資料內建的斷字點（軟連字號）自然換行；超過 2 行才逐步縮小字級，直到塞得下或到下限。
+const WORD_MAX_LINES = 2;      // 主詞最多幾行
+const WORD_MIN_SCALE = 0.65;   // 縮到原字級的幾成為止
+const WORD_SCALE_STEP = 0.05;
+
+// 量目前主詞實際佔幾行（比用行高換算可靠）
+// 注意：軟連字號會把同一行切成多個 rect，所以要依 top 座標歸併，不能直接數 rect 個數。
+function wordLineCount(el) {
+    if (!el.firstChild) return 1;
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    const tops = [];
+    for (const r of range.getClientRects()) {
+        if (r.width === 0 && r.height === 0) continue;
+        if (!tops.some(t => Math.abs(t - r.top) < 2)) tops.push(r.top);
+    }
+    return tops.length || 1;
+}
+
+function fitWord() {
+    const el = document.getElementById('word');
+    el.style.fontSize = '';  // 先還原成 CSS 原尺寸再量
+    if (wordLineCount(el) <= WORD_MAX_LINES) return;
+
+    const base = parseFloat(getComputedStyle(el).fontSize);
+    if (!base) return;
+    for (let k = 1 - WORD_SCALE_STEP; k >= WORD_MIN_SCALE - 1e-9; k -= WORD_SCALE_STEP) {
+        el.style.fontSize = (base * k).toFixed(2) + 'px';
+        if (wordLineCount(el) <= WORD_MAX_LINES) return;
+    }
+    // 縮到下限仍超過 2 行就維持下限，由 CSS 的 overflow-wrap 保底不讓它溢出
+}
+
+// 轉向或改變視窗寬度後可用寬度變了，重算一次
+window.addEventListener('resize', fitWord);
+
 // 顯示單字到網頁
 function displayWord(data) {
-    document.getElementById('word').innerText = data.word || '-';
+    // word_shy 是離線算好、帶軟連字號的顯示用字串（見 scripts/add_hyphenation.py）；
+    // 軟連字號只在需要換行時顯示成連字號，朗讀與 learnedWords 比對一律用原本的 word。
+    document.getElementById('word').innerText = data.word_shy || data.word || '-';
     document.getElementById('phonetic').innerText = data.phonetic || '';
     document.getElementById('pos').innerText = posToChineseList(data.pos).join('／') || '';
     document.getElementById('meaning').innerText = data.meaning || '無解釋';
@@ -177,6 +216,8 @@ function displayWord(data) {
             phrasesEl.appendChild(li);
         });
     }
+
+    fitWord(); // 內容就定位後再量行數調字級
 }
 
 let voices = [];
